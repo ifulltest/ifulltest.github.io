@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/tags/github/</link>
+    <description>Recent content in Github on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What are the different commands or operations in GitHub?</title>
+      <link>https://ifulltest.github.io/en/posts/github-common-commands-or-operations/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/github-common-commands-or-operations/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As a public repository, GitHub mainly restored the source code from the local system, using git to control the software version. There are several commands frequently used from local git to Github&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is a GitHub repository?</title>
+      <link>https://ifulltest.github.io/en/posts/github-repository/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/github-repository/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Github repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

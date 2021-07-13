@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jira on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/tags/jira/</link>
+    <description>Recent content in Jira on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 14 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/jira/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How does a QA use JIRA?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-a-qa-use-jira/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-a-qa-use-jira/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;QA works with development teams to help ship features quickly and safely. 
+Jira plays a part in QA to do the below works&amp;hellip;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are alternatives to JIRA?</title>
+      <link>https://ifulltest.github.io/en/posts/what-are-alternatives-to-jira/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-are-alternatives-to-jira/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Many Jira alternatives can be chosen for your projects. Some of them are free or free with some conditions. Here is a list of alternatives&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the purpose of JIRA?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-the-purpose-of-jira/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-the-purpose-of-jira/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Jira Software is built for every member of your software team to plan, track, and release great software&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Basis on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/tags/test-basis/</link>
+    <description>Recent content in Test Basis on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/test-basis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is the purpose of a test or project management tool?</title>
+      <link>https://ifulltest.github.io/en/posts/purpose-of-a-test-or-pm-tool/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/purpose-of-a-test-or-pm-tool/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The primary purpose of test or project management tools is to help managers plan, execute and control all aspects of the test ore project management process. What we benefit from such tools are&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Difference between UAT and usability testing?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-between-uat-and-usability-test/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-between-uat-and-usability-test/</guid>
+      <description>&lt;p&gt;&lt;em&gt;User acceptance testing and usability testing are two easy confusing concepts. But overall, they go from a different perspective&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is regression testing with example?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-regression-testing-with-example/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-regression-testing-with-example/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Regression testing will be performed after functional modification or bug is fixed. These two activities may damage at a different extent to other functions that are related to the function need to be modified or repaired&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Difference between alpha and beta testing?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-between-alpha-and-beta-testing/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-between-alpha-and-beta-testing/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Alpha testing is performed in the controlled developing environment by real users but not internal developers or testers. It is often going after finishing a module or the whole system.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Beta testing is performed in the uncontrolled external environment by real users. It is often going after the stable version of Alpha testing&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you determine priority and severity of a defect?</title>
+      <link>https://ifulltest.github.io/en/posts/determine-defect-the-priority-and-severity/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/determine-defect-the-priority-and-severity/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Severity indicates the degree of damage defects impact to quality.Priority indicates the order to fix defects.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Severity and priority as two crucial aspects to defects; have some distinctions and connections.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In general, high severity often with high priority, but that is not exactly one-to-one correspondence&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you go about writing test conditions and cases for new functionality?</title>
+      <link>https://ifulltest.github.io/en/posts/writing-conditions-and-cases-for-new-func/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/writing-conditions-and-cases-for-new-func/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As is shown below, generally including 4 classes of test conditions to expend test cases.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;They are: valid verification, invalid verification, user interface capabilities, user experience capabilities&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you log defects?</title>
+      <link>https://ifulltest.github.io/en/posts/how-do-you-log-defects/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-do-you-log-defects/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Defects related activities mainly includes: select  defect tracking tool, log defects, track and close defects, retrospect defect report&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are different types of functional testing?</title>
+      <link>https://ifulltest.github.io/en/posts/different-types-of-functional-testing/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/different-types-of-functional-testing/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The functional test is from various aspects to measure whether the software is ready to deliver to the business world&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the difference between system, integration and E2E testing?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-between-sit-and-e2e-testing/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-between-sit-and-e2e-testing/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The software will experience unit testing, integration testing, system testing, acceptance testing to be delivered to the real-world. What&amp;rsquo;s the difference between integration testing, system testing, and end-to-end testing?&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How does software get developed?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-software-get-developed/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-software-get-developed/</guid>
+      <description>&lt;p&gt;&lt;em&gt;A software normally get developed by business requirement collection, product design, product developing, product test, product deployment, product operating and monitor&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How does software get hosted?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-software-get-hosted/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-software-get-hosted/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Clients -&amp;gt; CDN -&amp;gt; Nginx -&amp;gt; Static Date or Dynamic Data or Cache -&amp;gt; SQL Database or NoSQL Database&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How would you go about testing a new requirement and what&#39;s the process?</title>
+      <link>https://ifulltest.github.io/en/posts/the-process-of-testing-a-new-requirement/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/the-process-of-testing-a-new-requirement/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As is shown below, when a new requirement coming, Normally we will do a static check, test design, test preparation, then start a series of checks and test activities&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are the different environments in a software development team?</title>
+      <link>https://ifulltest.github.io/en/posts/different-environments-in-development-team/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/different-environments-in-development-team/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The differents are shown below, normally will have development, test, pre-production, and production environment for delivering software&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are the different layers in an app and how do they communicate with each other?</title>
+      <link>https://ifulltest.github.io/en/posts/different-layers-communicate-in-an-app/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/different-layers-communicate-in-an-app/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As is shown below, a typical 3-tiers software application includes a presentation layer, business layer, and data layer&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is SDLC?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-sdlc/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-sdlc/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The Software Development Life Cycle (SDLC) refers to a methodology with clearly defined processes for creating high-quality software. in detail, the SDLC methodology focuses on the following phases of software development&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is STLC?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-stlc/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-stlc/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Software Testing Life Cycle (STLC) refers to a testing process which has specific steps to be executed in a definite sequence to ensure that the quality goals have been met. In the STLC process, each activity is carried out in a planned and systematic way. Each phase has different goals and deliverables. the STLC methodology focuses on the following phases of software development&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why do we need a separate test environment?</title>
+      <link>https://ifulltest.github.io/en/posts/why-do-we-need-a-separate-test-environment/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/why-do-we-need-a-separate-test-environment/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The typical classification of environment for IT products is as below. Separate environments will make sure different roles using their own environment. To focus on different test purposes.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, will do their test work parallelly, improve efficiency, reduce disturbance from each other&lt;/em&gt;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

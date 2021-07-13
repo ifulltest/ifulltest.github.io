@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/</link>
+    <description>Recent content on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to install Jenkins?</title>
+      <link>https://ifulltest.github.io/en/posts/jenkins-installation/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/jenkins-installation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;We will start the journey of Jenkins discovery from here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article will&lt;/em&gt; concisely &lt;em&gt;introduce one of the basic Jenkins knowledge: how to install the Jenkins &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Cypress?</title>
+      <link>https://ifulltest.github.io/en/posts/cypress-installation/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/cypress-installation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;We will start the journey of Cypress discovery from here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article will quickly introduce what is Cypress, what can Cypress do, steps of installation and starting  the Cypress &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install JMeter?</title>
+      <link>https://ifulltest.github.io/en/posts/jmeter-installation/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/jmeter-installation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;We will start the journey of JMeter discovery from here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article will talk about JMeter installation-related knowledge &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://ifulltest.github.io/en/posts/about-me/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/about-me/</guid>
+      <description>Who Am I 10+ years old testing veteran.
+Be serious about entrusted things. Deem trustworthiness as supreme glory.
+Like knowledge sharing, sharing is an important way to consolidate what I have learned.
+Like delicious food. No trouble that delicious food cannot solve!
+Like NBA. Big love Mike Jordan, Kobe Bryant, and Stephen Curry!
+Love singing. People who love singing will never die!
+Love reading celebrities&#39; biographies. There always something to learn from the taste of different life.</description>
+    </item>
+    
+    <item>
+      <title>Blog Road Map</title>
+      <link>https://ifulltest.github.io/en/posts/blog-road-map/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/blog-road-map/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The quick road map as the graph above:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Life-related articles record the author&amp;rsquo;s personal life, such as &amp;lsquo;&lt;strong&gt;Migrant Story&lt;/strong&gt;&amp;rsquo;, &amp;lsquo;&lt;strong&gt;Philosophy and Religion&lt;/strong&gt;&amp;rsquo; and &amp;lsquo;&lt;strong&gt;Post-reading Notes&lt;/strong&gt;&amp;rsquo;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;IT-related articles are mainly classified as &amp;lsquo;&lt;strong&gt;Series Technical Tutorials&lt;/strong&gt;&amp;rsquo; and &amp;lsquo;&lt;strong&gt;TestOps Knowledge Framework&lt;/strong&gt;&amp;rsquo;&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are the different commands or operations in GitHub?</title>
+      <link>https://ifulltest.github.io/en/posts/github-common-commands-or-operations/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/github-common-commands-or-operations/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As a public repository, GitHub mainly restored the source code from the local system, using git to control the software version. There are several commands frequently used from local git to Github&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is a release pipeline?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-a-release-pipeline/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-a-release-pipeline/</guid>
+      <description>&lt;p&gt;&lt;em&gt;A release pipeline can also be thought of as a workflow. A workflow whose purpose is releasing software. As such, modelling your release pipeline should simply be a case of modelling how you want to release your software&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is CI CD CT, and how they are achieved by DevOps server?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-ci-cd-ct-to-be-achieved/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-ci-cd-ct-to-be-achieved/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As the picture showed, CT, CI and CD will work better when they are together. To know how they are achieved by the DevOps server, we need to see each concept of CI, CD, and CT&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the difference between code build and compilations?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-of-code-build-and-compilation/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-of-code-build-and-compilation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In software development, a build is the process of converting source code files into standalone software artifact(s) that can be run on a computer, or the result of doing so. In terms of compilation, they are two different concepts&amp;hellip;.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the purpose of a test or project management tool?</title>
+      <link>https://ifulltest.github.io/en/posts/purpose-of-a-test-or-pm-tool/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/purpose-of-a-test-or-pm-tool/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The primary purpose of test or project management tools is to help managers plan, execute and control all aspects of the test ore project management process. What we benefit from such tools are&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the role of a QA in a DevOps environment?</title>
+      <link>https://ifulltest.github.io/en/posts/the-role-of-a-qa-in-a-devops-environment/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/the-role-of-a-qa-in-a-devops-environment/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In the DevOps approach, testers and developers play equally important roles. The boundaries of job responsibilities between a developer and tester become blurred in DevOps&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is VCS?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-vcs/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-vcs/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Version control systems are a category of software tools that help a software team manage changes to source code over time&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How does a QA use JIRA?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-a-qa-use-jira/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-a-qa-use-jira/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;QA works with development teams to help ship features quickly and safely. 
+Jira plays a part in QA to do the below works&amp;hellip;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are alternatives to JIRA?</title>
+      <link>https://ifulltest.github.io/en/posts/what-are-alternatives-to-jira/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-are-alternatives-to-jira/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Many Jira alternatives can be chosen for your projects. Some of them are free or free with some conditions. Here is a list of alternatives&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is a GitHub repository?</title>
+      <link>https://ifulltest.github.io/en/posts/github-repository/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/github-repository/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Github repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the purpose of JIRA?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-the-purpose-of-jira/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-the-purpose-of-jira/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Jira Software is built for every member of your software team to plan, track, and release great software&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Difference between UAT and usability testing?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-between-uat-and-usability-test/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-between-uat-and-usability-test/</guid>
+      <description>&lt;p&gt;&lt;em&gt;User acceptance testing and usability testing are two easy confusing concepts. But overall, they go from a different perspective&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How Agile Scrum Helps Solve The Problems In Traditional Software Development Models?</title>
+      <link>https://ifulltest.github.io/en/posts/scrum-helps-software-development-models/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/scrum-helps-software-development-models/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Agile Scrum is a practice that helps continuous iteration of development and testing in the software development process. Unlike the Waterfall model, some features of Agile Scrum helps to solve the problems that traditional software development models cannot conquered&amp;hellip;.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are different frameworks within Agile methodology?</title>
+      <link>https://ifulltest.github.io/en/posts/different-agile-methodology/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/different-agile-methodology/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Some of the practices on different types of Agile frameworks bring significant improvement after the failure of the traditional development model. Such as  Scrum, Extreme Programming, Kan ban, Lean, Feature-Driven Development, Dynamic System Development, Crystal&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are the real life problems with traditional way of waterfall model?</title>
+      <link>https://ifulltest.github.io/en/posts/problems-of-waterfall-model/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/problems-of-waterfall-model/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The waterfall model is the earliest &lt;a href=&#34;https://gy0512.github.io/post/basic-test-knowledge-what-is-sdlc/&#34; target=&#34;_blank&#34;&gt;SDLC &lt;/a&gt;
+approach that was used for software development. It divide the whole process of software development into separate phases. The outcome of one phase acts as the input for the next phase sequentially&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are the similarity and difference between Scrum and Kanban?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-between-scrum-and-kanban/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-between-scrum-and-kanban/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This article focus on the similarity and difference between Scrum and Kanban. As to the concept and basic featues of Scrum and Kanban, can refer to &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is regression testing with example?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-regression-testing-with-example/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-regression-testing-with-example/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Regression testing will be performed after functional modification or bug is fixed. These two activities may damage at a different extent to other functions that are related to the function need to be modified or repaired&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Difference between alpha and beta testing?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-between-alpha-and-beta-testing/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-between-alpha-and-beta-testing/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Alpha testing is performed in the controlled developing environment by real users but not internal developers or testers. It is often going after finishing a module or the whole system.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Beta testing is performed in the uncontrolled external environment by real users. It is often going after the stable version of Alpha testing&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you determine priority and severity of a defect?</title>
+      <link>https://ifulltest.github.io/en/posts/determine-defect-the-priority-and-severity/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/determine-defect-the-priority-and-severity/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Severity indicates the degree of damage defects impact to quality.Priority indicates the order to fix defects.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Severity and priority as two crucial aspects to defects; have some distinctions and connections.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;In general, high severity often with high priority, but that is not exactly one-to-one correspondence&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you go about writing test conditions and cases for new functionality?</title>
+      <link>https://ifulltest.github.io/en/posts/writing-conditions-and-cases-for-new-func/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/writing-conditions-and-cases-for-new-func/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As is shown below, generally including 4 classes of test conditions to expend test cases.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;They are: valid verification, invalid verification, user interface capabilities, user experience capabilities&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you log defects?</title>
+      <link>https://ifulltest.github.io/en/posts/how-do-you-log-defects/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-do-you-log-defects/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Defects related activities mainly includes: select  defect tracking tool, log defects, track and close defects, retrospect defect report&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are different types of functional testing?</title>
+      <link>https://ifulltest.github.io/en/posts/different-types-of-functional-testing/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/different-types-of-functional-testing/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The functional test is from various aspects to measure whether the software is ready to deliver to the business world&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the difference between system, integration and E2E testing?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-between-sit-and-e2e-testing/</link>
+      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-between-sit-and-e2e-testing/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The software will experience unit testing, integration testing, system testing, acceptance testing to be delivered to the real-world. What&amp;rsquo;s the difference between integration testing, system testing, and end-to-end testing?&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How does software get developed?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-software-get-developed/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-software-get-developed/</guid>
+      <description>&lt;p&gt;&lt;em&gt;A software normally get developed by business requirement collection, product design, product developing, product test, product deployment, product operating and monitor&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How does software get hosted?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-software-get-hosted/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-software-get-hosted/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Clients -&amp;gt; CDN -&amp;gt; Nginx -&amp;gt; Static Date or Dynamic Data or Cache -&amp;gt; SQL Database or NoSQL Database&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How would you go about testing a new requirement and what&#39;s the process?</title>
+      <link>https://ifulltest.github.io/en/posts/the-process-of-testing-a-new-requirement/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/the-process-of-testing-a-new-requirement/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As is shown below, when a new requirement coming, Normally we will do a static check, test design, test preparation, then start a series of checks and test activities&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are the different environments in a software development team?</title>
+      <link>https://ifulltest.github.io/en/posts/different-environments-in-development-team/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/different-environments-in-development-team/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The differents are shown below, normally will have development, test, pre-production, and production environment for delivering software&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What are the different layers in an app and how do they communicate with each other?</title>
+      <link>https://ifulltest.github.io/en/posts/different-layers-communicate-in-an-app/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/different-layers-communicate-in-an-app/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As is shown below, a typical 3-tiers software application includes a presentation layer, business layer, and data layer&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is a cloud service?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-a-cloud-service/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-a-cloud-service/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Normally, we classify cloud service to private cloud service, public cloud service, and hybrid cloud service&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is SDLC?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-sdlc/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-sdlc/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The Software Development Life Cycle (SDLC) refers to a methodology with clearly defined processes for creating high-quality software. in detail, the SDLC methodology focuses on the following phases of software development&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is STLC?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-stlc/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-stlc/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Software Testing Life Cycle (STLC) refers to a testing process which has specific steps to be executed in a definite sequence to ensure that the quality goals have been met. In the STLC process, each activity is carried out in a planned and systematic way. Each phase has different goals and deliverables. the STLC methodology focuses on the following phases of software development&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why do we need a separate test environment?</title>
+      <link>https://ifulltest.github.io/en/posts/why-do-we-need-a-separate-test-environment/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/why-do-we-need-a-separate-test-environment/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The typical classification of environment for IT products is as below. Separate environments will make sure different roles using their own environment. To focus on different test purposes.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Also, will do their test work parallelly, improve efficiency, reduce disturbance from each other&lt;/em&gt;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://ifulltest.github.io/en/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0.Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

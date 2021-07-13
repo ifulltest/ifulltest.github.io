@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps Basis on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/tags/devops-basis/</link>
+    <description>Recent content in DevOps Basis on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Fri, 11 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/devops-basis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is a cloud service?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-a-cloud-service/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-a-cloud-service/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Normally, we classify cloud service to private cloud service, public cloud service, and hybrid cloud service&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

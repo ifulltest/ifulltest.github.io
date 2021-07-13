@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CICD on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/tags/cicd/</link>
+    <description>Recent content in CICD on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/cicd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is a release pipeline?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-a-release-pipeline/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-a-release-pipeline/</guid>
+      <description>&lt;p&gt;&lt;em&gt;A release pipeline can also be thought of as a workflow. A workflow whose purpose is releasing software. As such, modelling your release pipeline should simply be a case of modelling how you want to release your software&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is CI CD CT, and how they are achieved by DevOps server?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-ci-cd-ct-to-be-achieved/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-ci-cd-ct-to-be-achieved/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As the picture showed, CT, CI and CD will work better when they are together. To know how they are achieved by the DevOps server, we need to see each concept of CI, CD, and CT&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the difference between code build and compilations?</title>
+      <link>https://ifulltest.github.io/en/posts/difference-of-code-build-and-compilation/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/difference-of-code-build-and-compilation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In software development, a build is the process of converting source code files into standalone software artifact(s) that can be run on a computer, or the result of doing so. In terms of compilation, they are two different concepts&amp;hellip;.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the role of a QA in a DevOps environment?</title>
+      <link>https://ifulltest.github.io/en/posts/the-role-of-a-qa-in-a-devops-environment/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/the-role-of-a-qa-in-a-devops-environment/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In the DevOps approach, testers and developers play equally important roles. The boundaries of job responsibilities between a developer and tester become blurred in DevOps&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is VCS?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-vcs/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-vcs/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Version control systems are a category of software tools that help a software team manage changes to source code over time&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

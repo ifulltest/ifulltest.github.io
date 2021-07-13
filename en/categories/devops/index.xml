@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/categories/devops/</link>
+    <description>Recent content in DevOps on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to install Jenkins?</title>
+      <link>https://ifulltest.github.io/en/posts/jenkins-installation/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/jenkins-installation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;We will start the journey of Jenkins discovery from here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This article will&lt;/em&gt; concisely &lt;em&gt;introduce one of the basic Jenkins knowledge: how to install the Jenkins &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is a release pipeline?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-a-release-pipeline/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-a-release-pipeline/</guid>
+      <description>&lt;p&gt;&lt;em&gt;A release pipeline can also be thought of as a workflow. A workflow whose purpose is releasing software. As such, modelling your release pipeline should simply be a case of modelling how you want to release your software&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is CI CD CT, and how they are achieved by DevOps server?</title>
+      <link>https://ifulltest.github.io/en/posts/how-does-ci-cd-ct-to-be-achieved/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/how-does-ci-cd-ct-to-be-achieved/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As the picture showed, CT, CI and CD will work better when they are together. To know how they are achieved by the DevOps server, we need to see each concept of CI, CD, and CT&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is the role of a QA in a DevOps environment?</title>
+      <link>https://ifulltest.github.io/en/posts/the-role-of-a-qa-in-a-devops-environment/</link>
+      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/the-role-of-a-qa-in-a-devops-environment/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In the DevOps approach, testers and developers play equally important roles. The boundaries of job responsibilities between a developer and tester become blurred in DevOps&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What is a cloud service?</title>
+      <link>https://ifulltest.github.io/en/posts/what-is-a-cloud-service/</link>
+      <pubDate>Fri, 11 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/what-is-a-cloud-service/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Normally, we classify cloud service to private cloud service, public cloud service, and hybrid cloud service&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

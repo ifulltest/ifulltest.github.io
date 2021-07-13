@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TestOps Knowledge Framework on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/en/categories/testops-knowledge-framework/</link>
+    <description>Recent content in TestOps Knowledge Framework on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/categories/testops-knowledge-framework/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Road Map</title>
+      <link>https://ifulltest.github.io/en/posts/blog-road-map/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/blog-road-map/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The quick road map as the graph above:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Life-related articles record the author&amp;rsquo;s personal life, such as &amp;lsquo;&lt;strong&gt;Migrant Story&lt;/strong&gt;&amp;rsquo;, &amp;lsquo;&lt;strong&gt;Philosophy and Religion&lt;/strong&gt;&amp;rsquo; and &amp;lsquo;&lt;strong&gt;Post-reading Notes&lt;/strong&gt;&amp;rsquo;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;IT-related articles are mainly classified as &amp;lsquo;&lt;strong&gt;Series Technical Tutorials&lt;/strong&gt;&amp;rsquo; and &amp;lsquo;&lt;strong&gt;TestOps Knowledge Framework&lt;/strong&gt;&amp;rsquo;&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
