@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ifulltest.github.io/en/posts/about-me/</loc>
+    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ifulltest.github.io/en/posts/blog-road-map/</loc>
+    <lastmod>2021-01-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://ifulltest.github.io/en/categories/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -81,9 +87,6 @@
     <loc>https://ifulltest.github.io/en/tags/jmeter/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ifulltest.github.io/en/posts/about-me/</loc>
-    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://ifulltest.github.io/en/tags/css/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -108,9 +111,6 @@
   </url><url>
     <loc>https://ifulltest.github.io/en/series/user-manual/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/en/posts/blog-road-map/</loc>
-    <lastmod>2021-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/en/categories/testops-knowledge-framework/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
