@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Hugo Bootstrap</title>
+    <title>Posts on Become a Full-Stack Tester Here</title>
     <link>https://ifulltest.github.io/en/posts/</link>
-    <description>Recent content in Posts on Hugo Bootstrap</description>
+    <description>Recent content in Posts on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -23,14 +23,12 @@ Love reading celebrities&#39; biographies. There always something to learn from 
     </item>
     
     <item>
-      <title>Blog Road Map</title>
-      <link>https://ifulltest.github.io/en/posts/blog-road-map/</link>
+      <title>Site Map</title>
+      <link>https://ifulltest.github.io/en/posts/site-road-map/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/en/posts/blog-road-map/</guid>
-      <description>&lt;p&gt;&lt;em&gt;The quick road map as the graph above:&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Life-related articles record the author&amp;rsquo;s personal life, such as &amp;lsquo;&lt;strong&gt;Migrant Story&lt;/strong&gt;&amp;rsquo;, &amp;lsquo;&lt;strong&gt;Philosophy and Religion&lt;/strong&gt;&amp;rsquo; and &amp;lsquo;&lt;strong&gt;Post-reading Notes&lt;/strong&gt;&amp;rsquo;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;IT-related articles are mainly classified as &amp;lsquo;&lt;strong&gt;Series Technical Tutorials&lt;/strong&gt;&amp;rsquo; and &amp;lsquo;&lt;strong&gt;TestOps Knowledge Framework&lt;/strong&gt;&amp;rsquo;&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://ifulltest.github.io/en/posts/site-road-map/</guid>
+      <description>&lt;p&gt;&lt;em&gt;When you first go on this website, the site road map can guide you quickly through the  structure of the website and  the author&amp;rsquo;s habits of classification&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,7 +67,7 @@ Love reading celebrities&#39; biographies. There always something to learn from 
       <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/github-common-commands-or-operations/</guid>
-      <description>&lt;p&gt;&lt;em&gt;As a public repository, GitHub mainly restored the source code from the local system, using git to control the software version. There are several commands frequently used from local git to Github&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;As a public repository, GitHub mainly restored the source code from the local system, using git to control the software version. There are several commands frequently used from local git to GitHub&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -153,7 +151,7 @@ Jira plays a part in QA to do the below works&amp;hellip;&lt;/em&gt;&lt;/li&gt;
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/github-repository/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Github repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;GitHub repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

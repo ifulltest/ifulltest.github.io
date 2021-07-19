@@ -5,8 +5,21 @@
     <loc>https://ifulltest.github.io/en/posts/about-me/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ifulltest.github.io/en/posts/blog-road-map/</loc>
+    <loc>https://ifulltest.github.io/en/posts/site-road-map/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ifulltest.github.io/en/</loc>
+    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/"
+                />
   </url><url>
     <loc>https://ifulltest.github.io/en/categories/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
@@ -26,19 +39,6 @@
   </url><url>
     <loc>https://ifulltest.github.io/en/posts/jenkins-installation/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/en/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ifulltest.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ifulltest.github.io/en/"
-                />
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/jenkins/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
@@ -75,10 +75,10 @@
     <loc>https://ifulltest.github.io/en/posts/cypress-installation/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ifulltest.github.io/en/categories/ui-automation-test/</loc>
+    <loc>https://ifulltest.github.io/en/categories/ui-automation/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ifulltest.github.io/en/categories/api-automation-test/</loc>
+    <loc>https://ifulltest.github.io/en/categories/api-automation/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/en/posts/jmeter-installation/</loc>
@@ -86,15 +86,6 @@
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/jmeter/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/en/tags/css/</loc>
-    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/en/tags/html/</loc>
-    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/en/tags/markdown/</loc>
-    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/en/series/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
@@ -112,19 +103,16 @@
     <loc>https://ifulltest.github.io/en/series/user-manual/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ifulltest.github.io/en/categories/testops-knowledge-framework/</loc>
-    <lastmod>2021-01-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://ifulltest.github.io/en/tags/cicd/</loc>
+    <lastmod>2020-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ifulltest.github.io/en/categories/configuration-management/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/github/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/en/categories/project-management/</loc>
-    <lastmod>2020-09-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/en/categories/software-configuration-management/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/test-basis/</loc>
