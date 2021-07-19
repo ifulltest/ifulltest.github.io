@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Bootstrap</title>
-    <link>https://ifulltest.github.io/zh-cn/</link>
-    <description>Recent content on Hugo Bootstrap</description>
+    <title>User Manual on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/zh-cn/series/user-manual/</link>
+    <description>Recent content in User Manual on Hugo Bootstrap</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/series/user-manual/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>网站路线图</title>
       <link>https://ifulltest.github.io/zh-cn/posts/site-road-map/</link>
@@ -23,15 +23,6 @@
       
       <guid>https://ifulltest.github.io/zh-cn/posts/about-me/</guid>
       <description>我是谁 10 年以上测试老兵。擅长性能测试、自动化测试、知识共享和测试团队建设。 大爱美食、卡拉OK、NBA比赛、好莱坞大片！ 我最喜欢的歌手：迈克尔</description>
-    </item>
-    
-    <item>
-      <title>Alert Shortcode</title>
-      <link>https://ifulltest.github.io/zh-cn/posts/alert/</link>
-      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ifulltest.github.io/zh-cn/posts/alert/</guid>
-      <description>&lt;p&gt;本文展示了如果使用 &lt;code&gt;alert&lt;/code&gt; shortcode。&lt;/p&gt;</description>
     </item>
     
   </channel>

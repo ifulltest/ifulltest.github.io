@@ -6,7 +6,16 @@
     <description>Recent content in 专栏 on Hugo Bootstrap</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Manual</title>
+      <link>https://ifulltest.github.io/zh-cn/series/user-manual/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/series/user-manual/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>用户手册</title>
       <link>https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/</link>

@@ -2,11 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ifulltest.github.io/en/posts/about-me/</loc>
-    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://ifulltest.github.io/en/posts/site-road-map/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/site-road-map/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/site-road-map/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/en/posts/about-me/</loc>
+    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/about-me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/about-me/"
+                />
   </url><url>
     <loc>https://ifulltest.github.io/en/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
@@ -102,6 +122,16 @@
   </url><url>
     <loc>https://ifulltest.github.io/en/series/user-manual/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/series/user-manual/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/series/user-manual/"
+                />
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/cicd/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
