@@ -25,5 +25,14 @@
       <description>我是谁 10 年以上测试老兵。擅长性能测试、自动化测试、知识共享和测试团队建设。 大爱美食、卡拉OK、NBA比赛、好莱坞大片！ 我最喜欢的歌手：迈克尔</description>
     </item>
     
+    <item>
+      <title>Alert Shortcode</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/alert/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/alert/</guid>
+      <description>&lt;p&gt;本文展示了如果使用 &lt;code&gt;alert&lt;/code&gt; shortcode。&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

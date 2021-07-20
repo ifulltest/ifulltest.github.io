@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Site Map</title>
       <link>https://ifulltest.github.io/en/posts/site-road-map/</link>
@@ -17,17 +17,15 @@
     </item>
     
     <item>
-      <title>About Me</title>
-      <link>https://ifulltest.github.io/en/posts/about-me/</link>
-      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      <title>TradeMe API First Demo</title>
+      <link>https://ifulltest.github.io/en/posts/trademe-api-first-demo/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/en/posts/about-me/</guid>
-      <description>Who Am I   10+ years old testing veteran. Expertise in performance testing, automation testing, knowledge sharing, and testing team-building.
-  Big love delicious food, karaoke, NBA games, and Hollywood blockbuster!
-  My favourite singers: Michael Jackson, Whitney Houston, Mariah Carey.
-  My favourite movie stars: Tom Hanks, Anthony Hopkins.
-  My favourite sports stars: Mike Jordan, Kobe Bryant, Stephen Curry, Ronaldo.
-  What Can Be Found Here   The author expects to gradually cover the full-stack testing knowledge, such as manual testing, API testing, UI testing, mobile testing, performance testing, DevOps, and clouds.</description>
+      <guid>https://ifulltest.github.io/en/posts/trademe-api-first-demo/</guid>
+      <description>&lt;h2 id=&#34;what-is-trademe-sandbox&#34;&gt;&lt;em&gt;What is Trademe sandbox?&lt;/em&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database. It is designed to allow you to test potentially destructive API operations in a safe environment.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -58,6 +56,20 @@
       <guid>https://ifulltest.github.io/en/posts/jmeter-installation/</guid>
       <description>&lt;p&gt;&lt;em&gt;We will start the journey of JMeter discovery from here.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This article will talk about JMeter installation-related knowledge &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://ifulltest.github.io/en/posts/about-me/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/about-me/</guid>
+      <description>Who Am I   10+ years old testing veteran. Expertise in performance testing, automation testing, knowledge sharing, and testing team-building.
+  Big love delicious food, karaoke, NBA games, and Hollywood blockbuster!
+  My favourite singers: Michael Jackson, Whitney Houston, Mariah Carey.
+  My favourite movie stars: Tom Hanks, Anthony Hopkins.
+  My favourite sports stars: Mike Jordan, Kobe Bryant, Stephen Curry, Ronaldo.
+  What Can Be Found Here   The author expects to gradually cover the full-stack testing knowledge, such as manual testing, API testing, UI testing, mobile testing, performance testing, DevOps, and clouds.</description>
     </item>
     
     <item>

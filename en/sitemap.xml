@@ -15,21 +15,11 @@
                 href="https://ifulltest.github.io/en/posts/site-road-map/"
                 />
   </url><url>
-    <loc>https://ifulltest.github.io/en/posts/about-me/</loc>
-    <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ifulltest.github.io/zh-cn/posts/about-me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ifulltest.github.io/en/posts/about-me/"
-                />
+    <loc>https://ifulltest.github.io/en/posts/trademe-api-first-demo/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/en/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -39,6 +29,35 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://ifulltest.github.io/en/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/en/series/postman-api-automation-step-by-step/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ifulltest.github.io/en/posts/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/en/series/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/series/"
                 />
   </url><url>
     <loc>https://ifulltest.github.io/en/categories/</loc>
@@ -62,19 +81,6 @@
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/jenkins/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/en/posts/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ifulltest.github.io/zh-cn/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ifulltest.github.io/en/posts/"
-                />
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
@@ -107,17 +113,17 @@
     <loc>https://ifulltest.github.io/en/tags/jmeter/</loc>
     <lastmod>2021-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ifulltest.github.io/en/series/</loc>
+    <loc>https://ifulltest.github.io/en/posts/about-me/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ifulltest.github.io/zh-cn/series/"
+                href="https://ifulltest.github.io/zh-cn/posts/about-me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://ifulltest.github.io/en/series/"
+                href="https://ifulltest.github.io/en/posts/about-me/"
                 />
   </url><url>
     <loc>https://ifulltest.github.io/en/series/user-manual/</loc>
