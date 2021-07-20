@@ -6,13 +6,22 @@
     <description>Recent content in 标签 on Hugo Bootstrap</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alert</title>
-      <link>https://ifulltest.github.io/zh-cn/tags/alert/</link>
-      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      <title>Postman</title>
+      <link>https://ifulltest.github.io/zh-cn/tags/postman/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/zh-cn/tags/alert/</guid>
+      <guid>https://ifulltest.github.io/zh-cn/tags/postman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Trademe</title>
+      <link>https://ifulltest.github.io/zh-cn/tags/trademe/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/tags/trademe/</guid>
       <description></description>
     </item>
     

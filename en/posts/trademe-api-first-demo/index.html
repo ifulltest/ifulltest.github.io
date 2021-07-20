@@ -14,7 +14,7 @@
 The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database. It is designed to allow you to test potentially destructive API operations in a safe environment.
 "><meta itemprop="datePublished" content="2021-07-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="390"><meta itemprop="image" content="https://ifulltest.github.io/images/trademe-logo.webp">
+<meta itemprop="wordCount" content="391"><meta itemprop="image" content="https://ifulltest.github.io/images/trademe-logo.webp">
 <meta itemprop="keywords" content="" /><meta property="og:title" content="TradeMe API First Demo" />
 <meta property="og:description" content="What is Trademe sandbox?
 
@@ -175,6 +175,13 @@ if (!doNotTrack) {
   <span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>2 min read
   </span>
+<div class="post-translations nav-item dropdown me-2 d-inline-flex">
+  <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-fw fa-language me-1"></i>English
+  </a>
+  <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://ifulltest.github.io/zh-cn/posts/trademe-api-first-demo/">中文</a></div>
+</div>
+
 <a href="https://ifulltest.github.io/en/series/postman-api-automation-step-by-step/" class="post-taxonomy">#Postman API Automation Step by Step</a></div>
 <div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
 </a>
@@ -191,8 +198,8 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#what-is-trademe-sandbox"><em>What is Trademe sandbox?</em></a></li>
     <li><a href="#why-i-choose-the-trademe">Why I choose the Trademe?</a></li>
-    <li><a href="#trade-sandbox-official-materials">Trade sandbox official materials</a></li>
-    <li><a href="#preparation-before-developing-an-api-testing-demo">Preparation before developing an API testing demo</a></li>
+    <li><a href="#trademe-sandbox-official-materials">Trademe sandbox official materials</a></li>
+    <li><a href="#preparation-before-api-testing-demo">Preparation before API testing demo</a></li>
   </ul>
 </nav>
   </div>
@@ -209,61 +216,61 @@ if (!doNotTrack) {
 <li>Can practicers who see my demo reproduce it in the same product environment?</li>
 </ul>
 <p>Trademe exactly fulfills all these above considerations for me.</p>
-<h2 id="trade-sandbox-official-materials">Trade sandbox official materials</h2>
+<h2 id="trademe-sandbox-official-materials">Trademe sandbox official materials</h2>
 <ul>
 <li>
-<p><a href="https://www.tmsandbox.co.nz/" target="_blank">Trademe sandbox website</a>
-.</p>
+<p><strong><a href="https://www.tmsandbox.co.nz/" target="_blank">Trademe sandbox website</a>
+.</strong></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-sandbox-website.webp" alt=""  loading="lazy" />
 </p>
 </li>
 <li>
-<p><a href="https://ifulltest.github.io/images/trademe-development-documents.webp">Trademe development documents entry</a>
-.</p>
+<p><strong><a href="https://ifulltest.github.io/images/trademe-development-documents.webp">Trademe development documents entry</a>
+.</strong></p>
 </li>
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-development-documents.webp" alt=""  loading="lazy" />
 </p>
 <ul>
-<li><a href="https://ifulltest.github.io/images/trademe-getting-started.webp">Trademe getting started</a>
-.</li>
+<li><strong><a href="https://ifulltest.github.io/images/trademe-getting-started.webp">Trademe getting started</a>
+.</strong></li>
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-getting-started.webp" alt=""  loading="lazy" />
 </p>
 <ul>
-<li><a href="https://ifulltest.github.io/images/trademe-api-overview.webp">Trademe api-overview</a>
-.</li>
+<li><strong><a href="https://ifulltest.github.io/images/trademe-api-overview.webp">Trademe api-overview</a>
+.</strong></li>
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-api-overview.webp" alt=""  loading="lazy" />
 </p>
 <ul>
-<li><a href="https://ifulltest.github.io/images/trademe-register-an-application.webp">Trademe register an application</a>
-.</li>
+<li><strong><a href="https://ifulltest.github.io/images/trademe-register-an-application.webp">Trademe register an application</a>
+.</strong></li>
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-register-an-application.webp" alt=""  loading="lazy" />
 </p>
 <ul>
-<li><a href="https://ifulltest.github.io/images/trademe-api-reference.webp">Trademe API Reference</a>
-.</li>
+<li><strong><a href="https://ifulltest.github.io/images/trademe-api-reference.webp">Trademe API Reference</a>
+.</strong></li>
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-api-reference.webp" alt=""  loading="lazy" />
 </p>
-<h2 id="preparation-before-developing-an-api-testing-demo">Preparation before developing an API testing demo</h2>
-<p>1.Overview</p>
+<h2 id="preparation-before-api-testing-demo">Preparation before API testing demo</h2>
+<p><strong>1.Overview</strong></p>
 <ul>
 <li>Create a personal account.</li>
 <li>Register your API application - get Consumer Key and Consumer Secret.</li>
 <li>Get approved the Authentication - get OAuth Token and OAuth Token Secret.</li>
 <li>Connectivity testing for verifying the authentication worked.</li>
 </ul>
-<p>2.<a href="https://www.tmsandbox.co.nz/Members/Register.aspx" target="_blank">Register a TradMe Sandbox User</a>
-</p>
+<p><strong>2.<a href="https://www.tmsandbox.co.nz/Members/Register.aspx" target="_blank">Register a TradMe Sandbox User</a>
+</strong></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-create-a-personal-account.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-account-contact-details.webp" alt=""  loading="lazy" />
 </p>
-<p>3.<a href="https://developer.trademe.co.nz/api-overview/registering-an-application" target="_blank">Register your API Application</a>
-</p>
+<p><strong>3.<a href="https://developer.trademe.co.nz/api-overview/registering-an-application" target="_blank">Register your API Application</a>
+</strong></p>
 <ul>
 <li><a href="https://www.tmsandbox.co.nz/MyTradeMe/Default.aspx" target="_blank">My TradeMe</a>
 </li>
@@ -295,8 +302,8 @@ if (!doNotTrack) {
 <p>If successfully registered, will get the consumer key and consumer secret.</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-get-consumer-key-and-secret.webp" alt=""  loading="lazy" />
 </p>
-<p>4.<a href="https://developer.trademe.co.nz/api-overview/authentication" target="_blank">Authentication</a>
-</p>
+<p><strong>4.<a href="https://developer.trademe.co.nz/api-overview/authentication" target="_blank">Authentication</a>
+</strong></p>
 <ul>
 <li>Generate an access token</li>
 </ul>
@@ -320,7 +327,7 @@ if (!doNotTrack) {
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-get-your-token.webp" alt=""  loading="lazy" />
 </p>
-<p>5.Connectivity Testing with Postman</p>
+<p><strong>5.Connectivity Testing with Postman</strong></p>
 <ul>
 <li>All API domain in sandbox environment is: <em><strong>api.tmsandbox.co.nz</strong></em> , see <a href="https://developer.trademe.co.nz/api-overview/sandbox-environment" target="_blank">Testing your app</a>
 </li>
@@ -338,7 +345,7 @@ if (!doNotTrack) {
 <ul>
 <li>API - retrieve-your-watchlist <em><strong>with</strong></em> authentication info</li>
 </ul>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">API retrieve-your-watchlist reference</a>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">API - retrieve your watchlist reference</a>
 </p>
 <p>Using Postman tests the connectivity</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/trademe-watchlist-connect.webp" alt=""  loading="lazy" />
@@ -346,7 +353,7 @@ if (!doNotTrack) {
 <p><em><strong>Note:</strong></em></p>
 <p>When you do want to chain your upstream and downstream transactions, you may need self-assemble a network request.</p>
 <p>Then you should note that one of the auth domain called oauth_signature, will be composed with below sub-domain</p>
-<p><em><strong>oauth_signature =</strong></em> <em><strong>Consumer Secret</strong></em>***%26******OAuth Token Secret***</p></div><div class="post-copyright mb-4">
+<p><em><strong>oauth_signature =</strong></em> <em><strong>Consumer Secret%26OAuth Token Secret</strong></em></p></div><div class="post-copyright mb-4">
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
