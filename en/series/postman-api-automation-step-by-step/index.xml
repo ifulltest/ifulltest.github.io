@@ -6,7 +6,7 @@
     <description>Recent content in Postman API Automation Step by Step on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/series/postman-api-automation-step-by-step/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/series/postman-api-automation-step-by-step/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TradeMe API First Demo</title>
       <link>https://ifulltest.github.io/en/posts/trademe-api-first-demo/</link>
@@ -17,6 +17,18 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database. It is designed to allow you to test potentially destructive API operations in a safe environment.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trademe typical transactions</title>
+      <link>https://ifulltest.github.io/en/posts/trademe-api-typical-transactions/</link>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/trademe-api-typical-transactions/</guid>
+      <description>&lt;h2 id=&#34;how-to-pick-the-typical-transactions&#34;&gt;&lt;em&gt;How to pick the typical transactions?&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Before coding the API test script, we need to pick some typical transactions from TradeMe.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And these transactions we&amp;rsquo;ve picked better to cover different types of requests, such as the &lt;strong&gt;get, post, delete&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And part of these transactions should &lt;strong&gt;correlate with each other&lt;/strong&gt; at the business level.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
