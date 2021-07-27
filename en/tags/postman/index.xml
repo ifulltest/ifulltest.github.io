@@ -67,7 +67,7 @@
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-general-categories-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve general categories testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---retrieve-closing-soon-listings-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve closing soon listings testing steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -77,7 +77,17 @@
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---remove-a-listing-from-your-watchlist-testing-steps&#34;&gt;&lt;em&gt;API - Remove a listing from your watchlist testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---add-a-listing-to-your-watchlist-testing-steps&#34;&gt;&lt;em&gt;API - Add a listing to your watchlist testing steps&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TradeMe-8-Retrieve your won items</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</guid>
+      <description>&lt;h2 id=&#34;api---retrieve-your-won-items-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve your won items testing steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
