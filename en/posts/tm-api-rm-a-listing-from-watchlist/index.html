@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Remove a listing from your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1122"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1126"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="TradeMe-5-Remove a listing from your watchlist API testing" />
 <meta property="og:description" content="API - Remove a listing from your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -391,8 +391,8 @@ const pre_request_retrieveyourwatchlist = {
 <ul>
 <li>Assembling the delete request - Remove a listing from your watchlist</li>
 </ul>
-<p>From the API specification, parameter - <strong>listingId</strong> means one item on the watch list.</p>
-<p>And the listingId correlates from the query result of the pre_request: API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+<p>Base on the API specification, parameter - <strong>listingId</strong> means one item on the watch list.</p>
+<p>And in the context, the listingId correlates from the query result of the pre_request: API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
 </p>
 <p>So the request should be <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
 <ul>
@@ -473,7 +473,7 @@ pm.sendRequest(post_request, function (err, response) {
 
 <span style="color:#960050;background-color:#1e0010">});</span>
 </code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-debug.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-log.webp" alt=""  loading="lazy" />
 </p>
 <h2 id="api-testing-script-enhancement">API Testing Script Enhancement</h2>
 <ul>
@@ -504,7 +504,7 @@ pm.sendRequest(post_request, function (err, response) {
     </div></div>
 </div><section class="related-posts">
   <h3>Related Posts</h3>
-  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">TradeMe-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li></ul>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/">TradeMe-7-Add a listing to your watchlist</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">TradeMe-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li></ul>
 </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="ifulltest/comments"
   issue-term="pathname"
@@ -549,7 +549,7 @@ pm.sendRequest(post_request, function (err, response) {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">6</span>
+      Postman API Automation Practice <span class="badge rounded-pill">7</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -560,7 +560,7 @@ pm.sendRequest(post_request, function (err, response) {
   <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
     </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">6</span>
+      Postman <span class="badge rounded-pill">7</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
