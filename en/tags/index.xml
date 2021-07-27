@@ -6,22 +6,22 @@
     <description>Recent content in Tags on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 21 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cypress</title>
-      <link>https://ifulltest.github.io/en/tags/cypress/</link>
-      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
+      <title>Postman</title>
+      <link>https://ifulltest.github.io/en/tags/postman/</link>
+      <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/en/tags/cypress/</guid>
+      <guid>https://ifulltest.github.io/en/tags/postman/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Postman</title>
-      <link>https://ifulltest.github.io/en/tags/postman/</link>
-      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
+      <title>Cypress</title>
+      <link>https://ifulltest.github.io/en/tags/cypress/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/en/tags/postman/</guid>
+      <guid>https://ifulltest.github.io/en/tags/cypress/</guid>
       <description></description>
     </item>
     

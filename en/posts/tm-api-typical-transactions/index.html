@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TradeMe-2-typical transactions - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="TradeMe-2-typical transactions">
+<meta itemprop="description" content="How to pick the typical transactions?
+Before coding the API test script, we need to pick some typical transactions from TradeMe.
+And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
+And part of these transactions should correlate with each other at the business level."><meta itemprop="datePublished" content="2021-07-23T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-23T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2096"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman,Cypress," /><meta property="og:title" content="TradeMe-2-typical transactions" />
+<meta property="og:description" content="How to pick the typical transactions?
+Before coding the API test script, we need to pick some typical transactions from TradeMe.
+And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
+And part of these transactions should correlate with each other at the business level." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-23T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-23T00:00:00+00:00" />
+<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
+
+<meta name="twitter:title" content="TradeMe-2-typical transactions"/>
+<meta name="twitter:description" content="How to pick the typical transactions?
+Before coding the API test script, we need to pick some typical transactions from TradeMe.
+And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
+And part of these transactions should correlate with each other at the business level."/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-202225177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://ifulltest.github.io/en/">
+      <img class="logo" alt="Logo" src="https://ifulltest.github.io/images/logo.webp" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://ifulltest.github.io/en/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/posts/site-road-map/">
+            <i class="fas fa-fw fa-sitemap"></i>Site Map
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/series">
+            <i class="fas fa-fw fa-columns"></i>Series
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/categories">
+            <i class="fas fa-fw fa-folder"></i>Categories
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/tags">
+            <i class="fas fa-fw fa-tags"></i>Tags
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/archives">
+            <i class="fas fa-fw fa-file-archive"></i>Archives
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://ifulltest.github.io" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://www.linkedin.com/in/gary-gao-511854194/" target="_blank">
+                <i class="fab fa-fw fa-linkedin"></i>LinkedIn
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="languageSwitcher" data-bs-toggle="popover"
+    data-bs-placement="bottom" data-bs-target="#languagesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-language" ></i>
+  </a>
+</li>
+<script type="text/html" id="languagesPopoverBody">
+  <ul class="languages list-group"><li class="language list-group-item active">English</li><li class="language list-group-item"><a href="https://ifulltest.github.io/zh-cn/">中文</a></li></ul>
+</script><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>Blue</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>Blue Gray</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>Brown</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>Cyan</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>Green</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>Indigo</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>Orange</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>Pink</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>Purple</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>Red</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>Teal</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>Yellow</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">Font Size</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">TradeMe-2-typical transactions</li></ol>
+</nav><article class="post row surface"><div class="post-toolbox">
+  <div class="col-12 d-none d-lg-block">
+    <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
+  </div>
+</div>
+<h1 class="post-title my-3">TradeMe-2-typical transactions</h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Jul 23, 2021
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>10 min read
+  </span>
+<a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy">#Postman</a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy">#Cypress</a></div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">Table Of Contents</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-pick-the-typical-transactions"><em>How to pick the typical transactions?</em></a></li>
+    <li><a href="#api---retrieve-general-categorieshttpsdevelopertrademeconzapi-referencecatalogue-methodsretrieve-general-categories">API - <a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories">Retrieve general categories</a></a></li>
+    <li><a href="#api---retrieve-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist">Retrieve your watchlist</a></a></li>
+    <li><a href="#api---remove-a-listing-from-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-listing-from-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist">Remove a listing from your watchlist</a></a></li>
+    <li><a href="#api---retrieve-closing-soon-listingshttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-closing-soon-listings">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings">Retrieve closing soon listings</a></a></li>
+    <li><a href="#api---add-a-listing-to-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsadd-a-listing-to-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist">Add a listing to your watchlist</a></a></li>
+    <li><a href="#api---retrieve-your-won-itemshttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-won-items">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items">Retrieve your won items</a></a></li>
+    <li><a href="#api---remove-a-purchase-from-your-won-items-listhttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list">Remove a purchase from your won items list</a></a></li>
+    <li><a href="#api---general-searchhttpsdevelopertrademeconzapi-referencesearch-methodsgeneral-search">API - <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search">General search</a></a></li>
+    <li><a href="#api---retrieve-the-details-of-a-single-listinghttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-the-details-of-a-single-listing">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing">Retrieve the details of a single listing</a></a></li>
+    <li><a href="#api---buy-an-auction-using-buy-nowhttpsdevelopertrademeconzapi-referencebidding-and-buying-methodsbuy-an-auction-using-buy-now">API - <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now">Buy an auction using Buy Now</a></a></li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="how-to-pick-the-typical-transactions"><em>How to pick the typical transactions?</em></h2>
+<p><em>Before coding the API test script, we need to pick some typical transactions from TradeMe.</em></p>
+<p><em>And these transactions we&rsquo;ve picked better to cover different types of requests, such as the <strong>get, post, delete</strong>.</em></p>
+<p><em>And part of these transactions should <strong>correlate with each other</strong> at the business level.</em></p>
+<h2 id="api---retrieve-general-categorieshttpsdevelopertrademeconzapi-referencecatalogue-methodsretrieve-general-categories">API - <a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">Retrieve general categories</a>
+</h2>
+<ul>
+<li>
+<p>Business selection:  fetch all categories from the response, and verify whether the category &ldquo;Antiques &amp; Collectables&rdquo; is in.</p>
+</li>
+<li>
+<p>API Function: Retrieves all or part of the Trade Me category tree.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-2.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<p>Key response fields - A category tree.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>String or null</td>
+<td>The name of the category.</td>
+</tr>
+<tr>
+<td><strong>Number</strong></td>
+<td>String or null</td>
+<td>A unique identifier for the category e.g. &ldquo;0004-0369-6076-&rdquo;. We plan to change this to a numeric identifier (e.g. &ldquo;6076&rdquo;) so you should ensure you can cope with both formats.</td>
+</tr>
+<tr>
+<td><strong>Path</strong></td>
+<td>String or null</td>
+<td>The full URL path of this category e.g. &ldquo;/Home-living/Beds-bedroom-furniture/Bedside-tables&rdquo;.</td>
+</tr>
+<tr>
+<td><strong>Subcategories</strong></td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>The list of subcategories belonging to this category.</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://ifulltest.github.io/images/xx.webp">Retrieve general categories</a>
+</p>
+</li>
+<li>
+<p>Example request: GET <a href="https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=1">https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=1</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Name&#34;: &#34;Root&#34;,
+    &#34;Number&#34;: &#34;&#34;,
+    &#34;Path&#34;: &#34;&#34;,
+    &#34;Subcategories&#34;: [
+        {
+            &#34;Name&#34;: &#34;Trade Me Motors&#34;,
+            &#34;Number&#34;: &#34;0001-&#34;,
+            &#34;Path&#34;: &#34;/Trade-Me-Motors&#34;,
+            &#34;HasClassifieds&#34;: true,
+            &#34;AreaOfBusiness&#34;: 3,
+            &#34;CanHaveSecondCategory&#34;: true,
+            &#34;CanBeSecondCategory&#34;: true,
+            &#34;IsLeaf&#34;: false
+        },
+        {
+            &#34;Name&#34;: &#34;Trade Me Property&#34;,
+            &#34;Number&#34;: &#34;0350-&#34;,
+            &#34;Path&#34;: &#34;/Trade-Me-Property&#34;,
+            &#34;HasClassifieds&#34;: true,
+            &#34;AreaOfBusiness&#34;: 2,
+            &#34;IsLeaf&#34;: false
+        },
+        ...
+    ],
+    &#34;AreaOfBusiness&#34;: 0,
+    &#34;IsLeaf&#34;: false
+}        
+</code></pre></div><h2 id="api---retrieve-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+</h2>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</p>
+<ul>
+<li>API Function: Retrieves a list of items on the authenticated user&rsquo;s watchlist.</li>
+<li>Front-end page</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-2.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<p>Key response fields - the <strong>Watchlist</strong> for the authenticated user.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TotalCount</strong></td>
+<td>Integer</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Page</strong></td>
+<td>Integer</td>
+<td>The index of the current page of results (starts at 1).</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PageSize</strong></td>
+<td>Integer</td>
+<td>The number of results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>List</strong></td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>BidCount</strong></td>
+<td>Integer</td>
+<td>The number of bids on the item.</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+</p>
+</li>
+<li>
+<p>Example request: GET <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Watchlist/All.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Watchlist/All.JSON</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+  &#34;TotalCount&#34;: 1,
+  &#34;Page&#34;: 1,
+  &#34;PageSize&#34;: 1,
+  &#34;List&#34;: [
+    {
+      &#34;ListingId&#34;: 2149294406,
+      &#34;Title&#34;: &#34;11x Assorted T-Handle Hex Allen Keys&#34;,
+      &#34;Category&#34;: &#34;5964-5999-6004-9825-&#34;,
+      &#34;StartPrice&#34;: 1.0000,
+      &#34;StartDate&#34;: &#34;\/Date(1626749989730)\/&#34;,
+      &#34;EndDate&#34;: &#34;\/Date(1626922789730)\/&#34;,
+      &#34;ListingLength&#34;: null,
+      &#34;AsAt&#34;: &#34;\/Date(1626855531548)\/&#34;,
+      &#34;CategoryPath&#34;: &#34;\/Building-renovation\/Tools\/Hand-tools\/Sets-kits&#34;,
+      &#34;PictureHref&#34;: &#34;https:\/\/images.tmsandbox.co.nz\/photoserver\/thumb\/8152697.jpg&#34;,
+      &#34;PhotoId&#34;: 8152697,
+      &#34;RegionId&#34;: 16,
+      &#34;Region&#34;: &#34;Canterbury&#34;,
+      &#34;Suburb&#34;: &#34;Christchurch City&#34;,
+      &#34;Note&#34;: &#34;&#34;,
+      &#34;NoteDate&#34;: &#34;\/Date(0)\/&#34;,
+      &#34;CategoryName&#34;: &#34;Sets <span style="color:#960050;background-color:#1e0010">&amp;</span> kits&#34;,
+      &#34;Attributes&#34;: [
+        
+      ],
+      &#34;Subtitle&#34;: &#34;SKYLARC’S WINDFLOW TECHNOLOGY ONLINE AUCTION&#34;,
+      &#34;MinimumNextBidAmount&#34;: 1.0000,
+      &#34;IsOnWatchList&#34;: true,
+      &#34;PriceDisplay&#34;: &#34;$1.00&#34;,
+      &#34;AdditionalData&#34;: {
+        &#34;BulletPoints&#34;: [
+          
+        ],
+        &#34;Tags&#34;: [
+          
+        ]
+      },
+      &#34;IsDealer&#34;: false,
+      &#34;IsLeading&#34;: false,
+      &#34;IsOutbid&#34;: false,
+      &#34;IsInCart&#34;: false,
+      &#34;MemberBidShippingOption&#34;: 0
+    }
+  ],
+  &#34;FoundCategories&#34;: [
+    {
+      &#34;Count&#34;: 1,
+      &#34;Category&#34;: &#34;5964-&#34;,
+      &#34;Name&#34;: &#34;Building <span style="color:#960050;background-color:#1e0010">&amp;</span> renovation&#34;,
+      &#34;CategoryId&#34;: 5964
+    }
+  ]
+}
+</code></pre></div><h2 id="api---remove-a-listing-from-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-listing-from-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+</h2>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</p>
+<ul>
+<li>
+<p>API Function: Removes a listing from the authenticated user&rsquo;s watchlist.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-2.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<p>Key response fields - Details on whether the operation succeeded. Attempting to remove an auction that doesn&rsquo;t exist or is not on the watchlist will not produce an error.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>Boolean</td>
+<td>Indicates whether the operation was successful.</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>String or null</td>
+<td>The description of the error, if the operation failed.</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+</p>
+</li>
+<li>
+<p>Example request: DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Success&#34;
+}
+</code></pre></div><h2 id="api---retrieve-closing-soon-listingshttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-closing-soon-listings">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+</h2>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings(<strong>I&rsquo;m here</strong>)</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</p>
+<ul>
+<li>
+<p>API Function: Adds a listing to the authenticated user&rsquo;s watchlist.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui2.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-2.webp" alt=""  loading="lazy" />
+</p>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+</p>
+<ul>
+<li>
+<p>Key response fields</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TotalCount</strong></td>
+<td>Integer</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>TotalCountTruncated</strong></td>
+<td>Boolean</td>
+<td>True if the total count of results exceeded the allowed maximum and was truncated.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Page</strong></td>
+<td>Integer</td>
+<td>The index of the current page of results (starts at 1).</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PageSize</strong></td>
+<td>Integer</td>
+<td>The number of results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>List</strong></td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+</p>
+</li>
+<li>
+<p>Example request: GET <a href="https://api.tmsandbox.co.nz/v1/Listings/closing.JSON?rows=1000">https://api.tmsandbox.co.nz/v1/Listings/closing.JSON?rows=1000</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;TotalCount&#34;: 250,
+    &#34;Page&#34;: 1,
+    &#34;PageSize&#34;: 250,
+    &#34;List&#34;: [
+        {
+            &#34;ListingId&#34;: 2149292446,
+            &#34;Title&#34;: &#34;fox drawing&#34;,
+            &#34;Category&#34;: &#34;0339-5487-&#34;,
+            &#34;StartPrice&#34;: 0,
+            &#34;BuyNowPrice&#34;: 1.0000,
+            &#34;StartDate&#34;: &#34;/Date(1626323575513)/&#34;,
+            &#34;EndDate&#34;: &#34;/Date(1626928375513)/&#34;,
+            &#34;ListingLength&#34;: null,
+            &#34;AsAt&#34;: &#34;/Date(1626926636817)/&#34;,
+            &#34;CategoryPath&#34;: &#34;/Art/Digital-art&#34;,
+            &#34;Region&#34;: &#34;Canterbury&#34;,
+            &#34;Suburb&#34;: &#34;Christchurch City&#34;,
+            &#34;HasBuyNow&#34;: true,
+            &#34;NoteDate&#34;: &#34;/Date(0)/&#34;,
+            &#34;ReserveState&#34;: 3,
+            &#34;IsBuyNowOnly&#34;: true,
+            &#34;PriceDisplay&#34;: &#34;$1.00 per item&#34;,
+            &#34;PromotionId&#34;: 1,
+            &#34;AdditionalData&#34;: {
+                &#34;BulletPoints&#34;: [],
+                &#34;Tags&#34;: []
+            },
+            &#34;MemberId&#34;: 4007247
+        },
+        ...
+    ]
+}        
+</code></pre></div><h2 id="api---add-a-listing-to-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsadd-a-listing-to-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</h2>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist(<strong>I&rsquo;m here</strong>)</a>
+</p>
+<ul>
+<li>
+<p>API Function: retrieves the items closing soon for the whole country or for a single region.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui2.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist.webp" alt=""  loading="lazy" />
+</p>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</p>
+<ul>
+<li>
+<p>Key response fields - Details on whether the operation succeeded.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>Boolean</td>
+<td>Indicates whether the operation was successful.</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>String or null</td>
+<td>The description of the error, if the operation failed.</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</p>
+</li>
+<li>
+<p>Example request: POST <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149292722.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149292722.JSON</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Success&#34;
+}
+</code></pre></div><h2 id="api---retrieve-your-won-itemshttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-won-items">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+</h2>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt;  <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
+</p>
+<ul>
+<li>
+<p>API Function: Retrieves a list of purchases for the authenticated user. Multiple-quantity auctions can be purchased multiple times.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-ui-1.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<p>Key response fields - A list of items the authenticated user has purchased.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TotalCount</strong></td>
+<td>Integer</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Page</strong></td>
+<td>Integer</td>
+<td>The index of the current page of results (starts at 1).</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PageSize</strong></td>
+<td>Integer</td>
+<td>The number of results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>List</strong></td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+<tr>
+<td><strong>PurchaseId</strong></td>
+<td>Integer</td>
+<td>A unique ID that identifies the sale.</td>
+<td></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+</p>
+</li>
+<li>
+<p>Example request: GET <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/All.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/All.JSON</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;TotalCount&#34;: 1,
+    &#34;Page&#34;: 1,
+    &#34;PageSize&#34;: 1,
+    &#34;List&#34;: [
+        {
+            &#34;ListingId&#34;: 2149289946,
+            &#34;Title&#34;: &#34;Tankard 72&#34;,
+            &#34;Category&#34;: &#34;0341-6534-&#34;,
+            &#34;StartPrice&#34;: 10.0000,
+            &#34;StartDate&#34;: &#34;/Date(1625598488240)/&#34;,
+            &#34;EndDate&#34;: &#34;/Date(1625650049187)/&#34;,
+            &#34;ListingLength&#34;: null,
+            &#34;AsAt&#34;: &#34;/Date(1626932384524)/&#34;,
+            &#34;CategoryPath&#34;: &#34;/Crafts/Transfers&#34;,
+            &#34;PictureHref&#34;: &#34;https://images.tmsandbox.co.nz/photoserver/thumb/4548749.jpg&#34;,
+            &#34;PhotoId&#34;: 4548749,
+            &#34;Seller&#34;: {
+                &#34;MemberId&#34;: 4000433,
+                &#34;Nickname&#34;: &#34;junk1b&#34;,
+                &#34;DateAddressVerified&#34;: &#34;/Date(1380798000000)/&#34;,
+                &#34;DateJoined&#34;: &#34;/Date(1343044800000)/&#34;,
+                &#34;Email&#34;: &#34;junk1b@abcde.com&#34;,
+                &#34;UniqueNegative&#34;: 5,
+                &#34;UniquePositive&#34;: 16,
+                &#34;FeedbackCount&#34;: 11,
+                &#34;IsAddressVerified&#34;: true
+            },
+            &#34;BidCount&#34;: 1,
+            &#34;IsReserveMet&#34;: true,
+            &#34;Note&#34;: &#34;&#34;,
+            &#34;NoteDate&#34;: &#34;/Date(0)/&#34;,
+            &#34;CategoryName&#34;: &#34;Transfers&#34;,
+            &#34;ReserveState&#34;: 3,
+            &#34;Subtitle&#34;: &#34;J1B F4d1111&#34;,
+            &#34;Quantity&#34;: 1,
+            &#34;StatusDate&#34;: &#34;/Date(0)/&#34;,
+            &#34;AuctionAttribute&#34;: &#34;260`TV|3495193540674667286`0&#34;,
+            &#34;BuyerFeedbackPlaced&#34;: 0,
+            &#34;SellerFeedbackPlaced&#34;: 0,
+            &#34;DeliveryId&#34;: 0,
+            &#34;FpoDecisionViaMobile&#34;: false,
+            &#34;HasPaidByCreditCard&#34;: false,
+            &#34;InvoiceId&#34;: 0,
+            &#34;OfferId&#34;: 0,
+            &#34;PaymentInfo&#34;: &#34;NZ Bank Deposit&#34;,
+            &#34;Price&#34;: 20.0000,
+            &#34;SelectedShipping&#34;: &#34;Buyer to pick-up&#34;,
+            &#34;ShippingPrice&#34;: 0,
+            &#34;ShippingType&#34;: 2,
+            &#34;SoldDate&#34;: &#34;/Date(1625650049187)/&#34;,
+            &#34;SoldType&#34;: &#34;BUYNOW&#34;,
+            &#34;PaymentInstructions&#34;: &#34;&#34;,
+            &#34;PurchaseId&#34;: 26180,
+            &#34;ReferenceNumber&#34;: &#34;P26180&#34;,
+            &#34;SubtotalPrice&#34;: 20.0000,
+            &#34;TotalShippingPrice&#34;: 0,
+            &#34;TotalSalePrice&#34;: 20.0000,
+            &#34;TrackedParcels&#34;: [],
+            &#34;TaxSubTotal&#34;: 0.00,
+            &#34;HasPaidByDeferredPayment&#34;: false
+        }
+    ]
+}
+</code></pre></div><h2 id="api---remove-a-purchase-from-your-won-items-listhttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+</h2>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt;  <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
+</p>
+<ul>
+<li>
+<p>API Function: Hides a listing from the won items list.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-2.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<p>Key response fields - Details on whether the operation was successful. Note that this operation will only report failure if the purchase still exists in the won items list after the operation completes. In all other cases, this API will report success (for example it will report success if the purchase ID is invalid or the purchase has already been removed).</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>Boolean</td>
+<td>Indicates whether the operation was successful.</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>String or null</td>
+<td>The description of the error, if the operation failed.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Example request: DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/26180.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/26180.JSON</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Success&#34;
+}
+</code></pre></div><h2 id="api---general-searchhttpsdevelopertrademeconzapi-referencesearch-methodsgeneral-search">API - <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+</h2>
+<ul>
+<li>
+<p>Business selection:</p>
+<p>fetch a listing that has enabled the &lsquo;HasBuyNow&rsquo;, and &lsquo;BuyNowPrice&rsquo; is less than $20 from the response for later transaction &lsquo;Retrieve the details of a single listing&rsquo; to correlate with.</p>
+<p>chained portfolio transactions</p>
+</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search(<strong>I&rsquo;m here</strong>)</a>
+ -&gt;  <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
+</p>
+<ul>
+<li>
+<p>API Function: Allows you to search for listings on Trade Me by category, by keywords or a combination of these two. The result set can be filtered by a variety of properties, including availability of <strong>Buy Now</strong>, Pay Now, item condition or seller.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-ui.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search.webp" alt=""  loading="lazy" />
+</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>Integer (optional)</td>
+<td>The page number of the set of results to return, starting from 1. Defaults to 1.</td>
+</tr>
+<tr>
+<td>rows</td>
+<td>Integer (optional)</td>
+<td>The number of results per page; also the maximum number of results to return. The maximum is 25 for unauthenticated requests and 500 for authenticated requests. Defaults to 25 (unauthenticated) or 50 (authenticated).</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Key response fields - The search results.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TotalCount</strong></td>
+<td>Integer</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>TotalCountTruncated</strong></td>
+<td>Boolean</td>
+<td>True if the total count of results exceeded the allowed maximum and was truncated.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Page</strong></td>
+<td>Integer</td>
+<td>The index of the current page of results (starts at 1).</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PageSize</strong></td>
+<td>Integer</td>
+<td>The number of results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>List</strong></td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>BuyNowPrice</strong></td>
+<td>Number</td>
+<td>The Buy Now price.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>HasBuyNow</strong></td>
+<td>Boolean</td>
+<td>Indicates whether the item has Buy Now.</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+</p>
+<ul>
+<li>Example request: GET <a href="https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4">https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4</a></li>
+<li>Example response:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;TotalCount&#34;: 16479,
+    &#34;Page&#34;: 4,
+    &#34;PageSize&#34;: 500,
+    &#34;List&#34;: [
+    	...
+        {
+            &#34;ListingId&#34;: 2149294614,
+            &#34;Title&#34;: &#34;Cobra Glassware&#34;,
+            &#34;Category&#34;: &#34;0341-0881-4739-&#34;,
+            &#34;StartPrice&#34;: 11.0000,
+            &#34;BuyNowPrice&#34;: 33.0000,
+            ...
+            &#34;HasBuyNow&#34;: true,
+            ...
+        },
+        ...
+    ]
+}        
+</code></pre></div><h2 id="api---retrieve-the-details-of-a-single-listinghttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-the-details-of-a-single-listing">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+</h2>
+<ul>
+<li>
+<p>Business selection:</p>
+<p>fetch a &lsquo;ShippingId&rsquo; from the response for later transaction &lsquo;Buy an auction using Buy Now&rsquo; to correlate with.</p>
+<p>chained portfolio transactions</p>
+</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt;  <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
+</p>
+<ul>
+<li>
+<p>API Function: Retrieves the details of a single listing.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-details-of-a-single-listing-ui1.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-details-of-a-single-listing.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key response fields - The details of the listing.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>&hellip;</strong></td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ShippingOptions</strong></td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of shipping options.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Method</strong></td>
+<td>String or null</td>
+<td>The name of the delivery method (e.g. &ldquo;NZ Courier&rdquo;, &ldquo;Rural Delivery&rdquo;). Only applicable if ShippingType is Custom.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>ShippingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the shipping option (used when bidding or for Buy Now). Not required when listing an item.</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+</p>
+<ul>
+<li>Example request: GET <a href="https://api.tmsandbox.co.nz/v1/Listings/2149295093.JSON">https://api.tmsandbox.co.nz/v1/Listings/2149295093.JSON</a></li>
+<li>Example response:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;ListingId&#34;: 2149295093,
+	...
+    &#34;AllowsPickups&#34;: 3,
+    &#34;ShippingOptions&#34;: [
+        {
+            &#34;Type&#34;: 4,
+            &#34;Price&#34;: 4.99,
+            &#34;Method&#34;: &#34;nationwide non-rural&#34;,
+            &#34;ShippingId&#34;: 4
+        },
+        {
+            &#34;Type&#34;: 4,
+            &#34;Price&#34;: 9.99,
+            &#34;Method&#34;: &#34;rural&#34;,
+            &#34;ShippingId&#34;: 5
+        },
+        {
+            &#34;Type&#34;: 4,
+            &#34;Price&#34;: 0,
+            &#34;Method&#34;: &#34;test free shipping&#34;,
+            &#34;ShippingId&#34;: 6
+        }
+    ],    
+    ...
+}    
+</code></pre></div><h2 id="api---buy-an-auction-using-buy-nowhttpsdevelopertrademeconzapi-referencebidding-and-buying-methodsbuy-an-auction-using-buy-now">API - <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
+</h2>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt;  <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now(<strong>I&rsquo;m here</strong>)</a>
+</p>
+<ul>
+<li>
+<p>API Function: Buys an item using Buy Now.</p>
+</li>
+<li>
+<p>Front-end page</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui1.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key request fields</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Key response fields - The details of the Buy Now request.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>Boolean</td>
+<td>Indicates whether the operation was successful.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>String or null</td>
+<td>The description of the error, if the operation failed.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>StatusCode</strong></td>
+<td>Enumeration</td>
+<td>The status of the Buy Now request.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Success</td>
+<td>0</td>
+<td>The bid was a success.</td>
+</tr>
+<tr>
+<td><strong>&hellip;</strong></td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+<tr>
+<td><strong>PurchaseId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the purchase that was just made.</td>
+<td></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
+</p>
+<ul>
+<li>Example request: POST <a href="https://api.tmsandbox.co.nz/v1/Bidding/BuyNow.JSON">https://api.tmsandbox.co.nz/v1/Bidding/BuyNow.JSON</a></li>
+<li>Example response:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Seller&#39;s email owen4@snipesoft.net.nz&#34;,
+    &#34;StatusCode&#34;: 0,
+    &#34;PurchaseId&#34;: 26231
+}
+</code></pre></div></div><div class="post-copyright mb-4">
+  <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a>
+    </div></div>
+</div><section class="related-posts">
+  <h3>Related Posts</h3>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/cypress-installation/">How to install Cypress?</a></li></ul>
+</section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="ifulltest/comments"
+  issue-term="pathname"
+  label=""
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="https://ifulltest.github.io/images/about-me.webp" alt="Gary Gao" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">API, UI, Mobile, CICD, Full Stack Tester.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>ifulltest</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
+</section><section class="featured-posts row surface">
+  <h4>Featured Posts</h4>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">TradeMe-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a></li></ul>
+</section><section class="recent-posts row surface">
+  <h4>Recent Posts</h4>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">TradeMe-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a></li></ul>
+</section>
+<section class="taxonomy-categories row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/categories">Categories</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/categories/functional-test/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Functional Test">
+      Functional Test <span class="badge rounded-pill">18</span>
+    </a><a href="https://ifulltest.github.io/en/categories/project-management/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Project Management">
+      Project Management <span class="badge rounded-pill">6</span>
+    </a><a href="https://ifulltest.github.io/en/categories/devops/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="DevOps">
+      DevOps <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/categories/configuration-management/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Configuration Management">
+      Configuration Management <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/categories/api-automation/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="API Automation">
+      API Automation <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/en/categories/ui-automation/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="UI Automation">
+      UI Automation <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-series row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/series">Series</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
+      Postman API Automation Practice <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
+      User Manual <span class="badge rounded-pill">2</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/tags">Tags</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
+      Test Basis <span class="badge rounded-pill">17</span>
+    </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
+      CICD <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
+      Agile Basis <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
+      Cypress <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jira/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jira">
+      Jira <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
+      GitHub <span class="badge rounded-pill">2</span>
+    </a><a href="https://ifulltest.github.io/en/tags/devops-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="DevOps Basis">
+      DevOps Basis <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jmeter/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="JMeter">
+      JMeter <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:ifulltest@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://facebook.com/profile.php?id=100070922467826" title="Facebook">
+        <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/ifulltest" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/gary-gao-511854194/" title="LinkedIn">
+        <i class="fab fa-fw fa-2x fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.zhihu.com/people/ifulltest" title="Zhihu">
+        <i class="fab fa-fw fa-2x fa-zhihu"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2019-2021 Gary Gao. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e8010f7b2c7741"></script></body>
+</html>

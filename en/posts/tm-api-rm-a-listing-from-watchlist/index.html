@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TradeMe-5-Remove a listing from your watchlist API testing - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="TradeMe-5-Remove a listing from your watchlist API testing">
+<meta itemprop="description" content="API - Remove a listing from your watchlist testing steps
+API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1122"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman," /><meta property="og:title" content="TradeMe-5-Remove a listing from your watchlist API testing" />
+<meta property="og:description" content="API - Remove a listing from your watchlist testing steps
+API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-26T00:00:00+00:00" />
+<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
+
+<meta name="twitter:title" content="TradeMe-5-Remove a listing from your watchlist API testing"/>
+<meta name="twitter:description" content="API - Remove a listing from your watchlist testing steps
+API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-202225177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://ifulltest.github.io/en/">
+      <img class="logo" alt="Logo" src="https://ifulltest.github.io/images/logo.webp" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://ifulltest.github.io/en/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/posts/site-road-map/">
+            <i class="fas fa-fw fa-sitemap"></i>Site Map
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/series">
+            <i class="fas fa-fw fa-columns"></i>Series
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/categories">
+            <i class="fas fa-fw fa-folder"></i>Categories
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/tags">
+            <i class="fas fa-fw fa-tags"></i>Tags
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/archives">
+            <i class="fas fa-fw fa-file-archive"></i>Archives
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://ifulltest.github.io" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://www.linkedin.com/in/gary-gao-511854194/" target="_blank">
+                <i class="fab fa-fw fa-linkedin"></i>LinkedIn
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="languageSwitcher" data-bs-toggle="popover"
+    data-bs-placement="bottom" data-bs-target="#languagesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-language" ></i>
+  </a>
+</li>
+<script type="text/html" id="languagesPopoverBody">
+  <ul class="languages list-group"><li class="language list-group-item active">English</li><li class="language list-group-item"><a href="https://ifulltest.github.io/zh-cn/">中文</a></li></ul>
+</script><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>Blue</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>Blue Gray</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>Brown</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>Cyan</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>Green</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>Indigo</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>Orange</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>Pink</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>Purple</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>Red</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>Teal</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>Yellow</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">Font Size</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">TradeMe-5-Remove a listing from your watchlist API testing</li></ol>
+</nav><article class="post row surface"><div class="post-toolbox">
+  <div class="col-12 d-none d-lg-block">
+    <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
+  </div>
+</div>
+<h1 class="post-title my-3">TradeMe-5-Remove a listing from your watchlist API testing</h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Jul 26, 2021
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>6 min read
+  </span>
+<a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy">#Postman</a></div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">Table Of Contents</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#api---remove-a-listing-from-your-watchlist-testing-steps"><em>API - Remove a listing from your watchlist testing steps</em></a></li>
+    <li><a href="#api-specification">API Specification</a></li>
+    <li><a href="#business-presentation">Business Presentation</a></li>
+    <li><a href="#api-testing-script-debugging">API Testing Script Debugging</a></li>
+    <li><a href="#api-testing-script-enhancement">API Testing Script Enhancement</a></li>
+    <li><a href="#api-testing-script-negative-cases-extension">API Testing Script Negative Cases Extension</a></li>
+    <li><a href="#api-testing-script-publishment">API Testing Script Publishment</a></li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="api---remove-a-listing-from-your-watchlist-testing-steps"><em>API - Remove a listing from your watchlist testing steps</em></h2>
+<p><em>API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment</em></p>
+<h2 id="api-specification">API Specification</h2>
+<ul>
+<li>
+<p>API Function: Removes a listing from the authenticated user&rsquo;s watchlist.</p>
+</li>
+<li>
+<p>Key request fields</p>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<p>Key response fields - Details on whether the operation succeeded. Attempting to remove an auction that doesn&rsquo;t exist or is not on the watchlist will not produce an error.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>Boolean</td>
+<td>Indicates whether the operation was successful.</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>String or null</td>
+<td>The description of the error, if the operation failed.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>More API specification refers to <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+.</p>
+</li>
+<li>
+<p>Example request: DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON</a></p>
+</li>
+<li>
+<p>Example response:</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Success&#34;
+}
+</code></pre></div><h2 id="business-presentation">Business Presentation</h2>
+<ul>
+<li>Front-end page</li>
+</ul>
+<p>Watchlist page</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-1.webp" alt=""  loading="lazy" />
+</p>
+<p>Confirm to remove items page</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-2.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>Business selection:  chained portfolio transactions</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</p>
+<p>Choose API - Retrieve your watchlist as pre-request to get all items that want to be removed</p>
+<p>Remove all items in the watch list</p>
+<ul>
+<li>Business verification points</li>
+</ul>
+<p>Checking all items in the watch list have been removed.</p>
+<h2 id="api-testing-script-debugging">API Testing Script Debugging</h2>
+<ul>
+<li>Assembling the pre-request &lsquo;pre_request_retrieveyourwatchlist&rsquo; and &lsquo;pre_request_removealistingfromyourwatchlist&rsquo;</li>
+</ul>
+<p>The pre-request script&rsquo;s main coding logic is as below:</p>
+<ol>
+<li>Pre-request the API - Retrieve your watchlist to fetch all items in the watch list.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Pre-Transaction: RetrieveYourWatchlist Start&#34;);
+// oauth_signature = Consumer Secret%26OAuth Token Secret
+const pre_request_retrieveyourwatchlist = {
+    url: pm.environment.get(&#34;BaseUrl&#34;) + &#39;/v1/MyTradeMe/Watchlist/All.JSON&#39;,
+    method: &#39;GET&#39;,
+    header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+    body: {
+    }
+};
+...
+</code></pre></div><p>​	Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
+</p>
+<ol start="2">
+<li>All the fetched items should exclude those fields is &lsquo;BidCount&rsquo; = 1 to get all the items that allow being removed from the watch list.  The &lsquo;BidCount&rsquo; field means that the item has been bidden, couldn&rsquo;t be deleted from the watch list.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">pm.sendRequest(pre_request_retrieveyourwatchlist, function (err, response) {
+    if (err) {
+        console.log(err);
+        console.log(&#34;Pre-Transaction: RetrieveYourWatchlist Failed&#34;);
+    }
+    else {
+        // Get all ListingId in the Watchlist
+        pm.test(&#34;Get all ListingId in the Watchlist&#34;, function () {
+            var jsonData = response.json();
+            var Listdata = jsonData[&#39;List&#39;];
+            var arr = [];
+
+            for (i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+                <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">)</span> <span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+                    <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">push</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+                <span style="color:#960050;background-color:#1e0010">}</span>
+            <span style="color:#960050;background-color:#1e0010">}</span>
+            <span style="color:#a6e22e">postman</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">setEnvironmentVariable</span><span style="color:#960050;background-color:#1e0010">(&#39;</span><span style="color:#a6e22e">WatchlistListingIdCount</span><span style="color:#960050;background-color:#1e0010">&#39;,</span> <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+            <span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span> <span style="color:#960050;background-color:#1e0010">&lt;</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">){</span>
+                <span style="color:#a6e22e">var</span> <span style="color:#a6e22e">WatchlistListingIdCount </span><span style="color:#f92672">=</span> <span style="color:#e6db74">pm.environment.get(&#34;WatchlistListingIdCount&#34;);</span>
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">WatchlistListingIdCount:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">WatchlistListingIdCount</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;,</span> <span style="color:#a6e22e">nothing</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">.&#34;);</span>
+            <span style="color:#960050;background-color:#1e0010">}</span>
+            <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">{</span>
+                <span style="color:#a6e22e">postman</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">setEnvironmentVariable</span><span style="color:#960050;background-color:#1e0010">(&#39;</span><span style="color:#a6e22e">WatchlistListingId</span><span style="color:#960050;background-color:#1e0010">&#39;,</span> <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">);</span>
+                <span style="color:#a6e22e">var</span> <span style="color:#a6e22e">WatchlistListingId </span><span style="color:#f92672">=</span> <span style="color:#e6db74">pm.environment.get(&#34;WatchlistListingId&#34;);</span>
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">All</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">can</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">Watchlist:</span> <span style="color:#960050;background-color:#1e0010">&#34;);</span>
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">WatchlistListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+            <span style="color:#960050;background-color:#1e0010">}</span>
+        <span style="color:#960050;background-color:#1e0010">});</span>
+        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Pre-Transaction:</span> <span style="color:#a6e22e">RetrieveYourWatchlist</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+</code></pre></div><ol start="3">
+<li>If fetched items from the watch list &lt;=0, there are no items in the watchlist. Just initiate a meaningless &lsquo;ListingId&rsquo;.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">		var WatchlistListingIdCount = pm.environment.get(&#34;WatchlistListingIdCount&#34;);
+        var WatchlistListingId = pm.environment.get(&#34;WatchlistListingId&#34;).split(&#34;,&#34;);
+        // console.log(&#34;WatchlistListingId.length: &#34;+WatchlistListingId.length);
+        if (WatchlistListingIdCount <span style="color:#960050;background-color:#1e0010">&lt;</span>= 0) {
+            //Grant a meaningless value to LastListingId
+            postman.setEnvironmentVariable(&#39;LastListingId&#39;, &#34;0000000000&#34;);
+        }
+...        
+</code></pre></div><ol start="4">
+<li>If fetched items from the watch list =1, store the &lsquo;ListingId&rsquo; for later API request of &lsquo;RemoveAListingFromYourWatchlist&rsquo; to use.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else if (WatchlistListingIdCount == 1) {
+            postman.setEnvironmentVariable(&#39;LastListingId&#39;, WatchlistListingId[(Number(WatchlistListingIdCount) - 1)]);
+        }
+...        
+</code></pre></div><ol start="5">
+<li>If fetched items from the watch list &gt;1, assembling the pre-request &lsquo;pre_request_removealistingfromyourwatchlist&rsquo; to remove all the items but the last item in the watch list, then leave the last item to be removed in the later formal delete request &lsquo;RemoveAListingFromYourWatchlist&rsquo;.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else {
+            //Delete ListingId from Watchlist, but leave the last ListingId for later action to delete
+            console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Start&#34;);
+            postman.setEnvironmentVariable(&#39;LastListingId&#39;, WatchlistListingId[(Number(WatchlistListingIdCount) - 1)]);
+            var LastListingId = pm.environment.get(&#34;LastListingId&#34;);
+            console.log(&#34;LastListingId: &#34; + LastListingId);
+
+            for (var i = 0; i <span style="color:#960050;background-color:#1e0010">&lt;</span> (WatchlistListingId.length - 1); i++) {//Exclude the last ListingId
+                const pre_request_removealistingfromyourwatchlist = {
+                    url: pm.environment.get(&#34;BaseUrl&#34;) + &#39;/v1/MyTradeMe/WatchList/&#39; + WatchlistListingId[i] + &#39;.JSON&#39;,
+                    method: &#39;DELETE&#39;,
+                    header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+                    body: {
+                    }
+                };
+
+                pm.sendRequest(pre_request_removealistingfromyourwatchlist, function (err, response) {
+                    if (err) {
+                        console.log(err);
+                        console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Failed&#34;);
+                    }
+                    else {
+                        // Output the ListingId that has been deleted
+                        pm.test(&#34;Delete ListingId from the Watchlist, but leave the LastListingId: &#34; + LastListingId, function () {
+                        });
+                    }
+                });
+            }
+            console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Pass&#34;);
+        }
+    }
+});
+</code></pre></div><p>Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
+</p>
+<ul>
+<li>Choose the OAuth 1.0 in the Authorization label of Postman to authorize the request that needs to be authorized before sending.</li>
+</ul>
+<p>The OAuth 1.0 is like the below display:</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-authorization.webp" alt=""  loading="lazy" />
+</p>
+<p>How to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
+</p>
+<ul>
+<li>Assembling the delete request - Remove a listing from your watchlist</li>
+</ul>
+<p>From the API specification, parameter - <strong>listingId</strong> means one item on the watch list.</p>
+<p>And the listingId correlates from the query result of the pre_request: API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+</p>
+<p>So the request should be <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
+<ul>
+<li>API connectivity</li>
+</ul>
+<p>The connectivity test passes and gets a response example.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Success&#34;
+}
+</code></pre></div><ul>
+<li>API checkpoint</li>
+</ul>
+<p>Using the post_request: API - Retrieve your watchlist to check whether it still has items on the watchlist that can be deleted.</p>
+<p>Then we get the checking code snippet below base on the example feature.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: RetrieveYourWatchlist Start&#34;);
+
+const post_request = {
+
+  url:  pm.environment.get(&#34;BaseUrl&#34;)+&#39;/v1/MyTradeMe/Watchlist/All.JSON&#39;,
+
+  method: &#39;GET&#39;,
+  
+  header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+
+  body: {
+  }
+  
+};
+
+var LastListingId = pm.environment.get(&#34;LastListingId&#34;);
+
+pm.sendRequest(post_request, function (err, response) {
+
+    if (err) {
+
+        console.log(err);
+
+        console.log(&#34;Post-Transaction: RetrieveYourWatchlist Failed&#34;);
+
+    } 
+
+    else {
+
+        // Confirm whether all ListingId have been deleted from the Watchlist
+
+        pm.test(&#34;Checking LastListingId: &#34; +LastListingId +&#34; has been deleted&#34;, function () {
+
+            var jsonData = response.json();
+
+            var Listdata = jsonData[&#39;List&#39;];
+
+            var arr = [];
+
+            // console.log(&#34;Listdata.length: &#34; +Listdata.length);
+
+            for(i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+
+                <span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">){</span> <span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+
+                    <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">push</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+                <span style="color:#960050;background-color:#1e0010">}</span>
+
+            <span style="color:#960050;background-color:#1e0010">}</span>           
+
+            <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">0</span><span style="color:#960050;background-color:#1e0010">){</span>
+
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Current</span> <span style="color:#a6e22e">count</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">can</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">watchlist:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+            <span style="color:#960050;background-color:#1e0010">}</span>
+
+        <span style="color:#960050;background-color:#1e0010">});</span>
+        
+        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">RetrieveYourWatchlist</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
+    <span style="color:#960050;background-color:#1e0010">}</span> 
+
+<span style="color:#960050;background-color:#1e0010">});</span>
+</code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-rm-a-listing-from-watchlist-debug.webp" alt=""  loading="lazy" />
+</p>
+<h2 id="api-testing-script-enhancement">API Testing Script Enhancement</h2>
+<ul>
+<li>Enhance the script, such as to add the transactional function, exceptional verification, parameterization, etc.</li>
+<li>Run the final script and to verify from front-end page or console log.</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-rm-a-listing-from-watchlist-enhance.webp" alt=""  loading="lazy" />
+</p>
+<h2 id="api-testing-script-negative-cases-extension">API Testing Script Negative Cases Extension</h2>
+<p><em>Using the &lsquo;Equivalent Class Partitioning&rsquo; and &lsquo;Boundary Value Analysis&rsquo; as we did in manual testing cases.</em></p>
+<p><em>These API test scripts are doing the negative direction of the business, to be an extension to the above API positive case.</em></p>
+<h2 id="api-testing-script-publishment">API Testing Script Publishment</h2>
+<ul>
+<li>
+<p>Move script from debug folder to public folder when we finished API positive and negative cases.</p>
+</li>
+<li>
+<p>Then wait to be published to the GitHub specific repo combining with other scripts using the CICD tool.</p>
+</li>
+</ul></div><div class="post-copyright mb-4">
+  <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="https://ifulltest.github.io/en/posts/jenkins-installation/">How to install Jenkins?</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a>
+    </div></div>
+</div><section class="related-posts">
+  <h3>Related Posts</h3>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">TradeMe-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li></ul>
+</section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="ifulltest/comments"
+  issue-term="pathname"
+  label=""
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="https://ifulltest.github.io/images/about-me.webp" alt="Gary Gao" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">API, UI, Mobile, CICD, Full Stack Tester.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>ifulltest</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
+</section><section class="featured-posts row surface">
+  <h4>Featured Posts</h4>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">TradeMe-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a></li></ul>
+</section><section class="recent-posts row surface">
+  <h4>Recent Posts</h4>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe-1-API first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">TradeMe-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">TradeMe-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a></li></ul>
+</section>
+<section class="taxonomy-categories row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/categories">Categories</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/categories/functional-test/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Functional Test">
+      Functional Test <span class="badge rounded-pill">18</span>
+    </a><a href="https://ifulltest.github.io/en/categories/project-management/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Project Management">
+      Project Management <span class="badge rounded-pill">6</span>
+    </a><a href="https://ifulltest.github.io/en/categories/devops/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="DevOps">
+      DevOps <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/categories/configuration-management/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Configuration Management">
+      Configuration Management <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/categories/api-automation/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="API Automation">
+      API Automation <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/en/categories/ui-automation/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="UI Automation">
+      UI Automation <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-series row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/series">Series</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
+      Postman API Automation Practice <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
+      User Manual <span class="badge rounded-pill">2</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/tags">Tags</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
+      Test Basis <span class="badge rounded-pill">17</span>
+    </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
+      CICD <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
+      Agile Basis <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
+      Cypress <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jira/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jira">
+      Jira <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
+      GitHub <span class="badge rounded-pill">2</span>
+    </a><a href="https://ifulltest.github.io/en/tags/devops-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="DevOps Basis">
+      DevOps Basis <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jmeter/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="JMeter">
+      JMeter <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:ifulltest@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://facebook.com/profile.php?id=100070922467826" title="Facebook">
+        <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/ifulltest" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/gary-gao-511854194/" title="LinkedIn">
+        <i class="fab fa-fw fa-2x fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.zhihu.com/people/ifulltest" title="Zhihu">
+        <i class="fab fa-fw fa-2x fa-zhihu"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2019-2021 Gary Gao. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e8010f7b2c7741"></script></body>
+</html>
