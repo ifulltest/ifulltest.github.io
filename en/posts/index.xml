@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 26 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Site Map</title>
       <link>https://ifulltest.github.io/en/posts/site-road-map/</link>
@@ -67,6 +67,16 @@
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/</guid>
       <description>&lt;h2 id=&#34;api---remove-a-listing-from-your-watchlist-testing-steps&#34;&gt;&lt;em&gt;API - Remove a listing from your watchlist testing steps&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TradeMe-6-Retrieve closing soon listings</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</guid>
+      <description>&lt;h2 id=&#34;api---retrieve-general-categories-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve general categories testing steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     

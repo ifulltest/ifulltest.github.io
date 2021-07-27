@@ -20,7 +20,7 @@ API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-26T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-07-26T00:00:00+00:00" />
-<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" />
+<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
@@ -384,7 +384,7 @@ const pre_request_retrieveyourwatchlist = {
 <li>Choose the OAuth 1.0 in the Authorization label of Postman to authorize the request that needs to be authorized before sending.</li>
 </ul>
 <p>The OAuth 1.0 is like the below display:</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-authorization.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt=""  loading="lazy" />
 </p>
 <p>How to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
 </p>
@@ -473,14 +473,14 @@ pm.sendRequest(post_request, function (err, response) {
 
 <span style="color:#960050;background-color:#1e0010">});</span>
 </code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-rm-a-listing-from-watchlist-debug.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-debug.webp" alt=""  loading="lazy" />
 </p>
 <h2 id="api-testing-script-enhancement">API Testing Script Enhancement</h2>
 <ul>
 <li>Enhance the script, such as to add the transactional function, exceptional verification, parameterization, etc.</li>
 <li>Run the final script and to verify from front-end page or console log.</li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-rm-a-listing-from-watchlist-enhance.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-enhance.webp" alt=""  loading="lazy" />
 </p>
 <h2 id="api-testing-script-negative-cases-extension">API Testing Script Negative Cases Extension</h2>
 <p><em>Using the &lsquo;Equivalent Class Partitioning&rsquo; and &lsquo;Boundary Value Analysis&rsquo; as we did in manual testing cases.</em></p>
@@ -497,7 +497,7 @@ pm.sendRequest(post_request, function (err, response) {
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/jenkins-installation/">How to install Jenkins?</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">TradeMe-6-Retrieve closing soon listings</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
       <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">TradeMe-4-Retrieve your watchlist API testing</a>
@@ -549,7 +549,7 @@ pm.sendRequest(post_request, function (err, response) {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">5</span>
+      Postman API Automation Practice <span class="badge rounded-pill">6</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -559,10 +559,10 @@ pm.sendRequest(post_request, function (err, response) {
   </h4>
   <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
+    </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">6</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
-    </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
       Agile Basis <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
