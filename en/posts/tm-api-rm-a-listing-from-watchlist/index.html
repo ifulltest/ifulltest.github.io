@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Remove a listing from your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1139"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1228"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="TradeMe-5-Remove a listing from your watchlist API testing" />
 <meta property="og:description" content="API - Remove a listing from your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -451,9 +451,9 @@ const pre_request_retrieveyourwatchlist = {
 <ul>
 <li>Assembling the delete request - Remove a listing from your watchlist</li>
 </ul>
-<p>Base on the API specification, parameter - <strong>listingId</strong> means one item on the watch list.</p>
-<p>And in the context, the listingId correlates from the query result of the pre_request: API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
-</p>
+<p>Base on the API specification, parameter - <strong>listingId</strong> means the ID of the listing to remove.</p>
+<p>And the listingId origin from the response of pre_request &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+&rsquo;, and it has already been set to environment variables: {{LastListingId}}.</p>
 <p>So the request should be DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-para.webp" alt=""  loading="lazy" />
 </p>
@@ -469,6 +469,14 @@ const pre_request_retrieveyourwatchlist = {
 <li>API checkpoint</li>
 </ul>
 <p>Using the post_request: API - Retrieve your watchlist to check whether it still has items on the watchlist that can be deleted.</p>
+<p>Check whether the functionality of pre_request &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+&rsquo; works;</p>
+<p>and it can exclude those items that cannot execute the delete operation from its response for another  pre_request transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+&rsquo; to use;</p>
+<p>and it can remain the last item from its response for the downstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+&rsquo; to use.</p>
+<p>Check whether the functionality of &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+&rsquo; works, and it can remove the last item from watchlist.</p>
 <p>Then we get the checking code snippet below base on the example feature.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: RetrieveYourWatchlist Start&#34;);
 
@@ -615,7 +623,7 @@ pm.sendRequest(post_request, function (err, response) {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">10</span>
+      Postman API Automation Practice <span class="badge rounded-pill">12</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -626,7 +634,7 @@ pm.sendRequest(post_request, function (err, response) {
   <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
     </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">10</span>
+      Postman <span class="badge rounded-pill">12</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">

@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - General search testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="895"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="921"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="TradeMe-10-General search" />
 <meta property="og:description" content="API - General search testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -413,7 +413,9 @@ if (!doNotTrack) {
 </code></pre></div><ul>
 <li>API checkpoint</li>
 </ul>
-<p>Check whether the &lsquo;general search&rsquo; functionality works, and it can fetch any ListingId has the &lsquo;HasBuyNow&rsquo; feature.</p>
+<p>Check whether the functionality of &lsquo;general search&rsquo; works, and it can fetch any ListingId has the &lsquo;HasBuyNow&rsquo; feature from its response for the downstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+&rsquo; or &lsquo;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
+&rsquo; to use.</p>
 <p>Then we get the checking code snippet below base on the example feature.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: CheckingListingIdHasBuyNow Start&#34;);
 
@@ -498,14 +500,14 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/jenkins-installation/">How to install Jenkins?</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/">TradeMe-11-Retrieve the details of a single listing</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
       <a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/">TradeMe-9-Remove a purchase from your won items list</a>
     </div></div>
 </div><section class="related-posts">
   <h3>Related Posts</h3>
-  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/">TradeMe-9-Remove a purchase from your won items list</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">TradeMe-6-Retrieve closing soon listings</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/">TradeMe-8-Retrieve your won items</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">TradeMe-5-Remove a listing from your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/">TradeMe-7-Add a listing to your watchlist</a></li></ul>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/">TradeMe-11-Retrieve the details of a single listing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/">TradeMe-12-Buy an auction using Buy Now</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/">TradeMe-9-Remove a purchase from your won items list</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">TradeMe-6-Retrieve closing soon listings</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/">TradeMe-8-Retrieve your won items</a></li></ul>
 </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="ifulltest/comments"
   issue-term="pathname"
@@ -550,7 +552,7 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">10</span>
+      Postman API Automation Practice <span class="badge rounded-pill">12</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -561,7 +563,7 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
   <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
     </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">10</span>
+      Postman <span class="badge rounded-pill">12</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">

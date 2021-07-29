@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Add a listing to your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="852"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="857"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="TradeMe-7-Add a listing to your watchlist" />
 <meta property="og:description" content="API - Add a listing to your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -167,7 +167,7 @@ if (!doNotTrack) {
     <i class="fas fa-fw fa-calendar-alt"></i>Jul 26, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>4 min read
+    <i class="fas fa-fw fa-coffee"></i>5 min read
   </span>
 <a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy">#Postman</a></div>
 <div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
@@ -375,9 +375,9 @@ const pre_request = {
 <ul>
 <li>Assembling the request - &lsquo;Add a listing to your watchlist&rsquo;</li>
 </ul>
-<p>Base on the API specification, parameter - <strong>listingId</strong> means one item that we want to add to the watchlist.</p>
-<p>And in the context, the listingId correlates from the query result of the pre_request: API -<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
-</p>
+<p>Base on the API specification, parameter - <strong>listingId</strong> means the ID of the listing to add to the watchlist.</p>
+<p>And the listingId origin from the response of pre_request &lsquo;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+&rsquo;, and it has already been set to environment variables: {{ListingIdAddToWatchList}}.</p>
 <p>So the request should be POST <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BListingIdAddToWatchList%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{ListingIdAddToWatchList}}.JSON</a></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-para.webp" alt=""  loading="lazy" />
 </p>
@@ -528,7 +528,7 @@ pm.sendRequest(post_request, function (err, response) {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">10</span>
+      Postman API Automation Practice <span class="badge rounded-pill">12</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -539,7 +539,7 @@ pm.sendRequest(post_request, function (err, response) {
   <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
     </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">10</span>
+      Postman <span class="badge rounded-pill">12</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
