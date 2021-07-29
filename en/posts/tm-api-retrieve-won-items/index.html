@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Retrieve your won items testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-27T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-27T00:00:00+00:00" />
-<meta itemprop="wordCount" content="838"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="848"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="TradeMe-8-Retrieve your won items" />
 <meta property="og:description" content="API - Retrieve your won items testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -349,6 +349,8 @@ if (!doNotTrack) {
 </ul>
 <p>Base on the API specification, parameter - <strong>All</strong> means return all won items in the last 45 days.</p>
 <p>So the request should be GET <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/All.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/All.JSON</a></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-para.webp" alt=""  loading="lazy" />
+</p>
 <ul>
 <li>API connectivity</li>
 </ul>
@@ -433,7 +435,7 @@ if (!doNotTrack) {
 <p>Then we get the checking code snippet below base on the example feature.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: CheckingWonListHaveItems Start&#34;);
 
-pm.test(&#34;CheckingWonListHaveItems&#34;, function () {
+pm.test(&#34;CheckingWonListHasItems&#34;, function () {
 
     var jsonData = pm.response.json();
 
@@ -489,10 +491,12 @@ pm.test(&#34;CheckingWonListHaveItems&#34;, function () {
 
 });
 </code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
-<p>It has items on the won list page.</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-log0.webp" alt=""  loading="lazy" />
+</p>
+<p>It has no items on the won list page displaying on the console log.</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-log1.webp" alt=""  loading="lazy" />
 </p>
-<p>It has no items on the won list page.</p>
+<p>It has items on the won list page displaying on the console log.</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-log2.webp" alt=""  loading="lazy" />
 </p>
 <h2 id="api-testing-script-enhancement">API Testing Script Enhancement</h2>
@@ -500,6 +504,8 @@ pm.test(&#34;CheckingWonListHaveItems&#34;, function () {
 <li>Enhance the script, such as to add the transactional function, exceptional verification, parameterization, etc.</li>
 <li>Run the final script and to verify from front-end page or console log.</li>
 </ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-enhance.webp" alt=""  loading="lazy" />
+</p>
 <h2 id="api-testing-script-negative-cases-extension">API Testing Script Negative Cases Extension</h2>
 <p><em>Using the &lsquo;Equivalent Class Partitioning&rsquo; and &lsquo;Boundary Value Analysis&rsquo; as we did in manual testing cases.</em></p>
 <p><em>These API test scripts are doing the negative direction of the business, to be an extension to the above API positive case.</em></p>
@@ -515,7 +521,7 @@ pm.test(&#34;CheckingWonListHaveItems&#34;, function () {
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/jenkins-installation/">How to install Jenkins?</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/">TradeMe-9-Remove a purchase from your won items list</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
       <a href="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/">TradeMe-7-Add a listing to your watchlist</a>
@@ -567,7 +573,7 @@ pm.test(&#34;CheckingWonListHaveItems&#34;, function () {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">8</span>
+      Postman API Automation Practice <span class="badge rounded-pill">10</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -578,7 +584,7 @@ pm.test(&#34;CheckingWonListHaveItems&#34;, function () {
   <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
     </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">8</span>
+      Postman <span class="badge rounded-pill">10</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">

@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Site Map</title>
       <link>https://ifulltest.github.io/en/posts/site-road-map/</link>
@@ -97,6 +97,26 @@
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</guid>
       <description>&lt;h2 id=&#34;api---retrieve-your-won-items-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve your won items testing steps&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TradeMe-9-Remove a purchase from your won items list</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</link>
+      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</guid>
+      <description>&lt;h2 id=&#34;api---remove-a-purchase-from-your-won-items-list-testing-steps&#34;&gt;&lt;em&gt;API - Remove a purchase from your won items list testing steps&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TradeMe-10-General search</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-general-search/</link>
+      <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-general-search/</guid>
+      <description>&lt;h2 id=&#34;api---general-search-testing-steps&#34;&gt;&lt;em&gt;API - General search testing steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     

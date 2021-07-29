@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Remove a listing from your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1126"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1139"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="TradeMe-5-Remove a listing from your watchlist API testing" />
 <meta property="og:description" content="API - Remove a listing from your watchlist testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -279,13 +279,18 @@ if (!doNotTrack) {
 <li>Pre-request the API - Retrieve your watchlist to fetch all items in the watch list.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Pre-Transaction: RetrieveYourWatchlist Start&#34;);
+
 // oauth_signature = Consumer Secret%26OAuth Token Secret
 const pre_request_retrieveyourwatchlist = {
     url: pm.environment.get(&#34;BaseUrl&#34;) + &#39;/v1/MyTradeMe/Watchlist/All.JSON&#39;,
+
     method: &#39;GET&#39;,
+
     header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+    
     body: {
     }
+
 };
 ...
 </code></pre></div><p>​	Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
@@ -294,89 +299,144 @@ const pre_request_retrieveyourwatchlist = {
 <li>All the fetched items should exclude those fields is &lsquo;BidCount&rsquo; = 1 to get all the items that allow being removed from the watch list.  The &lsquo;BidCount&rsquo; field means that the item has been bidden, couldn&rsquo;t be deleted from the watch list.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">pm.sendRequest(pre_request_retrieveyourwatchlist, function (err, response) {
+
     if (err) {
+
         console.log(err);
+
         console.log(&#34;Pre-Transaction: RetrieveYourWatchlist Failed&#34;);
+
     }
+
     else {
+
         // Get all ListingId in the Watchlist
         pm.test(&#34;Get all ListingId in the Watchlist&#34;, function () {
+
             var jsonData = response.json();
+
             var Listdata = jsonData[&#39;List&#39;];
+
             var arr = [];
 
             for (i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
-                <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">)</span> <span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+                
+                <span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+                <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+
                     <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">push</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+
                 <span style="color:#960050;background-color:#1e0010">}</span>
+
             <span style="color:#960050;background-color:#1e0010">}</span>
+
             <span style="color:#a6e22e">postman</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">setEnvironmentVariable</span><span style="color:#960050;background-color:#1e0010">(&#39;</span><span style="color:#a6e22e">WatchlistListingIdCount</span><span style="color:#960050;background-color:#1e0010">&#39;,</span> <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span><span style="color:#960050;background-color:#1e0010">);</span>
 
             <span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span> <span style="color:#960050;background-color:#1e0010">&lt;</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">){</span>
+
                 <span style="color:#a6e22e">var</span> <span style="color:#a6e22e">WatchlistListingIdCount </span><span style="color:#f92672">=</span> <span style="color:#e6db74">pm.environment.get(&#34;WatchlistListingIdCount&#34;);</span>
+
                 <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">WatchlistListingIdCount:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">WatchlistListingIdCount</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;,</span> <span style="color:#a6e22e">nothing</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">.&#34;);</span>
+
             <span style="color:#960050;background-color:#1e0010">}</span>
+
             <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">{</span>
+
                 <span style="color:#a6e22e">postman</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">setEnvironmentVariable</span><span style="color:#960050;background-color:#1e0010">(&#39;</span><span style="color:#a6e22e">WatchlistListingId</span><span style="color:#960050;background-color:#1e0010">&#39;,</span> <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">);</span>
+
                 <span style="color:#a6e22e">var</span> <span style="color:#a6e22e">WatchlistListingId </span><span style="color:#f92672">=</span> <span style="color:#e6db74">pm.environment.get(&#34;WatchlistListingId&#34;);</span>
+
                 <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">All</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">can</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">Watchlist:</span> <span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
                 <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">WatchlistListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+
             <span style="color:#960050;background-color:#1e0010">}</span>
-        <span style="color:#960050;background-color:#1e0010">});</span>
+        
         <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Pre-Transaction:</span> <span style="color:#a6e22e">RetrieveYourWatchlist</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+        
+        <span style="color:#960050;background-color:#1e0010">});</span>
 <span style="color:#960050;background-color:#1e0010">...</span>
 </code></pre></div><ol start="3">
 <li>If fetched items from the watch list &lt;=0, there are no items in the watchlist. Just initiate a meaningless &lsquo;ListingId&rsquo;.</li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">		var WatchlistListingIdCount = pm.environment.get(&#34;WatchlistListingIdCount&#34;);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        var WatchlistListingIdCount = pm.environment.get(&#34;WatchlistListingIdCount&#34;);
+
         var WatchlistListingId = pm.environment.get(&#34;WatchlistListingId&#34;).split(&#34;,&#34;);
-        // console.log(&#34;WatchlistListingId.length: &#34;+WatchlistListingId.length);
+
         if (WatchlistListingIdCount <span style="color:#960050;background-color:#1e0010">&lt;</span>= 0) {
+
             //Grant a meaningless value to LastListingId
             postman.setEnvironmentVariable(&#39;LastListingId&#39;, &#34;0000000000&#34;);
+
         }
 ...        
 </code></pre></div><ol start="4">
 <li>If fetched items from the watch list =1, store the &lsquo;ListingId&rsquo; for later API request of &lsquo;RemoveAListingFromYourWatchlist&rsquo; to use.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else if (WatchlistListingIdCount == 1) {
+
             postman.setEnvironmentVariable(&#39;LastListingId&#39;, WatchlistListingId[(Number(WatchlistListingIdCount) - 1)]);
+
         }
 ...        
 </code></pre></div><ol start="5">
 <li>If fetched items from the watch list &gt;1, assembling the pre-request &lsquo;pre_request_removealistingfromyourwatchlist&rsquo; to remove all the items but the last item in the watch list, then leave the last item to be removed in the later formal delete request &lsquo;RemoveAListingFromYourWatchlist&rsquo;.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else {
-            //Delete ListingId from Watchlist, but leave the last ListingId for later action to delete
+
+            //Delete ListingId from Watchlist, but leave the last ListingId for later transaction to delete
             console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Start&#34;);
+
             postman.setEnvironmentVariable(&#39;LastListingId&#39;, WatchlistListingId[(Number(WatchlistListingIdCount) - 1)]);
+
             var LastListingId = pm.environment.get(&#34;LastListingId&#34;);
+
             console.log(&#34;LastListingId: &#34; + LastListingId);
 
-            for (var i = 0; i <span style="color:#960050;background-color:#1e0010">&lt;</span> (WatchlistListingId.length - 1); i++) {//Exclude the last ListingId
+            //Exclude the last ListingId
+            for (var i = 0; i <span style="color:#960050;background-color:#1e0010">&lt;</span> (WatchlistListingId.length - 1); i++) {
+
                 const pre_request_removealistingfromyourwatchlist = {
+
                     url: pm.environment.get(&#34;BaseUrl&#34;) + &#39;/v1/MyTradeMe/WatchList/&#39; + WatchlistListingId[i] + &#39;.JSON&#39;,
                     method: &#39;DELETE&#39;,
+
                     header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+                    
                     body: {
                     }
+
                 };
 
                 pm.sendRequest(pre_request_removealistingfromyourwatchlist, function (err, response) {
+
                     if (err) {
+
                         console.log(err);
+
                         console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Failed&#34;);
+
                     }
+
                     else {
+
                         // Output the ListingId that has been deleted
                         pm.test(&#34;Delete ListingId from the Watchlist, but leave the LastListingId: &#34; + LastListingId, function () {
+
+                            // console.log(response.json());
                         });
                     }
+
                 });
+
             }
+
             console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Pass&#34;);
+
         }
+
     }
+
 });
 </code></pre></div><p>Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
 </p>
@@ -394,7 +454,9 @@ const pre_request_retrieveyourwatchlist = {
 <p>Base on the API specification, parameter - <strong>listingId</strong> means one item on the watch list.</p>
 <p>And in the context, the listingId correlates from the query result of the pre_request: API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
 </p>
-<p>So the request should be <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
+<p>So the request should be DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-para.webp" alt=""  loading="lazy" />
+</p>
 <ul>
 <li>API connectivity</li>
 </ul>
@@ -415,7 +477,7 @@ const post_request = {
   url:  pm.environment.get(&#34;BaseUrl&#34;)+&#39;/v1/MyTradeMe/Watchlist/All.JSON&#39;,
 
   method: &#39;GET&#39;,
-  
+
   header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
 
   body: {
@@ -438,7 +500,6 @@ pm.sendRequest(post_request, function (err, response) {
     else {
 
         // Confirm whether all ListingId have been deleted from the Watchlist
-
         pm.test(&#34;Checking LastListingId: &#34; +LastListingId +&#34; has been deleted&#34;, function () {
 
             var jsonData = response.json();
@@ -447,18 +508,17 @@ pm.sendRequest(post_request, function (err, response) {
 
             var arr = [];
 
-            // console.log(&#34;Listdata.length: &#34; +Listdata.length);
-
             for(i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
 
-                <span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">){</span> <span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+                <span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+                <span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">){</span>
 
                     <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">push</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
 
                 <span style="color:#960050;background-color:#1e0010">}</span>
 
-            <span style="color:#960050;background-color:#1e0010">}</span>           
-
+            <span style="color:#960050;background-color:#1e0010">}</span>
+            
             <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">0</span><span style="color:#960050;background-color:#1e0010">){</span>
 
                 <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Current</span> <span style="color:#a6e22e">count</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">can</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">watchlist:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span><span style="color:#960050;background-color:#1e0010">);</span>
@@ -473,14 +533,20 @@ pm.sendRequest(post_request, function (err, response) {
 
 <span style="color:#960050;background-color:#1e0010">});</span>
 </code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-log.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-log0.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-log1.webp" alt=""  loading="lazy" />
 </p>
 <h2 id="api-testing-script-enhancement">API Testing Script Enhancement</h2>
 <ul>
 <li>Enhance the script, such as to add the transactional function, exceptional verification, parameterization, etc.</li>
 <li>Run the final script and to verify from front-end page or console log.</li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-enhance.webp" alt=""  loading="lazy" />
+<p>Display on the watchlist page before removing operation.</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-enhance1.webp" alt=""  loading="lazy" />
+</p>
+<p>Display on the watchlist page after removing operation.</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-enhance2.webp" alt=""  loading="lazy" />
 </p>
 <h2 id="api-testing-script-negative-cases-extension">API Testing Script Negative Cases Extension</h2>
 <p><em>Using the &lsquo;Equivalent Class Partitioning&rsquo; and &lsquo;Boundary Value Analysis&rsquo; as we did in manual testing cases.</em></p>
@@ -549,7 +615,7 @@ pm.sendRequest(post_request, function (err, response) {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">8</span>
+      Postman API Automation Practice <span class="badge rounded-pill">10</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -560,7 +626,7 @@ pm.sendRequest(post_request, function (err, response) {
   <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
     </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">8</span>
+      Postman <span class="badge rounded-pill">10</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
