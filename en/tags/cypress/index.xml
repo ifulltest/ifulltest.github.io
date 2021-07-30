@@ -8,19 +8,17 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/cypress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TradeMe-1-API first demo</title>
+      <title>Trade Me-1-API first demo</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
       <description>&lt;h2 id=&#34;what-is-trademe-sandbox&#34;&gt;&lt;em&gt;What is Trademe sandbox?&lt;/em&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database. It is designed to allow you to test potentially destructive API operations in a safe environment.&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;em&gt;The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database. It is designed to allow you to test potentially destructive API operations in a safe environment.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>TradeMe-2-typical transactions</title>
+      <title>Trade Me-2-typical transactions</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
