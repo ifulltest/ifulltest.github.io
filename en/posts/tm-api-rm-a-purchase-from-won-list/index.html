@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Remove a purchase from your won items list testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-28T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-28T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1013"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1004"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-9-Remove a purchase from your won items list" />
 <meta property="og:description" content="API - Remove a purchase from your won items list testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -432,37 +432,62 @@ else{
 <p>Check wheter have items on the won list.</p>
 <p>Then we get the checking code snippet below base on the example feature.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">//Check wheter have items on the won list
-console.log(&#34;Post-Transaction: CheckingDeleteWonItems Start&#34;);  
+console.log(&#34;Post-Transaction: CheckingDeleteWonItems Start&#34;);
+
 var LastWonPurchaseId = pm.environment.get(&#34;LastWonPurchaseId&#34;);
 
 const post_request = {
+
     url: pm.environment.get(&#34;BaseUrl&#34;) + &#39;/v1/MyTradeMe/Won/All.JSON&#39;,
+
     method: &#39;GET&#39;,
-    header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+
+    header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;4B34BCCFD24CF3497EE36E54204AA7E2&#34;,oauth_token=&#34;38B073E4F6C65F722A0CF964492EA6A2&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;0D8635F6A51F0EA381A8D97F5D7812E2%26293BD08354D18D33871C4EBB02D67ACA&#34;&#39;],
+
     body: {
     }
+
 };
 
 pm.sendRequest(post_request, function (err, response) {
+
     if (err) {
+
         console.log(err);
+
         console.log(&#34;Post-Transaction: CheckingDeleteWonItems Failed&#34;);
+
     }
+
     else {
+
         // Output the PurchaseId that has been removed
         pm.test(&#34;Checking LastWonPurchaseId: &#34; +LastWonPurchaseId +&#34; has been removed&#34;, function () {
+
             var jsonData = response.json();
+
             var TotalCount = jsonData.TotalCount;
+
             if (TotalCount == 0){
+
                 console.log(&#34;Current items count on the won list: &#34;+TotalCount + &#34;. All items have been removed from the won list.&#34;);
-                console.log(&#34;Post-Transaction: CheckingDeleteWonItems Pass&#34;);  
+
+                console.log(&#34;Post-Transaction: CheckingDeleteWonItems Pass&#34;);
+
             }
+
             else{
-                console.log(&#34;Current items count on the won list: &#34;+TotalCount + &#34;. Still have Items need to be removed from the won list.&#34;);                 
-                console.log(&#34;Post-Transaction: CheckingDeleteWonItems Failed&#34;); 
+
+                console.log(&#34;Current items count on the won list: &#34;+TotalCount + &#34;. Still have Items need to be removed from the won list.&#34;);
+                
+                console.log(&#34;Post-Transaction: CheckingDeleteWonItems Failed&#34;);
+                
             }
+
         });
-    }   
+
+    }
+       
 });
 </code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
 <p><strong>One item is removed from the won list page.</strong></p>

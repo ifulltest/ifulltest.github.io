@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Buy an auction using Buy Now testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="846"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="854"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-12-Buy an auction using Buy Now" />
 <meta property="og:description" content="API - Buy an auction using Buy Now testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -167,7 +167,7 @@ if (!doNotTrack) {
     <i class="fas fa-fw fa-calendar-alt"></i>Jul 29, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>4 min read
+    <i class="fas fa-fw fa-coffee"></i>5 min read
   </span>
 <a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy">#Postman</a></div>
 <div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
@@ -432,7 +432,7 @@ const post_request = {
 
 };
 
-setTimeout(()=&gt;{
+// setTimeout(()=&gt;{
     pm.sendRequest(post_request, function (err, response) {
 
         if (err) {
@@ -448,7 +448,7 @@ setTimeout(()=&gt;{
             // Confirm whether PurchaseId of new buy item existed on the won list.
             pm.test(&#34;Checking NewPurchasedListId existed in the won list&#34;, function () {
 
-                console.log(response.json());
+                // console.log(response.json());
 
                 var jsonData = response.json();
 
@@ -458,38 +458,46 @@ setTimeout(()=&gt;{
 
                 var BuyNowPurchaseId = pm.environment.get(&#34;BuyNowPurchaseId&#34;);
 
-                var i = 0;
+                breakloop:{
 
-                for(i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+                    for(var i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+                    
+                        <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">SingleListingId </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">BuyNowPurchaseId </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">PurchaseId</span><span style="color:#960050;background-color:#1e0010">){</span>
 
-                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">ListingId:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;,</span> <span style="color:#a6e22e">PurchaseId:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">PurchaseId</span><span style="color:#960050;background-color:#1e0010">);</span>
-                
-                    <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">SingleListingId </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">BuyNowPurchaseId </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">PurchaseId</span><span style="color:#960050;background-color:#1e0010">){</span>
+                            <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Found</span> <span style="color:#a6e22e">PurchaseId</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">BuyNowPurchaseId</span> <span style="color:#960050;background-color:#1e0010">+&#34;</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">&#34;+</span><span style="color:#a6e22e">SingleListingId</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#a6e22e">exists</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">won</span> <span style="color:#a6e22e">list</span><span style="color:#960050;background-color:#1e0010">&#34;);</span> 
 
-                        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Found</span> <span style="color:#a6e22e">PurchaseId</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">BuyNowPurchaseId</span> <span style="color:#960050;background-color:#1e0010">+&#34;</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">&#34;+</span><span style="color:#a6e22e">SingleListingId</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#a6e22e">exists</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">won</span> <span style="color:#a6e22e">list</span> <span style="color:#a6e22e">details</span><span style="color:#960050;background-color:#1e0010">&#34;);</span> 
+                            <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingPurchasedItemOnWonList</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
 
-                        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingPurchasedItemOnWonList</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+                            <span style="color:#a6e22e">break</span> <span style="color:#a6e22e">breakloop</span><span style="color:#960050;background-color:#1e0010">;</span>
 
-                        <span style="color:#a6e22e">i </span><span style="color:#f92672">=</span> <span style="color:#e6db74">1;</span>
+                        <span style="color:#960050;background-color:#1e0010">}</span>
 
                     <span style="color:#960050;background-color:#1e0010">}</span>
 
+                    <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#e6db74">=0){</span>
+
+                        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Not</span> <span style="color:#a6e22e">Found</span> <span style="color:#a6e22e">any</span> <span style="color:#a6e22e">PurchaseId</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">exist</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">won</span> <span style="color:#a6e22e">list</span><span style="color:#960050;background-color:#1e0010">.&#34;);</span>
+
+                        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingPurchasedItemOnWonList</span> <span style="color:#a6e22e">Failed</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
+                    <span style="color:#960050;background-color:#1e0010">}</span>
+
+                    <span style="color:#a6e22e">else</span><span style="color:#960050;background-color:#1e0010">{</span>
+
+                        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">The</span> <span style="color:#a6e22e">just</span> <span style="color:#a6e22e">purchased</span> <span style="color:#a6e22e">item</span> <span style="color:#a6e22e">hasn</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">been</span> <span style="color:#a6e22e">shown</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">won</span> <span style="color:#a6e22e">list</span> <span style="color:#a6e22e">details</span> <span style="color:#a6e22e">yet</span><span style="color:#960050;background-color:#1e0010">.&#34;);</span>
+
+                        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingPurchasedItemOnWonList</span> <span style="color:#a6e22e">Failed</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>                    
+                    <span style="color:#960050;background-color:#1e0010">}</span>
+                
                 <span style="color:#960050;background-color:#1e0010">}</span>
 
-                <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#e6db74">=0){</span>
-
-                    <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Not</span> <span style="color:#a6e22e">Found</span> <span style="color:#a6e22e">PurchaseId</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">exist</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">won</span> <span style="color:#a6e22e">list</span> <span style="color:#a6e22e">details</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
-
-                    <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingPurchasedItemOnWonList</span> <span style="color:#a6e22e">Failed</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
-
-                <span style="color:#960050;background-color:#1e0010">}</span>
             <span style="color:#960050;background-color:#1e0010">});</span>            
 
         <span style="color:#960050;background-color:#1e0010">}</span>
         
     <span style="color:#960050;background-color:#1e0010">});</span>
 
-<span style="color:#960050;background-color:#1e0010">},</span> <span style="color:#a6e22e">70000</span><span style="color:#960050;background-color:#1e0010">);</span>
+<span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#960050;background-color:#1e0010">},</span> <span style="color:#a6e22e">70000</span><span style="color:#960050;background-color:#1e0010">);</span>
 </code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-log1.webp" alt=""  loading="lazy" />
 </p>
