@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - General search testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="936"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="950"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-10-General search" />
 <meta property="og:description" content="API - General search testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -20,7 +20,7 @@ API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-general-search/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-29T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-07-29T00:00:00+00:00" />
-<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/" />
+<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
@@ -469,11 +469,15 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
 
     var jsonData = pm.response.json();
 
+    var Page = jsonData.Page;
+
+    var PageSize = jsonData.PageSize;
+
     var arr =[];
 
     var List = jsonData.List;
 
-    if (List !== []){
+    if (typeof(List) !== &#34;undefined&#34;){
 
         for (i in List){
 
@@ -492,11 +496,24 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
 
     }
 
-    if(arr !== []){        
+    if(Array.isArray(arr) <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> arr.length === 0){        
+
+        console.log(pm.response.json());
+
+        console.log(&#34;Didn&#39;t fetch any ListingId has the &#39;HasBuyNow&#39; feature: &#34; +SingleListingId);
+
+        console.log(&#34;Post-Transaction: CheckingListingIdHasBuyNow Failed&#34;);
+
+    }
+    else{
 
         postman.setEnvironmentVariable(&#39;ListingIdHasBuyNow&#39;, arr);
 
-        console.log(&#34;GetListingIdHasBuyNow counts to: &#34; + arr.length + &#34;, details are as below: &#34; + arr);
+        console.log(&#34;Page: &#34;+Page+&#34;, total items: &#34;+PageSize);
+        
+        console.log(&#34;&#39;HasBuyNow&#39; items counts to: &#34; + arr.length + &#34;, ListingId details: &#34;);
+
+        console.log(arr);
 
         // Randomly get one ListingId from the stored ListingId list that has the &#39;HasBuyNow&#39; feature.
         // The ListingId will be picked for downstream transaction &#39;RetrieveTheDetailsOfASingleListing&#39; to use.
@@ -512,12 +529,6 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
 
         console.log(&#34;Post-Transaction: CheckingListingIdHasBuyNow Pass&#34;);
 
-    }
-    else{
-
-        console.log(&#34;Didn&#39;t fetch any ListingId has the &#39;HasBuyNow&#39; feature: &#34; +SingleListingId);
-
-        console.log(&#34;Post-Transaction: CheckingListingIdHasBuyNow Failed&#34;);
     }
 
 });
@@ -569,10 +580,10 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
     <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">API, UI, Mobile, CICD, Full Stack Tester.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>ifulltest</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
 </section><section class="featured-posts row surface">
   <h4>Featured Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>

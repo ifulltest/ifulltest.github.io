@@ -8,18 +8,6 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/cypress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-2-typical transactions</title>
-      <link>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</guid>
-      <description>&lt;h2 id=&#34;how-to-pick-the-typical-transactions&#34;&gt;&lt;em&gt;How to pick the typical transactions?&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Before coding the API test script, we need to pick some typical transactions from TradeMe.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;And these transactions we&amp;rsquo;ve picked better to cover different types of requests, such as the &lt;strong&gt;get, post, delete&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;And part of these transactions should &lt;strong&gt;correlate with each other&lt;/strong&gt; at the business level.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Trade Me-1-API testing first demo</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
@@ -32,6 +20,18 @@
 &lt;li&gt;2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&amp;rsquo;t know what&amp;rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.&lt;/li&gt;
 &lt;li&gt;3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trade Me-2-typical transactions</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</guid>
+      <description>&lt;h2 id=&#34;how-to-pick-the-typical-transactions&#34;&gt;&lt;em&gt;How to pick the typical transactions?&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Before coding the API test script, we need to pick some typical transactions from TradeMe.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And these transactions we&amp;rsquo;ve picked better to cover different types of requests, such as the &lt;strong&gt;get, post, delete&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And part of these transactions should &lt;strong&gt;correlate with each other&lt;/strong&gt; at the business level.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

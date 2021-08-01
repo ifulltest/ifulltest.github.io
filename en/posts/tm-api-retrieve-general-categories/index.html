@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Retrieve general categories testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-24T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-24T00:00:00+00:00" />
-<meta itemprop="wordCount" content="800"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="825"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-3-Retrieve general categories API testing" />
 <meta property="og:description" content="API - Retrieve general categories testing steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -20,7 +20,7 @@ API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-24T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-07-24T00:00:00+00:00" />
-<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/" />
+<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
@@ -424,7 +424,7 @@ if (!doNotTrack) {
 
     var arr =[];
 
-    if (pm.expect(pm.response.json().Subcategories).to.not.be.empty){
+    if (typeof(pm.response.json().Subcategories) !== &#34;undefined&#34;){
 
         var Subcategories = jsonData.Subcategories;  
 
@@ -435,7 +435,7 @@ if (!doNotTrack) {
 
             arr.push(Name);
 
-            if(Name == &#34;Antiques <span style="color:#960050;background-color:#1e0010">&amp;</span> Collectables&#34;){
+            if(Name == &#34;Antiques <span style="color:#960050;background-color:#1e0010">&amp;</span> collectables&#34;){
 
                 var SpecificSubcategories = Name;
 
@@ -444,20 +444,34 @@ if (!doNotTrack) {
         
         console.log(&#34;Subcategories counts to: &#34; + jsonData.Subcategories.length);
 
-        console.log(&#34;All subcategories name listed below: &#34; + arr);
+        console.log(&#34;All subcategories name listed below: &#34;);
 
-        // checkpoint: whether subcategory - &#39;Antiques <span style="color:#960050;background-color:#1e0010">&amp;</span> Collectables&#39; exists in the response
-        if(SpecificSubcategories !== []){
+        console.log(arr);
 
-            console.log(&#34;Subcategory - Antiques <span style="color:#960050;background-color:#1e0010">&amp;</span> Collectables existed&#34;);
+        // checkpoint: whether subcategory - &#39;Antiques <span style="color:#960050;background-color:#1e0010">&amp;</span> collectables&#39; exists in the response      
+        if(typeof(SpecificSubcategories) !== &#34;undefined&#34; <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> SpecificSubcategories.length &gt;= 1 ){
+
+            console.log(&#34;Subcategory - Antiques <span style="color:#960050;background-color:#1e0010">&amp;</span> collectables existed&#34;);
+
+            console.log(&#34;Post-Transaction: CheckingtheCountsofGivenSubcategory Pass&#34;);
+            
+        }
+        else{
+
+            console.log(&#34;Subcategory - Antiques <span style="color:#960050;background-color:#1e0010">&amp;</span> collectables is not existed&#34;);
+
+            console.log(&#34;Post-Transaction: CheckingtheCountsofGivenSubcategory Failed&#34;);
 
         }
-    
-        console.log(&#34;Post-Transaction: CheckingtheCountsofGivenSubcategory Pass&#34;);   
+     
     }
 
     else{
 
+        console.log(pm.response.json());
+
+        console.log(&#34;Didn&#39;t catch the Subcategory field&#34;);
+        
         console.log(&#34;Post-Transaction: CheckingtheCountsofGivenSubcategory Failed&#34;);
 
     }
@@ -525,10 +539,10 @@ if (!doNotTrack) {
     <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">API, UI, Mobile, CICD, Full Stack Tester.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>ifulltest</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
 </section><section class="featured-posts row surface">
   <h4>Featured Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
