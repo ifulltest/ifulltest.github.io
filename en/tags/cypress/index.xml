@@ -27,14 +27,11 @@
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
       <description>&lt;h2 id=&#34;foreword&#34;&gt;&lt;em&gt;Foreword&lt;/em&gt;&lt;/h2&gt;
 &lt;h4 id=&#34;why-i-write-these-series-three-reasons&#34;&gt;Why I write these series? Three reasons.&lt;/h4&gt;
-&lt;p&gt;1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.&lt;/p&gt;
-&lt;p&gt;2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&amp;rsquo;t know what&amp;rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.&lt;/p&gt;
-&lt;p&gt;3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.&lt;/p&gt;
-&lt;h4 id=&#34;whats-next-after-this-series&#34;&gt;What&amp;rsquo;s next after this series?&lt;/h4&gt;
-&lt;p&gt;This series mainly covers postman practice from business and API analysis, API testing script skills, API testing scenario, and CI skills.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s only a tiny part of the full-stack testing. After this series, have UI automation testing practice like Cypress + Cucumber; mobile automation testing practice like Appium; performance testing practice like JMeter + Grafana&amp;amp;Prometheus&amp;amp;InfluxDB; Cloud technology like Azure cloud; Virtualization technology like docker on the way. Stay tuned.&lt;/p&gt;
-&lt;h2 id=&#34;what-is-trademe-sandbox&#34;&gt;&lt;em&gt;What is Trademe sandbox?&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database. It is designed to allow you to test potentially destructive API operations in a safe environment.&lt;/em&gt;&lt;/p&gt;</description>
+&lt;ul&gt;
+&lt;li&gt;1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.&lt;/li&gt;
+&lt;li&gt;2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&amp;rsquo;t know what&amp;rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.&lt;/li&gt;
+&lt;li&gt;3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
