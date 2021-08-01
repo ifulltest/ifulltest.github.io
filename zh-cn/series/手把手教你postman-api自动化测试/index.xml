@@ -8,12 +8,20 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/series/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TradeMe API 第一个演示</title>
+      <title>TradeMe API 测试的第一个演示</title>
       <link>https://ifulltest.github.io/zh-cn/posts/trademe-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/trademe-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;trademe沙箱是什么&#34;&gt;&lt;strong&gt;Trademe沙箱是什么？&lt;/strong&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;em&gt;前言&lt;/em&gt;&lt;/h2&gt;
+&lt;h4 id=&#34;我为什么要写这个系列文章三个原因&#34;&gt;我为什么要写这个系列文章？三个原因。&lt;/h4&gt;
+&lt;p&gt;1、背景是作者在新西兰找测试工作。选择一款合适的产品，使用主流的测试工具来覆盖功能测试、API自动化测试、UI自动化测试、CICD，这对作者来说是展示自己能力的聪明办法。&lt;/p&gt;
+&lt;p&gt;2、作者发现身边有太多的测试工程师表达了学习一些自动化测试技术的愿望。但是他们不知道扩展他们的测试技术堆栈的路线图是什么，从哪里开始，以及如何在尽可能短的时间内练习如此全面的技能？所以，笔者想，这样的一个系列文章或许可以帮助自己，同时帮助那些有上述疑问的人。&lt;/p&gt;
+&lt;p&gt;3、作者希望通过这个平台得到即时的反馈，纠正自己对IT技术的误解，最终提高作者和学习者的IT知识积累效率。&lt;/p&gt;
+&lt;h4 id=&#34;这个系列文章之后的下一步是什么&#34;&gt;这个系列文章之后的下一步是什么？&lt;/h4&gt;
+&lt;p&gt;本系列主要从业务与API分析、API测试脚本技术、API测试场景、CI技巧等方面介绍postman实践。&lt;/p&gt;
+&lt;p&gt;这只是全栈测试的一小部分。本系列之后，有Cypress + Cucumber等UI自动化测试实践；Appium之类的移动自动化测试实践；JMeter + Grafana&amp;amp;Prometheus&amp;amp;InfluxDB等性能测试实践；Azure 云等云技术；Docker 等虚拟化技术还在开路上。敬请关注。&lt;/p&gt;
+&lt;h2 id=&#34;trademe沙箱是什么&#34;&gt;&lt;em&gt;Trademe沙箱是什么？&lt;/em&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Trade Me 沙箱环境是 Trade Me 网站、API 和数据库的完全独立副本。它旨在允许您在安全环境中测试潜在的破坏性 API 操作。&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
