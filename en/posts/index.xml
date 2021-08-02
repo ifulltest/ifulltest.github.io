@@ -154,6 +154,36 @@
     </item>
     
     <item>
+      <title>How to install Newman?</title>
+      <link>https://ifulltest.github.io/en/posts/newman-installation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/newman-installation/</guid>
+      <description>&lt;h2 id=&#34;the-steps-of-newman-installation&#34;&gt;&lt;em&gt;The steps of Newman installation&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Download  and install the Newman application -&amp;gt; Verify your Newman installation by version -&amp;gt; Run Newman to get reports &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Node.js?</title>
+      <link>https://ifulltest.github.io/en/posts/nodejs-installation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/nodejs-installation/</guid>
+      <description>&lt;h2 id=&#34;the-steps-of-nodejs-installation&#34;&gt;&lt;em&gt;The steps of Node.js installation&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Download  and install the Node.js application -&amp;gt; Verify your Node.js installation by version -&amp;gt; Create a simple script &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to install Postman?</title>
+      <link>https://ifulltest.github.io/en/posts/postman-installation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/postman-installation/</guid>
+      <description>&lt;h2 id=&#34;the-steps-of-postman-installation&#34;&gt;&lt;em&gt;The steps of Postman installation&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Download and install the postman application -&amp;gt; Register your account and create the workspace -&amp;gt; Create the collection -&amp;gt; Add a request and begin your scripting &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>How to install Jenkins?</title>
       <link>https://ifulltest.github.io/en/posts/jenkins-installation/</link>
       <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
