@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TradeMe API 测试的第一个演示 - Hugo Bootstrap</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="TradeMe API 测试的第一个演示">
+<meta itemprop="description" content="前言
+我为什么要写这个系列文章？三个原因。
+1、背景是作者在新西兰找测试工作。选择一款合适的产品，使用主流的测试工具来覆盖功能测试、API自动化测试、UI自动化测试、CICD，这对作者来说是展示自己能力的聪明办法。
+2、作者发现身边有太多的测试工程师表达了学习一些自动化测试技术的愿望。但是他们不知道扩展他们的测试技术堆栈的路线图是什么，从哪里开始，以及如何在尽可能短的时间内练习如此全面的技能？所以，笔者想，这样的一个系列文章或许可以帮助自己，同时帮助那些有上述疑问的人。
+3、作者希望通过这个平台得到即时的反馈，纠正自己对IT技术的误解，最终提高作者和学习者的IT知识积累效率。"><meta itemprop="datePublished" content="2021-07-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1502"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman,Trademe," /><meta property="og:title" content="TradeMe API 测试的第一个演示" />
+<meta property="og:description" content="前言
+我为什么要写这个系列文章？三个原因。
+1、背景是作者在新西兰找测试工作。选择一款合适的产品，使用主流的测试工具来覆盖功能测试、API自动化测试、UI自动化测试、CICD，这对作者来说是展示自己能力的聪明办法。
+2、作者发现身边有太多的测试工程师表达了学习一些自动化测试技术的愿望。但是他们不知道扩展他们的测试技术堆栈的路线图是什么，从哪里开始，以及如何在尽可能短的时间内练习如此全面的技能？所以，笔者想，这样的一个系列文章或许可以帮助自己，同时帮助那些有上述疑问的人。
+3、作者希望通过这个平台得到即时的反馈，纠正自己对IT技术的误解，最终提高作者和学习者的IT知识积累效率。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-20T00:00:00+00:00" /><meta property="og:site_name" content="Hugo Bootstrap" />
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
+
+<meta name="twitter:title" content="TradeMe API 测试的第一个演示"/>
+<meta name="twitter:description" content="前言
+我为什么要写这个系列文章？三个原因。
+1、背景是作者在新西兰找测试工作。选择一款合适的产品，使用主流的测试工具来覆盖功能测试、API自动化测试、UI自动化测试、CICD，这对作者来说是展示自己能力的聪明办法。
+2、作者发现身边有太多的测试工程师表达了学习一些自动化测试技术的愿望。但是他们不知道扩展他们的测试技术堆栈的路线图是什么，从哪里开始，以及如何在尽可能短的时间内练习如此全面的技能？所以，笔者想，这样的一个系列文章或许可以帮助自己，同时帮助那些有上述疑问的人。
+3、作者希望通过这个平台得到即时的反馈，纠正自己对IT技术的误解，最终提高作者和学习者的IT知识积累效率。"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-202225177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://ifulltest.github.io/zh-cn/">
+      <img class="logo" alt="Logo" src="https://ifulltest.github.io/images/logo.webp" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://ifulltest.github.io/zh-cn/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">
+            <i class="fas fa-fw fa-sitemap"></i>网站路线图
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/archives">
+            <i class="fas fa-fw fa-file-archive"></i>归档
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/categories">
+            <i class="fas fa-fw fa-folder"></i>分类
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/tags">
+            <i class="fas fa-fw fa-tags"></i>标签
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/series">
+            <i class="fas fa-fw fa-columns"></i>专栏
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            更多
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://github.com/ifulltest" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://www.linkedin.com/in/gary-gao-511854194/" target="_blank">
+                <i class="fab fa-fw fa-linkedin"></i>LinkedIn
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="languageSwitcher" data-bs-toggle="popover"
+    data-bs-placement="bottom" data-bs-target="#languagesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-language" ></i>
+  </a>
+</li>
+<script type="text/html" id="languagesPopoverBody">
+  <ul class="languages list-group"><li class="language list-group-item"><a href="https://ifulltest.github.io/en/">English</a></li><li class="language list-group-item active">中文</li></ul>
+</script><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>蓝色</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>蓝灰色</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>棕色</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>青色</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>绿色</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>靛青色</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>橙色</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>粉色</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>紫色</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>红色</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>蓝绿色</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>黄色</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">字体大小</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/zh-cn/">主页</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/zh-cn/posts/">文章</a></li><li class="breadcrumb-item active">TradeMe API 测试的第一个演示</li></ol>
+</nav><article class="post row surface"><div class="post-toolbox">
+  <div class="col-12 d-none d-lg-block">
+    <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
+  </div>
+</div>
+<h1 class="post-title my-3">TradeMe API 测试的第一个演示</h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2021-07-20
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>3 分钟阅读
+  </span>
+<div class="post-translations nav-item dropdown me-2 d-inline-flex">
+  <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-fw fa-language me-1"></i>中文
+  </a>
+  <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">English</a></div>
+</div>
+
+<a href="https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/" class="post-taxonomy">#Postman API自动化测试实践</a><a href="https://ifulltest.github.io/zh-cn/tags/postman/" class="post-taxonomy">#Postman</a><a href="https://ifulltest.github.io/zh-cn/tags/trademe/" class="post-taxonomy">#Trademe</a></div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">目录</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言"><em>前言</em></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#trademe沙箱是什么">Trademe沙箱是什么？</a></li>
+    <li><a href="#为什么我选择-trademe">为什么我选择 Trademe？</a></li>
+    <li><a href="#trademe沙箱官方材料">Trademe沙箱官方材料</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#api测试演示前的准备工作">API测试演示前的准备工作</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#trademe第一个api演示的连通性测试"><strong>Trademe第一个API演示的连通性测试</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="前言"><em>前言</em></h2>
+<h4 id="我为什么要写这个系列文章三个原因">我为什么要写这个系列文章？三个原因。</h4>
+<p>1、背景是作者在新西兰找测试工作。选择一款合适的产品，使用主流的测试工具来覆盖功能测试、API自动化测试、UI自动化测试、CICD，这对作者来说是展示自己能力的聪明办法。</p>
+<p>2、作者发现身边有太多的测试工程师表达了学习一些自动化测试技术的愿望。但是他们不知道扩展他们的测试技术堆栈的路线图是什么，从哪里开始，以及如何在尽可能短的时间内练习如此全面的技能？所以，笔者想，这样的一个系列文章或许可以帮助自己，同时帮助那些有上述疑问的人。</p>
+<p>3、作者希望通过这个平台得到即时的反馈，纠正自己对IT技术的误解，最终提高作者和学习者的IT知识积累效率。</p>
+<h4 id="这个系列文章之后的下一步是什么">这个系列文章之后的下一步是什么？</h4>
+<p>本系列主要从业务与API分析、API测试脚本技术、API测试场景、CI技巧等方面介绍postman实践。</p>
+<p>这只是全栈测试的一小部分。本系列之后，有Cypress + Cucumber等UI自动化测试实践；Appium之类的移动自动化测试实践；JMeter + Grafana&amp;Prometheus&amp;InfluxDB等性能测试实践；Azure 云等云技术；Docker 等虚拟化技术还在开路上。敬请关注。</p>
+<h2 id="trademe沙箱是什么">Trademe沙箱是什么？</h2>
+<ul>
+<li><em>Trade Me 沙箱环境是 Trade Me 网站、API 和数据库的完全独立副本。它旨在允许您在安全环境中测试潜在的破坏性 API 操作。</em></li>
+</ul>
+<h2 id="为什么我选择-trademe">为什么我选择 Trademe？</h2>
+<p>当我想选择一个产品来练习和展示我的自动化演示时，我会考虑一些因素：</p>
+<ul>
+<li>这个产品是否流行并被大众广泛使用？</li>
+<li>该产品的业务复杂性是否足以让我涵盖不同类型的测试实践？</li>
+<li>该产品是否有足够明确的规范以允许我开发演示？</li>
+<li>看到我demo的实践者可以在同一个产品环境中复现那些操作吗？</li>
+</ul>
+<p>Trademe 完全满足了我的上述所有考虑。</p>
+<h2 id="trademe沙箱官方材料">Trademe沙箱官方材料</h2>
+<ul>
+<li>
+<h4 id="trademe沙箱网站点我httpswwwtmsandboxconz"><strong><a href="https://www.tmsandbox.co.nz/" target="_blank">Trademe沙箱网站（点我）</a>
+。</strong></h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-sandbox-website.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="trademe开发文档入口点我httpsdevelopertrademeconz"><strong><a href="https://developer.trademe.co.nz" target="_blank">Trademe开发文档入口（点我）</a>
+。</strong></h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-development-documents.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="trademe入门点我httpsdevelopertrademeconzgetting-started"><strong><a href="https://developer.trademe.co.nz/getting-started" target="_blank">Trademe入门（点我）</a>
+。</strong></h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-getting-started.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="trademe-api概览点我httpsdevelopertrademeconzapi-overview"><strong><a href="https://developer.trademe.co.nz/api-overview" target="_blank">Trademe API概览（点我）</a>
+。</strong></h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-overview.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="trademe注册一个沙箱应用点我httpsdevelopertrademeconzapi-overviewregistering-an-application"><strong><a href="https://developer.trademe.co.nz/api-overview/registering-an-application" target="_blank">Trademe注册一个沙箱应用（点我）</a>
+。</strong></h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-register-an-application.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="trademe-api参考点我httpsdevelopertrademeconzapi-reference"><strong><a href="https://developer.trademe.co.nz/api-reference" target="_blank">Trademe API参考（点我）</a>
+。</strong></h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-reference.webp" alt=""  loading="lazy" />
+</p>
+<h2 id="api测试演示前的准备工作">API测试演示前的准备工作</h2>
+<h4 id="1概述"><strong>1.概述</strong></h4>
+<ul>
+<li>创建个人帐户。</li>
+<li>注册您的 API 应用程序 - 获取Consumer Key和Consumer Secret。</li>
+<li>获得批准的身份验证 - 获得 OAuth Token 和 OAuth Token Secret。</li>
+<li>用于验证OAuth授权工作生效的连通性测试。</li>
+</ul>
+<h4 id="2注册trademe沙箱用户点我httpswwwtmsandboxconzmembersregisteraspx"><strong>2.<a href="https://www.tmsandbox.co.nz/Members/Register.aspx" target="_blank">注册Trademe沙箱用户（点我）</a>
+</strong></h4>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-create-a-personal-account.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-account-contact-details.webp" alt=""  loading="lazy" />
+</p>
+<h4 id="3注册您的api应用点我httpsdevelopertrademeconzapi-overviewregistering-an-application"><strong>3.<a href="https://developer.trademe.co.nz/api-overview/registering-an-application" target="_blank">注册您的API应用（点我）</a>
+</strong></h4>
+<ul>
+<li><a href="https://www.tmsandbox.co.nz/MyTradeMe/Default.aspx" target="_blank">我的TradeMe（点我）</a>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-my-trademe.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li><a href="https://www.tmsandbox.co.nz/MyTradeMe/Api/MyApplications.aspx" target="_blank">我的Trade Me API应用（点我）</a>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-my-trademe-api-applications.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li><a href="https://www.tmsandbox.co.nz/MyTradeMe/Api/DeveloperOptions.aspx" target="_blank">开发者选项（点我）</a>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-developer-options.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li><a href="https://www.tmsandbox.co.nz/MyTradeMe/Api/RegisterNewApplication.aspx" target="_blank">注册一个新的应用程序（点我）</a>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-register-a-new-application-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-register-a-new-application-2.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-register-a-new-application-3.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>获得consumer key和consumer secret</li>
+</ul>
+<p>如果注册成功，将获得consumer key和consumer secret。</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-get-consumer-key-and-secret.webp" alt=""  loading="lazy" />
+</p>
+<h4 id="4认证点我httpsdevelopertrademeconzapi-overviewauthentication"><strong>4.<a href="https://developer.trademe.co.nz/api-overview/authentication" target="_blank">认证（点我）</a>
+</strong></h4>
+<ul>
+<li>生成访问令牌</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-an-access-token.webp" alt=""  loading="lazy" />
+</p>
+<p><em><strong>注意</strong></em>: 如果您在“<em><strong>注册一个新的应用程序</strong></em>”步骤中没有给出正确的回调域，则此生成令牌操作将失败，如下页所示。</p>
+<p>参考回调域可以是： <a href="https://developer.trademe.co.nz/trademe-callback" target="_blank">https://developer.trademe.co.nz</a>
+</p>
+<p>参考回调网址可以是： <a href="https://developer.trademe.co.nz/trademe-callback" target="_blank">https://developer.trademe.co.nz/callback</a>
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-oauth-authentication-failure.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>允许您的身份验证</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-allow-your-authentication.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>获取您的令牌（返回<a href="https://developer.trademe.co.nz/api-overview/authentication" target="_blank">身份验证页面（点我）</a>
+ 可以看到它）</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-get-your-token.webp" alt=""  loading="lazy" />
+</p>
+<h2 id="trademe第一个api演示的连通性测试"><strong>Trademe第一个API演示的连通性测试</strong></h2>
+<p><em>当我们完成准备工作后，我们可以挑选两种类型的交易来测试API的连通性。</em></p>
+<p><em>第一个交易不需要认证，第二个交易需要认证。</em></p>
+<ul>
+<li>
+<h4 id="沙盒环境中的所有-api-域是apitmsandboxconz请参阅测试您的应用程序httpsdevelopertrademeconzapi-overviewsandbox-environment">沙盒环境中的所有 API 域是：<em><strong>api.tmsandbox.co.nz</strong></em>，请参阅<a href="https://developer.trademe.co.nz/api-overview/sandbox-environment" target="_blank">测试您的应用程序</a>
+</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-api-domain.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="api---检索不需要身份验证信息的一般类别信息接口">API - 检索<em><strong>不需要</strong></em>身份验证信息的一般类别信息接口</h4>
+</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">API - 检索一般类别信息的参考接口文档（点我）</a>
+</p>
+<p>使用 Postman 测试连通性</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-categories-connect.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="api---需要身份验证信息的检索关注列表接口">API - <em><strong>需要</strong></em>身份验证信息的检索关注列表接口</h4>
+</li>
+</ul>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">API - 检索关注列表参考接口文档（点我）</a>
+</p>
+<p>使用 Postman 测试连通性</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-watchlist-connect.webp" alt=""  loading="lazy" />
+</p>
+<p><em><strong>注意:</strong></em></p>
+<p>当您确实想要贯穿上游和下游交易时，您可能需要自行组装网络请求。</p>
+<p>然后你需要注意一个名为oauth_signature的域, 它是由下面的子域组成的：</p>
+<p><em><strong>oauth_signature =</strong></em> <em><strong>Consumer Secret%26OAuth Token Secret</strong></em></p></div><div class="post-copyright mb-4">
+  <h3>版权</h3><div class="post-cc">本作品采用 <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a> 授权。</div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="https://ifulltest.github.io/zh-cn/posts/about-me/">关于我</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">网站路线图</a>
+    </div></div>
+</div></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="ifulltest/comments"
+  issue-term="pathname"
+  label=""
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="https://ifulltest.github.io/images/about-me.png" alt="Gary Gao" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,CICD,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">关于我</a></div></div>
+</section><section class="featured-posts row surface">
+  <h4>精选文章</h4>
+  <ul><li><a href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">网站路线图</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/about-me/">关于我</a></li></ul>
+</section><section class="recent-posts row surface">
+  <h4>最近文章</h4>
+  <ul><li><a href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">网站路线图</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/about-me/">关于我</a></li></ul>
+</section>
+<section class="taxonomy-series row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/zh-cn/series">专栏</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="用户手册">
+      用户手册 <span class="badge rounded-pill">2</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API自动化测试实践">
+      Postman API自动化测试实践 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/zh-cn/tags">标签</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/zh-cn/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/trademe/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Trademe">
+      Trademe <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:ifulltest@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://facebook.com/profile.php?id=100070922467826" title="Facebook">
+        <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/ifulltest" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/gary-gao-511854194/" title="LinkedIn">
+        <i class="fab fa-fw fa-2x fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.zhihu.com/people/ifulltest" title="Zhihu">
+        <i class="fab fa-fw fa-2x fa-zhihu"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2019-2021 Gary Gao. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e8010f7b2c7741"></script></body>
+</html>

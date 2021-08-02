@@ -14,7 +14,7 @@
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
       <description>&lt;h2 id=&#34;foreword&#34;&gt;&lt;em&gt;Foreword&lt;/em&gt;&lt;/h2&gt;
-&lt;h4 id=&#34;why-i-write-these-series-three-reasons&#34;&gt;Why I write these series? Three reasons.&lt;/h4&gt;
+&lt;h4 id=&#34;why-i-write-this-series-three-reasons&#34;&gt;Why I write this series? Three reasons.&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.&lt;/li&gt;
 &lt;li&gt;2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&amp;rsquo;t know what&amp;rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.&lt;/li&gt;

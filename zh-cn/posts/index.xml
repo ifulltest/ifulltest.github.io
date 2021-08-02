@@ -18,10 +18,10 @@
     
     <item>
       <title>TradeMe API 测试的第一个演示</title>
-      <link>https://ifulltest.github.io/zh-cn/posts/trademe-api-first-demo/</link>
+      <link>https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/zh-cn/posts/trademe-api-first-demo/</guid>
+      <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/</guid>
       <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;em&gt;前言&lt;/em&gt;&lt;/h2&gt;
 &lt;h4 id=&#34;我为什么要写这个系列文章三个原因&#34;&gt;我为什么要写这个系列文章？三个原因。&lt;/h4&gt;
 &lt;p&gt;1、背景是作者在新西兰找测试工作。选择一款合适的产品，使用主流的测试工具来覆盖功能测试、API自动化测试、UI自动化测试、CICD，这对作者来说是展示自己能力的聪明办法。&lt;/p&gt;
@@ -32,10 +32,17 @@
     <item>
       <title>关于我</title>
       <link>https://ifulltest.github.io/zh-cn/posts/about-me/</link>
-      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/about-me/</guid>
-      <description>我是谁 10 年以上测试老兵。擅长性能测试、自动化测试、知识共享和测试团队建设。 大爱美食、卡拉OK、NBA比赛、好莱坞大片！ 我最喜欢的歌手：迈克尔</description>
+      <description>&lt;h2 id=&#34;我是谁&#34;&gt;我是谁&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;10 年以上测试老兵。擅长性能测试、自动化测试、知识共享和测试团队建设。&lt;/li&gt;
+&lt;li&gt;大爱美食、卡拉OK、NBA比赛、好莱坞大片！&lt;/li&gt;
+&lt;li&gt;我最喜欢的歌手：迈克尔杰克逊、惠特尼休斯顿、玛丽亚凯莉。&lt;/li&gt;
+&lt;li&gt;我最喜欢的电影明星：汤姆汉克斯、安东尼霍普金斯。&lt;/li&gt;
+&lt;li&gt;我最喜欢的体育明星：迈克乔丹、科比布莱恩特、斯蒂芬库里、罗纳尔多。&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

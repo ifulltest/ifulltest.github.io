@@ -6,7 +6,7 @@
     <description>Recent content in Postman API Automation Practice on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Thu, 29 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/series/postman-api-automation-practice/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/series/postman-api-automation-practice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Trade Me-1-API testing first demo</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
@@ -14,7 +14,7 @@
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
       <description>&lt;h2 id=&#34;foreword&#34;&gt;&lt;em&gt;Foreword&lt;/em&gt;&lt;/h2&gt;
-&lt;h4 id=&#34;why-i-write-these-series-three-reasons&#34;&gt;Why I write these series? Three reasons.&lt;/h4&gt;
+&lt;h4 id=&#34;why-i-write-this-series-three-reasons&#34;&gt;Why I write this series? Three reasons.&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.&lt;/li&gt;
 &lt;li&gt;2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&amp;rsquo;t know what&amp;rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.&lt;/li&gt;
@@ -40,7 +40,7 @@
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-general-categories-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve general categories testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---retrieve-general-categories-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve general categories script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -50,7 +50,7 @@
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-your-watchlist-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve your watchlist testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---retrieve-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -60,7 +60,7 @@
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---remove-a-listing-from-your-watchlist-testing-steps&#34;&gt;&lt;em&gt;API - Remove a listing from your watchlist testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---remove-a-listing-from-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Remove a listing from your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -70,7 +70,7 @@
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-closing-soon-listings-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve closing soon listings testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---retrieve-closing-soon-listings-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve closing soon listings script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -80,7 +80,7 @@
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---add-a-listing-to-your-watchlist-testing-steps&#34;&gt;&lt;em&gt;API - Add a listing to your watchlist testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---add-a-listing-to-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Add a listing to your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -90,7 +90,7 @@
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-your-won-items-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve your won items testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---retrieve-your-won-items-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve your won items script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -100,7 +100,7 @@
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</guid>
-      <description>&lt;h2 id=&#34;api---remove-a-purchase-from-your-won-items-list-testing-steps&#34;&gt;&lt;em&gt;API - Remove a purchase from your won items list testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---remove-a-purchase-from-your-won-items-list-script-development-steps&#34;&gt;&lt;em&gt;API - Remove a purchase from your won items list script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -110,7 +110,7 @@
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-general-search/</guid>
-      <description>&lt;h2 id=&#34;api---general-search-testing-steps&#34;&gt;&lt;em&gt;API - General search testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---general-search-script-development-steps&#34;&gt;&lt;em&gt;API - General search script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -120,7 +120,7 @@
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-the-details-of-a-single-listing-testing-steps&#34;&gt;&lt;em&gt;API - Retrieve the details of a single listing testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---retrieve-the-details-of-a-single-listing-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve the details of a single listing script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
@@ -130,8 +130,18 @@
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/</guid>
-      <description>&lt;h2 id=&#34;api---buy-an-auction-using-buy-now-testing-steps&#34;&gt;&lt;em&gt;API - Buy an auction using Buy Now testing steps&lt;/em&gt;&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;api---buy-an-auction-using-buy-now-script-development-steps&#34;&gt;&lt;em&gt;API - Buy an auction using Buy Now script development steps&lt;/em&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trade Me-13-scenarios-and-reports</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/</guid>
+      <description>&lt;h2 id=&#34;scenarios-position-in-the-api-automation-testing&#34;&gt;&lt;em&gt;Scenario‘s position in the API automation testing&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Typical transactions selection -&amp;gt; Corresponding API selection -&amp;gt; Scripting -&amp;gt; Parameterization -&amp;gt; &lt;strong&gt;Scenario(I&amp;rsquo;m here)&lt;/strong&gt; -&amp;gt; CICD&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
