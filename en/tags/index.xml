@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://ifulltest.github.io/en/tags/git/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://ifulltest.github.io/en/tags/github/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://ifulltest.github.io/en/tags/java/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>https://ifulltest.github.io/en/tags/jenkins/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Cypress</title>
       <link>https://ifulltest.github.io/en/tags/cypress/</link>
@@ -26,15 +62,6 @@
     </item>
     
     <item>
-      <title>Jenkins</title>
-      <link>https://ifulltest.github.io/en/tags/jenkins/</link>
-      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ifulltest.github.io/en/tags/jenkins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>JMeter</title>
       <link>https://ifulltest.github.io/en/tags/jmeter/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
@@ -49,15 +76,6 @@
       <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/tags/cicd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://ifulltest.github.io/en/tags/github/</link>
-      <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ifulltest.github.io/en/tags/github/</guid>
       <description></description>
     </item>
     

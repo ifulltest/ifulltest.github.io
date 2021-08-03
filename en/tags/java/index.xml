@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Become a Full-Stack Tester Here</title>
+    <link>https://ifulltest.github.io/en/tags/java/</link>
+    <description>Recent content in Java on Become a Full-Stack Tester Here</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to install JDK?</title>
+      <link>https://ifulltest.github.io/en/posts/jdk-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/jdk-installation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The JDK - &amp;lsquo;Java™ Platform, Standard Edition Development Kit &#39; is a development environment for building applications, and components using the Java programming language.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It includes tools useful for developing and testing programs written in the Java programming language and running on the Java platform&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

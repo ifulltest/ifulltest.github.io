@@ -6,14 +6,24 @@
     <description>Recent content in Jenkins on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to install JDK?</title>
+      <link>https://ifulltest.github.io/en/posts/jdk-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/jdk-installation/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The JDK - &amp;lsquo;Java™ Platform, Standard Edition Development Kit &#39; is a development environment for building applications, and components using the Java programming language.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It includes tools useful for developing and testing programs written in the Java programming language and running on the Java platform&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to install Jenkins?</title>
       <link>https://ifulltest.github.io/en/posts/jenkins-installation/</link>
-      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/jenkins-installation/</guid>
-      <description>&lt;p&gt;&lt;em&gt;We will start the journey of Jenkins discovery from here.&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;This article will&lt;/em&gt; concisely &lt;em&gt;introduce one of the basic Jenkins knowledge: how to install the Jenkins &amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     

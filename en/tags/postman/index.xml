@@ -135,13 +135,13 @@
     </item>
     
     <item>
-      <title>Trade Me-13-scenarios-and-reports</title>
+      <title>Trade Me-13-scenarios-and-newman-reports</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/</guid>
       <description>&lt;h2 id=&#34;scenarios-position-in-the-api-automation-testing&#34;&gt;&lt;em&gt;Scenario‘s position in the API automation testing&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Typical transactions selection -&amp;gt; Corresponding API selection -&amp;gt; Scripting -&amp;gt; Parameterization -&amp;gt; &lt;strong&gt;Scenario(I&amp;rsquo;m here)&lt;/strong&gt; -&amp;gt; CICD&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;em&gt;Typical transactions selection -&amp;gt; Corresponding API selection -&amp;gt; Scripting -&amp;gt; &lt;strong&gt;Scenarios and reports(I&amp;rsquo;m here)&lt;/strong&gt; -&amp;gt; CICD&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

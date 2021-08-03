@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Become a Full-Stack Tester Here</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
-    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DevOps</title>
+      <link>https://ifulltest.github.io/en/categories/devops/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/categories/devops/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>API Automation</title>
       <link>https://ifulltest.github.io/en/categories/api-automation/</link>
@@ -22,15 +31,6 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/categories/ui-automation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DevOps</title>
-      <link>https://ifulltest.github.io/en/categories/devops/</link>
-      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ifulltest.github.io/en/categories/devops/</guid>
       <description></description>
     </item>
     
