@@ -12,7 +12,7 @@
 <meta itemprop="description" content="Scenario‘s position in the API automation testing
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports(I&rsquo;m here) -&gt; CICD"><meta itemprop="datePublished" content="2021-08-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="418"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="441"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-13-scenarios-and-newman-reports" />
 <meta property="og:description" content="Scenario‘s position in the API automation testing
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports(I&rsquo;m here) -&gt; CICD" />
@@ -167,7 +167,7 @@ if (!doNotTrack) {
     <i class="fas fa-fw fa-calendar-alt"></i>Aug 2, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>2 min read
+    <i class="fas fa-fw fa-coffee"></i>3 min read
   </span>
 <a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy">#Postman</a></div>
 <div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
@@ -284,19 +284,25 @@ if (!doNotTrack) {
 <h4 id="what-is-the-newman">What is the newman</h4>
 </li>
 </ul>
-<p>Newman is a command-line collection runner for Postman. It allows you to effortlessly run and test a Postman collection directly from the command-line. It is built with extensibility in mind so that you can easily integrate it with your continuous integration servers and build systems. More refer to: <a href="https://github.com/postmanlabs/newman" target="_blank">newman GitHub</a>
-</p>
+<p>Newman is a command-line collection runner for Postman. It allows you to effortlessly run and test a Postman collection directly from the command-line. It is built with extensibility in mind so that you can easily integrate it with your continuous integration servers and build systems. More refer to: <strong><a href="https://github.com/postmanlabs/newman" target="_blank">newman GitHub</a>
+</strong></p>
 <ul>
 <li>
 <h4 id="export-collection-files-to-local">Export collection files to local</h4>
 </li>
 </ul>
 <p>Right click given collection -&gt;  Export -&gt; single click &lsquo;Collection v2.1 (recommended)&rsquo; -&gt; Export -&gt; choose a local directory to store the collection file. (This demo stores to local D:\Software\postman\collections)</p>
+<p>Will have both positive and negative case scripts to be exported to local</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export1-2.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export2.webp" alt=""  loading="lazy" />
 </p>
+<p>Positive and negative case scripts name as  &lsquo;tradeMeSandBox.postman_collection.json&rsquo;  and &lsquo;tradeMeSandBox-Negative.postman_collection.json&rsquo;.</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export3.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export3-2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
@@ -333,7 +339,7 @@ if (!doNotTrack) {
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/git-bash-installation/">How to install Git Bash?</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/">Trade Me-14-Jenkins-CI-process</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
       <a href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-Buy an auction using Buy Now</a>
@@ -385,7 +391,7 @@ if (!doNotTrack) {
     <a href="https://ifulltest.github.io/en/series">Series</a>
   </h4>
   <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
-      Postman API Automation Practice <span class="badge rounded-pill">13</span>
+      Postman API Automation Practice <span class="badge rounded-pill">14</span>
     </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
       User Manual <span class="badge rounded-pill">2</span>
     </a></div>
@@ -393,10 +399,10 @@ if (!doNotTrack) {
   <h4>
     <a href="https://ifulltest.github.io/en/tags">Tags</a>
   </h4>
-  <div><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
+  <div><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">17</span>
+    </a><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
       Test Basis <span class="badge rounded-pill">17</span>
-    </a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
-      Postman <span class="badge rounded-pill">16</span>
     </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
       CICD <span class="badge rounded-pill">5</span>
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
@@ -405,10 +411,10 @@ if (!doNotTrack) {
       Cypress <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
       GitHub <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/en/tags/jira/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jira">
       Jira <span class="badge rounded-pill">3</span>
-    </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
-      Jenkins <span class="badge rounded-pill">2</span>
     </a><a href="https://ifulltest.github.io/en/tags/devops-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="DevOps Basis">
       DevOps Basis <span class="badge rounded-pill">1</span>
     </a><a href="https://ifulltest.github.io/en/tags/git/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Git">

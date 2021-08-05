@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trade Me-14-Jenkins-CI-process - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="Trade Me-14-Jenkins-CI-process">
+<meta itemprop="description" content="API automation testing CI process
+Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1350"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-CI-process" />
+<meta property="og:description" content="API automation testing CI process
+Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-08-03T00:00:00+00:00" />
+<meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
+
+<meta name="twitter:title" content="Trade Me-14-Jenkins-CI-process"/>
+<meta name="twitter:description" content="API automation testing CI process
+Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-202225177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://ifulltest.github.io/en/">
+      <img class="logo" alt="Logo" src="https://ifulltest.github.io/images/logo.webp" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://ifulltest.github.io/en/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/posts/site-road-map/">
+            <i class="fas fa-fw fa-sitemap"></i>Site Map
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/series">
+            <i class="fas fa-fw fa-columns"></i>Series
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/categories">
+            <i class="fas fa-fw fa-folder"></i>Categories
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/tags">
+            <i class="fas fa-fw fa-tags"></i>Tags
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/en/archives">
+            <i class="fas fa-fw fa-file-archive"></i>Archives
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://github.com/ifulltest" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://www.linkedin.com/in/gary-gao-511854194/" target="_blank">
+                <i class="fab fa-fw fa-linkedin"></i>LinkedIn
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="languageSwitcher" data-bs-toggle="popover"
+    data-bs-placement="bottom" data-bs-target="#languagesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-language" ></i>
+  </a>
+</li>
+<script type="text/html" id="languagesPopoverBody">
+  <ul class="languages list-group"><li class="language list-group-item active">English</li><li class="language list-group-item"><a href="https://ifulltest.github.io/zh-cn/">中文</a></li></ul>
+</script><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>Blue</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>Blue Gray</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>Brown</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>Cyan</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>Green</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>Indigo</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>Orange</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>Pink</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>Purple</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>Red</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>Teal</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>Yellow</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">Font Size</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-14-Jenkins-CI-process</li></ol>
+</nav><article class="post row surface"><div class="post-toolbox">
+  <div class="col-12 d-none d-lg-block">
+    <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
+  </div>
+</div>
+<h1 class="post-title my-3">Trade Me-14-Jenkins-CI-process</h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Aug 3, 2021
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>7 min read
+  </span>
+<a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy">#Postman</a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy">#Jenkins</a></div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">Table Of Contents</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#api-automation-testing-ci-process"><em>API automation testing CI process</em></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#typical-transactions-selection">Typical transactions selection</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#corresponding-api-selection-and-scripting">Corresponding API selection and scripting</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#scenarios-and-reports">Scenarios and reports</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#jenkins-ci-process-practice">Jenkins CI process Practice</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="api-automation-testing-ci-process"><em>API automation testing CI process</em></h2>
+<h5 id="typical-transactions-selection---corresponding-api-selection---scripting---scenarios-and-reports---ciim-here"><em>Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; <strong>CI(I&rsquo;m here)</strong></em></h5>
+<h2 id="typical-transactions-selection">Typical transactions selection</h2>
+<h5 id="typical-transactions-selection-refers-to-trade-me-2-typical-transactionshttpsifulltestgithubioenpoststm-api-typical-transactions">Typical transactions selection refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a>
+</strong></h5>
+<h2 id="corresponding-api-selection-and-scripting">Corresponding API selection and scripting</h2>
+<h5 id="corresponding-api-selection-and-scripting-refers-to">Corresponding API selection and scripting refers to:</h5>
+<h4 id="trade-me-3-retrieve-general-categories-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-general-categories"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a>
+</h4>
+<h4 id="trade-me-4-retrieve-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a>
+</h4>
+<h4 id="trade-me-5-remove-a-listing-from-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-rm-a-listing-from-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a>
+</h4>
+<h4 id="trade-me-6-retrieve-closing-soon-listingshttpsifulltestgithubioenpoststm-api-retrieve-closing-soon-listings"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-Retrieve closing soon listings</a>
+</h4>
+<h4 id="trade-me-7-add-a-listing-to-your-watchlisthttpsifulltestgithubioenpoststm-api-add-a-listing-to-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/">Trade Me-7-Add a listing to your watchlist</a>
+</h4>
+<h4 id="trade-me-8-retrieve-your-won-itemshttpsifulltestgithubioenpoststm-api-retrieve-won-items"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/">Trade Me-8-Retrieve your won items</a>
+</h4>
+<h4 id="trade-me-9-remove-a-purchase-from-your-won-items-listhttpsifulltestgithubioenpoststm-api-rm-a-purchase-from-won-list"><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-Remove a purchase from your won items list</a>
+</h4>
+<h4 id="trade-me-10-general-searchhttpsifulltestgithubioenpoststm-api-general-search"><a href="https://ifulltest.github.io/en/posts/tm-api-general-search/">Trade Me-10-General search</a>
+</h4>
+<h4 id="trade-me-11-retrieve-the-details-of-a-single-listinghttpsifulltestgithubioenpoststm-api-retrieve-listings-details"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/">Trade Me-11-Retrieve the details of a single listing</a>
+</h4>
+<h4 id="trade-me-12-buy-an-auction-using-buy-nowhttpsifulltestgithubioenpoststm-api-buy-an-auction-using-buy-now"><a href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-Buy an auction using Buy Now</a>
+</h4>
+<h2 id="scenarios-and-reports">Scenarios and reports</h2>
+<h5 id="scenarios-and-reports-refer-to-trade-me-13-scenarios-and-reportshttpsifulltestgithubioenpoststm-api-scenarios-and-newman-report">Scenarios and reports refer to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/">Trade Me-13-scenarios-and-reports</a>
+</strong>.</h5>
+<h2 id="jenkins-ci-process-practice">Jenkins CI process Practice</h2>
+<ul>
+<li>
+<h4 id="steps-of-jenkins-ci-process">Steps of Jenkins CI process</h4>
+</li>
+</ul>
+<h5 id="preparations---new-a-ci-job---job-configuration---job-running---job-results-checking---email-to-stakeholders">Preparations -&gt; New a CI job -&gt; Job configuration -&gt; Job running -&gt; Job results checking -&gt; Email to stakeholders</h5>
+<ul>
+<li>
+<h4 id="preparations---jenkins-installation">Preparations - Jenkins installation</h4>
+</li>
+</ul>
+<h5 id="jenkins-installation-refers-to-how-to-install-jenkinshttpsifulltestgithubioenpostsjenkins-installation">Jenkins installation refers to: <strong><a href="https://ifulltest.github.io/en/posts/jenkins-installation">How to install Jenkins?</a>
+</strong></h5>
+<ul>
+<li>
+<h4 id="preparations---git-bash-installation">Preparations - Git Bash installation</h4>
+</li>
+</ul>
+<h5 id="git-bash-installation-refers-to-how-to-install-git-bashhttpsifulltestgithubioenpostsgit-bash-installation">Git Bash installation refers to: <strong><a href="https://ifulltest.github.io/en/posts/git-bash-installation">How to install Git Bash?</a>
+</strong></h5>
+<ul>
+<li>
+<h4 id="preparations---environment-initiation">Preparations - environment initiation</h4>
+</li>
+</ul>
+<h5 id="initialize-folder-structure-for-postman-related-scripts-data-reports-repository-before-building-the-ci-job">Initialize folder structure for Postman-related scripts, data, reports, repository before building the CI job.</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem create folder for Postman collection, env parameter, temporary parameter, reports
+pushd d:\Software <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> md postman\collections postman\data postman\reports\hisreports postman\postman_github
+</code></pre></div><h5 id="set-the-postman-home-directory-to-system-environment-parameter"><strong>Set the Postman home directory to system environment parameter</strong></h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">setx &#34;POSTMAN_HOME&#34; &#34;D:\Software\postman&#34; /M
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-2.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="preparations---export-postman-collection-and-environment-variables-file-to-local">Preparations - export Postman collection and environment variables file to local</h5>
+<p>export Postman collection file to local refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/#export-collection-files-to-local">export Postman collection file to local </a>
+</strong></p>
+<p>export Postman environment variables file to local refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/#export-environment-parameter-file-to-local">export Postman environment variables file to local </a>
+</strong></p>
+<ul>
+<li>
+<h4 id="preparations---github-repository-clone">Preparations - GItHub repository clone</h4>
+</li>
+</ul>
+<h5 id="clone-remote-postman-github-repository-to-given-local-folder"><strong>Clone remote Postman GitHub repository to given local folder</strong></h5>
+<p>Note: need to start a new dos window after setting the system environment variables</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem postman github repository clone
+pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git init <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git clone https://github.com/ifulltest/postman.git
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="set-email-and-password-to-authorize-files-transfer-between-local-and-remote-repository"><strong>Set email and password to authorize files transfer between local and remote repository.</strong></h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote &#34;origin&#34;]
+	url = https://Github username:passwrod@github.com/ifulltest/postman.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-4.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="new-a-ci-job">New a CI job</h4>
+</li>
+</ul>
+<h5 id="start-jenkins-by-self-defined-port-number-java--jar-jenkinswar---httpport8088"><strong>Start Jenkins by self-defined port number: java -jar jenkins.war &ndash;httpPort=8088</strong></h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/jenkins-installation-1.webp" alt=""  loading="lazy" />
+</p>
+<p>&hellip;&hellip;</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/jenkins-installation-2.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="create-a-freestyle-project"><strong>Create a Freestyle project</strong></h5>
+<p>The example project named as: &lsquo;TradeMe-API-Automation-Practice&rsquo;</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-5.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-6.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="job-configuration---general">Job configuration - General</h4>
+</li>
+</ul>
+<h5 id="discard-old-builds"><strong>Discard old builds</strong></h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-7.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="job-configuration---build---archive-reports">Job configuration - Build - archive reports</h4>
+</li>
+</ul>
+<h5 id="build-windows-batch-command-archive-newman-reports-that-creating-for-more-than-seven-days-to-the-history-folder">Build Windows batch command, archive Newman reports that creating for more than seven days to the history folder.</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-0.webp" alt=""  loading="lazy" />
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Archive Newman reports that creating for more than seven days to the hisreports folder.
+pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
+
+copy /y /b reports\hisreports\newmanrpt-his.html &#34;%POSTMAN_HOME%\reports&#34; <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m <span style="font-style:italic">*.html /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34; &amp;&amp; copy /y /b reports\hisreports\newmanrpt-his.txt &#34;%POSTMAN_HOME%\reports&#34; &amp;&amp; forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m *</span>.txt /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34;
+</code></pre></div><h5 id="before-the-archive-operation-two-files-in-the-reports-folder-creating-for-more-than-7-days-need-to-be-archived">Before the archive operation, two files in the reports folder creating for more than 7 days need to be archived.</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-1.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="run-job-and-see-the-jenkins-log">Run job and see the Jenkins log</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">Started by user GaryGao
+Running as SYSTEM
+Building on master in workspace D:\Software\Jenkins\workspace\TradeMe-API-Automation-Practice
+[TradeMe-API-Automation-Practice] $ cmd /c call C:\Users\ADMINI~1\AppData\Local\Temp\jenkins7423834600478251788.bat
+
+D:\Software\Jenkins\workspace\TradeMe-API-Automation-Practice&gt;rem Archive Newman reports that creating for more than seven days to the hisreports folder. 
+
+D:\Software\Jenkins\workspace\TradeMe-API-Automation-Practice&gt;pushd D:\Software\postman   <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1 1&gt;nul 
+
+D:\Software\postman&gt;copy /y /b reports\hisreports\newmanrpt-his.html &#34;D:\Software\postman\reports&#34;   <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> forfiles /p &#34;D:\Software\postman\reports&#34;  /m <span style="font-style:italic">*.html /d -7 /c &#34;cmd /c move @path D:\Software\postman\reports\hisreports&#34;   &amp;&amp; copy /y /b reports\hisreports\newmanrpt-his.txt &#34;D:\Software\postman\reports&#34;   &amp;&amp; forfiles /p &#34;D:\Software\postman\reports&#34;  /m *</span>.txt /d -7 /c &#34;cmd /c move @path D:\Software\postman\reports\hisreports&#34; 
+        1 file(s) copied.
+
+        1 file(s) moved.
+        1 file(s) moved.
+        1 file(s) moved.
+        1 file(s) copied.
+
+        1 file(s) moved.
+
+D:\Software\postman&gt;exit 0 
+Finished: SUCCESS
+</code></pre></div><h5 id="after-the-archive-operation-the-given-two-files-are-archived-in-the-hisreports-folder">After the archive operation, the given two files are archived in the hisreports folder.</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-2-1.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-2-2.webp" alt=""  loading="lazy" />
+</p>
+<p><em>Note: &lsquo;newmanrpt-his.html&rsquo; and &lsquo;newmanrpt-his.txt&rsquo; in the hisreports folder are two files created more than 7 days ago, making sure the archiving loop operation is not failed.</em></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-3.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="job-configuration---build---generate-cli--html-reports">Job configuration - Build - generate cli &amp; html reports</h4>
+</li>
+</ul>
+<h5 id="build-jobs-for-generating-both-positive-and-negative-case-cli--html-reports">Build jobs for generating both positive and negative case CLI &amp; HTML reports.</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report1.webp" alt=""  loading="lazy" />
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Using Newman to generate positive case CLI <span style="color:#960050;background-color:#1e0010">&amp;</span> HTML reports, dynamic report name stores in a temporary file.
+pushd %POSTMAN_HOME%
+if %time:~0,2% leq 9 (set h=0%time:~1,1%) else (set h=%time:~0,2%)
+set y=%date:~0,4%<span style="color:#960050;background-color:#1e0010">&amp;</span> set m=%date:~5,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set d=%date:~8,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set mi=%time:~3,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set s=%time:~6,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set ms=%time:~9,2% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
+newman run collections\tradeMeSandBox.postman_collection.json -e data\tradeMeSandBox.postman_environment.json -r cli,html --reporter-html-export reports\newmanrpt-%y%%m%%d%%h%%mi%%s%.html&gt;reports\newmanrpt-%y%%m%%d%%h%%mi%%s%.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> echo |set /p=&#34;newmanrpt-%y%%m%%d%%h%%mi%%s%&#34;&gt;%POSTMAN_HOME%\data\fn.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> exit 0
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Using Newman to generate negative case CLI <span style="color:#960050;background-color:#1e0010">&amp;</span> HTML reports, dynamic report name stores in a temporary file.
+pushd %POSTMAN_HOME%
+if %time:~0,2% leq 9 (set h=0%time:~1,1%) else (set h=%time:~0,2%)
+set y=%date:~0,4%<span style="color:#960050;background-color:#1e0010">&amp;</span> set m=%date:~5,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set d=%date:~8,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set mi=%time:~3,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set s=%time:~6,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set ms=%time:~9,2% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
+newman run collections\tradeMeSandBox-Negative.postman_collection.json -e data\tradeMeSandBox.postman_environment.json -r cli,html --reporter-html-export reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.html&gt;reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> echo |set /p=&#34;newmanrpt-%y%%m%%d%%h%%mi%%s%-neg&#34;&gt;%POSTMAN_HOME%\data\negfn.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> exit 0
+</code></pre></div><h5 id="run-job-and-see-the-jenkins-log-1">Run job and see the Jenkins log</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report2.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="after-the-job-cli--html-reports-and-temporary-data-files-are-generated">After the job, CLI &amp; HTML reports and temporary data files are generated.</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report3.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report4.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report5.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report6.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="job-configuration---build---upload-local-reports-to-remote-github-repository">Job configuration - Build - upload local reports to remote GitHub repository</h4>
+</li>
+</ul>
+<h5 id="copy-newly-generated-newman-report-to-local-github-repository">Copy newly generated Newman report to local GitHub repository</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit1.webp" alt=""  loading="lazy" />
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem copy newly generated Newman report to local GitHub repository
+pushd %POSTMAN_HOME%
+set /P fn=&lt;<span style="color:#f92672">data</span>\f<span style="color:#f92672">n.txt</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">set</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">P</span> <span style="color:#a6e22e">negfn</span><span style="color:#f92672">=</span><span style="color:#e6db74">&lt;data</span>\n<span style="color:#e6db74">egfn.txt</span>
+<span style="color:#a6e22e">copy</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">y</span> <span style="color:#a6e22e">reports</span>\%<span style="color:#a6e22e">fn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#a6e22e">postman_github</span>\p<span style="color:#a6e22e">ostman</span>\r<span style="color:#a6e22e">eports</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">copy</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">y</span> <span style="color:#a6e22e">reports</span>\%<span style="color:#a6e22e">negfn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#a6e22e">postman_github</span>\p<span style="color:#a6e22e">ostman</span>\r<span style="color:#a6e22e">eports</span>
+</code></pre></div><h5 id="run-job-and-see-the-jenkins-log-2">Run job and see the Jenkins log</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit2.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="after-the-job-given-reports-have-been-copied-to-local-github-repository">After the job, given reports have been copied to local GitHub repository</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit3.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="commit-given-reports-local-github-to-public-github-repository">Commit given reports local GitHub to public GitHub repository</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit1.webp" alt=""  loading="lazy" />
+</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Commit given reports local GitHub to public GitHub repository
+pushd %POSTMAN_HOME%
+set /P fn=&lt;<span style="color:#f92672">data</span>\f<span style="color:#f92672">n.txt</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">set</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">P</span> <span style="color:#a6e22e">negfn</span><span style="color:#f92672">=</span><span style="color:#e6db74">&lt;data</span>\n<span style="color:#e6db74">egfn.txt</span>
+<span style="color:#a6e22e">pushd</span> <span style="color:#960050;background-color:#1e0010">%</span><span style="color:#a6e22e">POSTMAN_HOME</span><span style="color:#960050;background-color:#1e0010">%</span>\p<span style="color:#a6e22e">ostman_github</span>\p<span style="color:#a6e22e">ostman</span>\r<span style="color:#a6e22e">eports</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">pull</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">main</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">add</span> <span style="color:#960050;background-color:#1e0010">%</span><span style="color:#a6e22e">fn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#960050;background-color:#1e0010">%</span><span style="color:#a6e22e">negfn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">commit</span> <span style="color:#a6e22e">-m</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">txt</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">html</span> <span style="color:#a6e22e">report</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">push</span> <span style="color:#a6e22e">-u</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">main</span>
+</code></pre></div><h5 id="run-job-and-see-the-jenkins-log-3">Run job and see the Jenkins log</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit2.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="after-the-job-given-reports-have-been-committed-to--public-github-repository">After the job, given reports have been committed to  public GitHub repository</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit3.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="job-configuration---build---email-to-stakeholders">Job configuration - Build - Email to stakeholders</h4>
+</li>
+</ul>
+<h5 id="build-job-for-emailing-stakeholders-the-reports-related-information">Build job for emailing stakeholders the reports related information.</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Email to stakeholders the given testing report
+pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> node collections\nodemailer.js <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> del %POSTMAN_HOME%\data\*fn.txt
+</code></pre></div><h5 id="before-the-job-see-related-storage-status">Before the job, see related storage status.</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-before-commit.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="run-job-and-see-the-jenkins-log-4">Run job and see the Jenkins log</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-jenkins-log.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="after-the-job-see-related-storage-and-email-status">After the job, see related storage and email status.</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-after-commit.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-after-email.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="how-to-use-nodejs-realize-the-email-function">How to use Node.js realize the email function</h4>
+</li>
+</ul>
+<p><em>The above example mainly uses node.js the &lsquo;nodemailer&rsquo; module to realize the email function.</em></p>
+<p><em>Install the Node.js in the Postman home directory or directly move the &lsquo;<strong>node_moudules</strong>&rsquo; in.</em></p>
+<h5 id="how-to-install-nodejs-please-refer-to-how-to-install-nodejshttpsifulltestgithubioenpostsnodejs-installation">How to install Node.js please refer to: <strong><a href="https://ifulltest.github.io/en/posts/nodejs-installation/">How to install Node.js</a>
+</strong></h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/nodejs-installation5.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="install-the-extended-module-nodemailer-and-moment-to-nodejs">Install the extended module &lsquo;nodemailer&rsquo; and &lsquo;moment&rsquo; to Node.js.</h5>
+<p>Moule installation command:</p>
+<p>npm install nodemailer or yarn add nodemailer &ndash;save</p>
+<p>npm install moment or yarn add moment</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-nodejs-ext.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="email-realizing-by-nodemailerjs---get-current-time-for-later-email-title-to-use">Email realizing by &lsquo;nodemailer.js&rsquo; - get current time for later email title to use.</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// Get current time for later email title to use.
+const moment = require(&#39;moment&#39;)
+
+let currentTime =  moment(Date.now()).format(&#39;YYYY-MM-DD HH:mm:ss&#39;)
+</code></pre></div><h5 id="email-realizing-by-nodemailerjs---file-operation-and-concatenate-the-email-content">Email realizing by &lsquo;nodemailer.js&rsquo; - file operation and concatenate the email content.</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// file systme module which can operate the file
+const fs = require(&#34;fs&#34;);
+
+const path_fn = &#34;D:/Software/postman/data/fn.txt&#34;; // file path
+
+const isExist_fn = fs.existsSync(path_fn); // check whether file exist
+
+const filedata_fn = isExist_fn ? fs.readFileSync(path_fn, &#34;utf-8&#34;) : &#34;&#34;;
+
+const fs_neg = require(&#34;fs&#34;);
+
+const path_negfn = &#34;D:/Software/postman/data/negfn.txt&#34;;
+
+const isExist_negfn = fs_neg.existsSync(path_negfn);
+
+const filedata_negfn = isExist_negfn ? fs_neg.readFileSync(path_negfn, &#34;utf-8&#34;) : &#34;&#34;;
+
+console.log(&#34;Positive cases report name: &#34;+filedata_fn);
+
+console.log(&#34;Negative cases report name: &#34;+filedata_negfn);
+
+// Concatenate the email content
+var arr=new Array();
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;5&#39;</span>&gt;Positive cases HTML report: &lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">https://ifulltest.github.io/postman/reports/&#34;+filedata_fn+&#34;.html</span>&gt;&lt;<span style="color:#f92672">b</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;4&#39;</span>&gt;https://ifulltest.github.io/postman/reports/&#34;+filedata_fn+&#34;.html&lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">b</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;5&#39;</span>&gt;Positive cases TXT report: &lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">https://ifulltest.github.io/postman/reports/&#34;+filedata_fn+&#34;.txt</span>&gt;&lt;<span style="color:#f92672">b</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;4&#39;</span>&gt;https://ifulltest.github.io/postman/reports/&#34;+filedata_fn+&#34;.txt&lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">b</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;5&#39;</span>&gt;Negative cases HTML report: &lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">https://ifulltest.github.io/postman/reports/&#34;+filedata_negfn+&#34;.html</span>&gt;&lt;<span style="color:#f92672">b</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;4&#39;</span>&gt;https://ifulltest.github.io/postman/reports/&#34;+filedata_negfn+&#34;.html&lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">b</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;5&#39;</span>&gt;Negative cases TXT report: &lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">https://ifulltest.github.io/postman/reports/&#34;+filedata_negfn+&#34;.txt</span>&gt;&lt;<span style="color:#f92672">b</span>&gt;&lt;<span style="color:#f92672">font</span> <span style="color:#a6e22e">size</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;4&#39;</span>&gt;https://ifulltest.github.io/postman/reports/&#34;+filedata_negfn+&#34;.txt&lt;/<span style="color:#f92672">font</span>&gt;&lt;/<span style="color:#f92672">b</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">p</span>&gt;&#34;);
+
+var htmltxt = arr.join(&#34;&#34;);
+
+console.log(&#34;htmltxt: &#34;+htmltxt);
+</code></pre></div><h5 id="email-realizing-by-nodemailerjs----sending-the-email">Email realizing by &lsquo;nodemailer.js&rsquo; -  sending the email</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// nodemailer module which can operate email
+var nodemailer = require(&#34;nodemailer&#34;)
+
+var transport = nodemailer.createTransport({
+	
+    host: &#34;smtp.gmail.com&#34;,
+	
+    secureConnection: true,
+	
+    port: 465,
+	
+    auth:{
+		
+        user: &#34;sender email&#34;,
+		
+        pass: &#34;sender email password&#34;
+		
+    }
+	
+})
+
+var mailOptions = {
+	
+    from: &#34;sender email&#34;,
+	
+    to: &#34;receiver email&#34;,
+	
+    subject: &#34;Daily env check: &#34;+currentTime,
+	
+    text: &#34;Hello-text&#34;,
+	
+    html: htmltxt,
+	
+}
+
+transport.sendMail(mailOptions, function(err, response) {
+    
+	if(err) console.log(err)
+		
+    else console.log(response)
+	
+})
+</code></pre></div><ul>
+<li>
+<h4 id="other-ci-practices-that-waiting-to-be-extended">Other CI practices that waiting to be extended</h4>
+</li>
+</ul>
+<p>The above CI example uses the Windows batch command to realize the CI process.</p>
+<p>Using &lsquo;Execute shell&rsquo; and &lsquo;Pipe line&rsquo; mode to realize the CI process will be displayed on later blog.</p></div><div class="post-copyright mb-4">
+  <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="https://ifulltest.github.io/en/posts/git-bash-installation/">How to install Git Bash?</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/">Trade Me-13-scenarios-and-newman-reports</a>
+    </div></div>
+</div><section class="related-posts">
+  <h3>Related Posts</h3>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/jdk-installation/">How to install JDK?</a></li><li><a href="https://ifulltest.github.io/en/posts/jenkins-installation/">How to install Jenkins?</a></li><li><a href="https://ifulltest.github.io/en/posts/newman-installation/">How to install Newman?</a></li><li><a href="https://ifulltest.github.io/en/posts/nodejs-installation/">How to install Node.js?</a></li><li><a href="https://ifulltest.github.io/en/posts/postman-installation/">How to install Postman?</a></li></ul>
+</section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="ifulltest/comments"
+  issue-term="pathname"
+  label=""
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="https://ifulltest.github.io/images/about-me.webp" alt="Gary Gao" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,CICD,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
+</section><section class="featured-posts row surface">
+  <h4>Featured Posts</h4>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
+</section><section class="recent-posts row surface">
+  <h4>Recent Posts</h4>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
+</section>
+<section class="taxonomy-categories row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/categories">Categories</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/categories/functional-test/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Functional Test">
+      Functional Test <span class="badge rounded-pill">18</span>
+    </a><a href="https://ifulltest.github.io/en/categories/devops/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="DevOps">
+      DevOps <span class="badge rounded-pill">7</span>
+    </a><a href="https://ifulltest.github.io/en/categories/project-management/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Project Management">
+      Project Management <span class="badge rounded-pill">6</span>
+    </a><a href="https://ifulltest.github.io/en/categories/api-automation/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="API Automation">
+      API Automation <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/categories/configuration-management/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Configuration Management">
+      Configuration Management <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/categories/ui-automation/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="UI Automation">
+      UI Automation <span class="badge rounded-pill">2</span>
+    </a></div>
+</section><section class="taxonomy-series row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/series">Series</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
+      Postman API Automation Practice <span class="badge rounded-pill">14</span>
+    </a><a href="https://ifulltest.github.io/en/series/user-manual/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="User Manual">
+      User Manual <span class="badge rounded-pill">2</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/en/tags">Tags</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">17</span>
+    </a><a href="https://ifulltest.github.io/en/tags/test-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Test Basis">
+      Test Basis <span class="badge rounded-pill">17</span>
+    </a><a href="https://ifulltest.github.io/en/tags/cicd/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="CICD">
+      CICD <span class="badge rounded-pill">5</span>
+    </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
+      Agile Basis <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
+      Cypress <span class="badge rounded-pill">4</span>
+    </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
+      GitHub <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/jira/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jira">
+      Jira <span class="badge rounded-pill">3</span>
+    </a><a href="https://ifulltest.github.io/en/tags/devops-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="DevOps Basis">
+      DevOps Basis <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/en/tags/git/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Git">
+      Git <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:ifulltest@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://facebook.com/profile.php?id=100070922467826" title="Facebook">
+        <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/ifulltest" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/gary-gao-511854194/" title="LinkedIn">
+        <i class="fab fa-fw fa-2x fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.zhihu.com/people/ifulltest" title="Zhihu">
+        <i class="fab fa-fw fa-2x fa-zhihu"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2019-2021 Gary Gao. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e8010f7b2c7741"></script></body>
+</html>
