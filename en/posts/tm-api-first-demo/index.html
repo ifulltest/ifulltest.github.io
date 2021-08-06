@@ -9,22 +9,44 @@
 <link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-1-API testing first demo">
-<meta itemprop="description" content="Foreword
-Why I write this series? Three reasons.
+<meta itemprop="description" content="Three reasons for writing the series.
 
-1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.
-2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&rsquo;t know what&rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.
-3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.
+
+1st, for testing skills demonstration.
+
+
+The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.
+
+
+2nd, for guiding those who are new to automation testing.
+
+
+Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.
+
+
+3rd, for mutual boost and progress.
+
 "><meta itemprop="datePublished" content="2021-07-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="673"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="615"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Cypress," /><meta property="og:title" content="Trade Me-1-API testing first demo" />
-<meta property="og:description" content="Foreword
-Why I write this series? Three reasons.
+<meta property="og:description" content="Three reasons for writing the series.
 
-1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.
-2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&rsquo;t know what&rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.
-3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.
+
+1st, for testing skills demonstration.
+
+
+The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.
+
+
+2nd, for guiding those who are new to automation testing.
+
+
+Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.
+
+
+3rd, for mutual boost and progress.
+
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-first-demo/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
@@ -36,12 +58,23 @@ Why I write this series? Three reasons.
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
 
 <meta name="twitter:title" content="Trade Me-1-API testing first demo"/>
-<meta name="twitter:description" content="Foreword
-Why I write this series? Three reasons.
+<meta name="twitter:description" content="Three reasons for writing the series.
 
-1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.
-2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&rsquo;t know what&rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.
-3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.
+
+1st, for testing skills demonstration.
+
+
+The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.
+
+
+2nd, for guiding those who are new to automation testing.
+
+
+Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.
+
+
+3rd, for mutual boost and progress.
+
 "/>
 <meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
 <script type="application/javascript">
@@ -182,7 +215,7 @@ if (!doNotTrack) {
     <i class="fas fa-fw fa-calendar-alt"></i>Jul 20, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>4 min read
+    <i class="fas fa-fw fa-coffee"></i>3 min read
   </span>
 <div class="post-translations nav-item dropdown me-2 d-inline-flex">
   <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -205,7 +238,7 @@ if (!doNotTrack) {
   <div class="offcanvas-body">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#foreword"><em>Foreword</em></a>
+    <li><a href="#three-reasons-for-writing-the-series">Three reasons for writing the series.</a>
       <ul>
         <li></li>
       </ul>
@@ -230,18 +263,37 @@ if (!doNotTrack) {
   </ul>
 </nav>
   </div>
-</div><div class="post-content mb-3"><h2 id="foreword"><em>Foreword</em></h2>
-<h4 id="why-i-write-this-series-three-reasons">Why I write this series? Three reasons.</h4>
+</div><div class="post-content mb-3"><h2 id="three-reasons-for-writing-the-series">Three reasons for writing the series.</h2>
 <ul>
-<li>1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.</li>
-<li>2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&rsquo;t know what&rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.</li>
-<li>3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.</li>
+<li>
+<h4 id="1st-for-testing-skills-demonstration">1st, for testing skills demonstration.</h4>
+</li>
+</ul>
+<p>The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.</p>
+<ul>
+<li>
+<h4 id="2nd-for-guiding-those-who-are-new-to-automation-testing">2nd, for guiding those who are new to automation testing.</h4>
+</li>
+</ul>
+<p>Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.</p>
+<ul>
+<li>
+<h4 id="3rd-for-mutual-boost-and-progress">3rd, for mutual boost and progress.</h4>
+</li>
 </ul>
 <h4 id="whats-next-after-this-series">What&rsquo;s next after this series?</h4>
-<p>This series mainly covers postman practice from business and API analysis, API testing script skills, API testing scenario, and CI skills.</p>
-<p>It&rsquo;s only a tiny part of the full-stack testing. After this series, have UI automation testing practice like Cypress + Cucumber; mobile automation testing practice like Appium; performance testing practice like JMeter + Grafana&amp;Prometheus&amp;InfluxDB; Cloud technology like Azure cloud; Virtualization technology like docker on the way. Stay tuned.</p>
+<p>This series mainly covers postman practice from business and API analysis, API testing script skills, API testing scenario, to CI process.</p>
+<p>It&rsquo;s only a tiny part of the full-stack testing.</p>
+<p>After this series,  the author will continue publish other automation testing practices. Such as:</p>
+<p><strong>Cypress + Cucumber UI automation testing practice,</strong></p>
+<p><strong>Appium mobile automation testing practice,</strong></p>
+<p><strong>JMeter + Grafana&amp;Prometheus&amp;InfluxDB performance testing practice,</strong></p>
+<p><strong>Jenkins / Azure CI process,</strong></p>
+<p><strong>Docker application.</strong></p>
+<p>Stay tuned.</p>
 <h2 id="what-is-trademe-sandbox">What is Trademe sandbox?</h2>
-<p><em>The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database. It is designed to allow you to test potentially destructive API operations in a safe environment.</em></p>
+<p>The Trade Me sandbox environment is a completely independent copy of the Trade Me website, API and database.</p>
+<p>It is designed to allow you to test potentially destructive API operations in a safe environment.</p>
 <h2 id="why-i-choose-the-trademe">Why I choose the Trademe?</h2>
 <p>When I want to choose a product to practice and display my automation demo, I will take some factors into my consideration:</p>
 <ul>
@@ -250,7 +302,7 @@ if (!doNotTrack) {
 <li>Is there a clear enough specification for this product to allow me to develop my demo?</li>
 <li>Can practicers who see my demo reproduce it in the same product environment?</li>
 </ul>
-<p>TradeMe exactly fulfills all these above considerations for me.</p>
+<p>TradeMe exactly fulfils all these above considerations for me.</p>
 <h2 id="trademe-sandbox-official-materials">TradeMe sandbox official materials</h2>
 <ul>
 <li>
@@ -376,6 +428,14 @@ if (!doNotTrack) {
 <h2 id="trademe-first-api-demo-connectivity-testing">Trademe first API demo connectivity testing</h2>
 <p><em>When we finished the preparation, we could pick two types of transactions to test the API connectivity.</em></p>
 <p><em>The first transaction does not need authentication, and the second transaction needs authentication.</em></p>
+<p><em>We will use the API testing tool Postman to verify the connectivity.</em></p>
+<ul>
+<li>
+<h4 id="how-to-install-postman">How to install Postman?</h4>
+</li>
+</ul>
+<p>Postman installation refers to: <strong><a href="https://ifulltest.github.io/en/posts/postman-installation/">How to install Postman?</a>
+</strong></p>
 <ul>
 <li>
 <h4 id="all-api-domain-in-sandbox-environment---apitmsandboxconz">All API domain in sandbox environment - <em><strong>api.tmsandbox.co.nz</strong></em></h4>

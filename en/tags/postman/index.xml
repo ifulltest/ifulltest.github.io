@@ -13,12 +13,23 @@
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;foreword&#34;&gt;&lt;em&gt;Foreword&lt;/em&gt;&lt;/h2&gt;
-&lt;h4 id=&#34;why-i-write-this-series-three-reasons&#34;&gt;Why I write this series? Three reasons.&lt;/h4&gt;
+      <description>&lt;h2 id=&#34;three-reasons-for-writing-the-series&#34;&gt;Three reasons for writing the series.&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;1st, the background is the author was in the process of seeking testing job in New Zealand. To pick a proper product and use the main stream testing tools to cover the manual testing, API automation testing, UI automation testing, and CICD will be a smart work for the author to show what his ability.&lt;/li&gt;
-&lt;li&gt;2nd, the author found that too many testing engineers surrounding him expressed the desire to learn some automated testing techniques. But they don&amp;rsquo;t know what&amp;rsquo;s the roadmap to extend their testing technique stack, where to start with, and how to practice such comprehensive skills in as little time as possible? So, the author thought that such a series might help himself meanwhile to help those people who have the above questions in mind.&lt;/li&gt;
-&lt;li&gt;3rd, the author wants to use this platform to get instant feedback to correct his own misconceptions about IT technologies, ultimately improving IT knowledge accumulation efficiency for both author and learner.&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;1st, for testing skills demonstration.&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;2nd-for-guiding-those-who-are-new-to-automation-testing&#34;&gt;2nd, for guiding those who are new to automation testing.&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;3rd-for-mutual-boost-and-progress&#34;&gt;3rd, for mutual boost and progress.&lt;/h4&gt;
+&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
