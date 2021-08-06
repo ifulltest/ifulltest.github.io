@@ -14,7 +14,7 @@ Before coding the API test script, we need to pick some typical transactions fro
 And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
 And part of these transactions should correlate with each other at the business level."><meta itemprop="datePublished" content="2021-07-23T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-23T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2251"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="2297"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Cypress," /><meta property="og:title" content="Trade Me-2-typical transactions" />
 <meta property="og:description" content="How to pick the typical transactions?
 Before coding the API test script, we need to pick some typical transactions from TradeMe.
@@ -317,8 +317,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p>More refer to: <a href="https://ifulltest.github.io/images/xx.webp">Retrieve general categories</a>
-</p>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">Retrieve general categories</a>
+</strong></p>
 </li>
 <li>
 <h4 id="example-request">Example request</h4>
@@ -365,7 +365,7 @@ if (!doNotTrack) {
 <h4 id="business-scope-selection">Business scope selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist(<strong>I&rsquo;m here</strong>)</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
@@ -448,8 +448,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
-</p>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+</strong></p>
 </li>
 <li>
 <h4 id="example-request-1">Example request</h4>
@@ -522,14 +522,17 @@ if (!doNotTrack) {
 <h4 id="business-scope-selection-1">Business scope selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist(<strong>I&rsquo;m here</strong>)</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
 -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
 </p>
-<p>Choose API - Retrieve your watchlist as pre-request to get all items that want to be removed</p>
-<p>Remove all items in the watch list</p>
+<p>Fetch all ‘ListingId’ from the response of upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+’ as the request fields.</p>
+<p>Pre_repquest &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+&rsquo; removes all ListingId but leave the last one from the whatchlist.</p>
+<p>Removes the last ListingId from the whatchlist.</p>
 <ul>
 <li>
 <h4 id="api-function-removes-a-listing-from-the-authenticated-users-watchlist">API Function: Removes a listing from the authenticated user&rsquo;s watchlist.</h4>
@@ -576,8 +579,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
-</p>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+</strong></p>
 <ul>
 <li>
 <h4 id="example-request-2">Example request</h4>
@@ -600,7 +603,7 @@ if (!doNotTrack) {
 <h4 id="business-scope-selection-2">Business scope selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings(<strong>I&rsquo;m here</strong>)</a>
@@ -628,8 +631,8 @@ if (!doNotTrack) {
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-2.webp" alt=""  loading="lazy" />
 </p>
-<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
-</p>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+</strong></p>
 <ul>
 <li>
 <h4 id="key-response-fields">Key response fields</h4>
@@ -687,8 +690,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
-</p>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+</strong></p>
 </li>
 <li>
 <h4 id="example-request-3">Example request</h4>
@@ -740,14 +743,14 @@ if (!doNotTrack) {
 <h4 id="business-selection">Business selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist(<strong>I’m here</strong>)</a>
 </p>
-<p>Choose API - Retrieve closing soon listings as pre-request to get all items on the 1st page of closing soon listings.</p>
-<p>Randomly add 1 of the above items to the watchlist.</p>
+<p>Fetch a random item on the closing soon listings from upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+&rsquo;, and add this item to the watchlist.</p>
 <ul>
 <li>
 <h4 id="api-function-adds-a-listing-to-the-authenticated-users-watchlist">API Function: Adds a listing to the authenticated user&rsquo;s watchlist.</h4>
@@ -767,8 +770,8 @@ if (!doNotTrack) {
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist.webp" alt=""  loading="lazy" />
 </p>
-<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
-</p>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+</strong></p>
 <ul>
 <li>
 <h4 id="key-response-fields---details-on-whether-the-operation-succeeded-1">Key response fields - Details on whether the operation succeeded.</h4>
@@ -815,7 +818,7 @@ if (!doNotTrack) {
 <h4 id="business-selection-1">Business selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items(<strong>I’m here</strong>)</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
@@ -905,8 +908,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
-</p>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+</strong></p>
 </li>
 <li>
 <h4 id="example-request-5">Example request</h4>
@@ -989,7 +992,7 @@ if (!doNotTrack) {
 <h4 id="business-selection-2">Business selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list(<strong>I’m here</strong>)</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
@@ -1066,7 +1069,7 @@ if (!doNotTrack) {
 <h4 id="business-scope-selection-3">Business scope selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search(<strong>I’m here</strong>)</a>
@@ -1237,16 +1240,17 @@ if (!doNotTrack) {
 <h4 id="business-scope-selection-4">Business scope selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
- -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search(<strong>I’m here</strong>)</a>
- -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing(<strong>I’m here</strong>)</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
 </p>
-<p>Only pick the item that has the ‘Buy Now’ feature to display.</p>
-<p>Fetch a ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
- to use.https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now)</p>
+<p>Fetch a random item that has the &lsquo;Buy Now&rsquo; feature from upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+&rsquo; to display.</p>
+<p>Fetch a random ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
+ to use.</p>
 <ul>
 <li>
 <h4 id="api-function-retrieves-the-details-of-a-single-listing">API Function: Retrieves the details of a single listing.</h4>
@@ -1363,15 +1367,17 @@ if (!doNotTrack) {
 <h4 id="business-selection-3">Business selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now(<strong>I’m here</strong>)</a>
 </p>
-<p>Fetch a ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
- to use.</p>
+<p>Fetch ‘ListingId’ from the response of upstream transaction ‘<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+’ as one of the request fields.</p>
+<p>Fetch ‘ShippingId’ from the response of upstream transaction <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">&lsquo;Retrieve the details of a single listing&rsquo;</a>
+ as one of the request fields.</p>
 <ul>
 <li>
 <h4 id="api-function-buys-an-item-using-buy-now">API Function: Buys an item using Buy Now.</h4>

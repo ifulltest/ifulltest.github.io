@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Retrieve the details of a single listing script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="776"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="789"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-11-Retrieve the details of a single listing API testing" />
 <meta property="og:description" content="API - Retrieve the details of a single listing script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -233,13 +233,19 @@ if (!doNotTrack) {
 <table>
 <thead>
 <tr>
-<th><strong>ListingId</strong></th>
-<th>Long Integer</th>
-<th>The ID of the listing.</th>
+<th></th>
+<th></th>
+<th></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
+<td></td>
+</tr>
 <tr>
 <td><strong>…</strong></td>
 <td>…</td>
@@ -322,15 +328,16 @@ if (!doNotTrack) {
 <h4 id="business-scope-selection">Business scope selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
- -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search(<strong>I’m here</strong>)</a>
- -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing(<strong>I’m here</strong>)</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
 </p>
-<p>Only pick the item that has the &lsquo;Buy Now&rsquo; feature to display.</p>
-<p>Fetch a ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
+<p>Fetch a random item that has the &lsquo;Buy Now&rsquo; feature from upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+&rsquo; to display.</p>
+<p>Fetch a random ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
  to use.</p>
 <ul>
 <li>

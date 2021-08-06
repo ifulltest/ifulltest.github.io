@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Buy an auction using Buy Now script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="871"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="892"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-12-Buy an auction using Buy Now API testing" />
 <meta property="og:description" content="API - Buy an auction using Buy Now script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -237,13 +237,19 @@ if (!doNotTrack) {
 <table>
 <thead>
 <tr>
-<th><strong>Success</strong></th>
-<th>Boolean</th>
-<th>Indicates whether the operation was successful.</th>
+<th></th>
+<th></th>
+<th></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>Boolean</td>
+<td>Indicates whether the operation was successful.</td>
+<td></td>
+</tr>
 <tr>
 <td><strong>Description</strong></td>
 <td>String or null</td>
@@ -326,15 +332,17 @@ if (!doNotTrack) {
 <h4 id="business-scope-selection">Business scope selection</h4>
 </li>
 </ul>
-<p>Chained portfolio transactions</p>
+<p>Chained combination transactions</p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
  -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now(<strong>I’m here</strong>)</a>
 </p>
-<p>Fetch a ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
- to use.</p>
+<p>Fetch ‘ListingId’ from the response of upstream transaction ‘<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+’ as one of the request fields.</p>
+<p>Fetch ‘ShippingId’ from the response of upstream transaction <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">&lsquo;Retrieve the details of a single listing&rsquo;</a>
+ as one of the request fields.</p>
 <ul>
 <li>
 <h4 id="business-verification-points">Business verification points</h4>
