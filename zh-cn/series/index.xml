@@ -8,20 +8,20 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Postman API自动化测试实践</title>
-      <link>https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/</link>
+      <title>Postman API Automation Practice</title>
+      <link>https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/</guid>
+      <guid>https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>用户手册</title>
-      <link>https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/</link>
+      <title>User Manual</title>
+      <link>https://ifulltest.github.io/zh-cn/series/user-manual/</link>
       <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/</guid>
+      <guid>https://ifulltest.github.io/zh-cn/series/user-manual/</guid>
       <description></description>
     </item>
     

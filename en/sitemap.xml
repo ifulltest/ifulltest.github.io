@@ -272,6 +272,16 @@
   </url><url>
     <loc>https://ifulltest.github.io/en/series/postman-api-automation-practice/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/series/postman-api-automation-practice/"
+                />
   </url><url>
     <loc>https://ifulltest.github.io/en/posts/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
@@ -351,6 +361,16 @@
   </url><url>
     <loc>https://ifulltest.github.io/en/series/user-manual/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/series/user-manual/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/series/user-manual/"
+                />
   </url><url>
     <loc>https://ifulltest.github.io/en/tags/cicd/</loc>
     <lastmod>2020-09-19T00:00:00+00:00</lastmod>
