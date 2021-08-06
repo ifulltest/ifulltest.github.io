@@ -8,15 +8,6 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>网站路线图</title>
-      <link>https://ifulltest.github.io/zh-cn/posts/site-road-map/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ifulltest.github.io/zh-cn/posts/site-road-map/</guid>
-      <description>&lt;p&gt;&lt;em&gt;当你第一次上这个网站时，网站路线图可以引导你快速了解网站的结构和作者的分类习惯……&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>关于我</title>
       <link>https://ifulltest.github.io/zh-cn/posts/about-me/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
@@ -28,8 +19,17 @@
 &lt;li&gt;大爱美食、卡拉OK、NBA比赛、好莱坞大片！&lt;/li&gt;
 &lt;li&gt;我最喜欢的歌手：迈克尔杰克逊、惠特尼休斯顿、玛丽亚凯莉。&lt;/li&gt;
 &lt;li&gt;我最喜欢的电影明星：汤姆汉克斯、安东尼霍普金斯。&lt;/li&gt;
-&lt;li&gt;我最喜欢的体育明星：迈克乔丹、科比布莱恩特、斯蒂芬库里、罗纳尔多。&lt;/li&gt;
+&lt;li&gt;我最喜欢的体育明星：迈克乔丹、科比布莱恩特、斯蒂芬库里、罗纳尔多 &amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>网站路线图</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/site-road-map/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/site-road-map/</guid>
+      <description>&lt;p&gt;&lt;em&gt;当你第一次上这个网站时，网站路线图可以引导你快速了解网站的结构和作者的分类习惯……&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
