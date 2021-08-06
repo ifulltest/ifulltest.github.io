@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trade Me-5-从您的监视列表中删除列表 API 测试 - Hugo Bootstrap</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="Trade Me-5-从您的监视列表中删除列表 API 测试">
+<meta itemprop="description" content="API - 从监视列表脚本开发步骤中删除列表 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2177"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-5-从您的监视列表中删除列表 API 测试" />
+<meta property="og:description" content="API - 从监视列表脚本开发步骤中删除列表 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-26T00:00:00+00:00" /><meta property="og:site_name" content="Hugo Bootstrap" />
+<meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
+
+<meta name="twitter:title" content="Trade Me-5-从您的监视列表中删除列表 API 测试"/>
+<meta name="twitter:description" content="API - 从监视列表脚本开发步骤中删除列表 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-202225177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://ifulltest.github.io/zh-cn/">
+      <img class="logo" alt="Logo" src="https://ifulltest.github.io/images/logo.webp" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://ifulltest.github.io/zh-cn/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">
+            <i class="fas fa-fw fa-sitemap"></i>网站路线图
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/archives">
+            <i class="fas fa-fw fa-file-archive"></i>归档
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/categories">
+            <i class="fas fa-fw fa-folder"></i>分类
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/tags">
+            <i class="fas fa-fw fa-tags"></i>标签
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/series">
+            <i class="fas fa-fw fa-columns"></i>专栏
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            更多
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://github.com/ifulltest" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://www.linkedin.com/in/gary-gao-511854194/" target="_blank">
+                <i class="fab fa-fw fa-linkedin"></i>LinkedIn
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="languageSwitcher" data-bs-toggle="popover"
+    data-bs-placement="bottom" data-bs-target="#languagesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-language" ></i>
+  </a>
+</li>
+<script type="text/html" id="languagesPopoverBody">
+  <ul class="languages list-group"><li class="language list-group-item"><a href="https://ifulltest.github.io/en/">English</a></li><li class="language list-group-item active">中文</li></ul>
+</script><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>蓝色</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>蓝灰色</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>棕色</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>青色</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>绿色</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>靛青色</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>橙色</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>粉色</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>紫色</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>红色</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>蓝绿色</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>黄色</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">字体大小</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/zh-cn/">主页</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/zh-cn/posts/">文章</a></li><li class="breadcrumb-item active">Trade Me-5-从您的监视列表中删除列表 API 测试</li></ol>
+</nav><article class="post row surface"><div class="post-toolbox">
+  <div class="col-12 d-none d-lg-block">
+    <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
+  </div>
+</div>
+<h1 class="post-title my-3">Trade Me-5-从您的监视列表中删除列表 API 测试</h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2021-07-26
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>5 分钟阅读
+  </span>
+<div class="post-translations nav-item dropdown me-2 d-inline-flex">
+  <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-fw fa-language me-1"></i>中文
+  </a>
+  <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">English</a></div>
+</div>
+
+<a href="https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/zh-cn/tags/postman/" class="post-taxonomy">#Postman</a></div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">目录</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#api---从监视列表脚本开发步骤中删除列表"><em>API - 从监视列表脚本开发步骤中删除列表</em></a></li>
+    <li><a href="#api规范">API规范</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#业务介绍">业务介绍</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#api测试脚本调试">API测试脚本调试</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#api-测试脚本增强">API 测试脚本增强</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</a></li>
+    <li><a href="#api测试脚本发布">API测试脚本发布</a></li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="api---从监视列表脚本开发步骤中删除列表"><em>API - 从监视列表脚本开发步骤中删除列表</em></h2>
+<p><em>API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Negative Cases扩展-&gt;API测试脚本发布</em></p>
+<h2 id="api规范">API规范</h2>
+<ul>
+<li>
+<h4 id="api-功能从经过身份验证的用户的监视列表中删除列表">API 功能：从经过身份验证的用户的监视列表中删除列表。</h4>
+</li>
+<li>
+<h4 id="关键请求字段">关键请求字段</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist.webp" alt="img"  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="关键响应字段---有关操作是否成功的详细信息">关键响应字段 - 有关操作是否成功的详细信息。</h4>
+</li>
+</ul>
+<p>尝试删除不存在或不在监视列表中的拍卖不会产生错误。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>Boolean</td>
+<td>指示操作是否成功。</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>String or null</td>
+<td>错误的描述，如果操作失败。</td>
+</tr>
+</tbody>
+</table>
+<p>更多 API 规范是指<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+ 。</p>
+<ul>
+<li>
+<h4 id="示例请求">示例请求</h4>
+</li>
+</ul>
+<p><strong>DELETE</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON</a></p>
+<ul>
+<li>
+<h4 id="示例响应">示例响应</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Success&#34;
+}
+</code></pre></div><h2 id="业务介绍">业务介绍</h2>
+<ul>
+<li>
+<h4 id="前端页面---关注列表页面">前端页面 - 关注列表页面</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-1.webp" alt="img"  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="前端页面---确认删除项目页面">前端页面 - 确认删除项目页面</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-2.webp" alt="img"  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="业务范围选择">业务范围选择</h4>
+</li>
+</ul>
+<p>链式组合交易</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表（<strong>我在这里</strong>）</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
+</p>
+<p>从上游事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+ ”的响应中获取所有“ListingId ”作为请求字段。</p>
+<p>前置请求 &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除一个列表</a>
+ ' 从 监视列表中删除所有 ListingId 但留下最后一个。</p>
+<p>从监视列表中删除最后一个 ListingId。</p>
+<ul>
+<li>
+<h4 id="业务验证点">业务验证点</h4>
+</li>
+</ul>
+<p>检查监视列表中的所有项目已被删除。</p>
+<h2 id="api测试脚本调试">API测试脚本调试</h2>
+<ul>
+<li>
+<h4 id="组装前置请求检索您的监视列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-watchlist-和从您的监视列表中删除列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-listing-from-your-watchlist-">组装前置请求“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+ ”和“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+ ”</h4>
+</li>
+</ul>
+<p>前置求脚本的主要编码逻辑如下：</p>
+<ol>
+<li>前置请求 API - 检索您的监视列表以获取监视列表中的所有项目。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Pre-Transaction: RetrieveYourWatchlist Start&#34;);
+
+// oauth_signature = Consumer Secret%26OAuth Token Secret
+const pre_request_retrieveyourwatchlist = {
+    url: pm.environment.get(&#34;BaseUrl&#34;) + &#39;/v1/MyTradeMe/Watchlist/All.JSON&#39;,
+
+    method: &#39;GET&#39;,
+
+    header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+    
+    body: {
+    }
+
+};
+...
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+</p>
+<ol>
+<li>所有获取的项目都应该排除那些字段是 &lsquo;BidCount&rsquo; = 1 以获取允许从监视列表中删除的所有项目。&lsquo;BidCount&rsquo; 字段表示该项目已被投标，无法从监视列表中删除。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">pm.sendRequest(pre_request_retrieveyourwatchlist, function (err, response) {
+
+    if (err) {
+
+        console.log(err);
+
+        console.log(&#34;Pre-Transaction: RetrieveYourWatchlist Failed&#34;);
+
+    }
+
+    else {
+
+        // Get all ListingId on the Watchlist
+        pm.test(&#34;Get all ListingId on the Watchlist&#34;, function () {
+
+            var jsonData = response.json();
+
+            var Listdata = jsonData[&#39;List&#39;];
+
+            var arr = [];
+
+            for (i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+                
+                <span style="color:#960050;background-color:#1e0010">//</span> <span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+                <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+
+                    <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">push</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+                <span style="color:#960050;background-color:#1e0010">}</span>
+
+            <span style="color:#960050;background-color:#1e0010">}</span>
+
+            <span style="color:#a6e22e">postman</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">setEnvironmentVariable</span><span style="color:#960050;background-color:#1e0010">(&#39;</span><span style="color:#a6e22e">WatchlistListingIdCount</span><span style="color:#960050;background-color:#1e0010">&#39;,</span> <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+            <span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span> <span style="color:#960050;background-color:#1e0010">&lt;</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">){</span>
+
+                <span style="color:#a6e22e">var</span> <span style="color:#a6e22e">WatchlistListingIdCount </span><span style="color:#f92672">=</span> <span style="color:#e6db74">pm.environment.get(&#34;WatchlistListingIdCount&#34;);</span>
+
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">WatchlistListingIdCount:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">WatchlistListingIdCount</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;,</span> <span style="color:#a6e22e">nothing</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">.&#34;);</span>
+
+            <span style="color:#960050;background-color:#1e0010">}</span>
+
+            <span style="color:#a6e22e">else</span> <span style="color:#960050;background-color:#1e0010">{</span>
+
+                <span style="color:#a6e22e">postman</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">setEnvironmentVariable</span><span style="color:#960050;background-color:#1e0010">(&#39;</span><span style="color:#a6e22e">WatchlistListingId</span><span style="color:#960050;background-color:#1e0010">&#39;,</span> <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+                <span style="color:#a6e22e">var</span> <span style="color:#a6e22e">WatchlistListingId </span><span style="color:#f92672">=</span> <span style="color:#e6db74">pm.environment.get(&#34;WatchlistListingId&#34;);</span>
+
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">All</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">can</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">on</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">Watchlist:</span> <span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">WatchlistListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+            <span style="color:#960050;background-color:#1e0010">}</span>
+        
+        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Pre-Transaction:</span> <span style="color:#a6e22e">RetrieveYourWatchlist</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+        
+        <span style="color:#960050;background-color:#1e0010">});</span>
+<span style="color:#960050;background-color:#1e0010">...</span>
+</code></pre></div><ol>
+<li>如果从监视列表中提取的项目 &lt;=0，则监视列表中没有项目。只需启动一个无意义的&rsquo;ListingId&rsquo;。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        var WatchlistListingIdCount = pm.environment.get(&#34;WatchlistListingIdCount&#34;);
+
+        var WatchlistListingId = pm.environment.get(&#34;WatchlistListingId&#34;).split(&#34;,&#34;);
+
+        if (WatchlistListingIdCount <span style="color:#960050;background-color:#1e0010">&lt;</span>= 0) {
+
+            //Grant a meaningless value to LastListingId
+            postman.setEnvironmentVariable(&#39;LastListingId&#39;, &#34;0000000000&#34;);
+
+        }
+...        
+</code></pre></div><ol>
+<li>如果从监视列表中提取的项目 =1，则存储 &lsquo;ListingId&rsquo; 以供以后使用 &lsquo;RemoveAListingFromYourWatchlist&rsquo; 的 API 请求使用。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else if (WatchlistListingIdCount == 1) {
+
+            postman.setEnvironmentVariable(&#39;LastListingId&#39;, WatchlistListingId[(Number(WatchlistListingIdCount) - 1)]);
+
+        }
+...        
+</code></pre></div><ol>
+<li>如果从监视列表中获取的项目 &gt;1，则组装预请求“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从监视列表</a>
+ 中删除<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">列表</a>
+”以删除<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">监视列表</a>
+中除最后一个项目之外的所有项目，然后保留最后一个项目以供后续交易删除<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+ ' 以使用。</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else {
+
+            //Delete ListingId from Watchlist, but leave the last ListingId for later transaction to delete
+            console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Start&#34;);
+
+            postman.setEnvironmentVariable(&#39;LastListingId&#39;, WatchlistListingId[(Number(WatchlistListingIdCount) - 1)]);
+
+            var LastListingId = pm.environment.get(&#34;LastListingId&#34;);
+
+            console.log(&#34;LastListingId: &#34; + LastListingId);
+
+            //Exclude the last ListingId
+            for (var i = 0; i <span style="color:#960050;background-color:#1e0010">&lt;</span> (WatchlistListingId.length - 1); i++) {
+
+                const pre_request_removealistingfromyourwatchlist = {
+
+                    url: pm.environment.get(&#34;BaseUrl&#34;) + &#39;/v1/MyTradeMe/WatchList/&#39; + WatchlistListingId[i] + &#39;.JSON&#39;,
+                    method: &#39;DELETE&#39;,
+
+                    header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+                    
+                    body: {
+                    }
+
+                };
+
+                pm.sendRequest(pre_request_removealistingfromyourwatchlist, function (err, response) {
+
+                    if (err) {
+
+                        console.log(err);
+
+                        console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Failed&#34;);
+
+                    }
+
+                    else {
+
+                        // Output the ListingId that has been deleted
+                        pm.test(&#34;Delete ListingId from the Watchlist, but leave the LastListingId: &#34; + LastListingId, function () {
+
+                            // console.log(response.json());
+                        });
+                    }
+
+                });
+
+            }
+
+            console.log(&#34;Pre-Transaction: RemoveAListingFromYourWatchlist Pass&#34;);
+
+        }
+
+    }
+
+});
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+</p>
+<ul>
+<li>
+<h4 id="在-postman-的-authorization-标签中选择-oauth-10-对请求进行授权">在 Postman 的 Authorization 标签中选择 OAuth 1.0 对请求进行授权。</h4>
+</li>
+</ul>
+<p>OAuth 1.0 是针对发送前需要授权的交易。模板如下：</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt="img"  loading="lazy" />
+</p>
+<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+</p>
+<ul>
+<li>组合删除请求 - 从您的监视列表中删除列表</li>
+</ul>
+<p>根据 API 规范，参数 - <strong>listingId</strong>表示要删除的列表的 ID。</p>
+<p>并且listingId 来自pre_request ' <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ &lsquo;的响应，并且它已经设置为环境变量：{{LastListingId}}。</p>
+<p>所以请求应该是 DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-para.webp" alt="img"  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="api连接">API连接</h4>
+</li>
+</ul>
+<p>连通性测试通过并获得响应示例。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;Success&#34;: true,
+    &#34;Description&#34;: &#34;Success&#34;
+}
+</code></pre></div><ul>
+<li>
+<h4 id="api检查点">API检查点</h4>
+</li>
+</ul>
+<p>使用后置请求: API - 检索您的监视列表以检查它是否仍有可以删除的监视列表中的项目。</p>
+<p>检查前置请求&rsquo; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ &lsquo;的功能是否有效；</p>
+<p>并且它可以从其响应中排除那些无法执行删除操作的项目，以便使用另一个 pre_request 事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+ ”；</p>
+<p>并且它可以保留其对下游事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+ ”的响应中的最后一项以供使用。</p>
+<p>检查“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+ ”的功能是否有效，它可以从监视列表中删除最后一个项目。</p>
+<p>然后我们根据示例功能得到下面的检查代码片段。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: RetrieveYourWatchlist Start&#34;);
+
+const post_request = {
+
+  url:  pm.environment.get(&#34;BaseUrl&#34;)+&#39;/v1/MyTradeMe/Watchlist/All.JSON&#39;,
+
+  method: &#39;GET&#39;,
+
+  header:[&#39;Content-Type:application/json&#39;, &#39;Authorization:OAuth oauth_consumer_key=&#34;your Consumer Key&#34;,oauth_token=&#34;your OAuth Token&#34;,oauth_signature_method=&#34;PLAINTEXT&#34;,oauth_timestamp=&#34;1623834029&#34;,oauth_nonce=&#34;Zr5dzIAuVON&#34;,oauth_version=&#34;1.0&#34;,oauth_signature=&#34;your Consumer Secret%26your OAuth Token Secret&#34;&#39;],
+
+  body: {
+  }
+  
+};
+
+var LastListingId = pm.environment.get(&#34;LastListingId&#34;);
+
+pm.sendRequest(post_request, function (err, response) {
+
+    if (err) {
+
+        console.log(err);
+
+        console.log(&#34;Post-Transaction: RetrieveYourWatchlist Failed&#34;);
+
+    } 
+
+    else {
+
+        // Confirm whether all ListingId have been deleted from the Watchlist
+        pm.test(&#34;Checking LastListingId: &#34; +LastListingId +&#34; has been deleted&#34;, function () {
+
+            var jsonData = response.json();
+
+            var Listdata = jsonData[&#39;List&#39;];
+
+            var arr = [];
+
+            for(i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
+
+                <span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">bidding</span> <span style="color:#a6e22e">items</span> <span style="color:#a6e22e">can</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">need</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">exclude</span> <span style="color:#a6e22e">them</span>
+                <span style="color:#a6e22e">if</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">BidCount</span> <span style="color:#960050;background-color:#1e0010">!=</span> <span style="color:#a6e22e">1</span><span style="color:#960050;background-color:#1e0010">){</span>
+
+                    <span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">push</span><span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+                <span style="color:#960050;background-color:#1e0010">}</span>
+
+            <span style="color:#960050;background-color:#1e0010">}</span>
+            
+            <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">0</span><span style="color:#960050;background-color:#1e0010">){</span>
+
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Current</span> <span style="color:#a6e22e">count</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">ListingId</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">can</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">deleted</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">watchlist:</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">arr</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">length</span><span style="color:#960050;background-color:#1e0010">);</span>
+
+            <span style="color:#960050;background-color:#1e0010">}</span>
+
+        <span style="color:#960050;background-color:#1e0010">});</span>
+        
+        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">RetrieveYourWatchlist</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
+    <span style="color:#960050;background-color:#1e0010">}</span> 
+
+<span style="color:#960050;background-color:#1e0010">});</span>
+</code></pre></div><p>运行脚本以从控制台日志验证检查点是否正常工作。</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-log0.webp" alt="img"  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-log1.webp" alt="img"  loading="lazy" />
+</p>
+<h2 id="api-测试脚本增强">API 测试脚本增强</h2>
+<ul>
+<li>
+<h4 id="增强脚本如添加事务功能异常验证参数化等">增强脚本，如添加事务功能、异常验证、参数化等。</h4>
+</li>
+<li>
+<h4 id="运行最终脚本并从前端页面或控制台日志进行验证">运行最终脚本并从前端页面或控制台日志进行验证。</h4>
+</li>
+</ul>
+<p><strong>删除操作前显示在监视列表页面上。</strong></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-enhance1.webp" alt="img"  loading="lazy" />
+</p>
+<p><strong>移除操作后显示在关注列表页面。</strong></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-listing-from-watchlist-enhance2.webp" alt="img"  loading="lazy" />
+</p>
+<h2 id="api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</h2>
+<p>使用我们在手动测试案例中所做的“等效类划分”和“边界值分析”。</p>
+<p>这些API测试脚本都是做负方向的业务，作为上述API正案例的延伸。</p>
+<h2 id="api测试脚本发布">API测试脚本发布</h2>
+<p>当我们完成 API 正面和反面案例时，将脚本从调试文件夹移动到公共文件夹。</p>
+<p>然后等待使用 CICD 工具与其他脚本结合发布到 GitHub 特定存储库。</p>
+</div><div class="post-copyright mb-4">
+  <h3>版权</h3><div class="post-cc">本作品采用 <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a> 授权。</div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-检索即将关闭列表 API 测试</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a>
+    </div></div>
+</div><section class="related-posts">
+  <h3>相关文章</h3>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/">Trade Me-7-将列表添加到您的监视列表 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li></ul>
+</section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="ifulltest/comments"
+  issue-term="pathname"
+  label=""
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="https://ifulltest.github.io/images/about-me.webp" alt="Gary Gao" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,CICD,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">关于我</a></div></div>
+</section><section class="featured-posts row surface">
+  <h4>精选文章</h4>
+  <ul><li><a href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">网站路线图</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+</section><section class="recent-posts row surface">
+  <h4>最近文章</h4>
+  <ul><li><a href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">网站路线图</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+</section>
+<section class="taxonomy-series row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/zh-cn/series">专栏</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
+      Postman API Automation Practice <span class="badge rounded-pill">13</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="用户手册">
+      用户手册 <span class="badge rounded-pill">2</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API自动化测试实践">
+      Postman API自动化测试实践 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/zh-cn/tags">标签</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/zh-cn/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">14</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
+      Cypress <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/trademe/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Trademe">
+      Trademe <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:ifulltest@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://facebook.com/profile.php?id=100070922467826" title="Facebook">
+        <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/ifulltest" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/gary-gao-511854194/" title="LinkedIn">
+        <i class="fab fa-fw fa-2x fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.zhihu.com/people/ifulltest" title="Zhihu">
+        <i class="fab fa-fw fa-2x fa-zhihu"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2019-2021 Gary Gao. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e8010f7b2c7741"></script></body>
+</html>

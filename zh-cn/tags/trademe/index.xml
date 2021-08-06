@@ -13,11 +13,24 @@
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;&lt;em&gt;前言&lt;/em&gt;&lt;/h2&gt;
-&lt;h4 id=&#34;我为什么要写这个系列文章三个原因&#34;&gt;我为什么要写这个系列文章？三个原因。&lt;/h4&gt;
-&lt;p&gt;1、背景是作者在新西兰找测试工作。选择一款合适的产品，使用主流的测试工具来覆盖功能测试、API自动化测试、UI自动化测试、CICD，这对作者来说是展示自己能力的聪明办法。&lt;/p&gt;
-&lt;p&gt;2、作者发现身边有太多的测试工程师表达了学习一些自动化测试技术的愿望。但是他们不知道扩展他们的测试技术堆栈的路线图是什么，从哪里开始，以及如何在尽可能短的时间内练习如此全面的技能？所以，笔者想，这样的一个系列文章或许可以帮助自己，同时帮助那些有上述疑问的人。&lt;/p&gt;
-&lt;p&gt;3、作者希望通过这个平台得到即时的反馈，纠正自己对IT技术的误解，最终提高作者和学习者的IT知识积累效率。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;写这个系列的原因是什么&#34;&gt;写这个系列的原因是什么？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;1用于测试技能演示&#34;&gt;1、用于测试技能演示。&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;作者希望通过一系列自动化测试实践分享来展示他在 API、UI、移动自动化测试领域的综合技能。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;2用于指导自动化测试新手&#34;&gt;2、用于指导自动化测试新手。&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;选择一款流行的产品来演示其API自动化测试过程，将是上述人员快速进入自动化测试领域以节省时间的一种简便方法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;3是互助进步&#34;&gt;3、是互助进步。&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

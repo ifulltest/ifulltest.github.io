@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trade Me-10-通用搜索API测试 - Hugo Bootstrap</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
+<link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
+<meta name="description" content="" /><meta itemprop="name" content="Trade Me-10-通用搜索API测试">
+<meta itemprop="description" content="API - 一般搜索脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Nega"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1628"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-10-通用搜索API测试" />
+<meta property="og:description" content="API - 一般搜索脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Nega" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-07-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-07-29T00:00:00+00:00" /><meta property="og:site_name" content="Hugo Bootstrap" />
+<meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/" /><meta property="og:see_also" content="https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
+
+<meta name="twitter:title" content="Trade Me-10-通用搜索API测试"/>
+<meta name="twitter:description" content="API - 一般搜索脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Nega"/>
+<meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-202225177-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://ifulltest.github.io/zh-cn/">
+      <img class="logo" alt="Logo" src="https://ifulltest.github.io/images/logo.webp" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://ifulltest.github.io/zh-cn/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">
+            <i class="fas fa-fw fa-sitemap"></i>网站路线图
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/archives">
+            <i class="fas fa-fw fa-file-archive"></i>归档
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/categories">
+            <i class="fas fa-fw fa-folder"></i>分类
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/tags">
+            <i class="fas fa-fw fa-tags"></i>标签
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://ifulltest.github.io/zh-cn/series">
+            <i class="fas fa-fw fa-columns"></i>专栏
+          </a>
+        </li><li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            更多
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
+              <a class="dropdown-item"
+                href="https://github.com/ifulltest" target="_blank">
+                <i class="fab fa-fw fa-github"></i>Github
+              </a>
+            </li><li>
+              <a class="dropdown-item"
+                href="https://www.linkedin.com/in/gary-gao-511854194/" target="_blank">
+                <i class="fab fa-fw fa-linkedin"></i>LinkedIn
+              </a>
+            </li></ul>
+        </li></ul>
+      <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0"><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="languageSwitcher" data-bs-toggle="popover"
+    data-bs-placement="bottom" data-bs-target="#languagesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-language" ></i>
+  </a>
+</li>
+<script type="text/html" id="languagesPopoverBody">
+  <ul class="languages list-group"><li class="language list-group-item"><a href="https://ifulltest.github.io/en/">English</a></li><li class="language list-group-item active">中文</li></ul>
+</script><li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="paletteSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#palettesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-palette" ></i>
+  </a>
+</li>
+<script type="text/html" id="palettesPopoverBody">
+  <ul class="palettes list-group"><li id="palette-blue" class="palette list-group-item bg-blue">
+      <a>蓝色</a>
+    </li><li id="palette-blue-gray" class="palette list-group-item bg-blue-gray">
+      <a>蓝灰色</a>
+    </li><li id="palette-brown" class="palette list-group-item bg-brown">
+      <a>棕色</a>
+    </li><li id="palette-cyan" class="palette list-group-item bg-cyan">
+      <a>青色</a>
+    </li><li id="palette-green" class="palette list-group-item bg-green">
+      <a>绿色</a>
+    </li><li id="palette-indigo" class="palette list-group-item bg-indigo">
+      <a>靛青色</a>
+    </li><li id="palette-orange" class="palette list-group-item bg-orange">
+      <a>橙色</a>
+    </li><li id="palette-pink" class="palette list-group-item bg-pink">
+      <a>粉色</a>
+    </li><li id="palette-purple" class="palette list-group-item bg-purple">
+      <a>紫色</a>
+    </li><li id="palette-red" class="palette list-group-item bg-red">
+      <a>红色</a>
+    </li><li id="palette-teal" class="palette list-group-item bg-teal">
+      <a>蓝绿色</a>
+    </li><li id="palette-yellow" class="palette list-group-item bg-yellow">
+      <a>黄色</a>
+    </li></ul>
+</script>
+<li class="nav-item me-1">
+  <a class="nav-link" tabindex="0" data-bs-trigger="click" id="fontSizeSwitcher" data-bs-toggle="popover" data-bs-placement="bottom" 
+    data-bs-target="#fontSizesPopoverBody" data-bs-html="true">
+    <i class="fas fa-fw fa-font" ></i>
+  </a>
+</li>
+<script type="text/html" id="fontSizesPopoverBody">
+  <form class="font-size-switcher-form">
+    <label for="fontSize" class="form-label">字体大小</label>
+    <input type="range" class="form-range" min="-2" max="2" id="fontSize">
+  </form>
+</script>
+
+<form class="mode-switcher-form d-flex align-items-center">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="modeSwitcher">
+  </div>
+</form></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/zh-cn/">主页</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/zh-cn/posts/">文章</a></li><li class="breadcrumb-item active">Trade Me-10-通用搜索API测试</li></ol>
+</nav><article class="post row surface"><div class="post-toolbox">
+  <div class="col-12 d-none d-lg-block">
+    <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
+  </div>
+</div>
+<h1 class="post-title my-3">Trade Me-10-通用搜索API测试</h1><div class="post-meta mb-3">
+  <span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>2021-07-29
+  </span>
+  <span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>4 分钟阅读
+  </span>
+<div class="post-translations nav-item dropdown me-2 d-inline-flex">
+  <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-fw fa-language me-1"></i>中文
+  </a>
+  <div class="dropdown-menu"><a class="dropdown-item post-translation" href="https://ifulltest.github.io/en/posts/tm-api-general-search/">English</a></div>
+</div>
+
+<a href="https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/zh-cn/tags/postman/" class="post-taxonomy">#Postman</a></div>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">目录</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#api---一般搜索脚本开发步骤"><em>API - 一般搜索脚本开发步骤</em></a></li>
+    <li><a href="#api规范">API规范</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#业务介绍">业务介绍</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#api测试脚本调试">API测试脚本调试</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#api-测试脚本增强">API 测试脚本增强</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</a></li>
+    <li><a href="#api测试脚本发布">API测试脚本发布</a></li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="api---一般搜索脚本开发步骤"><em>API - 一般搜索脚本开发步骤</em></h2>
+<p><em>API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Negative Cases扩展-&gt;API测试脚本发布</em></p>
+<h2 id="api规范">API规范</h2>
+<ul>
+<li>
+<h4 id="api-功能允许您按类别关键字或这两者的组合搜索-trade-me-上的列表">API 功能：允许您按类别、关键字或这两者的组合搜索 Trade Me 上的列表。</h4>
+</li>
+</ul>
+<p>结果集可以通过各种属性进行过滤，包括“<strong>立即购买”</strong>、“立即付款”、“商品状况”或“卖家”的可用性。</p>
+<ul>
+<li>
+<h4 id="关键请求字段">关键请求字段</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search.webp" alt="img"  loading="lazy" />
+</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>page</strong></td>
+<td>Integer (optional)</td>
+<td>要返回的结果集的页码，从 1 开始。默认为 1。</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td><strong>rows</strong></td>
+<td>Integer (optional)</td>
+<td>每页结果数；也是要返回的最大结果数。对于未经身份验证的请求，最大值为 25，对于经过身份验证的请求，最大值为 500。默认为 25（未认证）或 50（已认证）。</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>更多参考：<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank"><strong>一般搜索</strong></a>
+</p>
+<ul>
+<li>
+<h4 id="关键响应字段">关键响应字段</h4>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>TotalCount</strong></td>
+<td>Integer</td>
+<td>集合中的结果总数。可以大于返回结果的数量。</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>TotalCountTruncated</strong></td>
+<td>Boolean</td>
+<td>如果结果总数超过允许的最大值并被截断，则为真。</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Page</strong></td>
+<td>Integer</td>
+<td>当前结果页的索引（从 1 开始）。</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PageSize</strong></td>
+<td>Integer</td>
+<td>当前页面中的结果数。</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>List</strong></td>
+<td>Collection of or null</td>
+<td>当前页面中的结果列表。</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>商家信息的 ID。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>BuyNowPrice</strong></td>
+<td>Number</td>
+<td>立即购买价格。</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>HasBuyNow</strong></td>
+<td>Boolean</td>
+<td>指示该项目是否有立即购买。</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>更多参考：<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank"><strong>一般搜索</strong></a>
+</p>
+<ul>
+<li>
+<h4 id="示例请求">示例请求</h4>
+</li>
+</ul>
+<p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4">https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4</a></p>
+<ul>
+<li>
+<h4 id="示例响应">示例响应</h4>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;TotalCount&#34;: 16479,
+    &#34;Page&#34;: 4,
+    &#34;PageSize&#34;: 500,
+    &#34;List&#34;: [
+    	...
+        {
+            &#34;ListingId&#34;: 2149294614,
+            &#34;Title&#34;: &#34;Cobra Glassware&#34;,
+            &#34;Category&#34;: &#34;0341-0881-4739-&#34;,
+            &#34;StartPrice&#34;: 11.0000,
+            &#34;BuyNowPrice&#34;: 33.0000,
+            ...
+            &#34;HasBuyNow&#34;: true,
+            ...
+        },
+        ...
+    ]
+}   
+</code></pre></div><h2 id="业务介绍">业务介绍</h2>
+<ul>
+<li>
+<h4 id="前端页面---搜索框勾选立即购买以过滤具有立即购买功能的项目">前端页面 - 搜索框勾选“立即购买”以过滤具有“立即购买”功能的项目。</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-ui.webp" alt="img"  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="业务范围选择">业务范围选择</h4>
+</li>
+</ul>
+<p>链式投资组合交易</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索（<strong>我在这里</strong>）</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖</a>
+</p>
+<p>通过搜索功能搜索 500 件商品，并仅从下游交易“检索单个列表的详细信息”的响应中选择具有“HasBuyNow”功能和 BuyNowPrice &lt;= $20 的商品以供使用。</p>
+<ul>
+<li>
+<h4 id="业务验证点">业务验证点</h4>
+</li>
+</ul>
+<p>检查给定的搜索条件可以获得项目，这些项目中的一个随机项目可以存储供下游事务&rsquo;RetrieveTheDetailsOfASingleListing&rsquo;使用。</p>
+<h2 id="api测试脚本调试">API测试脚本调试</h2>
+<ul>
+<li>
+<h4 id="在-postman-的-authorization-标签中选择-oauth-10-对请求进行授权">在 Postman 的 Authorization 标签中选择 OAuth 1.0 对请求进行授权。</h4>
+</li>
+</ul>
+<p>OAuth 1.0 是针对发送前需要授权的交易。模板如下：</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt="img"  loading="lazy" />
+</p>
+<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考**<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+**</p>
+<ul>
+<li>
+<h4 id="组装请求---从您赢得的物品列表中删除购买httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list">组装请求 - &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
+&rsquo;</h4>
+</li>
+</ul>
+<p>根据 API 规范，参数<strong>buy=All</strong>表示将列表过滤为仅包含“立即购买”的列表。</p>
+<p>参数<strong>rows=500</strong>表示对于经过身份验证的请求，每页的最大结果数为<strong>500</strong>。</p>
+<p>参数<strong>page=4</strong>表示要返回的结果集的第<strong>4</strong>页。</p>
+<p>所以请求应该是 <strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4">https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4</a></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-para.webp" alt="img"  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="api连接">API连接</h4>
+</li>
+</ul>
+<p>连通性测试通过并获得响应示例。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
+    &#34;TotalCount&#34;: 16479,
+    &#34;Page&#34;: 4,
+    &#34;PageSize&#34;: 500,
+    &#34;List&#34;: [
+    	...
+        {
+            &#34;ListingId&#34;: 2149288229,
+            &#34;Title&#34;: &#34;The Shawshank Redemption (Special Edition)&#34;,
+            &#34;Category&#34;: &#34;0003-9232-9241-&#34;,
+            &#34;StartPrice&#34;: 0,
+            &#34;BuyNowPrice&#34;: 12,
+            &#34;StartDate&#34;: &#34;/Date(1625090253613)/&#34;,
+            &#34;EndDate&#34;: &#34;/Date(1625695053613)/&#34;,
+            &#34;ListingLength&#34;: null,
+            &#34;HasGallery&#34;: true,
+            &#34;AsAt&#34;: &#34;/Date(1625649443316)/&#34;,
+            &#34;CategoryPath&#34;: &#34;/Movies-TV/Bluray/Drama&#34;,
+            &#34;PictureHref&#34;: &#34;https://images.tmsandbox.co.nz/photoserver/thumb/104197832.jpg&#34;,
+            &#34;Region&#34;: &#34;Wellington&#34;,
+            &#34;Suburb&#34;: &#34;Wellington City&#34;,
+            &#34;HasBuyNow&#34;: true,
+            &#34;NoteDate&#34;: &#34;/Date(0)/&#34;,
+            &#34;ReserveState&#34;: 3,
+            &#34;IsBuyNowOnly&#34;: true,
+            &#34;PriceDisplay&#34;: &#34;$12.00 per item&#34;,
+            &#34;HasFreeShipping&#34;: true,
+            &#34;PromotionId&#34;: 2,
+            &#34;AdditionalData&#34;: {
+                &#34;BulletPoints&#34;: [],
+                &#34;Tags&#34;: []
+            },
+            &#34;MemberId&#34;: 4007156
+        },
+        ...
+    ]
+}
+</code></pre></div><ul>
+<li>
+<h4 id="api检查点">API检查点</h4>
+</li>
+</ul>
+<p>检查“常规搜索”的功能是否有效，它可以从其对下游交易的响应中获取任何具有“HasBuyNow”功能的 ListingId &lsquo;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
+ &lsquo;或&rsquo;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用立即购买的拍卖</a>
+ &lsquo;来使用.</p>
+<p>然后我们根据示例功能得到下面的检查代码片段。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: CheckingListingIdHasBuyNow Start&#34;);
+
+pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
+
+    var jsonData = pm.response.json();
+
+    var Page = jsonData.Page;
+
+    var PageSize = jsonData.PageSize;
+
+    var arr =[];
+
+    var List = jsonData.List;
+
+    if (typeof(List) !== &#34;undefined&#34;){
+
+        for (i in List){
+
+            var ListingId = List[i].ListingId;
+
+            //Only pick the items that has the &#39;HasBuyNow&#39; feature and the BuyNowPrice <span style="color:#960050;background-color:#1e0010">&lt;</span>= $20
+            if(List[i].HasBuyNow == true <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> List[i].BuyNowPrice <span style="color:#960050;background-color:#1e0010">&lt;</span>=20){
+
+                arr.push(ListingId);
+
+                }
+
+        }
+
+        postman.setEnvironmentVariable(&#39;ListingIdHasBuyNowCount&#39;, arr.length);  
+
+    }
+
+    if(Array.isArray(arr) <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> arr.length === 0){        
+
+        console.log(pm.response.json());
+
+        console.log(&#34;Didn&#39;t fetch any ListingId has the &#39;HasBuyNow&#39; feature: &#34; +SingleListingId);
+
+        console.log(&#34;Post-Transaction: CheckingListingIdHasBuyNow Failed&#34;);
+
+    }
+    else{
+
+        postman.setEnvironmentVariable(&#39;ListingIdHasBuyNow&#39;, arr);
+
+        console.log(&#34;Page: &#34;+Page+&#34;, total items: &#34;+PageSize);
+        
+        console.log(&#34;&#39;HasBuyNow&#39; items counts to: &#34; + arr.length + &#34;, ListingId details: &#34;);
+
+        console.log(arr);
+
+        // Randomly get one ListingId from the stored ListingId list that has the &#39;HasBuyNow&#39; feature.
+        // The ListingId will be picked for downstream transaction &#39;RetrieveTheDetailsOfASingleListing&#39; to use.
+        var ListingIdHasBuyNowCount = pm.environment.get(&#34;ListingIdHasBuyNowCount&#34;);
+
+        var ListingIdHasBuyNow=pm.environment.get(&#34;ListingIdHasBuyNow&#34;).split(&#34;,&#34;);
+
+        postman.setEnvironmentVariable(&#39;SingleListingId&#39;, ListingIdHasBuyNow[Math.floor(Math.random() * Number(ListingIdHasBuyNowCount))]);
+
+        var SingleListingId = pm.environment.get(&#34;SingleListingId&#34;);
+        
+        console.log(&#34;Get random SingleListingId: &#34; +SingleListingId);
+
+        console.log(&#34;Post-Transaction: CheckingListingIdHasBuyNow Pass&#34;);
+
+    }
+
+});
+</code></pre></div><p>运行脚本以从控制台日志验证检查点是否正常工作。</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-log1.webp" alt="img"  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-log2.webp" alt="img"  loading="lazy" />
+</p>
+<h2 id="api-测试脚本增强">API 测试脚本增强</h2>
+<ul>
+<li>
+<h4 id="增强脚本如添加事务功能异常验证参数化等">增强脚本，如添加事务功能、异常验证、参数化等。</h4>
+</li>
+<li>
+<h4 id="运行最终脚本并从前端页面或控制台日志进行验证">运行最终脚本并从前端页面或控制台日志进行验证。</h4>
+</li>
+</ul>
+<h2 id="api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</h2>
+<p>使用我们在手动测试案例中所做的“等效类划分”和“边界值分析”。</p>
+<p>这些API测试脚本都是做反方向的业务，作为上述API正案例的延伸。</p>
+<h2 id="api测试脚本发布">API测试脚本发布</h2>
+<p>当我们完成 API 正面和反面案例时，将脚本从调试文件夹移动到公共文件夹。</p>
+<p>然后等待使用 CICD 工具与其他脚本结合发布到 GitHub 特定存储库。</p>
+</div><div class="post-copyright mb-4">
+  <h3>版权</h3><div class="post-cc">本作品采用 <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a> 授权。</div>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表 API 测试的详细信息</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+      <a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-从您赢得的物品列表中删除购买 API 测试</a>
+    </div></div>
+</div><section class="related-posts">
+  <h3>相关文章</h3>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表 API 测试的详细信息</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-使用 Buy Now API 测试购买拍卖</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-从您赢得的物品列表中删除购买 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-检索即将关闭列表 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/">Trade Me-8-检索您赢得的物品 API 测试</a></li></ul>
+</section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
+  repo="ifulltest/comments"
+  issue-term="pathname"
+  label=""
+  theme="github-light"
+  crossorigin="anonymous"
+  async>
+</script></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row">
+  <div class="col-xl-6 d-flex align-items-center justify-content-center">
+    <img class="profile-avatar img-fluid" src="https://ifulltest.github.io/images/about-me.webp" alt="Gary Gao" loading="lazy">
+  </div>
+  <div class="col-xl-6">
+    <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,CICD,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">关于我</a></div></div>
+</section><section class="featured-posts row surface">
+  <h4>精选文章</h4>
+  <ul><li><a href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">网站路线图</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+</section><section class="recent-posts row surface">
+  <h4>最近文章</h4>
+  <ul><li><a href="https://ifulltest.github.io/zh-cn/posts/site-road-map/">网站路线图</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+</section>
+<section class="taxonomy-series row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/zh-cn/series">专栏</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API Automation Practice">
+      Postman API Automation Practice <span class="badge rounded-pill">13</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="用户手册">
+      用户手册 <span class="badge rounded-pill">2</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman API自动化测试实践">
+      Postman API自动化测试实践 <span class="badge rounded-pill">1</span>
+    </a></div>
+</section><section class="taxonomy-tags row surface">
+  <h4>
+    <a href="https://ifulltest.github.io/zh-cn/tags">标签</a>
+  </h4>
+  <div><a href="https://ifulltest.github.io/zh-cn/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
+      Postman <span class="badge rounded-pill">14</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
+      Cypress <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
+      Jenkins <span class="badge rounded-pill">1</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/trademe/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Trademe">
+      Trademe <span class="badge rounded-pill">1</span>
+    </a></div>
+</section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+    <a class="nav-link social-link" href="mailto:ifulltest@gmail.com" title="Email">
+      <i class="fas fa-fw fa-2x fa-envelope"></i>
+    </a>
+  </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://facebook.com/profile.php?id=100070922467826" title="Facebook">
+        <i class="fab fa-fw fa-2x fa-facebook-f"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/ifulltest" title="GitHub">
+        <i class="fab fa-fw fa-2x fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/gary-gao-511854194/" title="LinkedIn">
+        <i class="fab fa-fw fa-2x fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.zhihu.com/people/ifulltest" title="Zhihu">
+        <i class="fab fa-fw fa-2x fa-zhihu"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  Copyright © 2019-2021 Gary Gao. All Rights Reserved.
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+<script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e8010f7b2c7741"></script></body>
+</html>

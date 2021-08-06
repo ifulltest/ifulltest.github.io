@@ -28,8 +28,177 @@
                 href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/"
                 />
   </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/</loc>
+    <lastmod>2021-07-24T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/</loc>
+    <lastmod>2021-07-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/</loc>
+    <lastmod>2021-07-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/</loc>
+    <lastmod>2021-07-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/</loc>
+    <lastmod>2021-07-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/</loc>
+    <lastmod>2021-07-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/</loc>
+    <lastmod>2021-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-general-search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/</loc>
+    <lastmod>2021-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/</loc>
+    <lastmod>2021-07-29T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-scenarios-and-newman-report/</loc>
+    <lastmod>2021-08-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-scenarios-and-newman-report/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/posts/tm-api-jenkins-cicd-process/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/posts/tm-api-jenkins-cicd-process/"
+                />
+  </url><url>
     <loc>https://ifulltest.github.io/zh-cn/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,8 +210,21 @@
                 href="https://ifulltest.github.io/zh-cn/"
                 />
   </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/tags/jenkins/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/tags/jenkins/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/tags/jenkins/"
+                />
+  </url><url>
     <loc>https://ifulltest.github.io/zh-cn/tags/postman/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,14 +236,21 @@
                 href="https://ifulltest.github.io/zh-cn/tags/postman/"
                 />
   </url><url>
-    <loc>https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ifulltest.github.io/zh-cn/tags/trademe/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <loc>https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/series/postman-api-automation-practice/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/series/postman-api-automation-practice/"
+                />
   </url><url>
     <loc>https://ifulltest.github.io/zh-cn/series/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -74,7 +263,7 @@
                 />
   </url><url>
     <loc>https://ifulltest.github.io/zh-cn/posts/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -87,7 +276,7 @@
                 />
   </url><url>
     <loc>https://ifulltest.github.io/zh-cn/tags/</loc>
-    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -98,6 +287,25 @@
                 hreflang="zh-cn"
                 href="https://ifulltest.github.io/zh-cn/tags/"
                 />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/tags/cypress/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ifulltest.github.io/en/tags/cypress/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ifulltest.github.io/zh-cn/tags/cypress/"
+                />
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/series/postman-api%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%AE%9E%E8%B7%B5/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ifulltest.github.io/zh-cn/tags/trademe/</loc>
+    <lastmod>2021-07-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ifulltest.github.io/zh-cn/series/%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/</loc>
     <lastmod>2021-01-11T00:00:00+00:00</lastmod>
