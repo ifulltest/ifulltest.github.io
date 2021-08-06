@@ -13,7 +13,7 @@
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;three-reasons-for-writing-the-series&#34;&gt;Three reasons for writing the series.&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;whatre-the-reasons-for-writing-the-series&#34;&gt;What&amp;rsquo;re the reasons for writing the series?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;1st, for testing skills demonstration.&lt;/h4&gt;
@@ -76,7 +76,7 @@
     </item>
     
     <item>
-      <title>Trade Me-6-Retrieve closing soon listings</title>
+      <title>Trade Me-6-Retrieve closing soon listings API testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -86,7 +86,7 @@
     </item>
     
     <item>
-      <title>Trade Me-7-Add a listing to your watchlist</title>
+      <title>Trade Me-7-Add a listing to your watchlist API testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -96,7 +96,7 @@
     </item>
     
     <item>
-      <title>Trade Me-8-Retrieve your won items</title>
+      <title>Trade Me-8-Retrieve your won items API testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -106,7 +106,7 @@
     </item>
     
     <item>
-      <title>Trade Me-9-Remove a purchase from your won items list</title>
+      <title>Trade Me-9-Remove a purchase from your won items list API testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -116,7 +116,7 @@
     </item>
     
     <item>
-      <title>Trade Me-10-General search</title>
+      <title>Trade Me-10-General search API testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-general-search/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -126,7 +126,7 @@
     </item>
     
     <item>
-      <title>Trade Me-11-Retrieve the details of a single listing</title>
+      <title>Trade Me-11-Retrieve the details of a single listing API testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -136,7 +136,7 @@
     </item>
     
     <item>
-      <title>Trade Me-12-Buy an auction using Buy Now</title>
+      <title>Trade Me-12-Buy an auction using Buy Now API testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
