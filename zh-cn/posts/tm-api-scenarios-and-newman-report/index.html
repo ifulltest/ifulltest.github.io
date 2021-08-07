@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-13-场景和Newman报告">
 <meta itemprop="description" content="场景在API自动化测试中的地位 典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;场景和报告（我来了） -&gt; CICD 典型交易选择 典型交易选择指：Trade Me-2-"><meta itemprop="datePublished" content="2021-08-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1036"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1065"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-13-场景和Newman报告" />
 <meta property="og:description" content="场景在API自动化测试中的地位 典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;场景和报告（我来了） -&gt; CICD 典型交易选择 典型交易选择指：Trade Me-2-" />
 <meta property="og:type" content="article" />
@@ -195,7 +195,7 @@ if (!doNotTrack) {
       </ul>
     </li>
     <li><a href="#运行场景的两种方式">运行场景的两种方式</a></li>
-    <li><a href="#由集合运行器运行您的场景">由集合运行器运行您的场景</a>
+    <li><a href="#由collection-runner运行您的场景">由Collection Runner运行您的场景</a>
       <ul>
         <li></li>
       </ul>
@@ -239,10 +239,10 @@ if (!doNotTrack) {
 <p>Postman 使用集合的概念来存储您的 API 测试脚本作为基本场景。</p>
 <p>您可以选择两种方式来运行场景和显示运行报告。</p>
 <p>一个是Collection Runner，另一个是Newman工具。</p>
-<h2 id="由集合运行器运行您的场景">由集合运行器运行您的场景</h2>
+<h2 id="由collection-runner运行您的场景">由Collection Runner运行您的场景</h2>
 <ul>
 <li>
-<h4 id="什么是邮递员集合转轮">什么是邮递员集合转轮</h4>
+<h4 id="什么是collection-runner">什么是Collection Runner</h4>
 </li>
 </ul>
 <p>Collection Runner 允许您以指定的顺序运行一组请求。</p>
@@ -251,14 +251,14 @@ if (!doNotTrack) {
  。</p>
 <ul>
 <li>
-<h4 id="转到集合跑步者标签">转到集合跑步者标签</h4>
+<h4 id="转到collection-runner标签">转到Collection Runner标签</h4>
 </li>
 </ul>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner1.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="启用显示邮差控制台">启用“显示邮差控制台”</h4>
+<h4 id="启用show-postman-console">启用“Show Postman Console”</h4>
 </li>
 </ul>
 <h5 id="查看--显示-postman-控制台以启用控制台日志">查看 &gt; 显示 Postman 控制台以启用控制台日志</h5>
@@ -344,7 +344,7 @@ if (!doNotTrack) {
 <h4 id="生成-cli-和-html-报告">生成 CLI 和 HTML 报告</h4>
 </li>
 </ul>
-<p>使用 Newman 报告器生成命令行和网页报告。</p>
+<p>使用 Newman reporters 生成命令行和网页报告。</p>
 <p>语法指的是**<a href="https://github.com/postmanlabs/newman#reporters" target="_blank">Reporters</a>
 ** 。</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-1.webp" alt="img"  loading="lazy" />
