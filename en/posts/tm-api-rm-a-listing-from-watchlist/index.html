@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Remove a listing from your watchlist script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1277"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1275"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-5-Remove a listing from your watchlist API testing" />
 <meta property="og:description" content="API - Remove a listing from your watchlist script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -337,7 +337,7 @@ const pre_request_retrieveyourwatchlist = {
 
 };
 ...
-</code></pre></div><p>​	Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
+</code></pre></div><p>​	Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo">Preparation before API testing demo</a>
 </p>
 <ol start="2">
 <li>All the fetched items should exclude those fields is &lsquo;BidCount&rsquo; = 1 to get all the items that allow being removed from the watch list.  The &lsquo;BidCount&rsquo; field means that the item has been bidden, couldn&rsquo;t be deleted from the watch list.</li>
@@ -424,9 +424,9 @@ const pre_request_retrieveyourwatchlist = {
         }
 ...        
 </code></pre></div><ol start="5">
-<li>If fetched items from the watch list &gt;1, assembling the pre-request &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
-&rsquo; to remove all the items but the last item in the watch list, then leave the last item to be removed for the later transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
-&rsquo; to use.</li>
+<li>If fetched items from the watch list &gt;1, assembling the pre-request <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">&lsquo;Remove a listing from your watchlist&rsquo;</a>
+&rsquo; to remove all the items but the last item in the watch list, then leave the last item to be removed by the later transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+&rsquo;.</li>
 </ol>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else {
 
@@ -484,7 +484,7 @@ const pre_request_retrieveyourwatchlist = {
     }
 
 });
-</code></pre></div><p>Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
+</code></pre></div><p>Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo">Preparation before API testing demo</a>
 </p>
 <ul>
 <li>
@@ -494,15 +494,15 @@ const pre_request_retrieveyourwatchlist = {
 <p>The OAuth 1.0 is for the transaction that needs to be authorized before sending. Template likes the below:</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt=""  loading="lazy" />
 </p>
-<p>How to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">Preparation before API testing demo</a>
+<p>How to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo">Preparation before API testing demo</a>
 </p>
 <ul>
 <li>Assembling the delete request - Remove a listing from your watchlist</li>
 </ul>
 <p>Base on the API specification, parameter - <strong>listingId</strong> means the ID of the listing to remove.</p>
-<p>And the listingId origin from the response of pre_request &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+<p>And the listingId origin from the response of pre_request &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
 &rsquo;, and it has already been set to environment variables: {{LastListingId}}.</p>
-<p>So the request should be DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
+<p>So the request should be <strong>DELETE</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-para.webp" alt=""  loading="lazy" />
 </p>
 <ul>

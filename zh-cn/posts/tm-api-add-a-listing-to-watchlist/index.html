@@ -280,16 +280,18 @@ if (!doNotTrack) {
 <h4 id="业务范围选择">业务范围选择</h4>
 </li>
 </ul>
-<p>链式组合交易</p>
+<p><strong>链式组合交易</strong></p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表（<strong>我在这里</strong>）</a>
 </p>
-<p>从上游交易“<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
- ”中获取即将关闭的列表中的随机项目，并将此项目添加到监视列表中。</p>
+<p><strong>从上游交易“<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
+ ”中获取即将关闭的列表中的随机项目，并将此项目添加到监视列表中。</strong></p>
 <ul>
-<li>业务验证点</li>
+<li>
+<h4 id="业务验证点">业务验证点</h4>
+</li>
 </ul>
 <p>检查所选项目可以添加到监视列表。</p>
 <h2 id="api测试脚本调试">API测试脚本调试</h2>
@@ -317,7 +319,7 @@ const pre_request = {
 
 };  
 ...
-</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
 </p>
 <ol>
 <li>从所有获取的项目中随机选择 1 个项目，并将该项目存储为参数以供以后 API - &lsquo;将列表添加到您的监视列表&rsquo; 使用。</li>
@@ -392,7 +394,7 @@ const pre_request = {
 <p>OAuth 1.0 是针对发送前需要授权的交易。模板如下：</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt="img"  loading="lazy" />
 </p>
-<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
 </p>
 <ul>
 <li>组合请求 - &lsquo;将列表添加到您的监视列表&rsquo;</li>

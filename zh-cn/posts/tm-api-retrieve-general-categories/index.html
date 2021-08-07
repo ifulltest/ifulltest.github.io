@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-3-检索一般类别 API 测试">
 <meta itemprop="description" content="API - 检索一般类别脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Ne"><meta itemprop="datePublished" content="2021-07-24T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-24T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1335"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1337"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-3-检索一般类别 API 测试" />
 <meta property="og:description" content="API - 检索一般类别脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Ne" />
 <meta property="og:type" content="article" />
@@ -352,7 +352,7 @@ if (!doNotTrack) {
 </p>
 <ul>
 <li>
-<h4 id="api连接">API连接</h4>
+<h4 id="api连通性">API连通性</h4>
 </li>
 </ul>
 <p>连通性测试通过并获得响应示例。</p>
@@ -488,7 +488,7 @@ if (!doNotTrack) {
 </p>
 <h2 id="api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</h2>
 <p><em>我们可以使用“等效类分区”和“边界值分析”来测试 API，就像我们在手动测试案例中所做的那样。</em></p>
-<p><em>这些API测试脚本都是做负方向的业务，作为上述API正案例的延伸。</em></p>
+<p><em>这些API测试脚本都是做反方向的业务，作为上述API正案例的延伸。</em></p>
 <ul>
 <li>
 <h4 id="组装请求---检索一般类别httpsdevelopertrademeconzapi-referencecatalogue-methodsretrieve-general-categories-反方向">组装请求 - &lsquo;<a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">检索一般类别</a>
@@ -496,7 +496,7 @@ if (!doNotTrack) {
 </li>
 </ul>
 <p>从 API 规范来看，参数 - <strong>depth=-10</strong>可能是一个“超出边界值”的情况，如果我们发送一个带有这个参数的请求，它期望返回一个异常。</p>
-<p>所以请求应该是 <a href="https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=-10">https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=-10</a></p>
+<p>所以请求应该是 <strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=-10">https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=-10</a></p>
 <ul>
 <li>
 <h4 id="api检查点-1">API检查点</h4>

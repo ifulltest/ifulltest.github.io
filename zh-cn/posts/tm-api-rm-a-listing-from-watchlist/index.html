@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-5-从您的监视列表中删除列表 API 测试">
 <meta itemprop="description" content="API - 从监视列表脚本开发步骤中删除列表 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2177"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="2193"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-5-从您的监视列表中删除列表 API 测试" />
 <meta property="og:description" content="API - 从监视列表脚本开发步骤中删除列表 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试" />
 <meta property="og:type" content="article" />
@@ -290,17 +290,17 @@ if (!doNotTrack) {
 <h4 id="业务范围选择">业务范围选择</h4>
 </li>
 </ul>
-<p>链式组合交易</p>
+<p><strong>链式组合交易</strong></p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表（<strong>我在这里</strong>）</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
 </p>
-<p>从上游事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
- ”的响应中获取所有“ListingId ”作为请求字段。</p>
-<p>前置请求 &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除一个列表</a>
- ' 从 监视列表中删除所有 ListingId 但留下最后一个。</p>
-<p>从监视列表中删除最后一个 ListingId。</p>
+<p><strong>从上游事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+ ”的响应中获取所有“ListingId ”作为请求字段。</strong></p>
+<p><strong>前置请求 &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除一个列表</a>
+ ' 从 监视列表中删除所有 ListingId 但留下最后一个。</strong></p>
+<p><strong>从监视列表中删除最后一个 ListingId。</strong></p>
 <ul>
 <li>
 <h4 id="业务验证点">业务验证点</h4>
@@ -316,9 +316,7 @@ if (!doNotTrack) {
 </li>
 </ul>
 <p>前置求脚本的主要编码逻辑如下：</p>
-<ol>
-<li>前置请求 API - 检索您的监视列表以获取监视列表中的所有项目。</li>
-</ol>
+<p>​	1.前置请求 API - 检索您的监视列表以获取监视列表中的所有项目。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Pre-Transaction: RetrieveYourWatchlist Start&#34;);
 
 // oauth_signature = Consumer Secret%26OAuth Token Secret
@@ -334,11 +332,9 @@ const pre_request_retrieveyourwatchlist = {
 
 };
 ...
-</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
 </p>
-<ol>
-<li>所有获取的项目都应该排除那些字段是 &lsquo;BidCount&rsquo; = 1 以获取允许从监视列表中删除的所有项目。&lsquo;BidCount&rsquo; 字段表示该项目已被投标，无法从监视列表中删除。</li>
-</ol>
+<p>​	2.所有获取的项目都应该排除那些字段是 &lsquo;BidCount&rsquo; = 1 以获取允许从监视列表中删除的所有项目。&lsquo;BidCount&rsquo; 字段表示该项目已被投标，无法从监视列表中删除。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">pm.sendRequest(pre_request_retrieveyourwatchlist, function (err, response) {
 
     if (err) {
@@ -397,9 +393,7 @@ const pre_request_retrieveyourwatchlist = {
         
         <span style="color:#960050;background-color:#1e0010">});</span>
 <span style="color:#960050;background-color:#1e0010">...</span>
-</code></pre></div><ol>
-<li>如果从监视列表中提取的项目 &lt;=0，则监视列表中没有项目。只需启动一个无意义的&rsquo;ListingId&rsquo;。</li>
-</ol>
+</code></pre></div><p>​	3.如果从监视列表中提取的项目 &lt;=0，则监视列表中没有项目。只需启动一个无意义的&rsquo;ListingId&rsquo;。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        var WatchlistListingIdCount = pm.environment.get(&#34;WatchlistListingIdCount&#34;);
 
         var WatchlistListingId = pm.environment.get(&#34;WatchlistListingId&#34;).split(&#34;,&#34;);
@@ -411,22 +405,16 @@ const pre_request_retrieveyourwatchlist = {
 
         }
 ...        
-</code></pre></div><ol>
-<li>如果从监视列表中提取的项目 =1，则存储 &lsquo;ListingId&rsquo; 以供以后使用 &lsquo;RemoveAListingFromYourWatchlist&rsquo; 的 API 请求使用。</li>
-</ol>
+</code></pre></div><p>​	4.如果从监视列表中提取的项目 =1，则存储 &lsquo;ListingId&rsquo; 以供之后的API &lsquo;RemoveAListingFromYourWatchlist&rsquo; 请求使用。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else if (WatchlistListingIdCount == 1) {
 
             postman.setEnvironmentVariable(&#39;LastListingId&#39;, WatchlistListingId[(Number(WatchlistListingIdCount) - 1)]);
 
         }
 ...        
-</code></pre></div><ol>
-<li>如果从监视列表中获取的项目 &gt;1，则组装预请求“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从监视列表</a>
- 中删除<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">列表</a>
-”以删除<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">监视列表</a>
-中除最后一个项目之外的所有项目，然后保留最后一个项目以供后续交易删除<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
- ' 以使用。</li>
-</ol>
+</code></pre></div><p>​	5.如果从监视列表中获取的项目 &gt;1，则组装前置请求<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">“从您的监视列表中删除列表”</a>
+以删除监视列表中除最后一个项目之外的所有项目，然后保留最后一个项目以供后续交易<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+删除。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">        else {
 
             //Delete ListingId from Watchlist, but leave the last ListingId for later transaction to delete
@@ -483,7 +471,7 @@ const pre_request_retrieveyourwatchlist = {
     }
 
 });
-</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
 </p>
 <ul>
 <li>
@@ -493,20 +481,20 @@ const pre_request_retrieveyourwatchlist = {
 <p>OAuth 1.0 是针对发送前需要授权的交易。模板如下：</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt="img"  loading="lazy" />
 </p>
-<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="http://localhost:1314/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo" target="_blank">API测试前的准备demo</a>
+<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
 </p>
 <ul>
-<li>组合删除请求 - 从您的监视列表中删除列表</li>
+<li>组装删除请求 - 从您的监视列表中删除列表</li>
 </ul>
 <p>根据 API 规范，参数 - <strong>listingId</strong>表示要删除的列表的 ID。</p>
-<p>并且listingId 来自pre_request ' <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
+<p>并且listingId 来自前置请求' <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
  &lsquo;的响应，并且它已经设置为环境变量：{{LastListingId}}。</p>
-<p>所以请求应该是 DELETE <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
+<p>所以请求应该是 <strong>DELETE</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BLastListingId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{LastListingId}}.JSON</a></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-para.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="api连接">API连接</h4>
+<h4 id="api连通性">API连通性</h4>
 </li>
 </ul>
 <p>连通性测试通过并获得响应示例。</p>
@@ -522,7 +510,7 @@ const pre_request_retrieveyourwatchlist = {
 <p>使用后置请求: API - 检索您的监视列表以检查它是否仍有可以删除的监视列表中的项目。</p>
 <p>检查前置请求&rsquo; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
  &lsquo;的功能是否有效；</p>
-<p>并且它可以从其响应中排除那些无法执行删除操作的项目，以便使用另一个 pre_request 事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+<p>并且它可以从其响应中排除那些无法执行删除操作的项目，以便使用另一个前置请求事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
  ”；</p>
 <p>并且它可以保留其对下游事务“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
  ”的响应中的最后一项以供使用。</p>
@@ -613,7 +601,7 @@ pm.sendRequest(post_request, function (err, response) {
 </p>
 <h2 id="api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</h2>
 <p>使用我们在手动测试案例中所做的“等效类划分”和“边界值分析”。</p>
-<p>这些API测试脚本都是做负方向的业务，作为上述API正案例的延伸。</p>
+<p>这些API测试脚本都是做反方向的业务，作为上述API正案例的延伸。</p>
 <h2 id="api测试脚本发布">API测试脚本发布</h2>
 <p>当我们完成 API 正面和反面案例时，将脚本从调试文件夹移动到公共文件夹。</p>
 <p>然后等待使用 CICD 工具与其他脚本结合发布到 GitHub 特定存储库。</p>
