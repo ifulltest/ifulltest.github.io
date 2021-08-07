@@ -16,5 +16,23 @@
       <description>API自动化测试持续集成流程 典型事务选择 -&amp;gt; 对应 API 选择 -&amp;gt; 脚本编写 -&amp;gt; 场景和报告 -&amp;gt; 持续集成（我在这儿） 典型交易选择 典型交易选择指：Trade Me-</description>
     </item>
     
+    <item>
+      <title>如何安装JDK?</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</guid>
+      <description>JDK - “Java™ 平台，标准版开发工具包”是使用 Java 编程语言构建应用程序和组件的开发环境。 它包括用于开发和测试用 Java 编程语言编写并在 Java 平台上运行的</description>
+    </item>
+    
+    <item>
+      <title>如何安装Jenkins?</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/jenkins-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/jenkins-installation/</guid>
+      <description>作为领先的开源自动化服务器，Jenkins 提供了数百个插件来支持任何项目的构建、部署和自动化。 本文将简要介绍Jenkins的一个基本知识：如</description>
+    </item>
+    
   </channel>
 </rss>

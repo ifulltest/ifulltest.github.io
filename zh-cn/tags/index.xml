@@ -8,6 +8,33 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Git</title>
+      <link>https://ifulltest.github.io/zh-cn/tags/git/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://ifulltest.github.io/zh-cn/tags/github/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://ifulltest.github.io/zh-cn/tags/java/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Jenkins</title>
       <link>https://ifulltest.github.io/zh-cn/tags/jenkins/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
@@ -28,7 +55,7 @@
     <item>
       <title>Cypress</title>
       <link>https://ifulltest.github.io/zh-cn/tags/cypress/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/tags/cypress/</guid>
       <description></description>

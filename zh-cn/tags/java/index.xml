@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/zh-cn/tags/java/</link>
+    <description>Recent content in Java on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何安装JDK?</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</guid>
+      <description>JDK - “Java™ 平台，标准版开发工具包”是使用 Java 编程语言构建应用程序和组件的开发环境。 它包括用于开发和测试用 Java 编程语言编写并在 Java 平台上运行的</description>
+    </item>
+    
+  </channel>
+</rss>

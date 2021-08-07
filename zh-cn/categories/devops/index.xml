@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on Hugo Bootstrap</title>
+    <link>https://ifulltest.github.io/zh-cn/categories/devops/</link>
+    <description>Recent content in DevOps on Hugo Bootstrap</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何Git Bash?</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/git-bash-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/git-bash-installation/</guid>
+      <description>Git 是一组命令行实用程序，旨在在 Unix 风格的命令行环境中执行。 Git Bash 是一个适用于 Microsoft Windows 环境的应用程序，它为 Git 命令行体验提供了一个模拟层。 本文将简要介绍</description>
+    </item>
+    
+    <item>
+      <title>如何安装JDK?</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</guid>
+      <description>JDK - “Java™ 平台，标准版开发工具包”是使用 Java 编程语言构建应用程序和组件的开发环境。 它包括用于开发和测试用 Java 编程语言编写并在 Java 平台上运行的</description>
+    </item>
+    
+    <item>
+      <title>如何安装Jenkins?</title>
+      <link>https://ifulltest.github.io/zh-cn/posts/jenkins-installation/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/posts/jenkins-installation/</guid>
+      <description>作为领先的开源自动化服务器，Jenkins 提供了数百个插件来支持任何项目的构建、部署和自动化。 本文将简要介绍Jenkins的一个基本知识：如</description>
+    </item>
+    
+  </channel>
+</rss>

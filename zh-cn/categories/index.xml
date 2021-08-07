@@ -5,6 +5,34 @@
     <link>https://ifulltest.github.io/zh-cn/categories/</link>
     <description>Recent content in 分类 on Hugo Bootstrap</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright><atom:link href="https://ifulltest.github.io/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DevOps</title>
+      <link>https://ifulltest.github.io/zh-cn/categories/devops/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>API Automation</title>
+      <link>https://ifulltest.github.io/zh-cn/categories/api-automation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/categories/api-automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI Automation</title>
+      <link>https://ifulltest.github.io/zh-cn/categories/ui-automation/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/zh-cn/categories/ui-automation/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
