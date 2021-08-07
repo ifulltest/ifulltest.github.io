@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-13-场景和Newman报告">
 <meta itemprop="description" content="场景处于API自动化测试中的位置 典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;场景和报告（我在这儿） -&gt; CICD 典型交易选择 典型交易选择指：Trade Me-"><meta itemprop="datePublished" content="2021-08-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1063"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1068"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-13-场景和Newman报告" />
 <meta property="og:description" content="场景处于API自动化测试中的位置 典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;场景和报告（我在这儿） -&gt; CICD 典型交易选择 典型交易选择指：Trade Me-" />
 <meta property="og:type" content="article" />
@@ -189,7 +189,7 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#场景处于api自动化测试中的位置"><em>场景处于API自动化测试中的位置</em></a></li>
     <li><a href="#典型交易选择">典型交易选择</a></li>
-    <li><a href="#对应的api选择和脚本">对应的API选择和脚本</a>
+    <li><a href="#对应的api选择和脚本编写">对应的API选择和脚本编写</a>
       <ul>
         <li></li>
       </ul>
@@ -213,28 +213,50 @@ if (!doNotTrack) {
 <h2 id="典型交易选择">典型交易选择</h2>
 <p>典型交易选择指：<strong><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a>
 </strong></p>
-<h2 id="对应的api选择和脚本">对应的API选择和脚本</h2>
-<p><em>对应的API选择和脚本指的是：</em></p>
+<h2 id="对应的api选择和脚本编写">对应的API选择和脚本编写</h2>
+<p><em>对应的API选择和脚本编写参考：</em></p>
+<ul>
+<li>
 <h5 id="trade-me-3-检索一般类别-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-general-categories"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a>
 </h5>
+</li>
+<li>
 <h5 id="trade-me-4-检索您的监视列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a>
 </h5>
+</li>
+<li>
 <h5 id="trade-me-5-从您的监视列表中删除列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-rm-a-listing-from-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-从您的监视列表中删除列表 API 测试</a>
 </h5>
+</li>
+<li>
 <h5 id="trade-me-6-检索即将关闭列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-closing-soon-listings"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-检索即将关闭列表 API 测试</a>
 </h5>
+</li>
+<li>
 <h5 id="trade-me-7-将列表添加到您的监视列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-add-a-listing-to-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/">Trade Me-7-将列表添加到您的监视列表 API 测试</a>
 </h5>
+</li>
+<li>
 <h5 id="trade-me-8-检索您赢得的物品-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-won-items"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/">Trade Me-8-检索您赢得的物品 API 测试</a>
 </h5>
+</li>
+<li>
 <h5 id="trade-me-9-从您赢得的物品列表中删除购买-api-测试httpsifulltestgithubiozh-cnpoststm-api-rm-a-purchase-from-won-list"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-从您赢得的物品列表中删除购买 API 测试</a>
 </h5>
+</li>
+<li>
 <h5 id="trade-me-10-通用搜索api测试httpsifulltestgithubiozh-cnpoststm-api-general-search"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/">Trade Me-10-通用搜索API测试</a>
 </h5>
-<h5 id="trade-me-11-检索单个列表-api-测试的详细信息httpsifulltestgithubiozh-cnpoststm-api-retrieve-listings-details"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表 API 测试的详细信息</a>
+</li>
+<li>
+<h5 id="trade-me-11-检索单个列表的详细信息-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-listings-details"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表的详细信息 API 测试</a>
 </h5>
-<h5 id="trade-me-12-使用-buy-now-api-测试购买拍卖httpsifulltestgithubiozh-cnpoststm-api-buy-an-auction-using-buy-now"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-使用 Buy Now API 测试购买拍卖</a>
+</li>
+<li>
+<h5 id="trade-me-12-使用-buy-now购买拍卖-api-测试httpsifulltestgithubiozh-cnpoststm-api-buy-an-auction-using-buy-now"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-使用 Buy Now购买拍卖 API 测试</a>
 </h5>
+</li>
+</ul>
 <h2 id="运行场景的两种方式">运行场景的两种方式</h2>
 <p>Postman 使用集合的概念来存储您的 API 测试脚本作为基本场景。</p>
 <p>您可以选择两种方式来运行场景和显示运行报告。</p>
@@ -371,7 +393,7 @@ if (!doNotTrack) {
     </div></div>
 </div><section class="related-posts">
   <h3>相关文章</h3>
-  <ul class="related-posts"><li><a href="https://ifulltest.github.io/zh-cn/posts/newman-installation/">如何安装Newman?</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/nodejs-installation/">如何安装Node.js?</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/postman-installation/">如何安装Postman?</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/">Trade Me-10-通用搜索API测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表 API 测试的详细信息</a></li></ul>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/zh-cn/posts/newman-installation/">如何安装Newman?</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/nodejs-installation/">如何安装Node.js?</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/postman-installation/">如何安装Postman?</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/">Trade Me-10-常规搜索API测试</a></li><li><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表 API 测试的详细信息</a></li></ul>
 </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="ifulltest/comments"
   issue-term="pathname"

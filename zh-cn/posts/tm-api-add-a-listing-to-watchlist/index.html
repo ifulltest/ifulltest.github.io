@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-7-将列表添加到您的监视列表 API 测试">
 <meta itemprop="description" content="API - 将列表添加到您的监视列表脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1516"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1519"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-7-将列表添加到您的监视列表 API 测试" />
 <meta property="og:description" content="API - 将列表添加到您的监视列表脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API" />
 <meta property="og:type" content="article" />
@@ -203,11 +203,7 @@ if (!doNotTrack) {
         <li></li>
       </ul>
     </li>
-    <li><a href="#api-测试脚本增强">API 测试脚本增强</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#api-测试脚本增强">API 测试脚本增强</a></li>
     <li><a href="#api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</a></li>
     <li><a href="#api测试脚本发布">API测试脚本发布</a></li>
   </ul>
@@ -301,9 +297,7 @@ if (!doNotTrack) {
 </li>
 </ul>
 <p><strong>前置请求脚本的主要编码逻辑如下：</strong></p>
-<ol>
-<li>前置请求 API -“检索即将关闭的列表”以获取即将关闭列表的第一页上的所有项目。</li>
-</ol>
+<p>​	1.前置请求 API -“检索即将关闭的列表”以获取即将关闭列表的第一页上的所有项目。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Pre-Transaction: RetrieveClosingSoonListings Start&#34;);
 
 const pre_request = {
@@ -319,11 +313,9 @@ const pre_request = {
 
 };  
 ...
-</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
-</p>
-<ol>
-<li>从所有获取的项目中随机选择 1 个项目，并将该项目存储为参数以供以后 API - &lsquo;将列表添加到您的监视列表&rsquo; 使用。</li>
-</ol>
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考**<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
+**</p>
+<p>​	2.从所有获取的项目中随机选择 1 个项目，并将该项目存储为参数以供以后 API - &lsquo;将列表添加到您的监视列表&rsquo; 使用。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">pm.sendRequest(pre_request, function (err, response) {
 
     if (err) {
@@ -394,20 +386,22 @@ const pre_request = {
 <p>OAuth 1.0 是针对发送前需要授权的交易。模板如下：</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt="img"  loading="lazy" />
 </p>
-<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
-</p>
+<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考**<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
+**</p>
 <ul>
-<li>组合请求 - &lsquo;将列表添加到您的监视列表&rsquo;</li>
+<li>
+<h4 id="组合请求---将列表添加到您的监视列表">组合请求 - &lsquo;将列表添加到您的监视列表&rsquo;</h4>
+</li>
 </ul>
 <p>根据 API 规范，参数 - <strong>listingId</strong>表示要添加到监视列表的列表的 ID。</p>
-<p>并且listingId 来自pre_request 的响应'<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
- &lsquo;，并且它已经设置为环境变量：{{ListingIdAddToWatchList}}。</p>
-<p>所以请求应该是 POST <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BListingIdAddToWatchList%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{ListingIdAddToWatchList}}.JSON</a></p>
+<p>listingId 来自前置请求**<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings%27" target="_blank">&lsquo;检索即将关闭的列表</a>
+**的响应，并且它已被设置为环境变量：{{ListingIdAddToWatchList}}。</p>
+<p>所以请求应该是 <strong>POST</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BListingIdAddToWatchList%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{ListingIdAddToWatchList}}.JSON</a></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-para.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="api连接">API连接</h4>
+<h4 id="api连通性">API连通性</h4>
 </li>
 </ul>
 <p>连通性测试通过并获得响应示例。</p>
@@ -420,7 +414,8 @@ const pre_request = {
 <h4 id="api检查点">API检查点</h4>
 </li>
 </ul>
-<p>使用后置请求: API - 检索您的监视列表以检查给定的项目是否已添加到监视列表中。</p>
+<p>使用后置请求: API - **<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+**以检查给定的项目是否已添加到监视列表中。</p>
 <p>然后我们根据示例功能得到下面的检查代码片段。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: CheckingAddToWatchList Start&#34;);
 
@@ -483,14 +478,8 @@ pm.sendRequest(post_request, function (err, response) {
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-log.webp" alt="img"  loading="lazy" />
 </p>
 <h2 id="api-测试脚本增强">API 测试脚本增强</h2>
-<ul>
-<li>
-<h4 id="增强脚本如添加事务功能异常验证参数化等">增强脚本，如添加事务功能、异常验证、参数化等。</h4>
-</li>
-<li>
-<h4 id="运行最终脚本并从前端页面或控制台日志进行验证">运行最终脚本并从前端页面或控制台日志进行验证。</h4>
-</li>
-</ul>
+<p><strong>增强脚本，如添加事务功能、异常验证、参数化等。</strong></p>
+<p><strong>运行最终脚本并从前端页面或控制台日志进行验证。</strong></p>
 <p><strong>在“将列表添加到您的监视列表”操作后，查看监视列表。</strong></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-page.webp" alt="img"  loading="lazy" />
 </p>

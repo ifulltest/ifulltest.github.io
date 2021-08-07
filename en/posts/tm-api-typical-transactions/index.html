@@ -3,23 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trade Me-2-典型交易 - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <title>Trade Me-2-typical transactions - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
-<meta name="description" content="" /><meta itemprop="name" content="Trade Me-2-典型交易">
-<meta itemprop="description" content="如何挑选典型的交易？ 在编写 API 测试脚本之前，我们需要从 TradeMe 中挑选一些典型的交易。
-我们选择的这些事务更好地涵盖了不同类型的请求，例如get、post、delete。
-这些交易的一部分应该在业务层面相互关联。
-API -检索一般类别   业务范围选择：获取所有子类别。   API 功能：检索全部或部分 Trade Me 类别树。   前端页面     关键请求字段     关键响应字段 - 类别树。           Name String or null 类别的名称。   Number String or null 类别的唯一标识符，例如“0004-0369-6076-”。我们计划将其更改为数字标识符（例如“6076”），因此您应该确保您可以处理这两种格式。   Path String or null 此类别的完整 URL 路径，例如“/Home-living/Beds-bedroom-furniture/Bedside-tables”。   Subcategories Collection of or null 属于该类别的子类别列表。   … … …    更多参考：检索一般类别"><meta itemprop="datePublished" content="2021-07-23T00:00:00+00:00" />
+<meta name="description" content="" /><meta itemprop="name" content="Trade Me-2-typical transactions">
+<meta itemprop="description" content="How to pick the typical transactions?
+Before coding the API test script, we need to pick some typical transactions from TradeMe.
+And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
+And part of these transactions should correlate with each other at the business level."><meta itemprop="datePublished" content="2021-07-23T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-23T00:00:00+00:00" />
-<meta itemprop="wordCount" content="980"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
-<meta itemprop="keywords" content="Postman,Cypress," /><meta property="og:title" content="Trade Me-2-典型交易" />
-<meta property="og:description" content="如何挑选典型的交易？ 在编写 API 测试脚本之前，我们需要从 TradeMe 中挑选一些典型的交易。
-我们选择的这些事务更好地涵盖了不同类型的请求，例如get、post、delete。
-这些交易的一部分应该在业务层面相互关联。
-API -检索一般类别   业务范围选择：获取所有子类别。   API 功能：检索全部或部分 Trade Me 类别树。   前端页面     关键请求字段     关键响应字段 - 类别树。           Name String or null 类别的名称。   Number String or null 类别的唯一标识符，例如“0004-0369-6076-”。我们计划将其更改为数字标识符（例如“6076”），因此您应该确保您可以处理这两种格式。   Path String or null 此类别的完整 URL 路径，例如“/Home-living/Beds-bedroom-furniture/Bedside-tables”。   Subcategories Collection of or null 属于该类别的子类别列表。   … … …    更多参考：检索一般类别" />
+<meta itemprop="wordCount" content="2297"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman,Cypress," /><meta property="og:title" content="Trade Me-2-typical transactions" />
+<meta property="og:description" content="How to pick the typical transactions?
+Before coding the API test script, we need to pick some typical transactions from TradeMe.
+And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
+And part of these transactions should correlate with each other at the business level." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-23T00:00:00+00:00" />
@@ -29,11 +29,11 @@ API -检索一般类别   业务范围选择：获取所有子类别。   API �
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
 
-<meta name="twitter:title" content="Trade Me-2-典型交易"/>
-<meta name="twitter:description" content="如何挑选典型的交易？ 在编写 API 测试脚本之前，我们需要从 TradeMe 中挑选一些典型的交易。
-我们选择的这些事务更好地涵盖了不同类型的请求，例如get、post、delete。
-这些交易的一部分应该在业务层面相互关联。
-API -检索一般类别   业务范围选择：获取所有子类别。   API 功能：检索全部或部分 Trade Me 类别树。   前端页面     关键请求字段     关键响应字段 - 类别树。           Name String or null 类别的名称。   Number String or null 类别的唯一标识符，例如“0004-0369-6076-”。我们计划将其更改为数字标识符（例如“6076”），因此您应该确保您可以处理这两种格式。   Path String or null 此类别的完整 URL 路径，例如“/Home-living/Beds-bedroom-furniture/Bedside-tables”。   Subcategories Collection of or null 属于该类别的子类别列表。   … … …    更多参考：检索一般类别"/>
+<meta name="twitter:title" content="Trade Me-2-typical transactions"/>
+<meta name="twitter:description" content="How to pick the typical transactions?
+Before coding the API test script, we need to pick some typical transactions from TradeMe.
+And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
+And part of these transactions should correlate with each other at the business level."/>
 <meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
 <script type="application/javascript">
 var doNotTrack = false;
@@ -162,18 +162,18 @@ if (!doNotTrack) {
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-2-典型交易</li></ol>
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-2-typical transactions</li></ol>
 </nav><article class="post row surface"><div class="post-toolbox">
   <div class="col-12 d-none d-lg-block">
     <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
   </div>
 </div>
-<h1 class="post-title my-3">Trade Me-2-典型交易</h1><div class="post-meta mb-3">
+<h1 class="post-title my-3">Trade Me-2-typical transactions</h1><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Jul 23, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>5 min read
+    <i class="fas fa-fw fa-coffee"></i>11 min read
   </span>
 <div class="post-translations nav-item dropdown me-2 d-inline-flex">
   <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -196,53 +196,53 @@ if (!doNotTrack) {
   <div class="offcanvas-body">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#如何挑选典型的交易"><em>如何挑选典型的交易？</em></a></li>
-    <li><a href="#api--检索一般类别httpsdevelopertrademeconzapi-referencecatalogue-methodsretrieve-general-categories">API -<a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories">检索一般类别</a></a>
+    <li><a href="#how-to-pick-the-typical-transactions"><em>How to pick the typical transactions?</em></a></li>
+    <li><a href="#api---retrieve-general-categorieshttpsdevelopertrademeconzapi-referencecatalogue-methodsretrieve-general-categories">API - <a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories">Retrieve general categories</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--检索您的监视列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-watchlist">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist">检索您的监视列表</a></a>
+    <li><a href="#api---retrieve-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist">Retrieve your watchlist</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--从您的监视列表中删除列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-listing-from-your-watchlist">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist">从您的监视列表中删除列表</a></a>
+    <li><a href="#api---remove-a-listing-from-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-listing-from-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist">Remove a listing from your watchlist</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--检索即将关闭的列表httpsdevelopertrademeconzapi-referencelisting-methodsretrieve-closing-soon-listings">API -<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings">检索即将关闭的列表</a></a>
+    <li><a href="#api---retrieve-closing-soon-listingshttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-closing-soon-listings">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings">Retrieve closing soon listings</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--将列表添加到您的监视列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsadd-a-listing-to-your-watchlist">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist">将列表添加到您的监视列表</a></a>
+    <li><a href="#api---add-a-listing-to-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsadd-a-listing-to-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist">Add a listing to your watchlist</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--检索您赢得的物品httpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-won-items">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items">检索您赢得的物品</a></a>
+    <li><a href="#api---retrieve-your-won-itemshttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-won-items">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items">Retrieve your won items</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--从您赢得的物品列表中删除购买httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list">从您赢得的物品列表中删除购买</a></a>
+    <li><a href="#api---remove-a-purchase-from-your-won-items-listhttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list">Remove a purchase from your won items list</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--常规搜索httpsdevelopertrademeconzapi-referencesearch-methodsgeneral-search">API -<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search">常规搜索</a></a>
+    <li><a href="#api---general-searchhttpsdevelopertrademeconzapi-referencesearch-methodsgeneral-search">API - <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search">General search</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--检索单个列表的详细信息httpsdevelopertrademeconzapi-referencelisting-methodsretrieve-the-details-of-a-single-listing">API -<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing">检索单个列表的详细信息</a></a>
+    <li><a href="#api---retrieve-the-details-of-a-single-listinghttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-the-details-of-a-single-listing">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing">Retrieve the details of a single listing</a></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api--使用立即购买购买拍卖httpsdevelopertrademeconzapi-referencebidding-and-buying-methodsbuy-an-auction-using-buy-now">API -<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now">使用“立即购买”购买拍卖</a></a>
+    <li><a href="#api---buy-an-auction-using-buy-nowhttpsdevelopertrademeconzapi-referencebidding-and-buying-methodsbuy-an-auction-using-buy-now">API - <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now">Buy an auction using Buy Now</a></a>
       <ul>
         <li></li>
       </ul>
@@ -250,37 +250,37 @@ if (!doNotTrack) {
   </ul>
 </nav>
   </div>
-</div><div class="post-content mb-3"><h2 id="如何挑选典型的交易"><em>如何挑选典型的交易？</em></h2>
-<p><em>在编写 API 测试脚本之前，我们需要从 TradeMe 中挑选一些典型的交易。</em></p>
-<p><em>我们选择的这些事务更好地涵盖了不同类型的请求，例如<strong>get、post、delete</strong>。</em></p>
-<p><em>这些交易的一部分应该在业务层面<strong>相互关联</strong>。</em></p>
-<h2 id="api--检索一般类别httpsdevelopertrademeconzapi-referencecatalogue-methodsretrieve-general-categories">API -<a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">检索一般类别</a>
+</div><div class="post-content mb-3"><h2 id="how-to-pick-the-typical-transactions"><em>How to pick the typical transactions?</em></h2>
+<p><em>Before coding the API test script, we need to pick some typical transactions from TradeMe.</em></p>
+<p><em>And these transactions we&rsquo;ve picked better to cover different types of requests, such as the <strong>get, post, delete</strong>.</em></p>
+<p><em>And part of these transactions should <strong>correlate with each other</strong> at the business level.</em></p>
+<h2 id="api---retrieve-general-categorieshttpsdevelopertrademeconzapi-referencecatalogue-methodsretrieve-general-categories">API - <a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">Retrieve general categories</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务范围选择获取所有子类别">业务范围选择：获取所有子类别。</h4>
+<h4 id="business-scope-selection--get-all-subcategories">Business scope selection:  Get all subcategories.</h4>
 </li>
 <li>
-<h4 id="api-功能检索全部或部分-trade-me-类别树">API 功能：检索全部或部分 Trade Me 类别树。</h4>
+<h4 id="api-function-retrieves-all-or-part-of-the-trade-me-category-tree">API Function: Retrieves all or part of the Trade Me category tree.</h4>
 </li>
 <li>
-<h4 id="前端页面">前端页面</h4>
+<h4 id="front-end-page">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键请求字段">关键请求字段</h4>
+<h4 id="key-request-fields">Key request fields</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段---类别树">关键响应字段 - 类别树。</h4>
+<h4 id="key-response-fields---a-category-tree">Key response fields - A category tree.</h4>
 <table>
 <thead>
 <tr>
@@ -293,41 +293,41 @@ if (!doNotTrack) {
 <tr>
 <td><strong>Name</strong></td>
 <td>String or null</td>
-<td>类别的名称。</td>
+<td>The name of the category.</td>
 </tr>
 <tr>
 <td><strong>Number</strong></td>
 <td>String or null</td>
-<td>类别的唯一标识符，例如“0004-0369-6076-”。我们计划将其更改为数字标识符（例如“6076”），因此您应该确保您可以处理这两种格式。</td>
+<td>A unique identifier for the category e.g. &ldquo;0004-0369-6076-&rdquo;. We plan to change this to a numeric identifier (e.g. &ldquo;6076&rdquo;) so you should ensure you can cope with both formats.</td>
 </tr>
 <tr>
 <td><strong>Path</strong></td>
 <td>String or null</td>
-<td>此类别的完整 URL 路径，例如“/Home-living/Beds-bedroom-furniture/Bedside-tables”。</td>
+<td>The full URL path of this category e.g. &ldquo;/Home-living/Beds-bedroom-furniture/Bedside-tables&rdquo;.</td>
 </tr>
 <tr>
 <td><strong>Subcategories</strong></td>
-<td>Collection of or null</td>
-<td>属于该类别的子类别列表。</td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>The list of subcategories belonging to this category.</td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<strong><a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">检索一般类别</a>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/catalogue-methods/retrieve-general-categories" target="_blank">Retrieve general categories</a>
 </strong></p>
 </li>
 <li>
-<h4 id="示例请求">示例请求</h4>
+<h4 id="example-request">Example request</h4>
 </li>
 </ul>
 <p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=1">https://api.tmsandbox.co.nz/v1/Categories.JSON?depth=1</a></p>
 <ul>
 <li>
-<h4 id="示例响应">示例响应</h4>
+<h4 id="example-response">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
@@ -358,42 +358,42 @@ if (!doNotTrack) {
     &#34;AreaOfBusiness&#34;: 0,
     &#34;IsLeaf&#34;: false
 }        
-</code></pre></div><h2 id="api--检索您的监视列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-watchlist">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+</code></pre></div><h2 id="api---retrieve-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务范围选择">业务范围选择</h4>
+<h4 id="business-scope-selection">Business scope selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表（<strong>我在这里</strong>）</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
 </p>
-<p><strong>查询监视列表中的项目。</strong></p>
+<p>Query items in the watch list.</p>
 <ul>
 <li>
-<h4 id="api-功能检索经过身份验证的用户监视列表中的项目列表">API 功能：检索经过身份验证的用户监视列表中的项目列表。</h4>
+<h4 id="api-function-retrieves-a-list-of-items-on-the-authenticated-users-watchlist">API Function: Retrieves a list of items on the authenticated user&rsquo;s watchlist.</h4>
 </li>
 <li>
-<h4 id="前端页面-1">前端页面</h4>
+<h4 id="front-end-page-1">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-2.webp" alt="img"  loading="lazy" />
-</p>
-<ul>
-<li>
-<h4 id="关键请求字段-1">关键请求字段</h4>
-</li>
-</ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段--经过身份验证的用户的监视列表">关键响应字段 -经过身份验证的用户的<strong>监视列表</strong>。</h4>
+<h4 id="key-request-fields-1">Key request fields</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="key-response-fields---the-watchlist-for-the-authenticated-user">Key response fields - the <strong>Watchlist</strong> for the authenticated user.</h4>
 <table>
 <thead>
 <tr>
@@ -407,58 +407,58 @@ if (!doNotTrack) {
 <tr>
 <td><strong>TotalCount</strong></td>
 <td>Integer</td>
-<td>集合中的结果总数。可以大于返回结果的数量。</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Page</strong></td>
 <td>Integer</td>
-<td>当前结果页的索引（从 1 开始）。</td>
+<td>The index of the current page of results (starts at 1).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>PageSize</strong></td>
 <td>Integer</td>
-<td>当前页面中的结果数。</td>
+<td>The number of results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>List</strong></td>
-<td>Collection of or null</td>
-<td>当前页面中的结果列表。</td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><strong>ListingId</strong></td>
-<td>长整数</td>
-<td>商家信息的 ID。</td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
 </tr>
 <tr>
 <td></td>
 <td><strong>BidCount</strong></td>
-<td>整数</td>
-<td>项目的出价数量。</td>
+<td>Integer</td>
+<td>The number of bids on the item.</td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">检索您的监视列表</a>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Retrieve your watchlist</a>
 </strong></p>
 </li>
 <li>
-<h4 id="示例请求-1">示例请求</h4>
+<h4 id="example-request-1">Example request</h4>
 </li>
 </ul>
 <p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Watchlist/All.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Watchlist/All.JSON</a></p>
 <ul>
 <li>
-<h4 id="示例响应-1">示例响应</h4>
+<h4 id="example-response-1">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
@@ -515,46 +515,49 @@ if (!doNotTrack) {
     }
   ]
 }
-</code></pre></div><h2 id="api--从您的监视列表中删除列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-listing-from-your-watchlist">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+</code></pre></div><h2 id="api---remove-a-listing-from-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-listing-from-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务范围选择-1">业务范围选择</h4>
+<h4 id="business-scope-selection-1">Business scope selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表（<strong>我在这里</strong>）</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist(<strong>I&rsquo;m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
 </p>
-<p><strong>选择 API - Retrieve your watchlist as pre-request 以获取所有要删除的项目</strong></p>
-<p><strong>删除监视列表中的所有项目</strong></p>
+<p>Fetch all ‘ListingId’ from the response of upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+’ as the request fields.</p>
+<p>Pre_repquest &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+&rsquo; removes all ListingId but leave the last one from the whatchlist.</p>
+<p>Removes the last ListingId from the whatchlist.</p>
 <ul>
 <li>
-<h4 id="api-功能从经过身份验证的用户的监视列表中删除列表">API 功能：从经过身份验证的用户的监视列表中删除列表。</h4>
+<h4 id="api-function-removes-a-listing-from-the-authenticated-users-watchlist">API Function: Removes a listing from the authenticated user&rsquo;s watchlist.</h4>
 </li>
 <li>
-<h4 id="前端页面-2">前端页面</h4>
+<h4 id="front-end-page-2">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-2.webp" alt="img"  loading="lazy" />
-</p>
-<ul>
-<li>
-<h4 id="关键请求字段-2">关键请求字段</h4>
-</li>
-</ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段---有关操作是否成功的详细信息">关键响应字段 - 有关操作是否成功的详细信息。</h4>
+<h4 id="key-request-fields-2">Key request fields</h4>
 </li>
 </ul>
-<p>尝试删除不存在或不在监视列表中的拍卖不会产生错误。</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="key-response-fields---details-on-whether-the-operation-succeeded">Key response fields - Details on whether the operation succeeded.</h4>
+</li>
+</ul>
+<p>Attempting to remove an auction that doesn&rsquo;t exist or is not on the watchlist will not produce an error.</p>
 <table>
 <thead>
 <tr>
@@ -567,72 +570,72 @@ if (!doNotTrack) {
 <tr>
 <td style="text-align:left"><strong>Success</strong></td>
 <td>Boolean</td>
-<td>指示操作是否成功。</td>
+<td>Indicates whether the operation was successful.</td>
 </tr>
 <tr>
 <td style="text-align:left"><strong>Description</strong></td>
 <td>String or null</td>
-<td>错误的描述，如果操作失败。</td>
+<td>The description of the error, if the operation failed.</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
 </strong></p>
 <ul>
 <li>
-<h4 id="示例请求-2">示例请求</h4>
+<h4 id="example-request-2">Example request</h4>
 </li>
 </ul>
 <p><strong>DELETE</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON</a></p>
 <ul>
 <li>
-<h4 id="示例响应-2">示例响应</h4>
+<h4 id="example-response-2">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
     &#34;Success&#34;: true,
     &#34;Description&#34;: &#34;Success&#34;
 }
-</code></pre></div><h2 id="api--检索即将关闭的列表httpsdevelopertrademeconzapi-referencelisting-methodsretrieve-closing-soon-listings">API -<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
+</code></pre></div><h2 id="api---retrieve-closing-soon-listingshttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-closing-soon-listings">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务范围选择-2">业务范围选择</h4>
+<h4 id="business-scope-selection-2">Business scope selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表（<strong>我在这里</strong>）</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings(<strong>I&rsquo;m here</strong>)</a>
+-&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
 </p>
-<p><strong>在即将关闭的列表的第一页获取所有项目。</strong></p>
+<p>Get all the items at 1st page of the closing soon listings.</p>
 <ul>
 <li>
-<h4 id="api-功能检索全国或单个地区即将关闭的项目">API 功能：检索全国或单个地区即将关闭的项目。</h4>
+<h4 id="api-function-retrieves-the-items-closing-soon-for-the-whole-country-or-for-a-single-region">API Function: retrieves the items closing soon for the whole country or for a single region.</h4>
 </li>
 <li>
-<h4 id="前端页面-3">前端页面</h4>
+<h4 id="front-end-page-3">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键请求字段-3">关键请求字段</h4>
+<h4 id="key-request-fields-3">Key request fields</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-2.webp" alt=""  loading="lazy" />
 </p>
-<p>更多参考：<strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
 </strong></p>
 <ul>
 <li>
-<h4 id="关键响应字段">关键响应字段</h4>
+<h4 id="key-response-fields">Key response fields</h4>
 <table>
 <thead>
 <tr>
@@ -646,59 +649,58 @@ if (!doNotTrack) {
 <tr>
 <td><strong>TotalCount</strong></td>
 <td>Integer</td>
-<td>集合中的结果总数。可以大于返回结果的数量。</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>TotalCountTruncated</strong></td>
 <td>Boolean</td>
-<td>如果结果总数超过允许的最大值并被截断，则为真。</td>
+<td>True if the total count of results exceeded the allowed maximum and was truncated.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Page</strong></td>
 <td>Integer</td>
-<td>当前结果页的索引（从 1 开始）。</td>
+<td>The index of the current page of results (starts at 1).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>PageSize</strong></td>
 <td>Integer</td>
-<td>当前页面中的结果数。</td>
+<td>The number of results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>List</strong></td>
-<td>Collection of or null</td>
-<td>当前页面中的结果列表。</td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td><strong>ListingId</strong>v</td>
-<td>长整数</td>
-<td>商家信息的 ID。</td>
+<td><strong>ListingId</strong></td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
 </strong></p>
 </li>
 <li>
-<h4 id="示例请求-3">示例请求</h4>
+<h4 id="example-request-3">Example request</h4>
 </li>
 </ul>
-<p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Listings/closing.JSON?rows=1000" target="_blank">https://api.tmsandbox.co.nz/v1/Listings/closure.JSON?rows=1000</a>
-</p>
+<p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Listings/closing.JSON?rows=1000">https://api.tmsandbox.co.nz/v1/Listings/closing.JSON?rows=1000</a></p>
 <ul>
 <li>
-<h4 id="示例响应-3">示例响应</h4>
+<h4 id="example-response-3">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
@@ -734,45 +736,45 @@ if (!doNotTrack) {
         ...
     ]
 }        
-</code></pre></div><h2 id="api--将列表添加到您的监视列表httpsdevelopertrademeconzapi-referencemy-trade-me-methodsadd-a-listing-to-your-watchlist">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
+</code></pre></div><h2 id="api---add-a-listing-to-your-watchlisthttpsdevelopertrademeconzapi-referencemy-trade-me-methodsadd-a-listing-to-your-watchlist">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务选择">业务选择</h4>
+<h4 id="business-selection">Business selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表（<strong>我在这里</strong>）</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist(<strong>I’m here</strong>)</a>
 </p>
-<p><strong>选择 API - 检索即将关闭的列表作为预请求，以获取即将关闭列表的第一页上的所有项目。</strong></p>
-<p><strong>将上述项目中的 1 个随机添加到监视列表中。</strong></p>
+<p>Fetch a random item on the closing soon listings from upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
+&rsquo;, and add this item to the watchlist.</p>
 <ul>
 <li>
-<h4 id="api-功能将列表添加到经过身份验证的用户的监视列表">API 功能：将列表添加到经过身份验证的用户的监视列表。</h4>
+<h4 id="api-function-adds-a-listing-to-the-authenticated-users-watchlist">API Function: Adds a listing to the authenticated user&rsquo;s watchlist.</h4>
 </li>
 <li>
-<h4 id="前端页面-4">前端页面</h4>
+<h4 id="front-end-page-4">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键请求字段-4">关键请求字段</h4>
+<h4 id="key-request-fields-4">Key request fields</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist.webp" alt=""  loading="lazy" />
 </p>
-<p>更多参考：<strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
 </strong></p>
 <ul>
 <li>
-<h4 id="关键响应字段---有关操作是否成功的详细信息-1">关键响应字段 - 有关操作是否成功的详细信息。</h4>
+<h4 id="key-response-fields---details-on-whether-the-operation-succeeded-1">Key response fields - Details on whether the operation succeeded.</h4>
 <table>
 <thead>
 <tr>
@@ -785,67 +787,67 @@ if (!doNotTrack) {
 <tr>
 <td><strong>Success</strong></td>
 <td>Boolean</td>
-<td>指示操作是否成功。</td>
+<td>Indicates whether the operation was successful.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td>String or null</td>
-<td>错误的描述，如果操作失败。</td>
+<td>The description of the error, if the operation failed.</td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<h4 id="示例请求-4">示例请求</h4>
+<h4 id="example-request-4">Example request</h4>
 </li>
 </ul>
 <p><strong>POST</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149292722.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149292722.JSON</a></p>
 <ul>
 <li>
-<h4 id="示例响应-4">示例响应</h4>
+<h4 id="example-response-4">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
     &#34;Success&#34;: true,
     &#34;Description&#34;: &#34;Success&#34;
 }
-</code></pre></div><h2 id="api--检索您赢得的物品httpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-won-items">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
+</code></pre></div><h2 id="api---retrieve-your-won-itemshttpsdevelopertrademeconzapi-referencemy-trade-me-methodsretrieve-your-won-items">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务选择-1">业务选择</h4>
+<h4 id="business-selection-1">Business selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品（<strong>我在这里</strong>）</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items(<strong>I’m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
 </p>
 <ul>
 <li>
-<h4 id="api-功能检索经过身份验证的用户的购买清单">API 功能：检索经过身份验证的用户的购买清单。</h4>
+<h4 id="api-function-retrieves-a-list-of-purchases-for-the-authenticated-user">API Function: Retrieves a list of purchases for the authenticated user.</h4>
 </li>
 </ul>
-<p>多数量拍卖可以多次购买。</p>
+<p>Multiple-quantity auctions can be purchased multiple times.</p>
 <ul>
 <li>
-<h4 id="前端页面-5">前端页面</h4>
+<h4 id="front-end-page-5">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-ui-1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-ui-1.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键请求字段-5">关键请求字段</h4>
+<h4 id="key-request-fields-5">Key request fields</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段---经过身份验证的用户已购买的项目列表">关键响应字段 - 经过身份验证的用户已购买的项目列表。</h4>
+<h4 id="key-response-fields---a-list-of-items-the-authenticated-user-has-purchased">Key response fields - A list of items the authenticated user has purchased.</h4>
 <table>
 <thead>
 <tr>
@@ -859,64 +861,64 @@ if (!doNotTrack) {
 <tr>
 <td><strong>TotalCount</strong></td>
 <td>Integer</td>
-<td>集合中的结果总数。可以大于返回结果的数量。</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Page</strong></td>
 <td>Integer</td>
-<td>当前结果页的索引（从 1 开始）。</td>
+<td>The index of the current page of results (starts at 1).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>PageSize</strong></td>
 <td>Integer</td>
-<td>当前页面中的结果数。</td>
+<td>The number of results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>List</strong></td>
-<td>Collection of or null</td>
-<td>当前页面中的结果列表。</td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><strong>ListingId</strong></td>
-<td>长整数</td>
-<td>商家信息的 ID。</td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 <tr>
 <td><strong>PurchaseId</strong></td>
 <td>Integer</td>
-<td>标识销售的唯一 ID。</td>
+<td>A unique ID that identifies the sale.</td>
 <td></td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
 </strong></p>
 </li>
 <li>
-<h4 id="示例请求-5">示例请求</h4>
+<h4 id="example-request-5">Example request</h4>
 </li>
 </ul>
 <p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/All.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/All.JSON</a></p>
 <ul>
 <li>
-<h4 id="示例响应-5">示例响应</h4>
+<h4 id="example-response-5">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
@@ -983,47 +985,47 @@ if (!doNotTrack) {
         }
     ]
 }
-</code></pre></div><h2 id="api--从您赢得的物品列表中删除购买httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list">API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
+</code></pre></div><h2 id="api---remove-a-purchase-from-your-won-items-listhttpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list">API - <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务选择-2">业务选择</h4>
+<h4 id="business-selection-2">Business selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买（<strong>我在这里</strong>）</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list(<strong>I’m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
 </p>
-<p><strong>选择 API - &lsquo;Retrieve your won items&rsquo; 作为预先请求以获取所有想要删除的赢得的物品</strong></p>
-<p><strong>删除获胜项目列表中的所有获胜项目</strong></p>
+<p>Choose API - &lsquo;Retrieve your won items&rsquo; as pre-request to get all won items that want to be removed</p>
+<p>Remove all won items on the won items list</p>
 <ul>
 <li>
-<h4 id="api-功能从赢得的项目列表中隐藏一个列表">API 功能：从赢得的项目列表中隐藏一个列表。</h4>
+<h4 id="api-function-hides-a-listing-from-the-won-items-list">API Function: Hides a listing from the won items list.</h4>
 </li>
 <li>
-<h4 id="前端页面-6">前端页面</h4>
+<h4 id="front-end-page-6">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-2.webp" alt="img"  loading="lazy" />
-</p>
-<ul>
-<li>
-<h4 id="关键请求字段-6">关键请求字段</h4>
-</li>
-</ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段---有关操作是否成功的详细信息-2">关键响应字段 - 有关操作是否成功的详细信息。</h4>
+<h4 id="key-request-fields-6">Key request fields</h4>
 </li>
 </ul>
-<p>请注意，此操作仅在操作完成后在赢得的物品列表中仍然存在购买的情况下才会报告失败。在所有其他情况下，此 API 将报告成功（例如，如果购买 ID 无效或购买已被删除，它将报告成功）。</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="key-response-fields---details-on-whether-the-operation-was-successful">Key response fields - Details on whether the operation was successful.</h4>
+</li>
+</ul>
+<p>Note that this operation will only report failure if the purchase still exists in the won items list after the operation completes. In all other cases, this API will report success (for example it will report success if the purchase ID is invalid or the purchase has already been removed).</p>
 <table>
 <thead>
 <tr>
@@ -1036,64 +1038,64 @@ if (!doNotTrack) {
 <tr>
 <td><strong>Success</strong></td>
 <td>Boolean</td>
-<td>指示操作是否成功。</td>
+<td>Indicates whether the operation was successful.</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td>String or null</td>
-<td>错误的描述，如果操作失败。</td>
+<td>The description of the error, if the operation failed.</td>
 </tr>
 </tbody>
 </table>
 <ul>
 <li>
-<h4 id="示例请求-6">示例请求</h4>
+<h4 id="example-request-6">Example request</h4>
 </li>
 </ul>
 <p><strong>DELETE</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/26180.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/26180.JSON</a></p>
 <ul>
 <li>
-<h4 id="示例响应-6">示例响应</h4>
+<h4 id="example-response-6">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
     &#34;Success&#34;: true,
     &#34;Description&#34;: &#34;Success&#34;
 }
-</code></pre></div><h2 id="api--常规搜索httpsdevelopertrademeconzapi-referencesearch-methodsgeneral-search">API -<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索</a>
+</code></pre></div><h2 id="api---general-searchhttpsdevelopertrademeconzapi-referencesearch-methodsgeneral-search">API - <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务范围选择-3">业务范围选择</h4>
+<h4 id="business-scope-selection-3">Business scope selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索（<strong>我在这里</strong>）</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search(<strong>I’m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
 </p>
-<p><strong>通过搜索功能搜索 500 件商品，并仅从下游交易“检索单个列表的详细信息”的响应中选择具有“HasBuyNow”功能和 BuyNowPrice &lt;= $20 的商品以供使用。</strong></p>
+<p>Searching 500 items by search function and only pick the items that has the ‘HasBuyNow’ feature and the BuyNowPrice &lt;= $20 from the response for downstream transaction ‘Retrieve the details of a single listing’ to use.</p>
 <ul>
 <li>
-<h4 id="api-功能允许您按类别关键字或这两者的组合搜索-trade-me-上的列表">API 功能：允许您按类别、关键字或这两者的组合搜索 Trade Me 上的列表。</h4>
+<h4 id="api-function-allows-you-to-search-for-listings-on-trade-me-by-category-by-keywords-or-a-combination-of-these-two">API Function: Allows you to search for listings on Trade Me by category, by keywords or a combination of these two.</h4>
 </li>
 </ul>
-<p>结果集可以通过各种属性进行过滤，包括“<strong>立即购买”</strong>、“立即付款”、“商品状况”或“卖家”的可用性。</p>
+<p>The result set can be filtered by a variety of properties, including availability of <strong>Buy Now</strong>, Pay Now, item condition or seller.</p>
 <ul>
 <li>
-<h4 id="前端页面-7">前端页面</h4>
+<h4 id="front-end-page-7">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-ui.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-ui.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键请求字段-7">关键请求字段</h4>
+<h4 id="key-request-fields-7">Key request fields</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search.webp" alt=""  loading="lazy" />
 </p>
 <table>
 <thead>
@@ -1107,7 +1109,7 @@ if (!doNotTrack) {
 <tr>
 <td><strong>page</strong></td>
 <td>Integer (optional)</td>
-<td>要返回的结果集的页码，从 1 开始。默认为 1。</td>
+<td>The page number of the set of results to return, starting from 1. Defaults to 1.</td>
 </tr>
 <tr>
 <td>…</td>
@@ -1117,7 +1119,7 @@ if (!doNotTrack) {
 <tr>
 <td><strong>rows</strong></td>
 <td>Integer (optional)</td>
-<td>每页结果数；也是要返回的最大结果数。对于未经身份验证的请求，最大值为 25，对于经过身份验证的请求，最大值为 500。默认为 25（未认证）或 50（已认证）。</td>
+<td>The number of results per page; also the maximum number of results to return. The maximum is 25 for unauthenticated requests and 500 for authenticated requests. Defaults to 25 (unauthenticated) or 50 (authenticated).</td>
 </tr>
 <tr>
 <td>…</td>
@@ -1126,11 +1128,11 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
-<p>更多参考：<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank"><strong>常规搜索</strong></a>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank"><strong>General search</strong></a>
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段---搜索结果">关键响应字段 - 搜索结果。</h4>
+<h4 id="key-response-fields---the-search-results">Key response fields - The search results.</h4>
 </li>
 </ul>
 <table>
@@ -1146,70 +1148,70 @@ if (!doNotTrack) {
 <tr>
 <td><strong>TotalCount</strong></td>
 <td>Integer</td>
-<td>集合中的结果总数。可以大于返回结果的数量。</td>
+<td>The total number of results in the collection. Can be larger than the number of returned results.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>TotalCountTruncated</strong></td>
 <td>Boolean</td>
-<td>如果结果总数超过允许的最大值并被截断，则为真。</td>
+<td>True if the total count of results exceeded the allowed maximum and was truncated.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Page</strong></td>
 <td>Integer</td>
-<td>当前结果页的索引（从 1 开始）。</td>
+<td>The index of the current page of results (starts at 1).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>PageSize</strong></td>
 <td>Integer</td>
-<td>当前页面中的结果数。</td>
+<td>The number of results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>List</strong></td>
-<td>Collection of or null</td>
-<td>当前页面中的结果列表。</td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of the results in the current page.</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><strong>ListingId</strong></td>
-<td>长整数</td>
-<td>商家信息的 ID。</td>
+<td>Long Integer</td>
+<td>The ID of the listing.</td>
 </tr>
 <tr>
 <td></td>
 <td><strong>BuyNowPrice</strong></td>
-<td>数字</td>
-<td>立即购买价格。</td>
+<td>Number</td>
+<td>The Buy Now price.</td>
 </tr>
 <tr>
 <td></td>
 <td><strong>HasBuyNow</strong></td>
-<td>布尔值</td>
-<td>指示该项目是否有立即购买。</td>
+<td>Boolean</td>
+<td>Indicates whether the item has Buy Now.</td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank"><strong>常规搜索</strong></a>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank"><strong>General search</strong></a>
 </p>
 <ul>
 <li>
-<h4 id="示例请求-7">示例请求</h4>
+<h4 id="example-request-7">Example request</h4>
 </li>
 </ul>
 <p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4">https://api.tmsandbox.co.nz/v1/Search/General.JSON?buy=All&amp;rows=500&amp;page=4</a></p>
 <ul>
 <li>
-<h4 id="示例响应-7">示例响应</h4>
+<h4 id="example-response-7">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
@@ -1231,44 +1233,44 @@ if (!doNotTrack) {
         ...
     ]
 }        
-</code></pre></div><h2 id="api--检索单个列表的详细信息httpsdevelopertrademeconzapi-referencelisting-methodsretrieve-the-details-of-a-single-listing">API -<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
+</code></pre></div><h2 id="api---retrieve-the-details-of-a-single-listinghttpsdevelopertrademeconzapi-referencelisting-methodsretrieve-the-details-of-a-single-listing">API - <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务范围选择-4">业务范围选择</h4>
+<h4 id="business-scope-selection-4">Business scope selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息（<strong>我在这里</strong>）</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing(<strong>I’m here</strong>)</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
 </p>
-<p><strong>从上游交易“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
-”中获取具有“立即购买”功能的随机物品 以显示。</strong></p>
-<p><strong>从响应中获取“ShippingId “供下游交易<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">“使用立即购买购买拍卖”</a>
-以使用。</strong></p>
+<p>Fetch a random item that has the &lsquo;Buy Now&rsquo; feature from upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+&rsquo; to display.</p>
+<p>Fetch a random ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
+ to use.</p>
 <ul>
 <li>
-<h4 id="api-功能检索单个列表的详细信息">API 功能：检索单个列表的详细信息。</h4>
+<h4 id="api-function-retrieves-the-details-of-a-single-listing">API Function: Retrieves the details of a single listing.</h4>
 </li>
 <li>
-<h4 id="前端页面-8">前端页面</h4>
+<h4 id="front-end-page-8">Front-end page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-details-of-a-single-listing-ui1.webp" alt="img"  loading="lazy" />
-</p>
-<ul>
-<li>
-<h4 id="关键请求字段-8">关键请求字段</h4>
-</li>
-</ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-details-of-a-single-listing.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-details-of-a-single-listing-ui1.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段---列表的详细信息">关键响应字段 - 列表的详细信息。</h4>
+<h4 id="key-request-fields-8">Key request fields</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-details-of-a-single-listing.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="key-response-fields---the-details-of-the-listing">Key response fields - The details of the listing.</h4>
 </li>
 </ul>
 <table>
@@ -1284,52 +1286,52 @@ if (!doNotTrack) {
 <tr>
 <td><strong>ListingId</strong></td>
 <td>Long Integer</td>
-<td>商家信息的 ID。</td>
+<td>The ID of the listing.</td>
 <td></td>
 </tr>
 <tr>
-<td><strong>…</strong></td>
-<td>…</td>
-<td>…</td>
+<td><strong>&hellip;</strong></td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>ShippingOptions</strong></td>
-<td>Collection of or null</td>
-<td>运输选项列表。</td>
+<td>Collection of <!-- raw HTML omitted --> or null</td>
+<td>A list of shipping options.</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td><strong>Method</strong></td>
-<td>字符串或空</td>
-<td>递送方式的名称（例如“NZ Courier”、“Rural Delivery”）。仅当 ShippingType 为自定义时适用。</td>
+<td>String or null</td>
+<td>The name of the delivery method (e.g. &ldquo;NZ Courier&rdquo;, &ldquo;Rural Delivery&rdquo;). Only applicable if ShippingType is Custom.</td>
 </tr>
 <tr>
 <td></td>
 <td><strong>ShippingId</strong></td>
-<td>长整数</td>
-<td>运输选项的 ID（在出价或立即购买时使用）。列出项目时不需要。</td>
+<td>Long Integer</td>
+<td>The ID of the shipping option (used when bidding or for Buy Now). Not required when listing an item.</td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank"><strong>检索单个列表的详细信息</strong></a>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank"><strong>Retrieve the details of a single listing</strong></a>
 </p>
 <ul>
 <li>
-<h4 id="示例请求-8">示例请求</h4>
+<h4 id="example-request-8">Example request</h4>
 </li>
 </ul>
 <p><strong>GET</strong> <a href="https://api.tmsandbox.co.nz/v1/Listings/2149295093.JSON">https://api.tmsandbox.co.nz/v1/Listings/2149295093.JSON</a></p>
 <ul>
 <li>
-<h4 id="示例响应-8">示例响应</h4>
+<h4 id="example-response-8">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
@@ -1358,65 +1360,65 @@ if (!doNotTrack) {
     ],    
     ...
 }    
-</code></pre></div><h2 id="api--使用立即购买购买拍卖httpsdevelopertrademeconzapi-referencebidding-and-buying-methodsbuy-an-auction-using-buy-now">API -<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖</a>
+</code></pre></div><h2 id="api---buy-an-auction-using-buy-nowhttpsdevelopertrademeconzapi-referencebidding-and-buying-methodsbuy-an-auction-using-buy-now">API - <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now</a>
 </h2>
 <ul>
 <li>
-<h4 id="业务选择-3">业务选择</h4>
+<h4 id="business-selection-3">Business selection</h4>
 </li>
 </ul>
-<p><strong>链式组合交易</strong></p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
- -&gt;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖（<strong>我在这里</strong>）</a>
+<p>Chained combination transactions</p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">Retrieve your won items</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+ -&gt; <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">Buy an auction using Buy Now(<strong>I’m here</strong>)</a>
 </p>
-<p><strong>从上游交易“<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索</a>
-”的响应中获取“ListingId” 作为请求字段之一。</strong></p>
-<p><strong>从上游交易<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">“检索单个列表的详细信息</a>
-”的响应中获取“ShippingId” 作为请求字段之一。</strong></p>
+<p>Fetch ‘ListingId’ from the response of upstream transaction ‘<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">General search</a>
+’ as one of the request fields.</p>
+<p>Fetch ‘ShippingId’ from the response of upstream transaction <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">&lsquo;Retrieve the details of a single listing&rsquo;</a>
+ as one of the request fields.</p>
 <ul>
 <li>
-<h4 id="api-功能使用立即购买购买商品">API 功能：使用“立即购买”购买商品。</h4>
+<h4 id="api-function-buys-an-item-using-buy-now">API Function: Buys an item using Buy Now.</h4>
 </li>
 <li>
-<h4 id="前端页面---商品详情页面">前端页面 - 商品详情页面</h4>
+<h4 id="front-end-page---item-details-page">Front-end page - Item details page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui1.webp" alt="img"  loading="lazy" />
-</p>
-<ul>
-<li>
-<h4 id="前端页面-确认购买页面">前端页面-确认购买页面</h4>
-</li>
-</ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui1.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="前端页面---购买详情页面">前端页面 - 购买详情页面</h4>
+<h4 id="front-end-page---confirm-purchase-page">Front-end page - Confirm purchase page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui3.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="前端页面---won-列表页面已购买的项目显示在此页面上">前端页面 - Won 列表页面（已购买的项目显示在此页面上）</h4>
+<h4 id="front-end-page---purchase--details-page">Front-end page - Purchase  details page</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui4.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui3.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键请求字段-9">关键请求字段</h4>
+<h4 id="front-end-page---won-list-page-purchased-item-shown-on-this-page">Front-end page - Won list page (purchased item shown on this page)</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui4.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="关键响应字段---buy-now-请求的详细信息">关键响应字段 - Buy Now 请求的详细信息。</h4>
+<h4 id="key-request-fields-9">Key request fields</h4>
+</li>
+</ul>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="key-response-fields---the-details-of-the-buy-now-request">Key response fields - The details of the Buy Now request.</h4>
 </li>
 </ul>
 <table>
@@ -1432,58 +1434,58 @@ if (!doNotTrack) {
 <tr>
 <td><strong>Success</strong></td>
 <td>Boolean</td>
-<td>指示操作是否成功。</td>
+<td>Indicates whether the operation was successful.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td>String or null</td>
-<td>错误的描述，如果操作失败。</td>
+<td>The description of the error, if the operation failed.</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>StatusCode</strong></td>
 <td>Enumeration</td>
-<td>立即购买请求的状态。</td>
+<td>The status of the Buy Now request.</td>
 <td></td>
 </tr>
 <tr>
 <td></td>
 <td>Success</td>
 <td>0</td>
-<td>竞标成功。</td>
+<td>The bid was a success.</td>
 </tr>
 <tr>
-<td><strong>…</strong></td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td><strong>&hellip;</strong></td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 <tr>
 <td><strong>PurchaseId</strong></td>
 <td>Long Integer</td>
-<td>刚刚购买的 ID。</td>
+<td>The ID of the purchase that was just made.</td>
 <td></td>
 </tr>
 <tr>
-<td>…</td>
-<td>…</td>
-<td>…</td>
-<td>…</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
+<td>&hellip;</td>
 </tr>
 </tbody>
 </table>
-<p>更多参考：<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank"><strong>使用“立即购买”购买拍卖</strong></a>
+<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank"><strong>Buy an auction using Buy Now</strong></a>
 </p>
 <ul>
 <li>
-<h4 id="示例请求-9">示例请求</h4>
+<h4 id="example-request-9">Example request</h4>
 </li>
 </ul>
 <p><strong>POST</strong> <a href="https://api.tmsandbox.co.nz/v1/Bidding/BuyNow.JSON">https://api.tmsandbox.co.nz/v1/Bidding/BuyNow.JSON</a></p>
 <ul>
 <li>
-<h4 id="示例响应-9">示例响应</h4>
+<h4 id="example-response-9">Example response</h4>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
@@ -1496,14 +1498,14 @@ if (!doNotTrack) {
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a>
     </div></div>
 </div><section class="related-posts">
   <h3>Related Posts</h3>
-  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/cypress-installation/">How to install Cypress?</a></li></ul>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/cypress-installation/">How to install Cypress?</a></li></ul>
 </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="ifulltest/comments"
   issue-term="pathname"
@@ -1521,10 +1523,10 @@ if (!doNotTrack) {
     <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,DevOps,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
 </section><section class="featured-posts row surface">
   <h4>Featured Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
@@ -1565,7 +1567,7 @@ if (!doNotTrack) {
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
       Agile Basis <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
-      Cypress <span class="badge rounded-pill">3</span>
+      Cypress <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
       GitHub <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">

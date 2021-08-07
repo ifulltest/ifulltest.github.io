@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-8-检索您赢得的物品 API 测试">
 <meta itemprop="description" content="API - 检索您赢得的物品脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本"><meta itemprop="datePublished" content="2021-07-27T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-27T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1330"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1331"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-8-检索您赢得的物品 API 测试" />
 <meta property="og:description" content="API - 检索您赢得的物品脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本" />
 <meta property="og:type" content="article" />
@@ -203,11 +203,7 @@ if (!doNotTrack) {
         <li></li>
       </ul>
     </li>
-    <li><a href="#api-测试脚本增强">API 测试脚本增强</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#api-测试脚本增强">API 测试脚本增强</a></li>
     <li><a href="#api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</a></li>
     <li><a href="#api测试脚本发布">API测试脚本发布</a></li>
   </ul>
@@ -398,7 +394,7 @@ if (!doNotTrack) {
 </p>
 <ul>
 <li>
-<h4 id="api连接">API连接</h4>
+<h4 id="api连通性">API连通性</h4>
 </li>
 </ul>
 <p>连通性测试通过并获得响应示例。</p>
@@ -479,8 +475,8 @@ if (!doNotTrack) {
 </li>
 </ul>
 <p>检查获胜列表中是否存在项目。</p>
-<p>并将赢得的项目 PurchaseId 及其计数存储为两个环境变量：{{WonPurchaseId}} 和 {{WonPurchaseIdCount}} 用于下游 API -<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的项目列表中删除购买</a>
- 使用。</p>
+<p>并将赢得的项目 PurchaseId 及其计数存储为两个环境变量：{{WonPurchaseId}} 和 {{WonPurchaseIdCount}} 用于下游 API -<strong><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的项目列表中删除购买</a>
+</strong> 使用。</p>
 <p>然后我们根据示例功能得到下面的检查代码片段。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: CheckingWonListHaveItems Start&#34;);
 
@@ -549,14 +545,8 @@ pm.test(&#34;CheckingWonListHasItems&#34;, function () {
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-log2.webp" alt="img"  loading="lazy" />
 </p>
 <h2 id="api-测试脚本增强">API 测试脚本增强</h2>
-<ul>
-<li>
-<h4 id="增强脚本如添加事务功能异常验证参数化等">增强脚本，如添加事务功能、异常验证、参数化等。</h4>
-</li>
-<li>
-<h4 id="运行最终脚本并从前端页面或控制台日志进行验证">运行最终脚本并从前端页面或控制台日志进行验证。</h4>
-</li>
-</ul>
+<p>增强脚本，如添加事务功能、异常验证、参数化等。</p>
+<p>运行最终脚本并从前端页面或控制台日志进行验证。</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-enhance.webp" alt="img"  loading="lazy" />
 </p>
 <h2 id="api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</h2>

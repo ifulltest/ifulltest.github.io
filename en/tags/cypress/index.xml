@@ -8,15 +8,41 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/cypress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-2-典型交易</title>
+      <title>Trade Me-1-API testing first demo</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
+      <description>&lt;h2 id=&#34;whatre-the-reasons-for-writing-the-series&#34;&gt;What&amp;rsquo;re the reasons for writing the series?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;1st, for testing skills demonstration.&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;2nd-for-guiding-those-who-are-new-to-automation-testing&#34;&gt;2nd, for guiding those who are new to automation testing.&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;3rd-for-mutual-boost-and-progress&#34;&gt;3rd, for mutual boost and progress.&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Trade Me-2-typical transactions</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</guid>
-      <description>如何挑选典型的交易？ 在编写 API 测试脚本之前，我们需要从 TradeMe 中挑选一些典型的交易。
-我们选择的这些事务更好地涵盖了不同类型的请求，例如get、post、delete。
-这些交易的一部分应该在业务层面相互关联。
-API -检索一般类别   业务范围选择：获取所有子类别。   API 功能：检索全部或部分 Trade Me 类别树。   前端页面     关键请求字段     关键响应字段 - 类别树。           Name String or null 类别的名称。   Number String or null 类别的唯一标识符，例如“0004-0369-6076-”。我们计划将其更改为数字标识符（例如“6076”），因此您应该确保您可以处理这两种格式。   Path String or null 此类别的完整 URL 路径，例如“/Home-living/Beds-bedroom-furniture/Bedside-tables”。   Subcategories Collection of or null 属于该类别的子类别列表。   … … …    更多参考：检索一般类别</description>
+      <description>&lt;h2 id=&#34;how-to-pick-the-typical-transactions&#34;&gt;&lt;em&gt;How to pick the typical transactions?&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Before coding the API test script, we need to pick some typical transactions from TradeMe.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And these transactions we&amp;rsquo;ve picked better to cover different types of requests, such as the &lt;strong&gt;get, post, delete&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;And part of these transactions should &lt;strong&gt;correlate with each other&lt;/strong&gt; at the business level.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

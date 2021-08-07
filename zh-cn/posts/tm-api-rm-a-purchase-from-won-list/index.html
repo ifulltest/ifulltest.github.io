@@ -9,11 +9,11 @@
 <link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-9-从您赢得的物品列表中删除购买 API 测试">
-<meta itemprop="description" content="API - 从您赢得的物品列表脚本开发步骤中删除购买 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;A"><meta itemprop="datePublished" content="2021-07-28T00:00:00+00:00" />
+<meta itemprop="description" content="API - 从您赢得的物品列表中删除购买脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;A"><meta itemprop="datePublished" content="2021-07-28T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-28T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1707"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1744"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-9-从您赢得的物品列表中删除购买 API 测试" />
-<meta property="og:description" content="API - 从您赢得的物品列表脚本开发步骤中删除购买 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;A" />
+<meta property="og:description" content="API - 从您赢得的物品列表中删除购买脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;A" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-28T00:00:00+00:00" />
@@ -24,7 +24,7 @@
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
 
 <meta name="twitter:title" content="Trade Me-9-从您赢得的物品列表中删除购买 API 测试"/>
-<meta name="twitter:description" content="API - 从您赢得的物品列表脚本开发步骤中删除购买 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;A"/>
+<meta name="twitter:description" content="API - 从您赢得的物品列表中删除购买脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;A"/>
 <meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
 <script type="application/javascript">
 var doNotTrack = false;
@@ -187,7 +187,7 @@ if (!doNotTrack) {
   <div class="offcanvas-body">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#api---从您赢得的物品列表脚本开发步骤中删除购买"><em>API - 从您赢得的物品列表脚本开发步骤中删除购买</em></a></li>
+    <li><a href="#api---从您赢得的物品列表中删除购买脚本开发步骤"><em>API - 从您赢得的物品列表中删除购买脚本开发步骤</em></a></li>
     <li><a href="#api规范">API规范</a>
       <ul>
         <li></li>
@@ -213,7 +213,7 @@ if (!doNotTrack) {
   </ul>
 </nav>
   </div>
-</div><div class="post-content mb-3"><h2 id="api---从您赢得的物品列表脚本开发步骤中删除购买"><em>API - 从您赢得的物品列表脚本开发步骤中删除购买</em></h2>
+</div><div class="post-content mb-3"><h2 id="api---从您赢得的物品列表中删除购买脚本开发步骤"><em>API - 从您赢得的物品列表中删除购买脚本开发步骤</em></h2>
 <p><em>API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Negative Cases扩展-&gt;API测试脚本发布</em></p>
 <h2 id="api规范">API规范</h2>
 <ul>
@@ -288,15 +288,15 @@ if (!doNotTrack) {
 <h4 id="业务范围选择">业务范围选择</h4>
 </li>
 </ul>
-<p>链式投资组合交易</p>
+<p><strong>链式投资组合交易</strong></p>
 <p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-won-items" target="_blank">检索您赢得的物品</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买（<strong>我在这里</strong>）</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/search-methods/general-search" target="_blank">常规搜索</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
  -&gt;<a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">使用“立即购买”购买拍卖</a>
 </p>
-<p>选择 API - &lsquo;Retrieve your won items&rsquo; 作为前置请求以获取所有想要删除的赢得的物品</p>
-<p>删除获胜项目列表中的所有获胜项目</p>
+<p><strong>选择 API - &lsquo;Retrieve your won items&rsquo; 作为前置请求以获取所有想要删除的赢得的物品</strong></p>
+<p><strong>删除获胜项目列表中的所有获胜项目</strong></p>
 <ul>
 <li>
 <h4 id="业务验证点">业务验证点</h4>
@@ -316,16 +316,16 @@ if (!doNotTrack) {
 
 var WonPurchaseId = pm.environment.get(&#34;WonPurchaseId&#34;).split(&#34;,&#34;);
 ...
-</code></pre></div><p>在哪里设置这两个变量参考：<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/#api%e6%b5%8b%e8%af%95%e8%84%9a%e6%9c%ac%e8%b0%83%e8%af%95">Retrieve your won items - API Testing Script Debugging</a>
- -&gt; API checkpoint。</p>
+</code></pre></div><p>在哪里设置这两个变量参考：<strong><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/#api%e6%b5%8b%e8%af%95%e8%84%9a%e6%9c%ac%e8%b0%83%e8%af%95">检索您赢得的物品 - API 测试脚本调试</a>
+</strong> -&gt; API checkpoint。</p>
 <ul>
 <li>
 <h4 id="组装前置请求从您赢得的物品列表中删除购买httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list-">组装前置请求“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
  ”</h4>
 </li>
 </ul>
-<p>从赢得的项目列表中删除所有赢得的项目，但保留最后一个赢得的项目（以供后置请求“<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您的赢得项目列表中删除购买</a>
- ”以使用。</p>
+<p>从赢得的项目列表中删除所有赢得的项目，但保留最后一个赢得的项目（以供后置请求**<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">“从您的赢得项目列表中删除购买”</a>
+**使用。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">if (WonPurchaseIdCount <span style="color:#960050;background-color:#1e0010">&lt;</span>= 0){
 
     postman.setEnvironmentVariable(&#39;LastWonPurchaseId&#39;, &#34;00000&#34;);
@@ -394,8 +394,8 @@ else{
         
     }, 2000);
 }
-</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
-</p>
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考**<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
+**</p>
 <ul>
 <li>
 <h4 id="在-postman-的-authorization-标签中选择-oauth-10-对请求进行授权">在 Postman 的 Authorization 标签中选择 OAuth 1.0 对请求进行授权。</h4>
@@ -404,8 +404,8 @@ else{
 <p>OAuth 1.0 是针对发送前需要授权的交易。模板如下：</p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt="img"  loading="lazy" />
 </p>
-<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
-</p>
+<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考**<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
+**</p>
 <ul>
 <li>
 <h4 id="组装请求---从您赢得的物品列表中删除购买httpsdevelopertrademeconzapi-referencemy-trade-me-methodsremove-a-purchase-from-your-won-items-list-">组装请求 - &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">从您赢得的物品列表中删除购买</a>
@@ -413,14 +413,14 @@ else{
 </li>
 </ul>
 <p>根据 API 规范，参数 - <strong>purchaseId</strong>表示获胜项目列表中的隐藏项目。</p>
-<p>来自前置请求响应的 purchaseId ' <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
- &lsquo;，它已经设置为环境变量：{{LastWonPurchaseId}}。</p>
+<p>purchaseId来自前置请求 **<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">&lsquo;从您赢得的物品列表中删除购买&rsquo;</a>
+**的响应报文，它已被设置为环境变量：{{LastWonPurchaseId}}。</p>
 <p>所以请求应该是 <strong>DELETE</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/%7B%7BLastWonPurchaseId%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/{{LastWonPurchaseId}}.JSON</a></p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-para.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="api连接">API连接</h4>
+<h4 id="api连通性">API连通性</h4>
 </li>
 </ul>
 <p>连通性测试通过并获得响应示例。</p>
@@ -529,7 +529,7 @@ pm.sendRequest(post_request, function (err, response) {
   <h3>版权</h3><div class="post-cc">本作品采用 <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a> 授权。</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/">Trade Me-10-通用搜索API测试</a>
+      <a href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/">Trade Me-10-常规搜索API测试</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
       <a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/">Trade Me-8-检索您赢得的物品 API 测试</a>

@@ -3,23 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trade Me-13-场景和Newman报告 - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <title>Trade Me-13-scenarios-and-newman-reports - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
-<meta name="description" content="" /><meta itemprop="name" content="Trade Me-13-场景和Newman报告">
-<meta itemprop="description" content="场景处于API自动化测试中的位置 典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;场景和报告（我在这儿） -&gt; CICD
-典型交易选择 典型交易选择指：Trade Me-2-典型交易
-对应的API选择和脚本编写 对应的API选择和脚本编写参考：
-Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表的详细信息 API 测试 Trade Me-12-使用 Buy Now购买拍卖 API 测试 运行场景的两种方式 Postman 使用集合的概念来存储您的 API 测试脚本作为基本场景。"><meta itemprop="datePublished" content="2021-08-02T00:00:00+00:00" />
+<meta name="description" content="" /><meta itemprop="name" content="Trade Me-13-scenarios-and-newman-reports">
+<meta itemprop="description" content="Scenario‘s position in the API automation testing
+Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports(I&rsquo;m here) -&gt; CICD"><meta itemprop="datePublished" content="2021-08-02T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-02T00:00:00+00:00" />
-<meta itemprop="wordCount" content="150"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
-<meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-13-场景和Newman报告" />
-<meta property="og:description" content="场景处于API自动化测试中的位置 典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;场景和报告（我在这儿） -&gt; CICD
-典型交易选择 典型交易选择指：Trade Me-2-典型交易
-对应的API选择和脚本编写 对应的API选择和脚本编写参考：
-Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表的详细信息 API 测试 Trade Me-12-使用 Buy Now购买拍卖 API 测试 运行场景的两种方式 Postman 使用集合的概念来存储您的 API 测试脚本作为基本场景。" />
+<meta itemprop="wordCount" content="471"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-13-scenarios-and-newman-reports" />
+<meta property="og:description" content="Scenario‘s position in the API automation testing
+Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports(I&rsquo;m here) -&gt; CICD" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-02T00:00:00+00:00" />
@@ -29,11 +25,9 @@ Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 AP
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
 
-<meta name="twitter:title" content="Trade Me-13-场景和Newman报告"/>
-<meta name="twitter:description" content="场景处于API自动化测试中的位置 典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;场景和报告（我在这儿） -&gt; CICD
-典型交易选择 典型交易选择指：Trade Me-2-典型交易
-对应的API选择和脚本编写 对应的API选择和脚本编写参考：
-Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表的详细信息 API 测试 Trade Me-12-使用 Buy Now购买拍卖 API 测试 运行场景的两种方式 Postman 使用集合的概念来存储您的 API 测试脚本作为基本场景。"/>
+<meta name="twitter:title" content="Trade Me-13-scenarios-and-newman-reports"/>
+<meta name="twitter:description" content="Scenario‘s position in the API automation testing
+Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports(I&rsquo;m here) -&gt; CICD"/>
 <meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
 <script type="application/javascript">
 var doNotTrack = false;
@@ -162,18 +156,18 @@ if (!doNotTrack) {
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-13-场景和Newman报告</li></ol>
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-13-scenarios-and-newman-reports</li></ol>
 </nav><article class="post row surface"><div class="post-toolbox">
   <div class="col-12 d-none d-lg-block">
     <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
   </div>
 </div>
-<h1 class="post-title my-3">Trade Me-13-场景和Newman报告</h1><div class="post-meta mb-3">
+<h1 class="post-title my-3">Trade Me-13-scenarios-and-newman-reports</h1><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Aug 2, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>1 min read
+    <i class="fas fa-fw fa-coffee"></i>3 min read
   </span>
 <div class="post-translations nav-item dropdown me-2 d-inline-flex">
   <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -183,170 +177,203 @@ if (!doNotTrack) {
 </div>
 
 <a href="https://ifulltest.github.io/en/series/postman-api-automation-practice/" class="post-taxonomy">#Postman API Automation Practice</a><a href="https://ifulltest.github.io/en/tags/postman/" class="post-taxonomy">#Postman</a></div>
-<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><div class="post-content mb-3"><h2 id="场景处于api自动化测试中的位置"><em>场景处于API自动化测试中的位置</em></h2>
-<p><em>典型交易选择 -&gt; 对应 API 选择 -&gt; Scripting -&gt;<strong>场景和报告（我在这儿）</strong> -&gt; CICD</em></p>
-<h2 id="典型交易选择">典型交易选择</h2>
-<p>典型交易选择指：<strong><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a>
+<div class="post-share mb-3"><div class="addthis_inline_share_toolbox"></div></div><a id="btnTOC" class="fas fa-fw fa-2x fa-list-alt position-fixed" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">Table Of Contents</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#scenarios-position-in-the-api-automation-testing"><em>Scenario‘s position in the API automation testing</em></a></li>
+    <li><a href="#typical-transactions-selection">Typical transactions selection</a></li>
+    <li><a href="#corresponding-api-selection-and-scripting">Corresponding API selection and scripting</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#two-ways-of-running-your-scenarios">Two ways of running your scenarios</a></li>
+    <li><a href="#run-your-scenarios-by-the-collection-runner">Run your scenarios by the collection runner</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#run-your-scenarios-by--newman">Run your scenarios by  &lsquo;Newman&rsquo;</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><h2 id="scenarios-position-in-the-api-automation-testing"><em>Scenario‘s position in the API automation testing</em></h2>
+<p><em>Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; <strong>Scenarios and reports(I&rsquo;m here)</strong> -&gt; CICD</em></p>
+<h2 id="typical-transactions-selection">Typical transactions selection</h2>
+<p>Typical transactions selection refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a>
 </strong></p>
-<h2 id="对应的api选择和脚本编写">对应的API选择和脚本编写</h2>
-<p><em>对应的API选择和脚本编写参考：</em></p>
-<h5 id="trade-me-3-检索一般类别-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-general-categories"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a>
+<h2 id="corresponding-api-selection-and-scripting">Corresponding API selection and scripting</h2>
+<p><em>Corresponding API selection and scripting refers to:</em></p>
+<h5 id="trade-me-3-retrieve-general-categories-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-general-categories"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a>
 </h5>
-<h5 id="trade-me-4-检索您的监视列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a>
+<h5 id="trade-me-4-retrieve-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a>
 </h5>
-<h5 id="trade-me-5-从您的监视列表中删除列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-rm-a-listing-from-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-从您的监视列表中删除列表 API 测试</a>
+<h5 id="trade-me-5-remove-a-listing-from-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-rm-a-listing-from-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a>
 </h5>
-<h5 id="trade-me-6-检索即将关闭列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-closing-soon-listings"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-检索即将关闭列表 API 测试</a>
+<h5 id="trade-me-6-retrieve-closing-soon-listings-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-closing-soon-listings"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-Retrieve closing soon listings API testing</a>
 </h5>
-<h5 id="trade-me-7-将列表添加到您的监视列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-add-a-listing-to-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/">Trade Me-7-将列表添加到您的监视列表 API 测试</a>
+<h5 id="trade-me-7-add-a-listing-to-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-add-a-listing-to-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/">Trade Me-7-Add a listing to your watchlist API testing</a>
 </h5>
-<h5 id="trade-me-8-检索您赢得的物品-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-won-items"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/">Trade Me-8-检索您赢得的物品 API 测试</a>
+<h5 id="trade-me-8-retrieve-your-won-items-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-won-items"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/">Trade Me-8-Retrieve your won items API testing</a>
 </h5>
-<h5 id="trade-me-9-从您赢得的物品列表中删除购买-api-测试httpsifulltestgithubiozh-cnpoststm-api-rm-a-purchase-from-won-list"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-从您赢得的物品列表中删除购买 API 测试</a>
+<h5 id="trade-me-9-remove-a-purchase-from-your-won-items-list-api-testinghttpsifulltestgithubioenpoststm-api-rm-a-purchase-from-won-list"><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-Remove a purchase from your won items list API testing</a>
 </h5>
-<h5 id="trade-me-10-通用搜索api测试httpsifulltestgithubiozh-cnpoststm-api-general-search"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/">Trade Me-10-通用搜索API测试</a>
+<h5 id="trade-me-10-general-search-api-testinghttpsifulltestgithubioenpoststm-api-general-search"><a href="https://ifulltest.github.io/en/posts/tm-api-general-search/">Trade Me-10-General search API testing</a>
 </h5>
-<h5 id="trade-me-11-检索单个列表的详细信息-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-listings-details"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表的详细信息 API 测试</a>
+<h5 id="trade-me-11-retrieve-the-details-of-a-single-listing-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-listings-details"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/">Trade Me-11-Retrieve the details of a single listing API testing</a>
 </h5>
-<h5 id="trade-me-12-使用-buy-now购买拍卖-api-测试httpsifulltestgithubiozh-cnpoststm-api-buy-an-auction-using-buy-now"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-使用 Buy Now购买拍卖 API 测试</a>
+<h5 id="trade-me-12-buy-an-auction-using-buy-now-api-testinghttpsifulltestgithubioenpoststm-api-buy-an-auction-using-buy-now"><a href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-Buy an auction using Buy Now API testing</a>
 </h5>
-<h2 id="运行场景的两种方式">运行场景的两种方式</h2>
-<p>Postman 使用集合的概念来存储您的 API 测试脚本作为基本场景。</p>
-<p>您可以选择两种方式来运行场景和显示运行报告。</p>
-<p>一个是Collection Runner，另一个是Newman工具。</p>
-<h2 id="由collection-runner运行您的场景">由Collection Runner运行您的场景</h2>
+<h2 id="two-ways-of-running-your-scenarios">Two ways of running your scenarios</h2>
+<p>Postman uses the concept of collection to store your API testing scripts as a basic scenario.</p>
+<p>You could choose two ways to run the scenario and display the running report.</p>
+<p>One is by the collection runner, and another is the &lsquo;Newman&rsquo; tool.</p>
+<h2 id="run-your-scenarios-by-the-collection-runner">Run your scenarios by the collection runner</h2>
 <ul>
 <li>
-<h4 id="什么是collection-runner">什么是Collection Runner</h4>
+<h4 id="what-is-the-postman-collection-runner">What is the postman collection runner</h4>
 </li>
 </ul>
-<p>Collection Runner 允许您以指定的顺序运行一组请求。</p>
-<p>Collection Runner 将记录您的请求测试结果，您的脚本可以在请求之间传递数据以及更改请求工作流程。</p>
-<p>更多请参考官方文档：<a href="https://learning.postman.com/docs/running-collections/intro-to-collection-runs/" target="_blank"><strong>使用 Collection Runner</strong></a>
- 。</p>
+<p>The Collection Runner allows you to run sets of requests in a specified sequence.</p>
+<p>The Collection Runner will log your request test results, and your scripts can pass data between requests as well as altering the request workflow.</p>
+<p>More refer to official doc: <a href="https://learning.postman.com/docs/running-collections/intro-to-collection-runs/" target="_blank"><strong>Using the Collection Runner</strong></a>
+.</p>
 <ul>
 <li>
-<h4 id="转到collection-runner标签">转到Collection Runner标签</h4>
+<h4 id="go-to-the-collection-runner-label">Go to the collection runner label</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner1.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner1.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="启用show-postman-console">启用“Show Postman Console”</h4>
+<h4 id="enable-show-postman-console">Enable &lsquo;Show Postman Console&rsquo;</h4>
 </li>
 </ul>
-<h5 id="view--show-postman-console-以启用控制台日志">View &gt; Show Postman Console 以启用控制台日志</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner2.webp" alt="img"  loading="lazy" />
+<h5 id="view--show-postman-console-to-enable-the-console-log">View &gt; Show Postman Console to enable the console log</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="设置运行顺序迭代次数参数数据文件然后单击run-collection按钮">设置运行顺序、迭代次数、参数数据文件，然后单击“Run collection”按钮</h4>
+<h4 id="set-running-order-iterations-parametric-data-files-then-click-the-run-collection-button">Set running order, iterations, parametric data files, then click the &lsquo;Run collection&rsquo; button</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner3.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner3.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="查看来自-postman-内置view-results的报告">查看来自 Postman 内置“View Results”的报告</h4>
+<h4 id="see-reports-from-postman-in-build-view-results">See reports from Postman in-build &lsquo;View Results&rsquo;</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner4.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner4.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner5.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner5.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="从控制台日志查看运行结果">从控制台日志查看运行结果</h4>
+<h4 id="see-running-results-from-console-log">See running results from console log</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner6.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner6.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner7.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-runner7.webp" alt=""  loading="lazy" />
 </p>
-<h2 id="通过newman运行您的场景">通过“Newman”运行您的场景</h2>
+<h2 id="run-your-scenarios-by--newman">Run your scenarios by  &lsquo;Newman&rsquo;</h2>
 <ul>
 <li>
-<h4 id="什么是newman">什么是Newman</h4>
+<h4 id="what-is-the-newman">What is the Newman</h4>
 </li>
 </ul>
-<p>Newman 是 Postman 的命令行收集运行程序。</p>
-<p>它允许您直接从命令行毫不费力地运行和测试 Postman 集合。</p>
-<p>它在构建时考虑到了可扩展性，因此您可以轻松地将其与您的持续集成服务器和构建系统集成。</p>
-<p>更多参考：<strong><a href="https://github.com/postmanlabs/newman" target="_blank">Newman GitHub</a>
+<p>Newman is a command-line collection runner for Postman.</p>
+<p>It allows you to effortlessly run and test a Postman collection directly from the command-line.</p>
+<p>It is built with extensibility in mind so that you can easily integrate it with your continuous integration servers and build systems.</p>
+<p>More refer to: <!-- raw HTML omitted --><strong><a href="https://github.com/postmanlabs/newman" target="_blank">newman GitHub</a>
+</strong><!-- raw HTML omitted --></p>
+<ul>
+<li>
+<h4 id="how-to-install-the-newman">How to install the Newman?</h4>
+</li>
+</ul>
+<p>How to install the Newman refers to: <strong><a href="https://ifulltest.github.io/en/posts/newman-installation/">How to install Newman?</a>
 </strong></p>
 <ul>
 <li>
-<h4 id="如何安装newman">如何安装Newman？</h4>
+<h4 id="export-collection-files-to-local">Export collection files to local</h4>
 </li>
 </ul>
-<p>如何安装Newman参考：<strong><a href="https://ifulltest.github.io/zh-cn/posts/newman-installation/">如何安装Newman？</a>
-</strong></p>
-<ul>
-<li>
-<h4 id="将集合文件导出到本地">将集合文件导出到本地</h4>
-</li>
-</ul>
-<p>右键单击给定的集合 -&gt; 导出 -&gt; 单击“Collection v2.1 (recommended)” -&gt; Export -&gt; 选择一个本地目录来存储集合文件。</p>
-<p>此演示存储到本地 D:\Software\postman\collections</p>
-<p>将有正面和反面案例脚本导出到本地</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export1.webp" alt="img"  loading="lazy" />
+<p>Right click given collection -&gt;  Export -&gt; single click &lsquo;Collection v2.1 (recommended)&rsquo; -&gt; Export -&gt; choose a local directory to store the collection file.</p>
+<p>This demo stores to local D:\Software\postman\collections</p>
+<p>Will have both positive and negative case scripts to be exported to local</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export1-2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export1-2.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export2.webp" alt=""  loading="lazy" />
 </p>
-<p>正例和反例脚本名称为“tradeMeSandBox.postman_collection.json”和“tradeMeSandBox-Negative.postman_collection.json”。</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export3.webp" alt="img"  loading="lazy" />
+<p>Positive and negative case scripts name as  &lsquo;tradeMeSandBox.postman_collection.json&rsquo;  and &lsquo;tradeMeSandBox-Negative.postman_collection.json&rsquo;.</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export3.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export3-2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-collection-export3-2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="导出环境参数文件到本地">导出环境参数文件到本地</h4>
+<h4 id="export-environment-parameter-file-to-local">Export environment parameter file to local</h4>
 </li>
 </ul>
-<p>单击特定环境“Edit”-&gt; Export -&gt; 选择本地目录来存储环境文件。</p>
-<p>此案例存储到本地 D:\Software\postman\data</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-env-parameter-edit.webp" alt="img"  loading="lazy" />
+<p>Click specific environment the &lsquo;Edit&rsquo; -&gt; Export -&gt; choose a local directory to store the environment file.</p>
+<p>This demo stores to local D:\Software\postman\data</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-env-parameter-edit.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-env-parameter-export.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-env-parameter-export.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-env-parameter-local.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-env-parameter-local.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="生成-cli-和-html-报告">生成 CLI 和 HTML 报告</h4>
+<h4 id="generate-cli-and-html-report">Generate cli and html report</h4>
 </li>
 </ul>
-<p>使用 Newman reporters 生成命令行和网页报告。</p>
-<p>语法指的是**<a href="https://github.com/postmanlabs/newman#reporters" target="_blank">Reporters</a>
-** 。</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-1.webp" alt="img"  loading="lazy" />
+<p>Using Newman reporters to generate both command line and web page reports.</p>
+<p>The grammar refers to <strong><a href="https://github.com/postmanlabs/newman#reporters" target="_blank">Reporters</a>
+</strong>.</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-1.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-2.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-2.webp" alt=""  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="查看-cli-和-html-报告详细信息">查看 CLI 和 HTML 报告详细信息</h4>
+<h4 id="see-cli-and-html-report-details">See cli and html report details</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-3.webp" alt="img"  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-3.webp" alt=""  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-4.webp" alt="img"  loading="lazy" />
-</p>
-</div><div class="post-copyright mb-4">
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-generate-reports-4.webp" alt=""  loading="lazy" />
+</p></div><div class="post-copyright mb-4">
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/">Trade Me-14-Jenkins-持续集成流程</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/">Trade Me-14-Jenkins-CI-process</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-使用 Buy Now API 测试购买拍卖</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-Buy an auction using Buy Now API testing</a>
     </div></div>
 </div><section class="related-posts">
   <h3>Related Posts</h3>
-  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/newman-installation/">How to install Newman?</a></li><li><a href="https://ifulltest.github.io/en/posts/nodejs-installation/">How to install Node.js?</a></li><li><a href="https://ifulltest.github.io/en/posts/postman-installation/">How to install Postman?</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-general-search/">Trade Me-10-常规搜索API测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表 API 测试的详细信息</a></li></ul>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/newman-installation/">How to install Newman?</a></li><li><a href="https://ifulltest.github.io/en/posts/nodejs-installation/">How to install Node.js?</a></li><li><a href="https://ifulltest.github.io/en/posts/postman-installation/">How to install Postman?</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-general-search/">Trade Me-10-General search API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/">Trade Me-11-Retrieve the details of a single listing API testing</a></li></ul>
 </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="ifulltest/comments"
   issue-term="pathname"
@@ -364,10 +391,10 @@ if (!doNotTrack) {
     <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,DevOps,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
 </section><section class="featured-posts row surface">
   <h4>Featured Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
@@ -408,7 +435,7 @@ if (!doNotTrack) {
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
       Agile Basis <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
-      Cypress <span class="badge rounded-pill">3</span>
+      Cypress <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
       GitHub <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
