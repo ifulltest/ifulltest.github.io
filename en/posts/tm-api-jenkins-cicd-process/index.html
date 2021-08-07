@@ -3,19 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trade Me-14-Jenkins-CI-process - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <title>Trade Me-14-Jenkins-持续集成流程 - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
-<meta name="description" content="" /><meta itemprop="name" content="Trade Me-14-Jenkins-CI-process">
-<meta itemprop="description" content="API automation testing CI process
-Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
+<meta name="description" content="" /><meta itemprop="name" content="Trade Me-14-Jenkins-持续集成流程">
+<meta itemprop="description" content="API自动化测试持续集成流程 典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; 持续集成（我在这儿） 典型交易选择 典型交易选择指：Trade Me-2-典型交易 对应的API选择和脚本编写 对应的API选择和脚本编写参考： Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表 API 测试的详细信息 Trade Me-12-使用 Buy Now API 测试购买拍卖 场景和报告 场景和报告参考：Trade Me-13-场景和Newman报告 。 Jenkins 持续集成流程实践   Jenkins 持续集成流程的步骤   准备 -&gt; 新建 CI 作业 -&gt; 作业配置 -&gt; 作业运行 -&gt; 作业结果检查 -&gt; 电子邮件给相关人   准备工作 - 相关工具安装   Jenkins安装参考：如何安装Jenkins？ Git Bash安装参考：如何安装Git Bash？   准备工作 - 环境启动   在构建 CI 作业之前初始化 Postman 相关脚本、数据、报告、存储库的文件夹结构。 rem create folder for Postman collection, env parameter, temporary parameter, reports pushd d:\Software &amp;&amp; md postman\collections postman\data postman\reports\hisreports postman\postman_github 将 Postman 主目录设置为系统环境参数 setx &#34;POSTMAN_HOME&#34; &#34;D:\Software\postman&#34; /M   准备工作 - 将 Postman 集合和环境变量文件导出到本地   将 Postman 集合文件导出到本地是指：将 Postman 集合文件导出到本地"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1360"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
-<meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-CI-process" />
-<meta property="og:description" content="API automation testing CI process
-Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)" />
+<meta itemprop="wordCount" content="904"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-持续集成流程" />
+<meta property="og:description" content="API自动化测试持续集成流程 典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; 持续集成（我在这儿） 典型交易选择 典型交易选择指：Trade Me-2-典型交易 对应的API选择和脚本编写 对应的API选择和脚本编写参考： Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表 API 测试的详细信息 Trade Me-12-使用 Buy Now API 测试购买拍卖 场景和报告 场景和报告参考：Trade Me-13-场景和Newman报告 。 Jenkins 持续集成流程实践   Jenkins 持续集成流程的步骤   准备 -&gt; 新建 CI 作业 -&gt; 作业配置 -&gt; 作业运行 -&gt; 作业结果检查 -&gt; 电子邮件给相关人   准备工作 - 相关工具安装   Jenkins安装参考：如何安装Jenkins？ Git Bash安装参考：如何安装Git Bash？   准备工作 - 环境启动   在构建 CI 作业之前初始化 Postman 相关脚本、数据、报告、存储库的文件夹结构。 rem create folder for Postman collection, env parameter, temporary parameter, reports pushd d:\Software &amp;&amp; md postman\collections postman\data postman\reports\hisreports postman\postman_github 将 Postman 主目录设置为系统环境参数 setx &#34;POSTMAN_HOME&#34; &#34;D:\Software\postman&#34; /M   准备工作 - 将 Postman 集合和环境变量文件导出到本地   将 Postman 集合文件导出到本地是指：将 Postman 集合文件导出到本地" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-03T00:00:00+00:00" />
@@ -25,9 +23,8 @@ Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
 
-<meta name="twitter:title" content="Trade Me-14-Jenkins-CI-process"/>
-<meta name="twitter:description" content="API automation testing CI process
-Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)"/>
+<meta name="twitter:title" content="Trade Me-14-Jenkins-持续集成流程"/>
+<meta name="twitter:description" content="API自动化测试持续集成流程 典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; 持续集成（我在这儿） 典型交易选择 典型交易选择指：Trade Me-2-典型交易 对应的API选择和脚本编写 对应的API选择和脚本编写参考： Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表 API 测试的详细信息 Trade Me-12-使用 Buy Now API 测试购买拍卖 场景和报告 场景和报告参考：Trade Me-13-场景和Newman报告 。 Jenkins 持续集成流程实践   Jenkins 持续集成流程的步骤   准备 -&gt; 新建 CI 作业 -&gt; 作业配置 -&gt; 作业运行 -&gt; 作业结果检查 -&gt; 电子邮件给相关人   准备工作 - 相关工具安装   Jenkins安装参考：如何安装Jenkins？ Git Bash安装参考：如何安装Git Bash？   准备工作 - 环境启动   在构建 CI 作业之前初始化 Postman 相关脚本、数据、报告、存储库的文件夹结构。 rem create folder for Postman collection, env parameter, temporary parameter, reports pushd d:\Software &amp;&amp; md postman\collections postman\data postman\reports\hisreports postman\postman_github 将 Postman 主目录设置为系统环境参数 setx &#34;POSTMAN_HOME&#34; &#34;D:\Software\postman&#34; /M   准备工作 - 将 Postman 集合和环境变量文件导出到本地   将 Postman 集合文件导出到本地是指：将 Postman 集合文件导出到本地"/>
 <meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
 <script type="application/javascript">
 var doNotTrack = false;
@@ -156,18 +153,18 @@ if (!doNotTrack) {
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-14-Jenkins-CI-process</li></ol>
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-14-Jenkins-持续集成流程</li></ol>
 </nav><article class="post row surface"><div class="post-toolbox">
   <div class="col-12 d-none d-lg-block">
     <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
   </div>
 </div>
-<h1 class="post-title my-3">Trade Me-14-Jenkins-CI-process</h1><div class="post-meta mb-3">
+<h1 class="post-title my-3">Trade Me-14-Jenkins-持续集成流程</h1><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Aug 3, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>7 min read
+    <i class="fas fa-fw fa-coffee"></i>5 min read
   </span>
 <div class="post-translations nav-item dropdown me-2 d-inline-flex">
   <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -190,27 +187,27 @@ if (!doNotTrack) {
   <div class="offcanvas-body">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#api-automation-testing-ci-process"><em>API automation testing CI process</em></a>
+    <li><a href="#api自动化测试持续集成流程"><em>API自动化测试持续集成流程</em></a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#typical-transactions-selection">Typical transactions selection</a>
+    <li><a href="#典型交易选择">典型交易选择</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#corresponding-api-selection-and-scripting">Corresponding API selection and scripting</a>
+    <li><a href="#对应的api选择和脚本编写">对应的API选择和脚本编写</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#scenarios-and-reports">Scenarios and reports</a>
+    <li><a href="#场景和报告">场景和报告</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#jenkins-ci-process-practice">Jenkins CI process Practice</a>
+    <li><a href="#jenkins-持续集成流程实践">Jenkins 持续集成流程实践</a>
       <ul>
         <li></li>
       </ul>
@@ -218,87 +215,87 @@ if (!doNotTrack) {
   </ul>
 </nav>
   </div>
-</div><div class="post-content mb-3"><h2 id="api-automation-testing-ci-process"><em>API automation testing CI process</em></h2>
-<h5 id="typical-transactions-selection---corresponding-api-selection---scripting---scenarios-and-reports---ciim-here"><em>Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; <strong>CI(I&rsquo;m here)</strong></em></h5>
-<h2 id="typical-transactions-selection">Typical transactions selection</h2>
-<h5 id="typical-transactions-selection-refers-to-trade-me-2-typical-transactionshttpsifulltestgithubioenpoststm-api-typical-transactions">Typical transactions selection refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a>
+</div><div class="post-content mb-3"><h2 id="api自动化测试持续集成流程"><em>API自动化测试持续集成流程</em></h2>
+<h5 id="典型事务选择---对应-api-选择---脚本编写---场景和报告---持续集成我在这儿"><em>典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; <strong>持续集成（我在这儿）</strong></em></h5>
+<h2 id="典型交易选择">典型交易选择</h2>
+<h5 id="典型交易选择指trade-me-2-典型交易httpsifulltestgithubiozh-cnpoststm-api-typical-transactions">典型交易选择指：<strong><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a>
 </strong></h5>
-<h2 id="corresponding-api-selection-and-scripting">Corresponding API selection and scripting</h2>
-<h5 id="corresponding-api-selection-and-scripting-refers-to">Corresponding API selection and scripting refers to:</h5>
+<h2 id="对应的api选择和脚本编写">对应的API选择和脚本编写</h2>
+<h5 id="对应的api选择和脚本编写参考">对应的API选择和脚本编写参考：</h5>
+<h5 id="trade-me-3-检索一般类别-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-general-categories"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a>
+</h5>
+<h5 id="trade-me-4-检索您的监视列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a>
+</h5>
+<h5 id="trade-me-5-从您的监视列表中删除列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-rm-a-listing-from-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-从您的监视列表中删除列表 API 测试</a>
+</h5>
+<h5 id="trade-me-6-检索即将关闭列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-closing-soon-listings"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-检索即将关闭列表 API 测试</a>
+</h5>
+<h5 id="trade-me-7-将列表添加到您的监视列表-api-测试httpsifulltestgithubiozh-cnpoststm-api-add-a-listing-to-watchlist"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/">Trade Me-7-将列表添加到您的监视列表 API 测试</a>
+</h5>
+<h5 id="trade-me-8-检索您赢得的物品-api-测试httpsifulltestgithubiozh-cnpoststm-api-retrieve-won-items"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/">Trade Me-8-检索您赢得的物品 API 测试</a>
+</h5>
+<h5 id="trade-me-9-从您赢得的物品列表中删除购买-api-测试httpsifulltestgithubiozh-cnpoststm-api-rm-a-purchase-from-won-list"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-从您赢得的物品列表中删除购买 API 测试</a>
+</h5>
+<h5 id="trade-me-10-通用搜索api测试httpsifulltestgithubiozh-cnpoststm-api-general-search"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/">Trade Me-10-通用搜索API测试</a>
+</h5>
+<h5 id="trade-me-11-检索单个列表-api-测试的详细信息httpsifulltestgithubiozh-cnpoststm-api-retrieve-listings-details"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/">Trade Me-11-检索单个列表 API 测试的详细信息</a>
+</h5>
+<h5 id="trade-me-12-使用-buy-now-api-测试购买拍卖httpsifulltestgithubiozh-cnpoststm-api-buy-an-auction-using-buy-now"><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-使用 Buy Now API 测试购买拍卖</a>
+</h5>
+<h2 id="场景和报告">场景和报告</h2>
+<h5 id="场景和报告参考trade-me-13-场景和newman报告httpsifulltestgithubiozh-cnpoststm-api-scenarios-and-newman-report-">场景和报告参考：<strong><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-scenarios-and-newman-report/">Trade Me-13-场景和Newman报告</a>
+</strong> 。</h5>
+<h2 id="jenkins-持续集成流程实践">Jenkins 持续集成流程实践</h2>
 <ul>
 <li>
-<h5 id="trade-me-3-retrieve-general-categories-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-general-categories"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a>
-</h5>
-<h5 id="trade-me-4-retrieve-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a>
-</h5>
-<h5 id="trade-me-5-remove-a-listing-from-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-rm-a-listing-from-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a>
-</h5>
-<h5 id="trade-me-6-retrieve-closing-soon-listings-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-closing-soon-listings"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-Retrieve closing soon listings API testing</a>
-</h5>
-<h5 id="trade-me-7-add-a-listing-to-your-watchlist-api-testinghttpsifulltestgithubioenpoststm-api-add-a-listing-to-watchlist"><a href="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/">Trade Me-7-Add a listing to your watchlist API testing</a>
-</h5>
-<h5 id="trade-me-8-retrieve-your-won-items-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-won-items"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/">Trade Me-8-Retrieve your won items API testing</a>
-</h5>
-<h5 id="trade-me-9-remove-a-purchase-from-your-won-items-list-api-testinghttpsifulltestgithubioenpoststm-api-rm-a-purchase-from-won-list"><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/">Trade Me-9-Remove a purchase from your won items list API testing</a>
-</h5>
-<h5 id="trade-me-10-general-search-api-testinghttpsifulltestgithubioenpoststm-api-general-search"><a href="https://ifulltest.github.io/en/posts/tm-api-general-search/">Trade Me-10-General search API testing</a>
-</h5>
-<h5 id="trade-me-11-retrieve-the-details-of-a-single-listing-api-testinghttpsifulltestgithubioenpoststm-api-retrieve-listings-details"><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/">Trade Me-11-Retrieve the details of a single listing API testing</a>
-</h5>
-<h5 id="trade-me-12-buy-an-auction-using-buy-now-api-testinghttpsifulltestgithubioenpoststm-api-buy-an-auction-using-buy-now"><a href="https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/">Trade Me-12-Buy an auction using Buy Now API testing</a>
-</h5>
+<h4 id="jenkins-持续集成流程的步骤">Jenkins 持续集成流程的步骤</h4>
 </li>
 </ul>
-<h2 id="scenarios-and-reports">Scenarios and reports</h2>
-<h5 id="scenarios-and-reports-refer-to-trade-me-13-scenarios-and-reportshttpsifulltestgithubioenpoststm-api-scenarios-and-newman-report">Scenarios and reports refer to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/">Trade Me-13-scenarios-and-reports</a>
-</strong>.</h5>
-<h2 id="jenkins-ci-process-practice">Jenkins CI process Practice</h2>
+<h5 id="准备---新建-ci-作业---作业配置---作业运行---作业结果检查---电子邮件给相关人">准备 -&gt; 新建 CI 作业 -&gt; 作业配置 -&gt; 作业运行 -&gt; 作业结果检查 -&gt; 电子邮件给相关人</h5>
 <ul>
 <li>
-<h4 id="steps-of-jenkins-ci-process">Steps of Jenkins CI process</h4>
+<h4 id="准备工作---相关工具安装">准备工作 - 相关工具安装</h4>
 </li>
 </ul>
-<h5 id="preparations---new-a-ci-job---job-configuration---job-running---job-results-checking---email-to-stakeholders">Preparations -&gt; New a CI job -&gt; Job configuration -&gt; Job running -&gt; Job results checking -&gt; Email to stakeholders</h5>
-<ul>
-<li>
-<h4 id="preparations---related-tools-installation">Preparations - related tools installation</h4>
-</li>
-</ul>
-<h5 id="jenkins-installation-refers-to-how-to-install-jenkinshttpsifulltestgithubioenpostsjenkins-installation">Jenkins installation refers to: <strong><a href="https://ifulltest.github.io/en/posts/jenkins-installation">How to install Jenkins?</a>
+<h5 id="jenkins安装参考如何安装jenkinshttpsifulltestgithubiozh-cnpostsjenkins-installation">Jenkins安装参考：<strong><a href="https://ifulltest.github.io/zh-cn/posts/jenkins-installation">如何安装Jenkins？</a>
 </strong></h5>
-<h5 id="git-bash-installation-refers-to-how-to-install-git-bashhttpsifulltestgithubioenpostsgit-bash-installation">Git Bash installation refers to: <strong><a href="https://ifulltest.github.io/en/posts/git-bash-installation">How to install Git Bash?</a>
+<h5 id="git-bash安装参考如何安装git-bashhttpsifulltestgithubiozh-cnpostsgit-bash-installation">Git Bash安装参考：<strong><a href="https://ifulltest.github.io/zh-cn/posts/git-bash-installation">如何安装Git Bash？</a>
 </strong></h5>
 <ul>
 <li>
-<h4 id="preparations---environment-initiation">Preparations - environment initiation</h4>
+<h4 id="准备工作---环境启动">准备工作 - 环境启动</h4>
 </li>
 </ul>
-<h5 id="initialize-folder-structure-for-postman-related-scripts-data-reports-repository-before-building-the-ci-job">Initialize folder structure for Postman-related scripts, data, reports, repository before building the CI job.</h5>
+<h5 id="在构建-ci-作业之前初始化-postman-相关脚本数据报告存储库的文件夹结构">在构建 CI 作业之前初始化 Postman 相关脚本、数据、报告、存储库的文件夹结构。</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem create folder for Postman collection, env parameter, temporary parameter, reports
 pushd d:\Software <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> md postman\collections postman\data postman\reports\hisreports postman\postman_github
-</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-1.webp" alt=""  loading="lazy" />
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-1.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="set-the-postman-home-directory-to-system-environment-parameter"><strong>Set the Postman home directory to system environment parameter</strong></h5>
+<h5 id="将-postman-主目录设置为系统环境参数"><strong>将 Postman 主目录设置为系统环境参数</strong></h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">setx &#34;POSTMAN_HOME&#34; &#34;D:\Software\postman&#34; /M
-</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-2.webp" alt=""  loading="lazy" />
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-2.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="preparations---export-postman-collection-and-environment-variables-file-to-local">Preparations - export Postman collection and environment variables file to local</h5>
-<p>export Postman collection file to local refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/#export-collection-files-to-local">export Postman collection file to local </a>
+<ul>
+<li>
+<h4 id="准备工作---将-postman-集合和环境变量文件导出到本地">准备工作 - 将 Postman 集合和环境变量文件导出到本地</h4>
+</li>
+</ul>
+<p>将 Postman 集合文件导出到本地是指：<strong><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-scenarios-and-newman-report/#%e5%b0%86%e9%9b%86%e5%90%88%e6%96%87%e4%bb%b6%e5%af%bc%e5%87%ba%e5%88%b0%e6%9c%ac%e5%9c%b0">将 Postman 集合文件导出到本地</a>
 </strong></p>
-<p>export Postman environment variables file to local refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/#export-environment-parameter-file-to-local">export Postman environment variables file to local </a>
+<p>将 Postman 环境变量文件导出到本地是指：<strong><a href="https://ifulltest.github.io/zh-cn/posts/tm-api-scenarios-and-newman-report/#%e5%af%bc%e5%87%ba%e7%8e%af%e5%a2%83%e5%8f%82%e6%95%b0%e6%96%87%e4%bb%b6%e5%88%b0%e6%9c%ac%e5%9c%b0">将 Postman 环境变量文件导出到本地</a>
 </strong></p>
 <ul>
 <li>
-<h4 id="preparations---github-repository-clone">Preparations - GItHub repository clone</h4>
+<h4 id="准备工作---github-存储库克隆">准备工作 - GItHub 存储库克隆</h4>
 </li>
 </ul>
-<h5 id="clone-remote-postman-github-repository-to-given-local-folder"><strong>Clone remote Postman GitHub repository to given local folder</strong></h5>
-<p>Note: need to start a new dos window after setting the system environment variables</p>
+<h5 id="将远程-postman-github-存储库克隆到给定的本地文件夹"><strong>将远程 Postman GitHub 存储库克隆到给定的本地文件夹</strong></h5>
+<p>注意：设置系统环境变量后需要启动一个新的dos窗口</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem postman github repository clone
 pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git init <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git clone https://github.com/ifulltest/postman.git
-</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3.webp" alt=""  loading="lazy" />
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="set-email-and-password-to-authorize-files-transfer-between-local-and-remote-repository"><strong>Set email and password to authorize files transfer between local and remote repository.</strong></h5>
+<h5 id="设置电子邮件和密码以授权本地和远程存储库之间的文件传输"><strong>设置电子邮件和密码以授权本地和远程存储库之间的文件传输。</strong></h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">[core]
 	repositoryformatversion = 0
 	filemode = false
@@ -309,49 +306,49 @@ pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:
 [remote &#34;origin&#34;]
 	url = https://Github username:passwrod@github.com/ifulltest/postman.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
-</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-4.webp" alt=""  loading="lazy" />
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-4.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="new-a-ci-job">New a CI job</h4>
+<h4 id="新建-持续集成-作业">新建 持续集成 作业</h4>
 </li>
 </ul>
-<h5 id="start-jenkins-by-self-defined-port-number-java--jar-jenkinswar---httpport8088"><strong>Start Jenkins by self-defined port number: java -jar jenkins.war &ndash;httpPort=8088</strong></h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/jenkins-installation-1.webp" alt=""  loading="lazy" />
+<h5 id="通过自定义端口号启动jenkinsjava--jar-jenkinswar-httpport8088"><strong>通过自定义端口号启动Jenkins：java -jar jenkins.war –httpPort=8088</strong></h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/jenkins-installation-1.webp" alt="img"  loading="lazy" />
 </p>
-<p>&hellip;&hellip;</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/jenkins-installation-2.webp" alt=""  loading="lazy" />
+<p>……</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/jenkins-installation-2.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="create-a-freestyle-project"><strong>Create a Freestyle project</strong></h5>
-<p>The example project named as: &lsquo;TradeMe-API-Automation-Practice&rsquo;</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-5.webp" alt=""  loading="lazy" />
+<h5 id="创建一个freestyle项目"><strong>创建一个Freestyle项目</strong></h5>
+<p>示例项目命名为：&lsquo;TradeMe-API-Automation-Practice&rsquo;</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-5.webp" alt="img"  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-6.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-6.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="job-configuration---general">Job configuration - General</h4>
+<h4 id="作业配置---常规">作业配置 - 常规</h4>
 </li>
 </ul>
-<h5 id="discard-old-builds"><strong>Discard old builds</strong></h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-7.webp" alt=""  loading="lazy" />
+<h5 id="丢弃旧版本"><strong>丢弃旧版本</strong></h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-7.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="job-configuration---build---archive-reports">Job configuration - Build - archive reports</h4>
+<h4 id="作业配置---构建---归档报告">作业配置 - 构建 - 归档报告</h4>
 </li>
 </ul>
-<h5 id="build-windows-batch-command-archive-newman-reports-that-creating-for-more-than-seven-days-to-the-history-folder">Build Windows batch command, archive Newman reports that creating for more than seven days to the history folder.</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-0.webp" alt=""  loading="lazy" />
+<h5 id="build-windows-批处理命令将创建超过-7-天的postman报告存档到历史文件夹">Build Windows 批处理命令，将创建超过 7 天的Postman报告存档到历史文件夹。</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-0.webp" alt="img"  loading="lazy" />
 </p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Archive Newman reports that creating for more than seven days to the hisreports folder.
 pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
 
 copy /y /b reports\hisreports\newmanrpt-his.html &#34;%POSTMAN_HOME%\reports&#34; <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m <span style="font-style:italic">*.html /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34; &amp;&amp; copy /y /b reports\hisreports\newmanrpt-his.txt &#34;%POSTMAN_HOME%\reports&#34; &amp;&amp; forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m *</span>.txt /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34;
-</code></pre></div><h5 id="before-the-archive-operation-two-files-in-the-reports-folder-creating-for-more-than-7-days-need-to-be-archived">Before the archive operation, two files in the reports folder creating for more than 7 days need to be archived.</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-1.webp" alt=""  loading="lazy" />
+</code></pre></div><h5 id="存档操作前需要存档reports文件夹中创建时间超过7天的两个文件">存档操作前，需要存档reports文件夹中创建时间超过7天的两个文件。</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-1.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="run-job-and-see-the-jenkins-log">Run job and see the Jenkins log</h5>
+<h5 id="运行作业并查看-jenkins-日志">运行作业并查看 Jenkins 日志</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">Started by user GaryGao
 Running as SYSTEM
 Building on master in workspace D:\Software\Jenkins\workspace\TradeMe-API-Automation-Practice
@@ -373,117 +370,117 @@ D:\Software\postman&gt;copy /y /b reports\hisreports\newmanrpt-his.html &#34;D:\
 
 D:\Software\postman&gt;exit 0 
 Finished: SUCCESS
-</code></pre></div><h5 id="after-the-archive-operation-the-given-two-files-are-archived-in-the-hisreports-folder">After the archive operation, the given two files are archived in the hisreports folder.</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-2-1.webp" alt=""  loading="lazy" />
+</code></pre></div><h5 id="存档操作后给定的两个文件存档在-hisreports-文件夹中">存档操作后，给定的两个文件存档在 hisreports 文件夹中。</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-2-1.webp" alt="img"  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-2-2.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-2-2.webp" alt="img"  loading="lazy" />
 </p>
-<p><em>Note: &lsquo;newmanrpt-his.html&rsquo; and &lsquo;newmanrpt-his.txt&rsquo; in the hisreports folder are two files created more than 7 days ago, making sure the archiving loop operation is not failed.</em></p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-3.webp" alt=""  loading="lazy" />
+<p><em>注意：hisreports文件夹中的&rsquo;newmanrpt-his.html&rsquo;和&rsquo;newmanrpt-his.txt&rsquo;是7天多前创建的两个文件，确保归档循环操作不会失败。</em></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-3.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="job-configuration---build---generate-cli--html-reports">Job configuration - Build - generate cli &amp; html reports</h4>
+<h4 id="作业配置---构建---生成-cli-和-html-报告">作业配置 - 构建 - 生成 CLI 和 HTML 报告</h4>
 </li>
 </ul>
-<h5 id="build-jobs-for-generating-both-positive-and-negative-case-cli--html-reports">Build jobs for generating both positive and negative case CLI &amp; HTML reports.</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report1.webp" alt=""  loading="lazy" />
+<h5 id="构建用于生成正面和负面案例-cli-和-html-报告的作业">构建用于生成正面和负面案例 CLI 和 HTML 报告的作业。</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report1.webp" alt="img"  loading="lazy" />
 </p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Using Newman to generate positive case CLI <span style="color:#960050;background-color:#1e0010">&amp;</span> HTML reports, dynamic report name stores in a temporary file.
 pushd %POSTMAN_HOME%
 if %time:~0,2% leq 9 (set h=0%time:~1,1%) else (set h=%time:~0,2%)
 set y=%date:~0,4%<span style="color:#960050;background-color:#1e0010">&amp;</span> set m=%date:~5,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set d=%date:~8,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set mi=%time:~3,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set s=%time:~6,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set ms=%time:~9,2% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
 newman run collections\tradeMeSandBox.postman_collection.json -e data\tradeMeSandBox.postman_environment.json -r cli,html --reporter-html-export reports\newmanrpt-%y%%m%%d%%h%%mi%%s%.html&gt;reports\newmanrpt-%y%%m%%d%%h%%mi%%s%.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> echo |set /p=&#34;newmanrpt-%y%%m%%d%%h%%mi%%s%&#34;&gt;%POSTMAN_HOME%\data\fn.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> exit 0
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Using Newman to generate negative case CLI <span style="color:#960050;background-color:#1e0010">&amp;</span> HTML reports, dynamic report name stores in a temporary file.
+rem Using Newman to generate negative case CLI <span style="color:#960050;background-color:#1e0010">&amp;</span> HTML reports, dynamic report name stores in a temporary file.
 pushd %POSTMAN_HOME%
 if %time:~0,2% leq 9 (set h=0%time:~1,1%) else (set h=%time:~0,2%)
 set y=%date:~0,4%<span style="color:#960050;background-color:#1e0010">&amp;</span> set m=%date:~5,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set d=%date:~8,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set mi=%time:~3,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set s=%time:~6,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set ms=%time:~9,2% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
 newman run collections\tradeMeSandBox-Negative.postman_collection.json -e data\tradeMeSandBox.postman_environment.json -r cli,html --reporter-html-export reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.html&gt;reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> echo |set /p=&#34;newmanrpt-%y%%m%%d%%h%%mi%%s%-neg&#34;&gt;%POSTMAN_HOME%\data\negfn.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> exit 0
-</code></pre></div><h5 id="run-job-and-see-the-jenkins-log-1">Run job and see the Jenkins log</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report2.webp" alt=""  loading="lazy" />
+</code></pre></div><h5 id="运行作业并查看-jenkins-日志-1">运行作业并查看 Jenkins 日志</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report2.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="after-the-job-cli--html-reports-and-temporary-data-files-are-generated">After the job, CLI &amp; HTML reports and temporary data files are generated.</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report3.webp" alt=""  loading="lazy" />
+<h5 id="作业完成后会生成-cli-和-html-报告以及临时数据文件">作业完成后，会生成 CLI 和 HTML 报告以及临时数据文件。</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report3.webp" alt="img"  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report4.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report4.webp" alt="img"  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report5.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report5.webp" alt="img"  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report6.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report6.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="job-configuration---build---upload-local-reports-to-remote-github-repository">Job configuration - Build - upload local reports to remote GitHub repository</h4>
+<h4 id="作业配置---构建---将本地报告上传到远程-github-存储库">作业配置 - 构建 - 将本地报告上传到远程 GitHub 存储库</h4>
 </li>
 </ul>
-<h5 id="copy-newly-generated-newman-report-to-local-github-repository">Copy newly generated Newman report to local GitHub repository</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit1.webp" alt=""  loading="lazy" />
+<h5 id="将新生成的-newman-报告复制到本地-github-存储库">将新生成的 Newman 报告复制到本地 GitHub 存储库</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit1.webp" alt="img"  loading="lazy" />
 </p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem copy newly generated Newman report to local GitHub repository
 pushd %POSTMAN_HOME%
 set /P fn=&lt;<span style="color:#f92672">data</span>\f<span style="color:#f92672">n.txt</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">set</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">P</span> <span style="color:#a6e22e">negfn</span><span style="color:#f92672">=</span><span style="color:#e6db74">&lt;data</span>\n<span style="color:#e6db74">egfn.txt</span>
 <span style="color:#a6e22e">copy</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">y</span> <span style="color:#a6e22e">reports</span>\%<span style="color:#a6e22e">fn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#a6e22e">postman_github</span>\p<span style="color:#a6e22e">ostman</span>\r<span style="color:#a6e22e">eports</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">copy</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">y</span> <span style="color:#a6e22e">reports</span>\%<span style="color:#a6e22e">negfn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#a6e22e">postman_github</span>\p<span style="color:#a6e22e">ostman</span>\r<span style="color:#a6e22e">eports</span>
-</code></pre></div><h5 id="run-job-and-see-the-jenkins-log-2">Run job and see the Jenkins log</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit2.webp" alt=""  loading="lazy" />
+</code></pre></div><h5 id="运行作业并查看-jenkins-日志-2">运行作业并查看 Jenkins 日志</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit2.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="after-the-job-given-reports-have-been-copied-to-local-github-repository">After the job, given reports have been copied to local GitHub repository</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit3.webp" alt=""  loading="lazy" />
+<h5 id="作业完成后给定的报告已复制到本地-github-存储库">作业完成后，给定的报告已复制到本地 GitHub 存储库</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-copy-to-localgit3.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="commit-given-reports-local-github-to-public-github-repository">Commit given reports local GitHub to public GitHub repository</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit1.webp" alt=""  loading="lazy" />
+<h5 id="将给定的本地-github-报告提交到公共-github-存储库">将给定的本地 GitHub 报告提交到公共 GitHub 存储库</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit1.webp" alt="img"  loading="lazy" />
 </p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Commit given reports local GitHub to public GitHub repository
 pushd %POSTMAN_HOME%
 set /P fn=&lt;<span style="color:#f92672">data</span>\f<span style="color:#f92672">n.txt</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">set</span> <span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">P</span> <span style="color:#a6e22e">negfn</span><span style="color:#f92672">=</span><span style="color:#e6db74">&lt;data</span>\n<span style="color:#e6db74">egfn.txt</span>
 <span style="color:#a6e22e">pushd</span> <span style="color:#960050;background-color:#1e0010">%</span><span style="color:#a6e22e">POSTMAN_HOME</span><span style="color:#960050;background-color:#1e0010">%</span>\p<span style="color:#a6e22e">ostman_github</span>\p<span style="color:#a6e22e">ostman</span>\r<span style="color:#a6e22e">eports</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">pull</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">main</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">add</span> <span style="color:#960050;background-color:#1e0010">%</span><span style="color:#a6e22e">fn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#960050;background-color:#1e0010">%</span><span style="color:#a6e22e">negfn</span><span style="color:#960050;background-color:#1e0010">%.*</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">commit</span> <span style="color:#a6e22e">-m</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">txt</span> <span style="color:#a6e22e">and</span> <span style="color:#a6e22e">html</span> <span style="color:#a6e22e">report</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> <span style="color:#a6e22e">git</span> <span style="color:#a6e22e">push</span> <span style="color:#a6e22e">-u</span> <span style="color:#a6e22e">origin</span> <span style="color:#a6e22e">main</span>
-</code></pre></div><h5 id="run-job-and-see-the-jenkins-log-3">Run job and see the Jenkins log</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit2.webp" alt=""  loading="lazy" />
+</code></pre></div><h5 id="运行作业并查看-jenkins-日志-3">运行作业并查看 Jenkins 日志</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit2.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="after-the-job-given-reports-have-been-committed-to--public-github-repository">After the job, given reports have been committed to  public GitHub repository</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit3.webp" alt=""  loading="lazy" />
+<h5 id="工作结束后给定的报告已提交到公共-github-存储库">工作结束后，给定的报告已提交到公共 GitHub 存储库</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-commit-to-remotegit3.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="job-configuration---build---email-to-stakeholders">Job configuration - Build - Email to stakeholders</h4>
+<h4 id="作业配置---构建---发送给相关人员的电子邮件">作业配置 - 构建 - 发送给相关人员的电子邮件</h4>
 </li>
 </ul>
-<h5 id="build-job-for-emailing-stakeholders-the-reports-related-information">Build job for emailing stakeholders the reports related information.</h5>
+<h5 id="构建作业以通过电子邮件向相关人员发送报告相关信息">构建作业以通过电子邮件向相关人员发送报告相关信息。</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Email to stakeholders the given testing report
 pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> node collections\nodemailer.js <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> del %POSTMAN_HOME%\data\*fn.txt
-</code></pre></div><h5 id="before-the-job-see-related-storage-status">Before the job, see related storage status.</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-before-commit.webp" alt=""  loading="lazy" />
+</code></pre></div><h5 id="作业前查看相关存储状态">作业前，查看相关存储状态。</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-before-commit.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="run-job-and-see-the-jenkins-log-4">Run job and see the Jenkins log</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-jenkins-log.webp" alt=""  loading="lazy" />
+<h5 id="运行作业并查看-jenkins-日志-4">运行作业并查看 Jenkins 日志</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-jenkins-log.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="after-the-job-see-related-storage-and-email-status">After the job, see related storage and email status.</h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-after-commit.webp" alt=""  loading="lazy" />
+<h5 id="作业后查看相关存储和电子邮件状态">作业后，查看相关存储和电子邮件状态。</h5>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-after-commit.webp" alt="img"  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-after-email.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-after-email.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="how-to-use-nodejs-realize-the-email-function">How to use Node.js realize the email function</h4>
+<h4 id="如何使用nodejs实现email功能">如何使用Node.js实现email功能</h4>
 </li>
 </ul>
-<p><em>The above example mainly uses node.js the &lsquo;nodemailer&rsquo; module to realize the email function.</em></p>
-<p><em>Install the Node.js in the Postman home directory or directly move the &lsquo;<strong>node_moudules</strong>&rsquo; in.</em></p>
-<h5 id="how-to-install-nodejs-please-refer-to-how-to-install-nodejshttpsifulltestgithubioenpostsnodejs-installation">How to install Node.js please refer to: <strong><a href="https://ifulltest.github.io/en/posts/nodejs-installation/">How to install Node.js</a>
+<p><em>上面的例子主要是使用node.js的&rsquo;nodemailer&rsquo;模块来实现email功能。</em></p>
+<p><em>将 Node.js 安装在 Postman 主目录或直接将‘ <strong>node_moudules</strong> ’<strong>移入</strong>。</em></p>
+<h5 id="如何安装nodejs请参考如何安装nodejshttpsifulltestgithubiozh-cnpostsnodejs-installation">如何安装Node.js请参考：<strong><a href="https://ifulltest.github.io/zh-cn/posts/nodejs-installation/">如何安装Node.js</a>
 </strong></h5>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/nodejs-installation5.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/nodejs-installation5.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="install-the-extended-module-nodemailer-and-moment-to-nodejs">Install the extended module &lsquo;nodemailer&rsquo; and &lsquo;moment&rsquo; to Node.js.</h5>
-<p>Moule installation command:</p>
-<p>npm install nodemailer or yarn add nodemailer &ndash;save</p>
-<p>npm install moment or yarn add moment</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-nodejs-ext.webp" alt=""  loading="lazy" />
+<h5 id="将扩展模块nodemailer和moment安装到-nodejs">将扩展模块“nodemailer”和“moment”安装到 Node.js。</h5>
+<p>Moule 安装命令：</p>
+<p>npm install nodemailer 或 yarn add nodemailer –save</p>
+<p>npm install moment 或 yarn add moment</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-nodejs-ext.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="email-realizing-by-nodemailerjs---get-current-time-for-later-email-title-to-use">Email realizing by &lsquo;nodemailer.js&rsquo; - get current time for later email title to use.</h5>
+<h5 id="通过nodemailerjs实现电子邮件---获取当前时间以供以后使用的电子邮件标题">通过“nodemailer.js”实现电子邮件 - 获取当前时间以供以后使用的电子邮件标题。</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// Get current time for later email title to use.
 const moment = require(&#39;moment&#39;)
 
 let currentTime =  moment(Date.now()).format(&#39;YYYY-MM-DD HH:mm:ss&#39;)
-</code></pre></div><h5 id="email-realizing-by-nodemailerjs---file-operation-and-concatenate-the-email-content">Email realizing by &lsquo;nodemailer.js&rsquo; - file operation and concatenate the email content.</h5>
+</code></pre></div><h5 id="电子邮件通过nodemailerjs实现文件操作并连接电子邮件内容">电子邮件通过&rsquo;nodemailer.js&rsquo;实现——文件操作并连接电子邮件内容。</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// file systme module which can operate the file
 const fs = require(&#34;fs&#34;);
 
@@ -526,7 +523,7 @@ arr.push(&#34;&lt;<span style="color:#f92672">p</span>&gt;&lt;<span style="color
 var htmltxt = arr.join(&#34;&#34;);
 
 console.log(&#34;htmltxt: &#34;+htmltxt);
-</code></pre></div><h5 id="email-realizing-by-nodemailerjs----sending-the-email">Email realizing by &lsquo;nodemailer.js&rsquo; -  sending the email</h5>
+</code></pre></div><h5 id="通过nodemailerjs实现电子邮件-发送电子邮件">通过&rsquo;nodemailer.js&rsquo;实现电子邮件-发送电子邮件</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// nodemailer module which can operate email
 var nodemailer = require(&#34;nodemailer&#34;)
 
@@ -571,18 +568,19 @@ transport.sendMail(mailOptions, function(err, response) {
 })
 </code></pre></div><ul>
 <li>
-<h4 id="other-ci-practices-that-waiting-to-be-extended">Other CI practices that waiting to be extended</h4>
+<h4 id="其他等待扩展的-ci-实践">其他等待扩展的 CI 实践</h4>
 </li>
 </ul>
-<p>The above CI example uses the Windows batch command to realize the CI process.</p>
-<p>Using &lsquo;Execute shell&rsquo; and &lsquo;Pipe line&rsquo; mode to realize the CI process will be displayed on later blog.</p></div><div class="post-copyright mb-4">
+<p>上面的 CI 示例使用 Windows 批处理命令来实现 CI 过程。</p>
+<p>使用&rsquo;Execute shell&rsquo;和&rsquo;Pipe line&rsquo;模式实现CI过程将在后面的文章中展示。</p>
+</div><div class="post-copyright mb-4">
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
       <a href="https://ifulltest.github.io/en/posts/git-bash-installation/">How to install Git Bash?</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/">Trade Me-13-scenarios-and-newman-reports</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/">Trade Me-13-场景和Newman报告</a>
     </div></div>
 </div><section class="related-posts">
   <h3>Related Posts</h3>
@@ -604,10 +602,10 @@ transport.sendMail(mailOptions, function(err, response) {
     <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,DevOps,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
 </section><section class="featured-posts row surface">
   <h4>Featured Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
@@ -648,7 +646,7 @@ transport.sendMail(mailOptions, function(err, response) {
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
       Agile Basis <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
-      Cypress <span class="badge rounded-pill">4</span>
+      Cypress <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
       GitHub <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">

@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trade Me-7-Add a listing to your watchlist API testing - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+    <title>Trade Me-7-将列表添加到您的监视列表 API 测试 - Become a Full-Stack Tester Here</title><link rel="apple-touch-icon" href="https://ifulltest.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="https://ifulltest.github.io/images/favicons/manifest.json">
 <link rel="icon" href="https://ifulltest.github.io/images/favicons/favicon.ico">
-<meta name="description" content="" /><meta itemprop="name" content="Trade Me-7-Add a listing to your watchlist API testing">
-<meta itemprop="description" content="API - Add a listing to your watchlist script development steps
-API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
+<meta name="description" content="" /><meta itemprop="name" content="Trade Me-7-将列表添加到您的监视列表 API 测试">
+<meta itemprop="description" content="API - 将列表添加到您的监视列表脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Negative Cases扩展-&gt;API测试脚本发布
+API规范   API 功能：将列表添加到经过身份验证的用户的监视列表。   关键请求字段   更多参考：将列表添加到您的监视列表关键响应字段 - 有关操作是否成功的详细信息。 尝试删除不存在或不在监视列表中的拍卖不会产生错误。
+          Success Boolean 指示操作是否成功。   Description String or null 错误的描述，如果操作失败。    示例请求 POST https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON
+ 示例响应：  { &#34;Success&#34;: true, &#34;Description&#34;: &#34;Success&#34; } 业务介绍   前端页面 - 即将关闭商品详情页面     前端页面 - 关注列表页面     业务范围选择   链式组合交易"><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="867"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
-<meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-7-Add a listing to your watchlist API testing" />
-<meta property="og:description" content="API - Add a listing to your watchlist script development steps
-API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
+<meta itemprop="wordCount" content="411"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-7-将列表添加到您的监视列表 API 测试" />
+<meta property="og:description" content="API - 将列表添加到您的监视列表脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Negative Cases扩展-&gt;API测试脚本发布
+API规范   API 功能：将列表添加到经过身份验证的用户的监视列表。   关键请求字段   更多参考：将列表添加到您的监视列表关键响应字段 - 有关操作是否成功的详细信息。 尝试删除不存在或不在监视列表中的拍卖不会产生错误。
+          Success Boolean 指示操作是否成功。   Description String or null 错误的描述，如果操作失败。    示例请求 POST https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON
+ 示例响应：  { &#34;Success&#34;: true, &#34;Description&#34;: &#34;Success&#34; } 业务介绍   前端页面 - 即将关闭商品详情页面     前端页面 - 关注列表页面     业务范围选择   链式组合交易" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/" /><meta property="og:image" content="https://ifulltest.github.io/images/tm-logo.webp" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-07-26T00:00:00+00:00" />
@@ -25,9 +29,11 @@ API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ifulltest.github.io/images/tm-logo.webp"/>
 
-<meta name="twitter:title" content="Trade Me-7-Add a listing to your watchlist API testing"/>
-<meta name="twitter:description" content="API - Add a listing to your watchlist script development steps
-API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"/>
+<meta name="twitter:title" content="Trade Me-7-将列表添加到您的监视列表 API 测试"/>
+<meta name="twitter:description" content="API - 将列表添加到您的监视列表脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Negative Cases扩展-&gt;API测试脚本发布
+API规范   API 功能：将列表添加到经过身份验证的用户的监视列表。   关键请求字段   更多参考：将列表添加到您的监视列表关键响应字段 - 有关操作是否成功的详细信息。 尝试删除不存在或不在监视列表中的拍卖不会产生错误。
+          Success Boolean 指示操作是否成功。   Description String or null 错误的描述，如果操作失败。    示例请求 POST https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON
+ 示例响应：  { &#34;Success&#34;: true, &#34;Description&#34;: &#34;Success&#34; } 业务介绍   前端页面 - 即将关闭商品详情页面     前端页面 - 关注列表页面     业务范围选择   链式组合交易"/>
 <meta data-name="palette" content="blue"><link rel=stylesheet href="https://ifulltest.github.io/css/bundle.min.2ae9debde3e5a18beea7a513677ee667b63fd7cacfd3e8fe87b84e8b2551430f.css" integrity="sha256-KunevePloYvup6UTZ37mZ7Y/18rP0&#43;j&#43;h7hOiyVRQw8=" crossorigin="anonymous"><script src="https://ifulltest.github.io/js/bundle.min.996a03cbbfd9fbd1c31eb2e458d0bcaddbb78d252916f4cfd96c166c9b1a4555.js" integrity="sha256-mWoDy7/Z&#43;9HDHrLkWNC8rdu3jSUpFvTP2WwWbJsaRVU=" crossorigin="anonymous"></script>
 <script type="application/javascript">
 var doNotTrack = false;
@@ -156,18 +162,18 @@ if (!doNotTrack) {
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-7-Add a listing to your watchlist API testing</li></ol>
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/">Home</a></li><li class="breadcrumb-item"><a href="https://ifulltest.github.io/en/posts/">Posts</a></li><li class="breadcrumb-item active">Trade Me-7-将列表添加到您的监视列表 API 测试</li></ol>
 </nav><article class="post row surface"><div class="post-toolbox">
   <div class="col-12 d-none d-lg-block">
     <a id="sidebarToggler" class="fas fa-fw fa-2x fa-expand-alt" role="button"></a>
   </div>
 </div>
-<h1 class="post-title my-3">Trade Me-7-Add a listing to your watchlist API testing</h1><div class="post-meta mb-3">
+<h1 class="post-title my-3">Trade Me-7-将列表添加到您的监视列表 API 测试</h1><div class="post-meta mb-3">
   <span class="post-date me-2">
     <i class="fas fa-fw fa-calendar-alt"></i>Jul 26, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>5 min read
+    <i class="fas fa-fw fa-coffee"></i>2 min read
   </span>
 <div class="post-translations nav-item dropdown me-2 d-inline-flex">
   <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -190,49 +196,45 @@ if (!doNotTrack) {
   <div class="offcanvas-body">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#api---add-a-listing-to-your-watchlist-script-development-steps"><em>API - Add a listing to your watchlist script development steps</em></a></li>
-    <li><a href="#api-specification">API Specification</a>
+    <li><a href="#api---将列表添加到您的监视列表脚本开发步骤"><em>API - 将列表添加到您的监视列表脚本开发步骤</em></a></li>
+    <li><a href="#api规范">API规范</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#business-presentation">Business Presentation</a>
+    <li><a href="#业务介绍">业务介绍</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api-testing-script-debugging">API Testing Script Debugging</a>
+    <li><a href="#api测试脚本调试">API测试脚本调试</a>
       <ul>
         <li></li>
       </ul>
     </li>
-    <li><a href="#api-testing-script-enhancement">API Testing Script Enhancement</a>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
-    <li><a href="#api-testing-script-negative-cases-extension">API Testing Script Negative Cases Extension</a></li>
-    <li><a href="#api-testing-script-publishment">API Testing Script Publishment</a></li>
+    <li><a href="#api-测试脚本增强">API 测试脚本增强</a></li>
+    <li><a href="#api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</a></li>
+    <li><a href="#api测试脚本发布">API测试脚本发布</a></li>
   </ul>
 </nav>
   </div>
-</div><div class="post-content mb-3"><h2 id="api---add-a-listing-to-your-watchlist-script-development-steps"><em>API - Add a listing to your watchlist script development steps</em></h2>
-<p><em>API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment</em></p>
-<h2 id="api-specification">API Specification</h2>
+</div><div class="post-content mb-3"><h2 id="api---将列表添加到您的监视列表脚本开发步骤"><em>API - 将列表添加到您的监视列表脚本开发步骤</em></h2>
+<p><em>API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测试脚本Negative Cases扩展-&gt;API测试脚本发布</em></p>
+<h2 id="api规范">API规范</h2>
 <ul>
 <li>
-<h4 id="api-function-adds-a-listing-to-the-authenticated-users-watchlist">API Function: Adds a listing to the authenticated user&rsquo;s watchlist.</h4>
+<h4 id="api-功能将列表添加到经过身份验证的用户的监视列表">API 功能：将列表添加到经过身份验证的用户的监视列表。</h4>
 </li>
 <li>
-<h4 id="key-request-fields">Key request fields</h4>
+<h4 id="关键请求字段">关键请求字段</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist.webp" alt="img"  loading="lazy" />
 </p>
-<p>More refer to: <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist</a>
+<p>更多参考：<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表</a>
 </p>
-<h4 id="key-response-fields---details-on-whether-the-operation-succeeded">Key response fields - Details on whether the operation succeeded.</h4>
-<p>Attempting to remove an auction that doesn&rsquo;t exist or is not on the watchlist will not produce an error.</p>
+<h4 id="关键响应字段---有关操作是否成功的详细信息">关键响应字段 - 有关操作是否成功的详细信息。</h4>
+<p>尝试删除不存在或不在监视列表中的拍卖不会产生错误。</p>
 <table>
 <thead>
 <tr>
@@ -245,66 +247,66 @@ if (!doNotTrack) {
 <tr>
 <td><strong>Success</strong></td>
 <td>Boolean</td>
-<td>Indicates whether the operation was successful.</td>
+<td>指示操作是否成功。</td>
 </tr>
 <tr>
 <td><strong>Description</strong></td>
 <td>String or null</td>
-<td>The description of the error, if the operation failed.</td>
+<td>错误的描述，如果操作失败。</td>
 </tr>
 </tbody>
 </table>
-<h4 id="example-request">Example request</h4>
-<p>POST <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON</a></p>
+<h4 id="示例请求">示例请求</h4>
+<p><strong>POST</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON</a></p>
 <ul>
-<li>Example response:</li>
+<li>示例响应：</li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
     &#34;Success&#34;: true,
     &#34;Description&#34;: &#34;Success&#34;
 }
-</code></pre></div><h2 id="business-presentation">Business Presentation</h2>
+</code></pre></div><h2 id="业务介绍">业务介绍</h2>
 <ul>
 <li>
-<h4 id="front-end-page---closing-soon-item-detail-page">Front-end page - Closing soon item detail page</h4>
+<h4 id="前端页面---即将关闭商品详情页面">前端页面 - 即将关闭商品详情页面</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui1.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui1.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="front-end-page---watchlist-page">Front-end page - Watchlist page</h4>
+<h4 id="前端页面---关注列表页面">前端页面 - 关注列表页面</h4>
 </li>
 </ul>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui2.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui2.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="business-scope-selection">Business scope selection</h4>
+<h4 id="业务范围选择">业务范围选择</h4>
 </li>
 </ul>
-<p>Chained combination transactions</p>
-<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">Retrieve your watchlist</a>
- -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">Remove a listing from your watchlist</a>
- -&gt; <a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
- -&gt; <a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">Add a listing to your watchlist(<strong>I’m here</strong>)</a>
+<p><strong>链式组合交易</strong></p>
+<p><a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-listing-from-your-watchlist" target="_blank">从您的监视列表中删除列表</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
+ -&gt;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/add-a-listing-to-your-watchlist" target="_blank">将列表添加到您的监视列表（<strong>我在这里</strong>）</a>
 </p>
-<p>Fetch a random item on the closing soon listings from upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
-&rsquo;, and add this item to the watchlist.</p>
-<ul>
-<li>Business verification points</li>
-</ul>
-<p>Checking selected items can add to the watchlist.</p>
-<h2 id="api-testing-script-debugging">API Testing Script Debugging</h2>
+<p><strong>从上游交易“<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">检索即将关闭的列表</a>
+ ”中获取即将关闭的列表中的随机项目，并将此项目添加到监视列表中。</strong></p>
 <ul>
 <li>
-<h4 id="assembling-the-pre-request-retrieve-closing-soon-listings">Assembling the pre-request &lsquo;Retrieve closing soon listings&rsquo;</h4>
+<h4 id="业务验证点">业务验证点</h4>
 </li>
 </ul>
-<p><strong>The pre-request script&rsquo;s main coding logic is as below:</strong></p>
-<ol>
-<li>Pre-request the API - &lsquo;Retrieve closing soon listings&rsquo;  to fetch all items on the 1st page of closing soon listings.</li>
-</ol>
+<p>检查所选项目可以添加到监视列表。</p>
+<h2 id="api测试脚本调试">API测试脚本调试</h2>
+<ul>
+<li>
+<h4 id="组装前置请求检索即将关闭的列表">组装前置请求“检索即将关闭的列表”</h4>
+</li>
+</ul>
+<p><strong>前置请求脚本的主要编码逻辑如下：</strong></p>
+<p>​	1.前置请求 API -“检索即将关闭的列表”以获取即将关闭列表的第一页上的所有项目。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Pre-Transaction: RetrieveClosingSoonListings Start&#34;);
 
 const pre_request = {
@@ -320,11 +322,9 @@ const pre_request = {
 
 };  
 ...
-</code></pre></div><p>​	Note:  how to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo">Preparation before API testing demo</a>
-</p>
-<ol start="2">
-<li>Randomly choose 1 item from all the fetched items, and store the item as a parameter for later API - &lsquo;Add a listing to your watchlist&rsquo; to use.</li>
-</ol>
+</code></pre></div><p>注意：如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考**<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
+**</p>
+<p>​	2.从所有获取的项目中随机选择 1 个项目，并将该项目存储为参数以供以后 API - &lsquo;将列表添加到您的监视列表&rsquo; 使用。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">pm.sendRequest(pre_request, function (err, response) {
 
     if (err) {
@@ -389,40 +389,43 @@ const pre_request = {
     }
 </code></pre></div><ul>
 <li>
-<h4 id="choose-the-oauth-10-in-the-authorization-label-of-postman-to-authorize-the-request">Choose the OAuth 1.0 in the Authorization label of Postman to authorize the request.</h4>
+<h4 id="在-postman-的-authorization-标签中选择-oauth-10-对请求进行授权">在 Postman 的 Authorization 标签中选择 OAuth 1.0 对请求进行授权。</h4>
 </li>
 </ul>
-<p>The OAuth 1.0 is for the transaction that needs to be authorized before sending. Template likes the below:</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt=""  loading="lazy" />
+<p>OAuth 1.0 是针对发送前需要授权的交易。模板如下：</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-authorization.webp" alt="img"  loading="lazy" />
 </p>
-<p>How to get Consumer Key, Consumer Secret, OAuth Token, and OAuth Token Secret, please refer to <a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/#preparation-before-api-testing-demo">Preparation before API testing demo</a>
-</p>
+<p>如何获取Consumer Key、Consumer Secret、OAuth Token、OAuth Token Secret，请参考**<a href="https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/#api%e6%b5%8b%e8%af%95%e6%bc%94%e7%a4%ba%e5%89%8d%e7%9a%84%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c">API测试前的准备demo</a>
+**</p>
 <ul>
-<li>Assembling the request - &lsquo;Add a listing to your watchlist&rsquo;</li>
+<li>
+<h4 id="组合请求---将列表添加到您的监视列表">组合请求 - &lsquo;将列表添加到您的监视列表&rsquo;</h4>
+</li>
 </ul>
-<p>Base on the API specification, parameter - <strong>listingId</strong> means the ID of the listing to add to the watchlist.</p>
-<p>And the listingId origin from the response of pre_request &lsquo;<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings" target="_blank">Retrieve closing soon listings</a>
-&rsquo;, and it has already been set to environment variables: {{ListingIdAddToWatchList}}.</p>
-<p>So the request should be POST <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BListingIdAddToWatchList%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{ListingIdAddToWatchList}}.JSON</a></p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-para.webp" alt=""  loading="lazy" />
+<p>根据 API 规范，参数 - <strong>listingId</strong>表示要添加到监视列表的列表的 ID。</p>
+<p>listingId 来自前置请求**<a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-closing-soon-listings%27" target="_blank">&lsquo;检索即将关闭的列表</a>
+**的响应，并且它已被设置为环境变量：{{ListingIdAddToWatchList}}。</p>
+<p>所以请求应该是 <strong>POST</strong> <a href="https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/%7B%7BListingIdAddToWatchList%7D%7D.JSON">https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/{{ListingIdAddToWatchList}}.JSON</a></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-para.webp" alt="img"  loading="lazy" />
 </p>
 <ul>
 <li>
-<h4 id="api-connectivity">API connectivity</h4>
+<h4 id="api连通性">API连通性</h4>
 </li>
 </ul>
-<p>The connectivity test passes and gets a response example.</p>
+<p>连通性测试通过并获得响应示例。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">{
     &#34;Success&#34;: true,
     &#34;Description&#34;: &#34;Success&#34;
 }
 </code></pre></div><ul>
 <li>
-<h4 id="api-checkpoint">API checkpoint</h4>
+<h4 id="api检查点">API检查点</h4>
 </li>
 </ul>
-<p>Using the post_request: API - Retrieve your watchlist to check whether the given item has been added onto the watchlist.</p>
-<p>Then we get the checking code snippet below base on the example feature.</p>
+<p>使用后置请求: API - **<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/retrieve-your-watchlist" target="_blank">检索您的监视列表</a>
+**以检查给定的项目是否已添加到监视列表中。</p>
+<p>然后我们根据示例功能得到下面的检查代码片段。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">console.log(&#34;Post-Transaction: CheckingAddToWatchList Start&#34;);
 
 var ListingIdAddToWatchList = pm.environment.get(&#34;ListingIdAddToWatchList&#34;);
@@ -478,40 +481,35 @@ pm.sendRequest(post_request, function (err, response) {
     <span style="color:#960050;background-color:#1e0010">}</span>
     
 <span style="color:#960050;background-color:#1e0010">});</span>
-</code></pre></div><p>Run script to verify the checkpoint works from console log.</p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-log0.webp" alt=""  loading="lazy" />
+</code></pre></div><p>运行脚本以从控制台日志验证检查点是否正常工作。</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-log0.webp" alt="img"  loading="lazy" />
 </p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-log.webp" alt=""  loading="lazy" />
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-log.webp" alt="img"  loading="lazy" />
 </p>
-<h2 id="api-testing-script-enhancement">API Testing Script Enhancement</h2>
-<ul>
-<li>
-<h4 id="enhance-the-script-such-as-to-add-the-transactional-function-exceptional-verification-parameterization-etc">Enhance the script, such as to add the transactional function, exceptional verification, parameterization, etc.</h4>
-</li>
-<li>
-<h4 id="run-the-final-script-and-to-verify-from-front-end-page-or-console-log">Run the final script and to verify from front-end page or console log.</h4>
-</li>
-</ul>
-<p><strong>After the &lsquo;Add a listing to your watchlist&rsquo; operation, see the watchlist.</strong></p>
-<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-page.webp" alt=""  loading="lazy" />
+<h2 id="api-测试脚本增强">API 测试脚本增强</h2>
+<p><strong>增强脚本，如添加事务功能、异常验证、参数化等。</strong></p>
+<p><strong>运行最终脚本并从前端页面或控制台日志进行验证。</strong></p>
+<p><strong>在“将列表添加到您的监视列表”操作后，查看监视列表。</strong></p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-watchlist-page.webp" alt="img"  loading="lazy" />
 </p>
-<h2 id="api-testing-script-negative-cases-extension">API Testing Script Negative Cases Extension</h2>
-<p>Using the &lsquo;Equivalent Class Partitioning&rsquo; and &lsquo;Boundary Value Analysis&rsquo; as we did in manual testing cases.</p>
-<p>These API test scripts are doing the negative direction of the business, to be an extension to the above API positive case.</p>
-<h2 id="api-testing-script-publishment">API Testing Script Publishment</h2>
-<p>Move script from debug folder to public folder when we finished API positive and negative cases.</p>
-<p>Then wait to be published to the GitHub specific repo combining with other scripts using the CICD tool.</p></div><div class="post-copyright mb-4">
+<h2 id="api-测试脚本否定案例扩展">API 测试脚本否定案例扩展</h2>
+<p>使用我们在手动测试案例中所做的“等效类划分”和“边界值分析”。</p>
+<p>这些API测试脚本都是做反方向的业务，作为上述API正案例的延伸。</p>
+<h2 id="api测试脚本发布">API测试脚本发布</h2>
+<p>当我们完成 API 正面和反面案例时，将脚本从调试文件夹移动到公共文件夹。</p>
+<p>然后等待使用 CICD 工具与其他脚本结合发布到 GitHub 特定存储库。</p>
+</div><div class="post-copyright mb-4">
   <h3>Copyright</h3><div class="post-cc">This work is licensed under <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en">CC BY-NC-ND 4.0 <i class="fab fa-fw fa-creative-commons"></i><i class="fab fa-fw fa-creative-commons-by"></i><i class="fab fa-fw fa-creative-commons-nc"></i><i class="fab fa-fw fa-creative-commons-nd"></i></a>.</div>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/">Trade Me-8-Retrieve your won items API testing</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/">Trade Me-8-检索您赢得的物品 API 测试</a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-Retrieve closing soon listings API testing</a>
+      <a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/">Trade Me-6-检索即将关闭列表 API 测试</a>
     </div></div>
 </div><section class="related-posts">
   <h3>Related Posts</h3>
-  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-Remove a listing from your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li></ul>
+  <ul class="related-posts"><li><a href="https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/">Trade Me-5-从您的监视列表中删除列表 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li></ul>
 </section></article><div class="post-comments surface row"><script src="https://utteranc.es/client.js"
   repo="ifulltest/comments"
   issue-term="pathname"
@@ -529,10 +527,10 @@ pm.sendRequest(post_request, function (err, response) {
     <h5 class="profile-name my-2">Gary Gao</h5><div class="profile-bio mb-2">Full Stack Tester: API/UI/Mobile automation,DevOps,etc.</div><div class="profile-company mb-2"><i class="fas fa-fw fa-building"></i>Null</div><div class="profile-location mb-2"><i class="fas fa-fw fa-map-marker-alt"></i>Auckland, NZ</div><div class="profile-about mb-2"><i class="fas fa-fw fa-info-circle"></i><a target="_blank" href="http://ifulltest.github.io/en/posts/about-me/">About Me</a></div></div>
 </section><section class="featured-posts row surface">
   <h4>Featured Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
 </section><section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">Trade Me-1-API testing first demo</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-typical transactions</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-Retrieve general categories API testing</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-Retrieve your watchlist API testing</a></li></ul>
+  <ul><li><a href="https://ifulltest.github.io/en/posts/site-road-map/">Site Map</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-first-demo/">TradeMe API 测试的第一个演示</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-typical-transactions/">Trade Me-2-典型交易</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/">Trade Me-3-检索一般类别 API 测试</a></li><li><a href="https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/">Trade Me-4-检索您的监视列表 API 测试</a></li></ul>
 </section>
 <section class="taxonomy-categories row surface">
   <h4>
@@ -573,7 +571,7 @@ pm.sendRequest(post_request, function (err, response) {
     </a><a href="https://ifulltest.github.io/en/tags/agile-basis/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Agile Basis">
       Agile Basis <span class="badge rounded-pill">4</span>
     </a><a href="https://ifulltest.github.io/en/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
-      Cypress <span class="badge rounded-pill">4</span>
+      Cypress <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/en/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
       GitHub <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/en/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">

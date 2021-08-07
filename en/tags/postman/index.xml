@@ -8,161 +8,172 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/postman/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-1-API testing first demo</title>
+      <title>TradeMe API 测试的第一个演示</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;whatre-the-reasons-for-writing-the-series&#34;&gt;What&amp;rsquo;re the reasons for writing the series?&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;写这个系列的原因是什么&#34;&gt;写这个系列的原因是什么？&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;1st, for testing skills demonstration.&lt;/h4&gt;
+&lt;h4 id=&#34;1用于测试技能演示&#34;&gt;1、用于测试技能演示。&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.&lt;/p&gt;
+&lt;p&gt;作者希望通过一系列自动化测试实践分享来展示他在 API、UI、移动自动化测试领域的综合技能。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;2nd-for-guiding-those-who-are-new-to-automation-testing&#34;&gt;2nd, for guiding those who are new to automation testing.&lt;/h4&gt;
+&lt;h4 id=&#34;2用于指导自动化测试新手&#34;&gt;2、用于指导自动化测试新手。&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.&lt;/p&gt;
+&lt;p&gt;选择一款流行的产品来演示其API自动化测试过程，将是上述人员快速进入自动化测试领域以节省时间的一种简便方法。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;3rd-for-mutual-boost-and-progress&#34;&gt;3rd, for mutual boost and progress.&lt;/h4&gt;
+&lt;h4 id=&#34;3互相促进共同进步&#34;&gt;3、互相促进、共同进步。&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-2-typical transactions</title>
+      <title>Trade Me-2-典型交易</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</guid>
-      <description>&lt;h2 id=&#34;how-to-pick-the-typical-transactions&#34;&gt;&lt;em&gt;How to pick the typical transactions?&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Before coding the API test script, we need to pick some typical transactions from TradeMe.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;And these transactions we&amp;rsquo;ve picked better to cover different types of requests, such as the &lt;strong&gt;get, post, delete&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;And part of these transactions should &lt;strong&gt;correlate with each other&lt;/strong&gt; at the business level.&lt;/em&gt;&lt;/p&gt;</description>
+      <description>如何挑选典型的交易？ 在编写 API 测试脚本之前，我们需要从 TradeMe 中挑选一些典型的交易。
+我们选择的这些事务更好地涵盖了不同类型的请求，例如get、post、delete。
+这些交易的一部分应该在业务层面相互关联。
+API -检索一般类别   业务范围选择：获取所有子类别。   API 功能：检索全部或部分 Trade Me 类别树。   前端页面     关键请求字段     关键响应字段 - 类别树。           Name String or null 类别的名称。   Number String or null 类别的唯一标识符，例如“0004-0369-6076-”。我们计划将其更改为数字标识符（例如“6076”），因此您应该确保您可以处理这两种格式。   Path String or null 此类别的完整 URL 路径，例如“/Home-living/Beds-bedroom-furniture/Bedside-tables”。   Subcategories Collection of or null 属于该类别的子类别列表。   … … …    更多参考：检索一般类别</description>
     </item>
     
     <item>
-      <title>Trade Me-3-Retrieve general categories API testing</title>
+      <title>Trade Me-3-检索一般类别 API 测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-general-categories-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve general categories script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 检索一般类别脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：检索全部或部分 Trade Me 类别树。   关键请求字段   关键响应字段 - 类别树。           Name String or null 类别的名称。   Number String or null 类别的唯一标识符，例如“0004-0369-6076-”。我们计划将其更改为数字标识符（例如“6076”），因此您应该确保您可以处理这两种格式。   Path String or null 此类别的完整 URL 路径，例如“/Home-living/Beds-bedroom-furniture/Bedside-tables”。   Subcategories Collection of or null 属于该类别的子类别列表。   … … …    更多 API 规范参考Retrieve general category。</description>
     </item>
     
     <item>
-      <title>Trade Me-4-Retrieve your watchlist API testing</title>
+      <title>Trade Me-4-检索您的监视列表 API 测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 检索您的监视列表脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：检索经过身份验证的用户监视列表中的项目列表。   关键请求字段     关键响应字段 - 经过身份验证的用户的监视列表。            TotalCount Integer 集合中的结果总数。可以大于返回结果的数量。    Page Integer 当前结果页的索引（从 1 开始）。    PageSize Integer 当前页面中的结果数。    List Collection of or null 当前页面中的结果列表。     ListingId 长整数 商家信息的 ID。    BidCount 整数 项目的出价数量。   … … … …      更多 API 规范参考**检索您的监视列表** 。</description>
     </item>
     
     <item>
-      <title>Trade Me-5-Remove a listing from your watchlist API testing</title>
+      <title>Trade Me-5-从您的监视列表中删除列表 API 测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---remove-a-listing-from-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Remove a listing from your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 从监视列表脚本开发步骤中删除列表 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：从经过身份验证的用户的监视列表中删除列表。   关键请求字段     关键响应字段 - 有关操作是否成功的详细信息。   尝试删除不存在或不在监视列表中的拍卖不会产生错误。
+          Success Boolean 指示操作是否成功。   Description String or null 错误的描述，如果操作失败。    更多 API 规范是指从您的监视列表中删除列表。
+  示例请求   DELETE https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/0000000000.JSON
+  示例响应   { &amp;#34;Success&amp;#34;: true, &amp;#34;Description&amp;#34;: &amp;#34;Success&amp;#34; } 业务介绍   前端页面 - 关注列表页面     前端页面 - 确认删除项目页面     业务范围选择   链式组合交易</description>
     </item>
     
     <item>
-      <title>Trade Me-6-Retrieve closing soon listings API testing</title>
+      <title>Trade Me-6-检索即将关闭列表 API 测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-closing-soon-listings-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve closing soon listings script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 检索即将关闭的列表脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：检索全国或单个地区即将关闭的项目。   关键请求字段   更多参考：检索即将关闭的列表
+  关键响应字段 - 类别树。           TotalCount Integer 集合中的结果总数。可以大于返回结果的数量。   TotalCountTruncated Boolean 如果结果总数超过允许的最大值并被截断，则为真。   Page Integer 当前结果页的索引（从 1 开始）。   PageSize Integer 当前页面中的结果数。   List Collection of or null 当前页面中的结果列表。    ListingId 长整数   … … …    更多参考：检索即将关闭的列表</description>
     </item>
     
     <item>
-      <title>Trade Me-7-Add a listing to your watchlist API testing</title>
+      <title>Trade Me-7-将列表添加到您的监视列表 API 测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---add-a-listing-to-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Add a listing to your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 将列表添加到您的监视列表脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：将列表添加到经过身份验证的用户的监视列表。   关键请求字段   更多参考：将列表添加到您的监视列表关键响应字段 - 有关操作是否成功的详细信息。 尝试删除不存在或不在监视列表中的拍卖不会产生错误。
+          Success Boolean 指示操作是否成功。   Description String or null 错误的描述，如果操作失败。    示例请求 POST https://api.tmsandbox.co.nz/v1/MyTradeMe/WatchList/2149294825.JSON
+ 示例响应：  { &amp;#34;Success&amp;#34;: true, &amp;#34;Description&amp;#34;: &amp;#34;Success&amp;#34; } 业务介绍   前端页面 - 即将关闭商品详情页面     前端页面 - 关注列表页面     业务范围选择   链式组合交易</description>
     </item>
     
     <item>
-      <title>Trade Me-8-Retrieve your won items API testing</title>
+      <title>Trade Me-8-检索您赢得的物品 API 测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-your-won-items-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve your won items script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 检索您赢得的物品脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：检索经过身份验证的用户的购买清单。   多数量拍卖可以多次购买。
+  关键请求字段     关键响应字段 - 经过身份验证的用户已购买的项目列表。            TotalCount Integer 集合中的结果总数。可以大于返回结果的数量。    Page Integer 当前结果页的索引（从 1 开始）。    PageSize Integer 当前页面中的结果数。    List Collection of or null 当前页面中的结果列表。     ListingId 长整数 商家信息的 ID。   … … … …   PurchaseId Integer 标识销售的唯一 ID。    … … … …      更多参考：检索您赢得的物品</description>
     </item>
     
     <item>
-      <title>Trade Me-9-Remove a purchase from your won items list API testing</title>
+      <title>Trade Me-9-从您赢得的物品列表中删除购买 API 测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</guid>
-      <description>&lt;h2 id=&#34;api---remove-a-purchase-from-your-won-items-list-script-development-steps&#34;&gt;&lt;em&gt;API - Remove a purchase from your won items list script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 从您赢得的物品列表中删除购买脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：从赢得的项目列表中隐藏一个列表。   关键请求字段     关键响应字段 - 有关操作是否成功的详细信息。   请注意，此操作仅在操作完成后在赢得的物品列表中仍然存在购买的情况下才会报告失败。在所有其他情况下，此 API 将报告成功（例如，如果购买 ID 无效或购买已被删除，它将报告成功）。
+          Success Boolean 指示操作是否成功。   Description String or null 错误的描述，如果操作失败。      示例请求   GET https://api.tmsandbox.co.nz/v1/MyTradeMe/Won/All.JSON
+  示例响应   { &amp;#34;Success&amp;#34;: true, &amp;#34;Description&amp;#34;: &amp;#34;Success&amp;#34; } 业务介绍   前端页面 - 赢得列表页面（选择要删除的给定项目）     前端页面 - 确认从赢得的项目列表中删除给定的项目。     业务范围选择   链式投资组合交易</description>
     </item>
     
     <item>
-      <title>Trade Me-10-General search API testing</title>
+      <title>Trade Me-10-常规搜索API测试</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-general-search/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-general-search/</guid>
-      <description>&lt;h2 id=&#34;api---general-search-script-development-steps&#34;&gt;&lt;em&gt;API - General search script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 常规搜索脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：允许您按类别、关键字或这两者的组合搜索 Trade Me 上的列表。   结果集可以通过各种属性进行过滤，包括“立即购买”、“立即付款”、“商品状况”或“卖家”的可用性。
+  关键请求字段             page Integer (optional) 要返回的结果集的页码，从 1 开始。默认为 1。   … … …   rows Integer (optional) 每页结果数；也是要返回的最大结果数。对于未经身份验证的请求，最大值为 25，对于经过身份验证的请求，最大值为 500。默认为 25（未认证）或 50（已认证）。   … … …    更多参考：常规搜索  关键响应字段              TotalCount Integer 集合中的结果总数。可以大于返回结果的数量。    TotalCountTruncated Boolean 如果结果总数超过允许的最大值并被截断，则为真。    Page Integer 当前结果页的索引（从 1 开始）。    PageSize Integer 当前页面中的结果数。    List Collection of or null 当前页面中的结果列表。     ListingId Long Integer 商家信息的 ID。    BuyNowPrice Number 立即购买价格。    HasBuyNow Boolean 指示该项目是否有立即购买。   … … … …    更多参考：常规搜索  示例请求   GET https://api.</description>
     </item>
     
     <item>
-      <title>Trade Me-11-Retrieve the details of a single listing API testing</title>
+      <title>Trade Me-11-检索单个列表 API 测试的详细信息</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-the-details-of-a-single-listing-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve the details of a single listing script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 检索单个列表的详细信息脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：检索单个列表的详细信息。   关键请求字段     关键响应字段 - 列表的详细信息。              ListingId Long Integer 商家信息的 ID。    … … …    ShippingOptions Collection of or null 运输选项列表。     Method String or null 递送方式的名称（例如“NZ Courier”、“Rural Delivery”）。仅当 ShippingType 为自定义时适用。    ShippingId Long Integer 运输选项的 ID（在出价或立即购买时使用）。列出项目时不需要。   … … … …      示例请求   GET https://api.</description>
     </item>
     
     <item>
-      <title>Trade Me-12-Buy an auction using Buy Now API testing</title>
+      <title>Trade Me-12-使用 Buy Now API 测试购买拍卖</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/</guid>
-      <description>&lt;h2 id=&#34;api---buy-an-auction-using-buy-now-script-development-steps&#34;&gt;&lt;em&gt;API - Buy an auction using Buy Now script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>API - 使用“立即购买”购买拍卖脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Negative Cases扩展-&amp;gt;API测试脚本发布
+API规范   API 功能：使用“立即购买”购买商品。   关键请求字段     关键响应字段 - Buy Now 请求的详细信息。              Success Boolean 指示操作是否成功。    Description String or null 错误的描述，如果操作失败。    StatusCode Enumeration 立即购买请求的状态。     Success 0 竞标成功。   … … … …   PurchaseId Long Integer 刚刚购买的 ID。    … … … …      示例请求   POST https://api.</description>
     </item>
     
     <item>
-      <title>Trade Me-13-scenarios-and-newman-reports</title>
+      <title>Trade Me-13-场景和Newman报告</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/</guid>
-      <description>&lt;h2 id=&#34;scenarios-position-in-the-api-automation-testing&#34;&gt;&lt;em&gt;Scenario‘s position in the API automation testing&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;Typical transactions selection -&amp;gt; Corresponding API selection -&amp;gt; Scripting -&amp;gt; &lt;strong&gt;Scenarios and reports(I&amp;rsquo;m here)&lt;/strong&gt; -&amp;gt; CICD&lt;/em&gt;&lt;/p&gt;</description>
+      <description>场景处于API自动化测试中的位置 典型交易选择 -&amp;gt; 对应 API 选择 -&amp;gt; Scripting -&amp;gt;场景和报告（我在这儿） -&amp;gt; CICD
+典型交易选择 典型交易选择指：Trade Me-2-典型交易
+对应的API选择和脚本编写 对应的API选择和脚本编写参考：
+Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表的详细信息 API 测试 Trade Me-12-使用 Buy Now购买拍卖 API 测试 运行场景的两种方式 Postman 使用集合的概念来存储您的 API 测试脚本作为基本场景。</description>
     </item>
     
     <item>
-      <title>Trade Me-14-Jenkins-CI-process</title>
+      <title>Trade Me-14-Jenkins-持续集成流程</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/</guid>
-      <description>&lt;h2 id=&#34;api-automation-testing-ci-process&#34;&gt;&lt;em&gt;API automation testing CI process&lt;/em&gt;&lt;/h2&gt;
-&lt;h5 id=&#34;typical-transactions-selection---corresponding-api-selection---scripting---scenarios-and-reports---ciim-here&#34;&gt;&lt;em&gt;Typical transactions selection -&amp;gt; Corresponding API selection -&amp;gt; Scripting -&amp;gt; Scenarios and reports -&amp;gt; &lt;strong&gt;CI(I&amp;rsquo;m here)&lt;/strong&gt;&lt;/em&gt;&lt;/h5&gt;</description>
+      <description>API自动化测试持续集成流程 典型事务选择 -&amp;gt; 对应 API 选择 -&amp;gt; 脚本编写 -&amp;gt; 场景和报告 -&amp;gt; 持续集成（我在这儿） 典型交易选择 典型交易选择指：Trade Me-2-典型交易 对应的API选择和脚本编写 对应的API选择和脚本编写参考： Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表 API 测试的详细信息 Trade Me-12-使用 Buy Now API 测试购买拍卖 场景和报告 场景和报告参考：Trade Me-13-场景和Newman报告 。 Jenkins 持续集成流程实践   Jenkins 持续集成流程的步骤   准备 -&amp;gt; 新建 CI 作业 -&amp;gt; 作业配置 -&amp;gt; 作业运行 -&amp;gt; 作业结果检查 -&amp;gt; 电子邮件给相关人   准备工作 - 相关工具安装   Jenkins安装参考：如何安装Jenkins？ Git Bash安装参考：如何安装Git Bash？   准备工作 - 环境启动   在构建 CI 作业之前初始化 Postman 相关脚本、数据、报告、存储库的文件夹结构。 rem create folder for Postman collection, env parameter, temporary parameter, reports pushd d:\Software &amp;amp;&amp;amp; md postman\collections postman\data postman\reports\hisreports postman\postman_github 将 Postman 主目录设置为系统环境参数 setx &amp;#34;POSTMAN_HOME&amp;#34; &amp;#34;D:\Software\postman&amp;#34; /M   准备工作 - 将 Postman 集合和环境变量文件导出到本地   将 Postman 集合文件导出到本地是指：将 Postman 集合文件导出到本地</description>
     </item>
     
     <item>

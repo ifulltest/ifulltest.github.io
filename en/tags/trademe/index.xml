@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trademe on Become a Full-Stack Tester Here</title>
+    <link>https://ifulltest.github.io/en/tags/trademe/</link>
+    <description>Recent content in Trademe on Become a Full-Stack Tester Here</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/trademe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TradeMe API 测试的第一个演示</title>
+      <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
+      <description>&lt;h2 id=&#34;写这个系列的原因是什么&#34;&gt;写这个系列的原因是什么？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;1用于测试技能演示&#34;&gt;1、用于测试技能演示。&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;作者希望通过一系列自动化测试实践分享来展示他在 API、UI、移动自动化测试领域的综合技能。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;2用于指导自动化测试新手&#34;&gt;2、用于指导自动化测试新手。&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;选择一款流行的产品来演示其API自动化测试过程，将是上述人员快速进入自动化测试领域以节省时间的一种简便方法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;3互相促进共同进步&#34;&gt;3、互相促进、共同进步。&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

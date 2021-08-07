@@ -8,13 +8,12 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-14-Jenkins-CI-process</title>
+      <title>Trade Me-14-Jenkins-持续集成流程</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/</guid>
-      <description>&lt;h2 id=&#34;api-automation-testing-ci-process&#34;&gt;&lt;em&gt;API automation testing CI process&lt;/em&gt;&lt;/h2&gt;
-&lt;h5 id=&#34;typical-transactions-selection---corresponding-api-selection---scripting---scenarios-and-reports---ciim-here&#34;&gt;&lt;em&gt;Typical transactions selection -&amp;gt; Corresponding API selection -&amp;gt; Scripting -&amp;gt; Scenarios and reports -&amp;gt; &lt;strong&gt;CI(I&amp;rsquo;m here)&lt;/strong&gt;&lt;/em&gt;&lt;/h5&gt;</description>
+      <description>API自动化测试持续集成流程 典型事务选择 -&amp;gt; 对应 API 选择 -&amp;gt; 脚本编写 -&amp;gt; 场景和报告 -&amp;gt; 持续集成（我在这儿） 典型交易选择 典型交易选择指：Trade Me-2-典型交易 对应的API选择和脚本编写 对应的API选择和脚本编写参考： Trade Me-3-检索一般类别 API 测试 Trade Me-4-检索您的监视列表 API 测试 Trade Me-5-从您的监视列表中删除列表 API 测试 Trade Me-6-检索即将关闭列表 API 测试 Trade Me-7-将列表添加到您的监视列表 API 测试 Trade Me-8-检索您赢得的物品 API 测试 Trade Me-9-从您赢得的物品列表中删除购买 API 测试 Trade Me-10-通用搜索API测试 Trade Me-11-检索单个列表 API 测试的详细信息 Trade Me-12-使用 Buy Now API 测试购买拍卖 场景和报告 场景和报告参考：Trade Me-13-场景和Newman报告 。 Jenkins 持续集成流程实践   Jenkins 持续集成流程的步骤   准备 -&amp;gt; 新建 CI 作业 -&amp;gt; 作业配置 -&amp;gt; 作业运行 -&amp;gt; 作业结果检查 -&amp;gt; 电子邮件给相关人   准备工作 - 相关工具安装   Jenkins安装参考：如何安装Jenkins？ Git Bash安装参考：如何安装Git Bash？   准备工作 - 环境启动   在构建 CI 作业之前初始化 Postman 相关脚本、数据、报告、存储库的文件夹结构。 rem create folder for Postman collection, env parameter, temporary parameter, reports pushd d:\Software &amp;amp;&amp;amp; md postman\collections postman\data postman\reports\hisreports postman\postman_github 将 Postman 主目录设置为系统环境参数 setx &amp;#34;POSTMAN_HOME&amp;#34; &amp;#34;D:\Software\postman&amp;#34; /M   准备工作 - 将 Postman 集合和环境变量文件导出到本地   将 Postman 集合文件导出到本地是指：将 Postman 集合文件导出到本地</description>
     </item>
     
     <item>
