@@ -11,7 +11,7 @@
 <meta name="description" content="" /><meta itemprop="name" content="Trade Me-11-检索单个列表 API 测试的详细信息">
 <meta itemprop="description" content="API - 检索单个列表的详细信息脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1314"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1328"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-11-检索单个列表 API 测试的详细信息" />
 <meta property="og:description" content="API - 检索单个列表的详细信息脚本开发步骤 API规范-&gt;业务展示-&gt;API测试脚本调试-&gt;API测试脚本增强-&gt;API测" />
 <meta property="og:type" content="article" />
@@ -275,6 +275,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">检索单个列表的详细信息</a>
+</strong></p>
 <ul>
 <li>
 <h4 id="示例请求">示例请求</h4>
@@ -422,9 +424,9 @@ pm.test(&#34;CheckingSingleListingIdDetails&#34;, function () {
 
     var ShippingOptions = jsonData.ShippingOptions;
 
-    var arrShippingId =[];
+    var ShippingIds =[];
 
-    var arrMethod =[];
+    var Methods =[];
 
     if(jsonData.HasBuyNow == true){
 
@@ -448,24 +450,24 @@ pm.test(&#34;CheckingSingleListingIdDetails&#34;, function () {
                     // Fetch random ShippingId only when ShippingMethod has no pick-up option
                     else{
 
-                        arrShippingId.push(ShippingOptions[i].ShippingId);
+                        ShippingIds.push(ShippingOptions[i].ShippingId);
 
-                        arrMethod.push(ShippingOptions[i].Method);
+                        Methods.push(ShippingOptions[i].Method);
 
-                        postman.setEnvironmentVariable(&#39;arrShippingIdCount&#39;, arrShippingId.length); 
+                        postman.setEnvironmentVariable(&#39;ShippingIdsCount&#39;, ShippingIds.length); 
 
-                        postman.setEnvironmentVariable(&#39;arrShippingId&#39;, arrShippingId);                     
+                        postman.setEnvironmentVariable(&#39;ShippingIds&#39;, ShippingIds);                     
                         
                         // If it has too many ShippingId, to get the randdom ShippingId should better not execute in the loop
-                        var ShippingId=pm.environment.get(&#34;arrShippingId&#34;).split(&#34;,&#34;);
+                        var ShippingId=pm.environment.get(&#34;ShippingIds&#34;).split(&#34;,&#34;);
 
-                        var arrShippingIdCount=pm.environment.get(&#34;arrShippingIdCount&#34;);
+                        var ShippingIdsCount=pm.environment.get(&#34;ShippingIdsCount&#34;);
 
-                        var RandShippingOptions = Math.floor(Math.random() * Number(arrShippingIdCount));
+                        var RandShippingOptions = Math.floor(Math.random() * Number(ShippingIdsCount));
 
-                        postman.setEnvironmentVariable(&#39;ShippingId&#39;, arrShippingId[RandShippingOptions]);
+                        postman.setEnvironmentVariable(&#39;ShippingId&#39;, ShippingIds[RandShippingOptions]);
 
-                        postman.setEnvironmentVariable(&#39;Method&#39;, arrMethod[RandShippingOptions]);
+                        postman.setEnvironmentVariable(&#39;Method&#39;, Methods[RandShippingOptions]);
 
                     }
 
@@ -566,18 +568,16 @@ pm.test(&#34;CheckingSingleListingIdDetails&#34;, function () {
   </h4>
   <div><a href="https://ifulltest.github.io/zh-cn/tags/postman/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Postman">
       Postman <span class="badge rounded-pill">17</span>
+    </a><a href="https://ifulltest.github.io/zh-cn/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
+      Cypress <span class="badge rounded-pill">3</span>
     </a><a href="https://ifulltest.github.io/zh-cn/tags/jenkins/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Jenkins">
       Jenkins <span class="badge rounded-pill">3</span>
-    </a><a href="https://ifulltest.github.io/zh-cn/tags/cypress/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Cypress">
-      Cypress <span class="badge rounded-pill">2</span>
     </a><a href="https://ifulltest.github.io/zh-cn/tags/git/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Git">
       Git <span class="badge rounded-pill">1</span>
     </a><a href="https://ifulltest.github.io/zh-cn/tags/github/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="GitHub">
       GitHub <span class="badge rounded-pill">1</span>
     </a><a href="https://ifulltest.github.io/zh-cn/tags/java/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Java">
       Java <span class="badge rounded-pill">1</span>
-    </a><a href="https://ifulltest.github.io/zh-cn/tags/trademe/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Trademe">
-      Trademe <span class="badge rounded-pill">1</span>
     </a></div>
 </section></div>
 </aside>

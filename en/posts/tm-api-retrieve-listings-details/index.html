@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API - Retrieve the details of a single listing script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="789"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="799"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-11-Retrieve the details of a single listing API testing" />
 <meta property="og:description" content="API - Retrieve the details of a single listing script development steps
 API Specification -&gt; Business Presentation -&gt; API Testing Script Debugging -&gt; API Testing Script Enhancement -&gt; API Testing Script Negative Cases Extension -&gt; API Testing Script Publishment" />
@@ -278,6 +278,8 @@ if (!doNotTrack) {
 </tr>
 </tbody>
 </table>
+<p>More refer to: <strong><a href="https://developer.trademe.co.nz/api-reference/listing-methods/retrieve-the-details-of-a-single-listing" target="_blank">Retrieve the details of a single listing</a>
+</strong></p>
 <ul>
 <li>
 <h4 id="example-request">Example request</h4>
@@ -424,9 +426,9 @@ pm.test(&#34;CheckingSingleListingIdDetails&#34;, function () {
 
     var ShippingOptions = jsonData.ShippingOptions;
 
-    var arrShippingId =[];
+    var ShippingIds =[];
 
-    var arrMethod =[];
+    var Methods =[];
 
     if(jsonData.HasBuyNow == true){
 
@@ -450,24 +452,24 @@ pm.test(&#34;CheckingSingleListingIdDetails&#34;, function () {
                     // Fetch random ShippingId only when ShippingMethod has no pick-up option
                     else{
 
-                        arrShippingId.push(ShippingOptions[i].ShippingId);
+                        ShippingIds.push(ShippingOptions[i].ShippingId);
 
-                        arrMethod.push(ShippingOptions[i].Method);
+                        Methods.push(ShippingOptions[i].Method);
 
-                        postman.setEnvironmentVariable(&#39;arrShippingIdCount&#39;, arrShippingId.length); 
+                        postman.setEnvironmentVariable(&#39;ShippingIdsCount&#39;, ShippingIds.length); 
 
-                        postman.setEnvironmentVariable(&#39;arrShippingId&#39;, arrShippingId);                     
+                        postman.setEnvironmentVariable(&#39;ShippingIds&#39;, ShippingIds);                     
                         
                         // If it has too many ShippingId, to get the randdom ShippingId should better not execute in the loop
-                        var ShippingId=pm.environment.get(&#34;arrShippingId&#34;).split(&#34;,&#34;);
+                        var ShippingId=pm.environment.get(&#34;ShippingIds&#34;).split(&#34;,&#34;);
 
-                        var arrShippingIdCount=pm.environment.get(&#34;arrShippingIdCount&#34;);
+                        var ShippingIdsCount=pm.environment.get(&#34;ShippingIdsCount&#34;);
 
-                        var RandShippingOptions = Math.floor(Math.random() * Number(arrShippingIdCount));
+                        var RandShippingOptions = Math.floor(Math.random() * Number(ShippingIdsCount));
 
-                        postman.setEnvironmentVariable(&#39;ShippingId&#39;, arrShippingId[RandShippingOptions]);
+                        postman.setEnvironmentVariable(&#39;ShippingId&#39;, ShippingIds[RandShippingOptions]);
 
-                        postman.setEnvironmentVariable(&#39;Method&#39;, arrMethod[RandShippingOptions]);
+                        postman.setEnvironmentVariable(&#39;Method&#39;, Methods[RandShippingOptions]);
 
                     }
 
