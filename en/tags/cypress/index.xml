@@ -8,33 +8,33 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/cypress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-1-API testing first demo</title>
+      <title>Trade Me-1-API testing first demo | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;whatre-the-reasons-for-writing-the-series&#34;&gt;What&amp;rsquo;re the reasons for writing the series?&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;whatre-the-reasons-for-writing-the-series&#34;&gt;&lt;em&gt;What&amp;rsquo;re the reasons for writing the series?&lt;/em&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;1st, for testing skills demonstration.&lt;/h4&gt;
+&lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;&lt;em&gt;1st, for testing skills demonstration.&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;2nd-for-guiding-those-who-are-new-to-automation-testing&#34;&gt;2nd, for guiding those who are new to automation testing.&lt;/h4&gt;
+&lt;h4 id=&#34;2nd-for-guiding-those-who-are-new-to-automation-testing&#34;&gt;&lt;em&gt;2nd, for guiding those who are new to automation testing.&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;3rd-for-mutual-boost-and-progress&#34;&gt;3rd, for mutual boost and progress.&lt;/h4&gt;
+&lt;h4 id=&#34;3rd-for-mutual-boost-and-progress&#34;&gt;&lt;em&gt;3rd, for mutual boost and progress.&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-2-typical transactions</title>
+      <title>Trade Me-2-typical transactions | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       

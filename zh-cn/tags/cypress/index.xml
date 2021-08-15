@@ -8,33 +8,33 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/tags/cypress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-1-API测试的第一个演示</title>
+      <title>Trade Me-1-API测试的第一个演示 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;写这个系列的原因是什么&#34;&gt;写这个系列的原因是什么？&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;写这个系列的原因是什么&#34;&gt;&lt;em&gt;写这个系列的原因是什么？&lt;/em&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;1用于测试技能演示&#34;&gt;1、用于测试技能演示。&lt;/h4&gt;
+&lt;h4 id=&#34;1用于测试技能演示&#34;&gt;&lt;em&gt;1、用于测试技能演示。&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;作者希望通过一系列自动化测试实践分享来展示他在 API、UI、移动自动化测试领域的综合技能。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;作者希望通过一系列自动化测试实践分享来展示他在 API、UI、移动自动化测试领域的综合技能。&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;2用于指导自动化测试新手&#34;&gt;2、用于指导自动化测试新手。&lt;/h4&gt;
+&lt;h4 id=&#34;2用于指导自动化测试新手&#34;&gt;&lt;em&gt;2、用于指导自动化测试新手。&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;选择一款流行的产品来演示其API自动化测试过程，将是上述人员快速进入自动化测试领域以节省时间的一种简便方法。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;选择一款流行的产品来演示其API自动化测试过程，将是上述人员快速进入自动化测试领域以节省时间的一种简便方法。&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;3互相促进共同进步&#34;&gt;3、互相促进、共同进步。&lt;/h4&gt;
+&lt;h4 id=&#34;3互相促进共同进步&#34;&gt;&lt;em&gt;3、互相促进、共同进步。&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-2-典型交易</title>
+      <title>Trade Me-2-典型交易 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -48,7 +48,8 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/nodejs-installation/</guid>
-      <description>Node.js 安装步骤 下载并安装 Node.js 应用程序 -&amp;gt; 通过版本验证您的 Node.js 安装 -&amp;gt; 创建一个简单的脚本&amp;hellip; 下载并安装 Node.js 应用程序 去官网下载安装app 设置环境变</description>
+      <description>&lt;h2 id=&#34;nodejs-安装步骤&#34;&gt;&lt;em&gt;Node.js 安装步骤&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;下载并安装 Node.js 应用程序 -&amp;gt; 通过版本验证您的 Node.js 安装 -&amp;gt; 创建一个简单的脚本&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -33,33 +33,33 @@
     </item>
     
     <item>
-      <title>Trade Me-1-API测试的第一个演示</title>
+      <title>Trade Me-1-API测试的第一个演示 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;写这个系列的原因是什么&#34;&gt;写这个系列的原因是什么？&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;写这个系列的原因是什么&#34;&gt;&lt;em&gt;写这个系列的原因是什么？&lt;/em&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;1用于测试技能演示&#34;&gt;1、用于测试技能演示。&lt;/h4&gt;
+&lt;h4 id=&#34;1用于测试技能演示&#34;&gt;&lt;em&gt;1、用于测试技能演示。&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;作者希望通过一系列自动化测试实践分享来展示他在 API、UI、移动自动化测试领域的综合技能。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;作者希望通过一系列自动化测试实践分享来展示他在 API、UI、移动自动化测试领域的综合技能。&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;2用于指导自动化测试新手&#34;&gt;2、用于指导自动化测试新手。&lt;/h4&gt;
+&lt;h4 id=&#34;2用于指导自动化测试新手&#34;&gt;&lt;em&gt;2、用于指导自动化测试新手。&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;选择一款流行的产品来演示其API自动化测试过程，将是上述人员快速进入自动化测试领域以节省时间的一种简便方法。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;选择一款流行的产品来演示其API自动化测试过程，将是上述人员快速进入自动化测试领域以节省时间的一种简便方法。&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;3互相促进共同进步&#34;&gt;3、互相促进、共同进步。&lt;/h4&gt;
+&lt;h4 id=&#34;3互相促进共同进步&#34;&gt;&lt;em&gt;3、互相促进、共同进步。&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-2-典型交易</title>
+      <title>Trade Me-2-典型交易 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-typical-transactions/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -68,111 +68,125 @@
     </item>
     
     <item>
-      <title>Trade Me-3-检索一般类别 API 测试</title>
+      <title>Trade Me-3-检索一般类别 API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-general-categories/</guid>
-      <description>API - 检索一般类别脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Ne</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;检索全部或部分 Trade Me 类别树。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-4-检索您的监视列表 API 测试</title>
+      <title>Trade Me-4-检索您的监视列表 API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-watchlist/</guid>
-      <description>API - 检索您的监视列表脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;检索经过身份验证的用户监视列表中的项目列表。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-5-从您的监视列表中删除列表 API 测试</title>
+      <title>Trade Me-5-从您的监视列表中删除列表 API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-listing-from-watchlist/</guid>
-      <description>API - 从监视列表脚本开发步骤中删除列表 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;从经过身份验证的用户的监视列表中删除列表。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-6-检索即将关闭列表 API 测试</title>
+      <title>Trade Me-6-检索即将关闭列表 API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-closing-soon-listings/</guid>
-      <description>API - 检索即将关闭的列表脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;检索全国或单个地区即将关闭的项目。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-7-将列表添加到您的监视列表 API 测试</title>
+      <title>Trade Me-7-将列表添加到您的监视列表 API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-add-a-listing-to-watchlist/</guid>
-      <description>API - 将列表添加到您的监视列表脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;将列表添加到经过身份验证的用户的监视列表。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-8-检索您赢得的物品 API 测试</title>
+      <title>Trade Me-8-检索您赢得的物品 API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-won-items/</guid>
-      <description>API - 检索您赢得的物品脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;检索经过身份验证的用户的购买清单。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;多数量拍卖可以多次购买。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-9-从您赢得的物品列表中删除购买 API 测试</title>
+      <title>Trade Me-9-从您赢得的物品列表中删除购买 API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-rm-a-purchase-from-won-list/</guid>
-      <description>API - 从您赢得的物品列表中删除购买脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;A</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;从赢得的项目列表中隐藏一个列表。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-10-常规搜索API测试</title>
+      <title>Trade Me-10-常规搜索API测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-general-search/</guid>
-      <description>API - 常规搜索脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测试脚本Nega</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;允许您按类别、关键字或这两者的组合搜索 Trade Me 上的列表。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;结果集可以通过各种属性进行过滤，包括“&lt;strong&gt;立即购买”&lt;/strong&gt;、“立即付款”、“商品状况”或“卖家”的可用性。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-11-检索单个列表的详细信息API 测试</title>
+      <title>Trade Me-11-检索单个列表的详细信息API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-retrieve-listings-details/</guid>
-      <description>API - 检索单个列表的详细信息脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API测</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;检索单个列表的详细信息。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-12-使用Buy Now购买拍卖API 测试</title>
+      <title>Trade Me-12-使用Buy Now购买拍卖API 测试 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-buy-an-auction-using-buy-now/</guid>
-      <description>API - 使用“立即购买”购买拍卖脚本开发步骤 API规范-&amp;gt;业务展示-&amp;gt;API测试脚本调试-&amp;gt;API测试脚本增强-&amp;gt;API</description>
+      <description>&lt;h2 id=&#34;api-功能&#34;&gt;&lt;em&gt;API 功能&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;使用“立即购买”购买商品。&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-13-场景和Newman报告</title>
+      <title>Trade Me-13-场景和Newman报告 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-scenarios-and-newman-report/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-scenarios-and-newman-report/</guid>
-      <description>场景处于API自动化测试中的位置 典型交易选择 -&amp;gt; 对应 API 选择 -&amp;gt; Scripting -&amp;gt;场景和报告（我在这儿） -&amp;gt; CICD 典型交易选择 典型交易选择指：Trade Me-</description>
+      <description>&lt;h2 id=&#34;场景处于api自动化测试中的位置&#34;&gt;&lt;em&gt;场景处于API自动化测试中的位置&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;典型交易选择 -&amp;gt; 对应 API 选择 -&amp;gt; Scripting -&amp;gt;&lt;strong&gt;场景和报告（我在这儿）&lt;/strong&gt; -&amp;gt; CICD&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-14-Jenkins-持续集成流程</title>
+      <title>Trade Me-14-Jenkins-持续集成流程 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-jenkins-cicd-process/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-jenkins-cicd-process/</guid>
-      <description>API自动化测试持续集成流程 典型事务选择 -&amp;gt; 对应 API 选择 -&amp;gt; 脚本编写 -&amp;gt; 场景和报告 -&amp;gt; 持续集成（我在这儿） 典型交易选择 典型交易选择参考：Trade Me</description>
+      <description>&lt;h2 id=&#34;api自动化测试持续集成流程&#34;&gt;&lt;em&gt;API自动化测试持续集成流程&lt;/em&gt;&lt;/h2&gt;
+&lt;h5 id=&#34;典型事务选择---对应-api-选择---脚本编写---场景和报告---持续集成我在这儿&#34;&gt;&lt;em&gt;典型事务选择 -&amp;gt; 对应 API 选择 -&amp;gt; 脚本编写 -&amp;gt; 场景和报告 -&amp;gt; &lt;strong&gt;持续集成（我在这儿）&lt;/strong&gt;&lt;/em&gt;&lt;/h5&gt;</description>
     </item>
     
     <item>
@@ -181,7 +195,9 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/git-bash-installation/</guid>
-      <description>Git 是一组命令行实用程序，旨在在 Unix 风格的命令行环境中执行。 Git Bash 是一个适用于 Microsoft Windows 环境的应用程序，它为 Git 命令行体验提供了一个模拟层。 本文将简要介绍</description>
+      <description>&lt;p&gt;&lt;em&gt;Git 是一组命令行实用程序，旨在在 Unix 风格的命令行环境中执行。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Git Bash 是一个适用于 Microsoft Windows 环境的应用程序，它为 Git 命令行体验提供了一个模拟层。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;本文将&lt;/em&gt;简要&lt;em&gt;介绍一个 Git 基础知识：如何安装 Git Bash&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -190,7 +206,8 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</guid>
-      <description>JDK - “Java™ 平台，标准版开发工具包”是使用 Java 编程语言构建应用程序和组件的开发环境。 它包括用于开发和测试用 Java 编程语言编写并在 Java 平台上运行的</description>
+      <description>&lt;p&gt;&lt;em&gt;JDK - “Java™ 平台，标准版开发工具包”是使用 Java 编程语言构建应用程序和组件的开发环境。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;它包括用于开发和测试用 Java 编程语言编写并在 Java 平台上运行的程序的有用工具&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -199,7 +216,8 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/jenkins-installation/</guid>
-      <description>作为领先的开源自动化服务器，Jenkins 提供了数百个插件来支持任何项目的构建、部署和自动化。 本文将简要介绍Jenkins的一个基本知识：如</description>
+      <description>&lt;p&gt;&lt;em&gt;作为领先的开源自动化服务器，Jenkins 提供了数百个插件来支持任何项目的构建、部署和自动化。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;本文将&lt;/em&gt;简要&lt;em&gt;介绍Jenkins的一个基本知识：如何安装Jenkins&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -208,7 +226,8 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/newman-installation/</guid>
-      <description>Newman安装步骤 下载并安装 Newman 应用程序 -&amp;gt; 按版本验证您的 Newman 安装 -&amp;gt; 运行 Newman 以获取报告&amp;hellip; 下载并安装Newman应用程序 在安装 Newman 之前，</description>
+      <description>&lt;h2 id=&#34;newman安装步骤&#34;&gt;&lt;em&gt;Newman安装步骤&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;下载并安装 Newman 应用程序 -&amp;gt; 按版本验证您的 Newman 安装 -&amp;gt; 运行 Newman 以获取报告&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -217,7 +236,8 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/nodejs-installation/</guid>
-      <description>Node.js 安装步骤 下载并安装 Node.js 应用程序 -&amp;gt; 通过版本验证您的 Node.js 安装 -&amp;gt; 创建一个简单的脚本&amp;hellip; 下载并安装 Node.js 应用程序 去官网下载安装app 设置环境变</description>
+      <description>&lt;h2 id=&#34;nodejs-安装步骤&#34;&gt;&lt;em&gt;Node.js 安装步骤&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;下载并安装 Node.js 应用程序 -&amp;gt; 通过版本验证您的 Node.js 安装 -&amp;gt; 创建一个简单的脚本&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -226,7 +246,8 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/postman-installation/</guid>
-      <description>Postman安装步骤 下载并安装Postman应用程序 -&amp;gt; 注册您的帐户并创建工作区 -&amp;gt; 创建集合 -&amp;gt; 添加请求并开始编写脚本…… 下载并安装Postma</description>
+      <description>&lt;h2 id=&#34;postman安装步骤&#34;&gt;&lt;em&gt;Postman安装步骤&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;下载并安装Postman应用程序 -&amp;gt; 注册您的帐户并创建工作区 -&amp;gt; 创建集合 -&amp;gt; 添加请求并开始编写脚本…&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

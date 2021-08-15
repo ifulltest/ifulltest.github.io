@@ -8,33 +8,33 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/en/tags/postman/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-1-API testing first demo</title>
+      <title>Trade Me-1-API testing first demo | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-first-demo/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-first-demo/</guid>
-      <description>&lt;h2 id=&#34;whatre-the-reasons-for-writing-the-series&#34;&gt;What&amp;rsquo;re the reasons for writing the series?&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;whatre-the-reasons-for-writing-the-series&#34;&gt;&lt;em&gt;What&amp;rsquo;re the reasons for writing the series?&lt;/em&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;1st, for testing skills demonstration.&lt;/h4&gt;
+&lt;h4 id=&#34;1st-for-testing-skills-demonstration&#34;&gt;&lt;em&gt;1st, for testing skills demonstration.&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;The author wanted to demonstrate his comprehensive skills within API, UI, mobile automation testing domains through a series of automation testing practices sharing.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;2nd-for-guiding-those-who-are-new-to-automation-testing&#34;&gt;2nd, for guiding those who are new to automation testing.&lt;/h4&gt;
+&lt;h4 id=&#34;2nd-for-guiding-those-who-are-new-to-automation-testing&#34;&gt;&lt;em&gt;2nd, for guiding those who are new to automation testing.&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Choose a popular product to demonstrate its API automation testing process will be an easy way for the above people to quickly get started into the automation testing domain to save their time.&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h4 id=&#34;3rd-for-mutual-boost-and-progress&#34;&gt;3rd, for mutual boost and progress.&lt;/h4&gt;
+&lt;h4 id=&#34;3rd-for-mutual-boost-and-progress&#34;&gt;&lt;em&gt;3rd, for mutual boost and progress.&lt;/em&gt;&lt;/h4&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-2-typical transactions</title>
+      <title>Trade Me-2-typical transactions | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-typical-transactions/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -46,107 +46,108 @@
     </item>
     
     <item>
-      <title>Trade Me-3-Retrieve general categories API testing</title>
+      <title>Trade Me-3-Retrieve general categories API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/</link>
       <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-general-categories/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-general-categories-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve general categories script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Retrieves all or part of the Trade Me category tree.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-4-Retrieve your watchlist API testing</title>
+      <title>Trade Me-4-Retrieve your watchlist API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Retrieves a list of items on the authenticated user&amp;rsquo;s watchlist.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-5-Remove a listing from your watchlist API testing</title>
+      <title>Trade Me-5-Remove a listing from your watchlist API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-listing-from-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---remove-a-listing-from-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Remove a listing from your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Removes a listing from the authenticated user&amp;rsquo;s watchlist.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-6-Retrieve closing soon listings API testing</title>
+      <title>Trade Me-6-Retrieve closing soon listings API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-closing-soon-listings/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-closing-soon-listings-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve closing soon listings script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Retrieves the items closing soon for the whole country or for a single region.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-7-Add a listing to your watchlist API testing</title>
+      <title>Trade Me-7-Add a listing to your watchlist API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/</link>
       <pubDate>Mon, 26 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-add-a-listing-to-watchlist/</guid>
-      <description>&lt;h2 id=&#34;api---add-a-listing-to-your-watchlist-script-development-steps&#34;&gt;&lt;em&gt;API - Add a listing to your watchlist script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Adds a listing to the authenticated user&amp;rsquo;s watchlist.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-8-Retrieve your won items API testing</title>
+      <title>Trade Me-8-Retrieve your won items API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</link>
       <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-won-items/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-your-won-items-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve your won items script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Retrieves a list of purchases for the authenticated user.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Multiple-quantity auctions can be purchased multiple times.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-9-Remove a purchase from your won items list API testing</title>
+      <title>Trade Me-9-Remove a purchase from your won items list API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-rm-a-purchase-from-won-list/</guid>
-      <description>&lt;h2 id=&#34;api---remove-a-purchase-from-your-won-items-list-script-development-steps&#34;&gt;&lt;em&gt;API - Remove a purchase from your won items list script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Hides a listing from the won items list.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-10-General search API testing</title>
+      <title>Trade Me-10-General search API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-general-search/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-general-search/</guid>
-      <description>&lt;h2 id=&#34;api---general-search-script-development-steps&#34;&gt;&lt;em&gt;API - General search script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Allows you to search for listings on Trade Me by category, by keywords or a combination of these two.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-11-Retrieve the details of a single listing API testing</title>
+      <title>Trade Me-11-Retrieve the details of a single listing API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-retrieve-listings-details/</guid>
-      <description>&lt;h2 id=&#34;api---retrieve-the-details-of-a-single-listing-script-development-steps&#34;&gt;&lt;em&gt;API - Retrieve the details of a single listing script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Retrieves the details of a single listing.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-12-Buy an auction using Buy Now API testing</title>
+      <title>Trade Me-12-Buy an auction using Buy Now API testing | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/</link>
       <pubDate>Thu, 29 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/en/posts/tm-api-buy-an-auction-using-buy-now/</guid>
-      <description>&lt;h2 id=&#34;api---buy-an-auction-using-buy-now-script-development-steps&#34;&gt;&lt;em&gt;API - Buy an auction using Buy Now script development steps&lt;/em&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;API Specification -&amp;gt; Business Presentation -&amp;gt; API Testing Script Debugging -&amp;gt; API Testing Script Enhancement -&amp;gt; API Testing Script Negative Cases Extension -&amp;gt; API Testing Script Publishment&lt;/em&gt;&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;api-function&#34;&gt;&lt;em&gt;API Function&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Buys an item using Buy Now.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Trade Me-13-scenarios-and-newman-reports</title>
+      <title>Trade Me-13-scenarios-and-newman-reports | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
@@ -156,7 +157,7 @@
     </item>
     
     <item>
-      <title>Trade Me-14-Jenkins-CI-process</title>
+      <title>Trade Me-14-Jenkins-CI-process | Postman API automation testing</title>
       <link>https://ifulltest.github.io/en/posts/tm-api-jenkins-cicd-process/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       

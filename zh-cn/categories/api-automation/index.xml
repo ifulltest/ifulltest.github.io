@@ -13,7 +13,8 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/newman-installation/</guid>
-      <description>Newman安装步骤 下载并安装 Newman 应用程序 -&amp;gt; 按版本验证您的 Newman 安装 -&amp;gt; 运行 Newman 以获取报告&amp;hellip; 下载并安装Newman应用程序 在安装 Newman 之前，</description>
+      <description>&lt;h2 id=&#34;newman安装步骤&#34;&gt;&lt;em&gt;Newman安装步骤&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;下载并安装 Newman 应用程序 -&amp;gt; 按版本验证您的 Newman 安装 -&amp;gt; 运行 Newman 以获取报告&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,7 +23,8 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/nodejs-installation/</guid>
-      <description>Node.js 安装步骤 下载并安装 Node.js 应用程序 -&amp;gt; 通过版本验证您的 Node.js 安装 -&amp;gt; 创建一个简单的脚本&amp;hellip; 下载并安装 Node.js 应用程序 去官网下载安装app 设置环境变</description>
+      <description>&lt;h2 id=&#34;nodejs-安装步骤&#34;&gt;&lt;em&gt;Node.js 安装步骤&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;下载并安装 Node.js 应用程序 -&amp;gt; 通过版本验证您的 Node.js 安装 -&amp;gt; 创建一个简单的脚本&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +33,8 @@
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/postman-installation/</guid>
-      <description>Postman安装步骤 下载并安装Postman应用程序 -&amp;gt; 注册您的帐户并创建工作区 -&amp;gt; 创建集合 -&amp;gt; 添加请求并开始编写脚本…… 下载并安装Postma</description>
+      <description>&lt;h2 id=&#34;postman安装步骤&#34;&gt;&lt;em&gt;Postman安装步骤&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;下载并安装Postman应用程序 -&amp;gt; 注册您的帐户并创建工作区 -&amp;gt; 创建集合 -&amp;gt; 添加请求并开始编写脚本…&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

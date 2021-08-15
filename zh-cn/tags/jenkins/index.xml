@@ -8,12 +8,13 @@
     <copyright>Copyright © 2019-{year} Gary Gao. All Rights Reserved.</copyright>
     <lastBuildDate>Tue, 03 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ifulltest.github.io/zh-cn/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trade Me-14-Jenkins-持续集成流程</title>
+      <title>Trade Me-14-Jenkins-持续集成流程 | Postman接口自动化测试</title>
       <link>https://ifulltest.github.io/zh-cn/posts/tm-api-jenkins-cicd-process/</link>
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/tm-api-jenkins-cicd-process/</guid>
-      <description>API自动化测试持续集成流程 典型事务选择 -&amp;gt; 对应 API 选择 -&amp;gt; 脚本编写 -&amp;gt; 场景和报告 -&amp;gt; 持续集成（我在这儿） 典型交易选择 典型交易选择参考：Trade Me</description>
+      <description>&lt;h2 id=&#34;api自动化测试持续集成流程&#34;&gt;&lt;em&gt;API自动化测试持续集成流程&lt;/em&gt;&lt;/h2&gt;
+&lt;h5 id=&#34;典型事务选择---对应-api-选择---脚本编写---场景和报告---持续集成我在这儿&#34;&gt;&lt;em&gt;典型事务选择 -&amp;gt; 对应 API 选择 -&amp;gt; 脚本编写 -&amp;gt; 场景和报告 -&amp;gt; &lt;strong&gt;持续集成（我在这儿）&lt;/strong&gt;&lt;/em&gt;&lt;/h5&gt;</description>
     </item>
     
     <item>
@@ -22,7 +23,8 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/jdk-installation/</guid>
-      <description>JDK - “Java™ 平台，标准版开发工具包”是使用 Java 编程语言构建应用程序和组件的开发环境。 它包括用于开发和测试用 Java 编程语言编写并在 Java 平台上运行的</description>
+      <description>&lt;p&gt;&lt;em&gt;JDK - “Java™ 平台，标准版开发工具包”是使用 Java 编程语言构建应用程序和组件的开发环境。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;它包括用于开发和测试用 Java 编程语言编写并在 Java 平台上运行的程序的有用工具&amp;hellip;&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +33,8 @@
       <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ifulltest.github.io/zh-cn/posts/jenkins-installation/</guid>
-      <description>作为领先的开源自动化服务器，Jenkins 提供了数百个插件来支持任何项目的构建、部署和自动化。 本文将简要介绍Jenkins的一个基本知识：如</description>
+      <description>&lt;p&gt;&lt;em&gt;作为领先的开源自动化服务器，Jenkins 提供了数百个插件来支持任何项目的构建、部署和自动化。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;本文将&lt;/em&gt;简要&lt;em&gt;介绍Jenkins的一个基本知识：如何安装Jenkins&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
