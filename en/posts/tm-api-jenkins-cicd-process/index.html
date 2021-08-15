@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API automation testing CI process
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1360"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1375"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-CI-process | Postman API automation testing" />
 <meta property="og:description" content="API automation testing CI process
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)" />
@@ -298,7 +298,7 @@ pushd d:\Software <span style="color:#960050;background-color:#1e0010">&amp;&amp
 pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git init <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git clone https://github.com/ifulltest/postman.git
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3.webp" alt=""  loading="lazy" />
 </p>
-<h5 id="set-email-and-password-to-authorize-files-transfer-between-local-and-remote-repository"><strong>Set email and password to authorize files transfer between local and remote repository.</strong></h5>
+<h5 id="set-username-and-personal-token-to-authorize-files-transfer-between-local-and-remote-repository"><strong>Set username and personal token to authorize files transfer between local and remote repository.</strong></h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">[core]
 	repositoryformatversion = 0
 	filemode = false
@@ -307,9 +307,11 @@ pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:
 	symlinks = false
 	ignorecase = true
 [remote &#34;origin&#34;]
-	url = https://Github username:passwrod@github.com/ifulltest/postman.git
+	url = https://Github username:personal token@github.com/ifulltest/postman.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-4.webp" alt=""  loading="lazy" />
+</p>
+<p><a href="https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to" target="_blank"><strong>How to get GitHub personal token and set it to local Windows server?</strong></a>
 </p>
 <ul>
 <li>

@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API自动化测试持续集成流程
 典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; 持续集成（我在这儿）"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2338"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="2379"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-持续集成流程 | Postman接口自动化测试" />
 <meta property="og:description" content="API自动化测试持续集成流程
 典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; 持续集成（我在这儿）" />
@@ -320,7 +320,7 @@ pushd d:\Software <span style="color:#960050;background-color:#1e0010">&amp;&amp
 pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git init <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git clone https://github.com/ifulltest/postman.git
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3.webp" alt="img"  loading="lazy" />
 </p>
-<h5 id="设置电子邮件和密码以授权本地和远程存储库之间的文件传输"><strong>设置电子邮件和密码以授权本地和远程存储库之间的文件传输。</strong></h5>
+<h5 id="设置用户名和个人token以授权本地和远程存储库之间的文件传输"><strong>设置用户名和个人token以授权本地和远程存储库之间的文件传输。</strong></h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">[core]
 	repositoryformatversion = 0
 	filemode = false
@@ -329,13 +329,15 @@ pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:
 	symlinks = false
 	ignorecase = true
 [remote &#34;origin&#34;]
-	url = https://Github username:passwrod@github.com/ifulltest/postman.git
+	url = https://Github username:personal token@github.com/ifulltest/postman.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-4.webp" alt="img"  loading="lazy" />
 </p>
+<p><a href="https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to" target="_blank"><strong>如何获得GitHub个人token并将其设置到本地Windows服务器?</strong></a>
+</p>
 <ul>
 <li>
-<h4 id="新建-持续集成-作业">新建 持续集成 作业</h4>
+<h4 id="新建持续集成作业">新建持续集成作业</h4>
 </li>
 </ul>
 <h5 id="通过自定义端口号启动jenkinsjava--jar-jenkinswar-httpport8088"><strong>通过自定义端口号启动Jenkins：java -jar jenkins.war –httpPort=8088</strong></h5>
