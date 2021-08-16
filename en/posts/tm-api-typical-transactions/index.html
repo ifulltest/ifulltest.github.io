@@ -14,7 +14,7 @@ Before coding the API test script, we need to pick some typical transactions fro
 And these transactions we&rsquo;ve picked better to cover different types of requests, such as the get, post, delete.
 And part of these transactions should correlate with each other at the business level."><meta itemprop="datePublished" content="2021-07-23T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-23T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2297"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="2414"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Cypress," /><meta property="og:title" content="Trade Me-2-typical transactions | Postman API automation testing" />
 <meta property="og:description" content="How to pick the typical transactions?
 Before coding the API test script, we need to pick some typical transactions from TradeMe.
@@ -173,7 +173,7 @@ if (!doNotTrack) {
     <i class="fas fa-fw fa-calendar-alt"></i>Jul 23, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>11 min read
+    <i class="fas fa-fw fa-coffee"></i>12 min read
   </span>
 <div class="post-translations nav-item dropdown me-2 d-inline-flex">
   <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -267,6 +267,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page">Front-end page</h4>
 </li>
 </ul>
+<h5 id="home-page--view-all-categories">home page &gt; View all categories</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-1.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-general-cat-ui-2.webp" alt=""  loading="lazy" />
@@ -380,6 +381,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-1">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--watchlist--view-watchlist">Login &gt; Watchlist &gt; View Watchlist</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-1.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-watchlist-ui-2.webp" alt=""  loading="lazy" />
@@ -541,6 +543,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-2">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--watchlist--view-watchlist--delete--confirm-to-delete">Login &gt; Watchlist &gt; View Watchlist &gt; Delete &gt; Confirm to delete</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-1.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-listing-from-watchlist-ui-2.webp" alt=""  loading="lazy" />
@@ -618,6 +621,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-3">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--view-all-closing-soon-in-all-regions">Login &gt; View all Closing soon in all regions</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui1.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-closing-soon-listings-ui2.webp" alt=""  loading="lazy" />
@@ -759,6 +763,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-4">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--view-all-closing-soon-in-all-regions--add-a-listing-to-your-watchlist">Login &gt; View all Closing soon in all regions &gt; Add a listing to your watchlist</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui1.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-add-a-listing-to-your-watchlist-ui2.webp" alt=""  loading="lazy" />
@@ -836,6 +841,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-5">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--my-trade-me--won">Login &gt; My Trade Me &gt; Won</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-retrieve-your-won-items-ui-1.webp" alt=""  loading="lazy" />
 </p>
 <ul>
@@ -1009,6 +1015,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-6">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--my-trade-me--won--delete--confirm-to-delete">Login &gt; My Trade Me &gt; Won &gt; Delete &gt; Confirm to delete</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-1.webp" alt=""  loading="lazy" />
 </p>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-rm-a-purchase-from-won-list-ui-2.webp" alt=""  loading="lazy" />
@@ -1088,6 +1095,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-7">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--search-a-category">Login &gt; search a category</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-general-search-ui.webp" alt=""  loading="lazy" />
 </p>
 <ul>
@@ -1249,7 +1257,7 @@ if (!doNotTrack) {
 </p>
 <p>Fetch a random item that has the &lsquo;Buy Now&rsquo; feature from upstream transaction &lsquo;<a href="https://developer.trademe.co.nz/api-reference/my-trade-me-methods/remove-a-purchase-from-your-won-items-list" target="_blank">Remove a purchase from your won items list</a>
 &rsquo; to display.</p>
-<p>Fetch a random ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank">‘Buy an auction using Buy Now’</a>
+<p>Fetch a random ‘ShippingId’ from the response for downstream transaction <a href="https://developer.trademe.co.nz/api-reference/bidding-and-buying-methods/buy-an-auction-using-buy-now" target="_blank"><strong>‘Buy an auction using Buy Now’</strong></a>
  to use.</p>
 <ul>
 <li>
@@ -1259,6 +1267,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page-8">Front-end page</h4>
 </li>
 </ul>
+<h5 id="login--search-a-category--filter-buy-now-item-and-go-to-the-item-details-page">Login &gt; search a category &gt; filter buy now item and go to the item details page</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-details-of-a-single-listing-ui1.webp" alt=""  loading="lazy" />
 </p>
 <ul>
@@ -1386,6 +1395,7 @@ if (!doNotTrack) {
 <h4 id="front-end-page---item-details-page">Front-end page - Item details page</h4>
 </li>
 </ul>
+<h5 id="login--search-a-category--filter-buynow-item-and-go-to-item-details-page--click-buy-now--choose-shipping-way-and-confirm-purchase">Login &gt; search a category &gt; filter buynow item and go to item details page &gt; Click Buy Now &gt; Choose shipping way and confirm purchase</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-buy-an-auction-using-buy-now-ui1.webp" alt=""  loading="lazy" />
 </p>
 <ul>
