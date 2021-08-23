@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API Function
 Adds a listing to the authenticated user&rsquo;s watchlist."><meta itemprop="datePublished" content="2021-07-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="883"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="909"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-7-Add a listing to your watchlist API testing | Postman API automation testing" />
 <meta property="og:description" content="API Function
 Adds a listing to the authenticated user&rsquo;s watchlist." />
@@ -462,19 +462,31 @@ pm.sendRequest(post_request, function (err, response) {
 
             var Listdata = jsonData[&#39;List&#39;];
 
+            var count = 0;
+
             for(i = 0; i &lt; <span style="color:#f92672">Listdata.length</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">++)</span> <span style="color:#960050;background-color:#1e0010">{</span>
 
                 <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">ListingIdAddToWatchList </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">Listdata</span><span style="color:#960050;background-color:#1e0010">[</span><span style="color:#a6e22e">i</span><span style="color:#960050;background-color:#1e0010">].</span><span style="color:#a6e22e">ListingId</span><span style="color:#960050;background-color:#1e0010">){</span>
 
-                    <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">ListingIdAddToWatchList</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#a6e22e">has</span> <span style="color:#a6e22e">been</span> <span style="color:#a6e22e">added</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">watchlist</span><span style="color:#960050;background-color:#1e0010">&#34;);</span> 
+                    <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">ListingIdAddToWatchList</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#a6e22e">has</span> <span style="color:#a6e22e">been</span> <span style="color:#a6e22e">added</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">watchlist</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
+                    <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingAddToWatchList</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
+                    <span style="color:#a6e22e">count </span><span style="color:#f92672">=</span> <span style="color:#e6db74">1;</span>
 
                 <span style="color:#960050;background-color:#1e0010">}</span>
 
             <span style="color:#960050;background-color:#1e0010">}</span>
 
+            <span style="color:#a6e22e">if</span> <span style="color:#960050;background-color:#1e0010">(</span><span style="color:#a6e22e">count </span><span style="color:#f92672">=</span><span style="color:#e6db74">=</span> <span style="color:#a6e22e">0</span><span style="color:#960050;background-color:#1e0010">){</span>
+                    
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">ListingId</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">+</span><span style="color:#a6e22e">ListingIdAddToWatchList</span> <span style="color:#960050;background-color:#1e0010">+</span> <span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#a6e22e">hasn</span><span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">been</span> <span style="color:#a6e22e">added</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">watchlist</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+
+                <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingAddToWatchList</span> <span style="color:#a6e22e">Failed</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
+                
+            <span style="color:#960050;background-color:#1e0010">}</span>
+
         <span style="color:#960050;background-color:#1e0010">});</span>
-        
-        <span style="color:#a6e22e">console</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">log</span><span style="color:#960050;background-color:#1e0010">(&#34;</span><span style="color:#a6e22e">Post-Transaction:</span> <span style="color:#a6e22e">CheckingAddToWatchList</span> <span style="color:#a6e22e">Pass</span><span style="color:#960050;background-color:#1e0010">&#34;);</span>
 
     <span style="color:#960050;background-color:#1e0010">}</span>
     
