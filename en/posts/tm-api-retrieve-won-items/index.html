@@ -497,7 +497,7 @@ pm.test(&#34;CheckingWonListHasItems&#34;, function () {
 
     var List = jsonData.List;
 
-    if (List !== []){
+    if (List != &#34;&#34;){
 
         for (i in List){
 
@@ -510,31 +510,30 @@ pm.test(&#34;CheckingWonListHasItems&#34;, function () {
         // Store WonPurchaseIdCount for later deleting usage
         postman.setEnvironmentVariable(&#39;WonPurchaseIdCount&#39;, arr.length);
 
-    }
-
-    if(arr !== []){
-        
-        if(arr.length &gt;=1){
-
-            // Store WonItems for later deleting usage         
-            postman.setEnvironmentVariable(&#39;WonPurchaseId&#39;, arr);
-
-            console.log(&#34;WonPurchaseId counts to: &#34; + arr.length + &#34;, the purchaseId: &#34; + arr);
+        if(arr !== []){
             
-            console.log(&#34;Post-Transaction: CheckingWonListHaveItems Pass&#34;);
+            if(arr.length &gt;=1){
+
+                // Store WonItems for later deleting usage         
+                postman.setEnvironmentVariable(&#39;WonPurchaseId&#39;, arr);
+
+                console.log(&#34;WonPurchaseId counts to: &#34; + arr.length + &#34;, the purchaseId: &#34; + arr);
+                
+                console.log(&#34;Post-Transaction: CheckingWonListHaveItems Pass&#34;);
+
+            }
+
+            else{
+
+                postman.setEnvironmentVariable(&#39;WonPurchaseId&#39;, arr);
+                
+                console.log(&#34;WonPurchaseId counts to: &#34; + arr.length + &#34;. There are no items on the won list.&#34;);
+                
+                console.log(&#34;Post-Transaction: CheckingWonListHaveItems Pass&#34;);
+
+            }
 
         }
-
-        else{
-
-            postman.setEnvironmentVariable(&#39;WonPurchaseId&#39;, arr);
-            
-            console.log(&#34;WonPurchaseId counts to: &#34; + arr.length + &#34;. There are no items on the won list.&#34;);
-            
-            console.log(&#34;Post-Transaction: CheckingWonListHaveItems Pass&#34;);
-
-        }
-
     }
 
     else{
