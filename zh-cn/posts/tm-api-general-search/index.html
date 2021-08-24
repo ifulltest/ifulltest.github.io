@@ -13,7 +13,7 @@
 允许您按类别、关键字或这两者的组合搜索 Trade Me 上的列表。
 结果集可以通过各种属性进行过滤，包括“立即购买”、“立即付款”、“商品状况”或“卖家”的可用性。"><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1628"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1631"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-10-常规搜索API测试 | Postman接口自动化测试" />
 <meta property="og:description" content="API 功能
 允许您按类别、关键字或这两者的组合搜索 Trade Me 上的列表。
@@ -516,7 +516,7 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
 
         console.log(&#34;Page: &#34;+Page+&#34;, total items: &#34;+PageSize);
         
-        console.log(&#34;&#39;HasBuyNow&#39; items counts to: &#34; + arr.length + &#34;, ListingId details: &#34;);
+        console.log(&#34;&#39;HasBuyNow and BuyNowPrice <span style="color:#960050;background-color:#1e0010">&lt;</span>=20&#39; items counts to: &#34; + arr.length + &#34;, ListingId details: &#34;);
 
         console.log(arr);
 

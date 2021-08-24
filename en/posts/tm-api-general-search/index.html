@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API Function
 Allows you to search for listings on Trade Me by category, by keywords or a combination of these two."><meta itemprop="datePublished" content="2021-07-29T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-07-29T00:00:00+00:00" />
-<meta itemprop="wordCount" content="977"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="980"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman," /><meta property="og:title" content="Trade Me-10-General search API testing | Postman API automation testing" />
 <meta property="og:description" content="API Function
 Allows you to search for listings on Trade Me by category, by keywords or a combination of these two." />
@@ -522,7 +522,7 @@ pm.test(&#34;GetListingIdHasBuyNow&#34;, function () {
 
         console.log(&#34;Page: &#34;+Page+&#34;, total items: &#34;+PageSize);
         
-        console.log(&#34;&#39;HasBuyNow&#39; items counts to: &#34; + arr.length + &#34;, ListingId details: &#34;);
+        console.log(&#34;&#39;HasBuyNow and BuyNowPrice <span style="color:#960050;background-color:#1e0010">&lt;</span>=20&#39; items counts to: &#34; + arr.length + &#34;, ListingId details: &#34;);
 
         console.log(arr);
 
