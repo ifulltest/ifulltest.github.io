@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API自动化测试持续集成流程
 典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; 持续集成（我在这儿）"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2475"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="2479"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-持续集成流程 | Postman接口自动化测试" />
 <meta property="og:description" content="API自动化测试持续集成流程
 典型事务选择 -&gt; 对应 API 选择 -&gt; 脚本编写 -&gt; 场景和报告 -&gt; 持续集成（我在这儿）" />
@@ -569,9 +569,9 @@ var transport = nodemailer.createTransport({
 	
     auth:{
 		
-        user: &#34;ifulltest@gmail.com&#34;,
+        user: &#34;sender email&#34;,
 		
-        pass: &#34;your token&#34;
+        pass: &#34;sender email token&#34;
 		
     }
 	
@@ -579,9 +579,9 @@ var transport = nodemailer.createTransport({
 
 var mailOptions = {
 	
-    from: &#34;ifulltest@gmail.com&#34;,
+    from: &#34;sender email&#34;,
 	
-    to: &#34;ifulltest@gmail.com&#34;,
+    to: &#34;receiver email&#34;,
 	
     subject: &#34;Daily env check: &#34;+currentTime,
 	
