@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API automation testing CI process
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1375"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1465"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-CI-process | Postman API automation testing" />
 <meta property="og:description" content="API automation testing CI process
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)" />
@@ -346,9 +346,10 @@ pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:
 <h5 id="build-windows-batch-command-archive-newman-reports-that-creating-for-more-than-seven-days-to-the-history-folder">Build Windows batch command, archive Newman reports that creating for more than seven days to the history folder.</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-0.webp" alt=""  loading="lazy" />
 </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Archive Newman reports that creating for more than seven days to the hisreports folder.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Randomly pick a file that was created more than seven days ago, name it with newmanrpt-his.html and newmanrpt-his.txt
+rem Put the above two files in %POSTMAN_HOME%\reports\hisreports\ in case the below command runs failed.
+rem Archive Newman reports that creating for more than seven days to the hisreports folder.
 pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
-
 copy /y /b reports\hisreports\newmanrpt-his.html &#34;%POSTMAN_HOME%\reports&#34; <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m <span style="font-style:italic">*.html /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34; &amp;&amp; copy /y /b reports\hisreports\newmanrpt-his.txt &#34;%POSTMAN_HOME%\reports&#34; &amp;&amp; forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m *</span>.txt /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34;
 </code></pre></div><h5 id="before-the-archive-operation-two-files-in-the-reports-folder-creating-for-more-than-7-days-need-to-be-archived">Before the archive operation, two files in the reports folder creating for more than 7 days need to be archived.</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-1.webp" alt=""  loading="lazy" />
@@ -400,7 +401,7 @@ newman run collections\tradeMeSandBox.postman_collection.json -e data\tradeMeSan
 pushd %POSTMAN_HOME%
 if %time:~0,2% leq 9 (set h=0%time:~1,1%) else (set h=%time:~0,2%)
 set y=%date:~0,4%<span style="color:#960050;background-color:#1e0010">&amp;</span> set m=%date:~5,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set d=%date:~8,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set mi=%time:~3,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set s=%time:~6,2%<span style="color:#960050;background-color:#1e0010">&amp;</span> set ms=%time:~9,2% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
-newman run collections\tradeMeSandBox-Negative.postman_collection.json -e data\tradeMeSandBox.postman_environment.json -r cli,html --reporter-html-export reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.html&gt;reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> echo |set /p=&#34;newmanrpt-%y%%m%%d%%h%%mi%%s%-neg&#34;&gt;%POSTMAN_HOME%\data\negfn.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> exit 0
+newman run collections\tradeMeSandBox.postman_collection-negative.json -e data\tradeMeSandBox.postman_environment.json -r cli,html --reporter-html-export reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.html&gt;reports\newmanrpt-%y%%m%%d%%h%%mi%%s%-neg.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> echo |set /p=&#34;newmanrpt-%y%%m%%d%%h%%mi%%s%-neg&#34;&gt;%POSTMAN_HOME%\data\negfn.txt <span style="color:#960050;background-color:#1e0010">&amp;</span> exit 0
 </code></pre></div><h5 id="run-job-and-see-the-jenkins-log-1">Run job and see the Jenkins log</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-generate-report2.webp" alt=""  loading="lazy" />
 </p>
@@ -481,7 +482,7 @@ pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-email-reports-nodejs-ext.webp" alt=""  loading="lazy" />
 </p>
 <h5 id="email-realizing-by-nodemailerjs---get-current-time-for-later-email-title-to-use">Email realizing by &lsquo;nodemailer.js&rsquo; - get current time for later email title to use.</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// Get current time for later email title to use.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// moment module which can get current time for later email title to use.
 const moment = require(&#39;moment&#39;)
 
 let currentTime =  moment(Date.now()).format(&#39;YYYY-MM-DD HH:mm:ss&#39;)
@@ -529,7 +530,11 @@ var htmltxt = arr.join(&#34;&#34;);
 
 console.log(&#34;htmltxt: &#34;+htmltxt);
 </code></pre></div><h5 id="email-realizing-by-nodemailerjs----sending-the-email">Email realizing by &lsquo;nodemailer.js&rsquo; -  sending the email</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// nodemailer module which can operate email
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">// Delay a specific time to ensure stakeholders can access the GitHub report details after receiving the email.
+sleep(60000);
+console.log(&#34;Delay a specific time to ensure stakeholders can access the GitHub report details after receiving the email.&#34;);
+	
+// nodemailer module which can operate email
 var nodemailer = require(&#34;nodemailer&#34;)
 
 var transport = nodemailer.createTransport({
@@ -542,9 +547,9 @@ var transport = nodemailer.createTransport({
 	
     auth:{
 		
-        user: &#34;sender email&#34;,
+        user: &#34;ifulltest@gmail.com&#34;,
 		
-        pass: &#34;sender email password&#34;
+        pass: &#34;your token&#34;
 		
     }
 	
@@ -552,9 +557,9 @@ var transport = nodemailer.createTransport({
 
 var mailOptions = {
 	
-    from: &#34;sender email&#34;,
+    from: &#34;ifulltest@gmail.com&#34;,
 	
-    to: &#34;receiver email&#34;,
+    to: &#34;ifulltest@gmail.com&#34;,
 	
     subject: &#34;Daily env check: &#34;+currentTime,
 	
@@ -565,12 +570,18 @@ var mailOptions = {
 }
 
 transport.sendMail(mailOptions, function(err, response) {
-    
+	
 	if(err) console.log(err)
 		
     else console.log(response)
 	
 })
+
+// sleep time: mm
+function sleep(delay) {
+  for (var t = Date.now(); Date.now() - t <span style="color:#960050;background-color:#1e0010">&lt;</span>= delay;);
+  return sleep;
+}
 </code></pre></div><ul>
 <li>
 <h4 id="other-ci-practices-that-waiting-to-be-extended">Other CI practices that waiting to be extended</h4>
