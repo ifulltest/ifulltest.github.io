@@ -12,7 +12,7 @@
 <meta itemprop="description" content="API automation testing CI process
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)"><meta itemprop="datePublished" content="2021-08-03T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-08-03T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1469"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
+<meta itemprop="wordCount" content="1507"><meta itemprop="image" content="https://ifulltest.github.io/images/tm-logo.webp">
 <meta itemprop="keywords" content="Postman,Jenkins," /><meta property="og:title" content="Trade Me-14-Jenkins-CI-process | Postman API automation testing" />
 <meta property="og:description" content="API automation testing CI process
 Typical transactions selection -&gt; Corresponding API selection -&gt; Scripting -&gt; Scenarios and reports -&gt; CI(I&rsquo;m here)" />
@@ -167,7 +167,7 @@ if (!doNotTrack) {
     <i class="fas fa-fw fa-calendar-alt"></i>Aug 3, 2021
   </span>
   <span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>7 min read
+    <i class="fas fa-fw fa-coffee"></i>8 min read
   </span>
 <div class="post-translations nav-item dropdown me-2 d-inline-flex">
   <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
@@ -273,42 +273,68 @@ if (!doNotTrack) {
 <h4 id="preparations---environment-initiation">Preparations - environment initiation</h4>
 </li>
 </ul>
-<h5 id="initialize-folder-structure-for-postman-related-scripts-data-reports-repository-before-building-the-ci-job">Initialize folder structure for Postman-related scripts, data, reports, repository before building the CI job.</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem create folder for Postman collection, env parameter, temporary parameter, reports
+<h5 id="initialize-your-local-working-folders">Initialize your local working folders.</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Initialize your local working folders
 pushd d:\Software <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> md postman\collections postman\data postman\reports\hisreports postman\postman_github
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-1.webp" alt=""  loading="lazy" />
 </p>
 <h5 id="set-the-postman-home-directory-to-system-environment-parameter"><strong>Set the Postman home directory to system environment parameter</strong></h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">setx &#34;POSTMAN_HOME&#34; &#34;D:\Software\postman&#34; /M
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem set your postman home directory, this example is &#39;D:\Software\postman&#39;
+setx &#34;POSTMAN_HOME&#34; &#34;D:\Software\postman&#34; /M
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-2.webp" alt=""  loading="lazy" />
 </p>
-<h5 id="preparations---export-postman-collection-and-environment-variables-file-to-local">Preparations - export Postman collection and environment variables file to local</h5>
-<p>export Postman collection file to local refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/#export-collection-files-to-local">export Postman collection file to local </a>
-</strong></p>
-<p>export Postman environment variables file to local refers to: <strong><a href="https://ifulltest.github.io/en/posts/tm-api-scenarios-and-newman-report/#export-environment-parameter-file-to-local">export Postman environment variables file to local </a>
-</strong></p>
-<ul>
+<h5 id="install-newman-related-and-email-related-nodejs-module">Install Newman-related and email-related Nodejs module</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem install Newman-related and email-related Nodejs module
+pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> npm init -y <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> npm install -g newman <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> npm install -g newman-reporter-html <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> npm install moment <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> npm install nodemailer --save
+</code></pre></div><ul>
 <li>
-<h4 id="preparations---github-repository-clone">Preparations - GItHub repository clone</h4>
+<h4 id="preparations---data-initiation">Preparations - data initiation</h4>
 </li>
 </ul>
-<h5 id="clone-remote-postman-github-repository-to-given-local-folder"><strong>Clone remote Postman GitHub repository to given local folder</strong></h5>
-<p>Note: need to start a new dos window after setting the system environment variables</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem postman github repository clone
+<h5 id="clone-demo-github-repository">Clone demo GitHub repository</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem clone demo GitHub repository 
 pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git init <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> git clone https://github.com/ifulltest/postman.git
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3.webp" alt=""  loading="lazy" />
 </p>
-<h5 id="set-username-and-personal-token-to-authorize-files-transfer-between-local-and-remote-repository"><strong>Set username and personal token to authorize files transfer between local and remote repository.</strong></h5>
+<h5 id="copy-github-demo-collections-and-data-to-your-local-working-directory">Copy GitHub demo collections and data to your local working directory</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem copy GitHub demo collections and data to your local working directory
+copy %POSTMAN_HOME%\postman_github\postman\collections\* %POSTMAN_HOME%\collections\ <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> copy %POSTMAN_HOME%\postman_github\postman\data\* %POSTMAN_HOME%\data\*
+</code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3-2.webp" alt=""  loading="lazy" />
+</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3-3.webp" alt=""  loading="lazy" />
+</p>
+<ul>
+<li>
+<h4 id="preparations---data-replacing-or-adding">Preparations - data replacing or adding</h4>
+</li>
+</ul>
+<h5 id="key-messages-replacing--in-collection-files">Key messages replacing  in collection files</h5>
+<p>&ldquo;key&rdquo;: &ldquo;token&rdquo;,&ldquo;value&rdquo;: &ldquo;your token&rdquo;,
+&ldquo;key&rdquo;: &ldquo;tokenSecret&rdquo;,&ldquo;value&rdquo;: &ldquo;your tokenSecret&rdquo;,
+&ldquo;key&rdquo;: &ldquo;consumerSecret&rdquo;,&ldquo;value&rdquo;: &ldquo;your consumerSecret&rdquo;,
+&ldquo;key&rdquo;: &ldquo;consumerKey&rdquo;,&ldquo;value&rdquo;: &ldquo;your consumerKey&rdquo;,</p>
+<p>oauth_consumer_key=&quot;your consumerKey&quot;,
+oauth_token=&quot;your token&quot;,
+oauth_signature=&quot;your consumerSecret%26your tokenSecret&quot;</p>
+<h5 id="key-messages-replacing-in-nodemailerjs-file">Key messages replacing in nodemailer.js file</h5>
+<p>user: &ldquo;sender email&rdquo;,
+pass: &ldquo;sender email token&rdquo;</p>
+<p>from: &ldquo;sender email&rdquo;,
+to: &ldquo;receiver email&rdquo;,</p>
+<h5 id="key-messages-adding-in-postman_homereportshisreports-folder">Key messages adding in &lsquo;%POSTMAN_HOME%\reports\hisreports&rsquo; folder</h5>
+<p>Find two files that creating date more than seven days ago,</p>
+<p>and name them with newmanrpt-his.html and newmanrpt-his.txt.</p>
+<p>Then put them to the given folder.</p>
+<p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-3-4.webp" alt=""  loading="lazy" />
+</p>
+<h5 id="key-messages-adding-in-postman_homepostman_githubpostmangit-file">Key messages adding in &lsquo;%POSTMAN_HOME%\postman_github\postman.git&rsquo; file</h5>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">[core]
-	repositoryformatversion = 0
-	filemode = false
-	bare = false
-	logallrefupdates = true
-	symlinks = false
-	ignorecase = true
+	...
 [remote &#34;origin&#34;]
 	url = https://Github username:personal token@github.com/ifulltest/postman.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch &#34;main&#34;]
+	...
 </code></pre></div><p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-4.webp" alt=""  loading="lazy" />
 </p>
 <p><a href="https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to" target="_blank"><strong>How to get GitHub personal token and set it to local Windows server?</strong></a>
@@ -346,12 +372,10 @@ pushd %POSTMAN_HOME%\postman_github <span style="color:#960050;background-color:
 <h5 id="build-windows-batch-command-archive-newman-reports-that-creating-for-more-than-seven-days-to-the-history-folder">Build Windows batch command, archive Newman reports that creating for more than seven days to the history folder.</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-0.webp" alt=""  loading="lazy" />
 </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Randomly pick a file that was created more than seven days ago, name it with newmanrpt-his.html and newmanrpt-his.txt
-rem Put the above two files in %POSTMAN_HOME%\reports\hisreports\ in case the below command runs failed.
-rem Archive Newman reports that creating for more than seven days to the hisreports folder.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-markdown" data-lang="markdown">rem Archive Newman reports that creating for more than seven days to the hisreports folder.
 pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> ping /n 3 127.0.0.1&gt;nul
-copy /y /b reports\hisreports\newmanrpt-his.html &#34;%POSTMAN_HOME%\reports&#34; <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m <span style="font-style:italic">*.html /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34; &amp;&amp; copy /y /b reports\hisreports\newmanrpt-his.txt &#34;%POSTMAN_HOME%\reports&#34; &amp;&amp; forfiles /p &#34;%POSTMAN_HOME%\reports&#34;  /m *</span>.txt /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34;
-</code></pre></div><h5 id="before-the-archive-operation-two-files-in-the-reports-folder-creating-for-more-than-7-days-need-to-be-archived">Before the archive operation, two files in the reports folder creating for more than 7 days need to be archived.</h5>
+copy /y /b reports\hisreports\newmanrpt-his.html &#34;%POSTMAN_HOME%\reports&#34; <span style="color:#960050;background-color:#1e0010">&amp;&amp;</span> forfiles /p &#34;%POSTMAN_HOME%\reports&#34; /m <span style="font-style:italic">*.html /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34;&gt;nul &amp;&amp; copy /y /b reports\hisreports\newmanrpt-his.txt &#34;%POSTMAN_HOME%\reports&#34; &amp;&amp; forfiles /p &#34;%POSTMAN_HOME%\reports&#34; /m *</span>.txt /d -7 /c &#34;cmd /c move @path %POSTMAN_HOME%\reports\hisreports&#34;&gt;nul
+</code></pre></div><h5 id="before-the-archive-operation-two-files-in-the-reports-folder-creating-for-more-than-7-days-will-expected-to-be-archived">Before the archive operation, two files in the reports folder creating for more than 7 days will expected to be archived.</h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/tm-jenkins-ci-archive-1.webp" alt=""  loading="lazy" />
 </p>
 <h5 id="run-job-and-see-the-jenkins-log">Run job and see the Jenkins log</h5>
@@ -475,7 +499,7 @@ pushd %POSTMAN_HOME% <span style="color:#960050;background-color:#1e0010">&amp;&
 </strong></h5>
 <p><img class="img-fluid" src="https://ifulltest.github.io/images/nodejs-installation5.webp" alt=""  loading="lazy" />
 </p>
-<h5 id="install-the-extended-module-nodemailer-and-moment-to-nodejs">Install the extended module &lsquo;nodemailer&rsquo; and &lsquo;moment&rsquo; to Node.js.</h5>
+<h5 id="extended-module-nodemailer-and-moment-installation-have-been-included-in-preparations---environment-initiation">Extended module &lsquo;nodemailer&rsquo; and &lsquo;moment&rsquo; installation have been included in &lsquo;Preparations - environment initiation&rsquo;.</h5>
 <p>Moule installation command:</p>
 <p>npm install nodemailer or yarn add nodemailer &ndash;save</p>
 <p>npm install moment or yarn add moment</p>
